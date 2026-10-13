@@ -1,0 +1,126 @@
+<header id="header">
+    <!-- ===== TOPBAR ===== -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="topbar__text">Adzco.vn - Cửa hàng thiết bị công nghiệp &amp; gia dụng chính hãng Nhật Bản</span>
+        </div>
+        <div class="topbar__right">
+          <span class="topbar__text topbar__slogan">Đồng hành cùng hiệu suất</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER DESKTOP (>=992px) ===== -->
+    <div class="header-desktop">
+      <div class="hd-sticky-spacer"></div>
+      <div class="hd-bar" data-sticky>
+        <div class="hd-main">
+          <div class="container">
+            <div class="hd-main__row">
+              <div class="hd-main__logo">
+                <a href="/" class="logo"><img src="/assets/img/media/logo-adzco.png" alt="Adzco" width="215" height="46"></a>
+              </div>
+              <div class="hd-main__search">
+                <form class="search-form search-form--wide" action="/tim-kiem/">
+                  <input type="text" name="keyword" placeholder="Nhập từ khóa" data-placeholder="Nhập từ khóa" autocomplete="off">
+                  <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="hd-main__right">
+                <a href="tel:0933110083" class="hotline-header">
+                  <span class="hotline-header__icon"><i class="fas fa-phone-alt"></i></span>
+                  <span class="hotline-header__text">
+                    <span class="hotline-header__label">Hotline</span>
+                    <span class="hotline-header__number">0933 11 00 83</span>
+                  </span>
+                </a>
+                <div class="hd-main__divider"></div>
+                <div class="mini-cart">
+                  <a href="/cart/" class="mini-cart__link"><img src="/assets/img/media/icon-cart.svg" class="mini-cart__icon" alt="Giỏ hàng"><span class="mini-cart__num">0</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hd-nav">
+          <div class="container">
+            <div class="hd-nav__row">
+              <div class="hd-nav__cat">
+                <div class="navleft">
+                  <div class="navleft__title"><div class="h3"><i class="fas fa-bars"></i>Danh mục</div></div>
+                  <div class="cat-menu">{{CAT_MENU}}</div>
+                </div>
+              </div>
+              <div class="hd-nav__menu">
+                <nav class="main-nav">
+                  <ul class="menu-nav">{{MAIN_MENU}}</ul>
+                </nav>
+                <ul class="hd-nav__tools">
+                  <li>
+                    <form class="search-form search-form--mini" action="/tim-kiem/">
+                      <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
+                      <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                    </form>
+                  </li>
+                  <li>
+                    <div class="mini-cart">
+                      <a href="/cart/" class="mini-cart__link"><img src="/assets/img/media/icon-cart.svg" class="mini-cart__icon" alt="Giỏ hàng"><span class="mini-cart__num">0</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER MOBILE (<992px) ===== -->
+    <div class="header-mobile">
+      <div class="hd-sticky-spacer"></div>
+      <div class="hm-bar" data-sticky>
+        <div class="container">
+          <div class="hm-row">
+            <div class="hm-logo">
+              <a href="/" class="logo"><img src="/assets/img/media/logo-adzco.png" alt="Adzco" width="159" height="34"></a>
+            </div>
+            <ul class="hm-tools">
+              <li>
+                <form class="search-form search-form--mini" action="/tim-kiem/">
+                  <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
+                  <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
+              <li>
+                <div class="mini-cart">
+                  <a href="/cart/" class="mini-cart__link"><img src="/assets/img/media/icon-cart.svg" class="mini-cart__icon" alt="Giỏ hàng"><span class="mini-cart__num">0</span></a>
+                </div>
+              </li>
+            </ul>
+            <nav class="m-nav">
+              <button type="button" class="m-nav__toggle" aria-label="Menu">
+                <span class="hamburger"><span></span></span>
+                <span class="m-nav__title">MENU</span>
+              </button>
+              <div class="m-nav__panel">
+                <ul class="m-menu">{{MOBILE_MENU}}</ul>
+                <div class="m-cat">
+                  <div class="m-cat__title">Danh mục</div>
+                  <ul class="m-menu m-menu--cat">{{MOBILE_CAT}}</ul>
+                </div>
+                <div class="m-nav__extra">
+                  <div class="social-header">
+                    <a href="https://zalo.me/0933110083" rel="nofollow" target="_blank" aria-label="zalo"><img src="/assets/img/static/themes/base/images/icons/icon-zalo.svg" alt="zalo"></a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{{HERO}}
+  </header>

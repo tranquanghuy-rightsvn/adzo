@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* /slug/index.html -> /slug/ */(function(l){var p=l.pathname;if(/\/index\.html?$/i.test(p)){l.replace(p.replace(/index\.html?$/i,'')+l.search+l.hash);}})(location);</script>
+  <title>Adzco - Thanh toán đơn hàng</title>
+  <meta name="description" content="Adzco - Thanh toán đơn hàng">
+  <!-- seo:start -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://adzo.vn/checkout/">
+  <meta name="author" content="Adzco">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Adzco">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adzco - Thanh toán đơn hàng">
+  <meta property="og:description" content="Adzco - Thanh toán đơn hàng">
+  <meta property="og:url" content="https://adzo.vn/checkout/">
+  <meta property="og:image" content="https://adzo.vn/assets/img/media/logo-adzco.png">
+  <meta property="og:image:alt" content="Adzco - Thanh toán đơn hàng">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Adzco - Thanh toán đơn hàng">
+  <meta name="twitter:description" content="Adzco - Thanh toán đơn hàng">
+  <meta name="twitter:image" content="https://adzo.vn/assets/img/media/logo-adzco.png">
+  <!-- seo:end -->
+  <link rel="icon" href="/assets/img/media/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css?v=mv10pu6o">
+  <link rel="stylesheet" href="/css/pages.css?v=mv10pu6o">
+</head>
+<body class="checkout-page">
+<div class="checkout-wrap">
+  <div class="checkout-logo"><a href="/"><img src="/assets/img/media/logo-adzco-den.png" alt="logo"></a></div>
+  <form action="#" id="checkout-order-form" novalidate>
+    <h2 class="title-checkout">Thông tin đặt hàng</h2>
+    <div class="checkout-row">
+      <div class="checkout-col">
+        <h5 class="order_review_heading">Thông tin mua hàng</h5>
+        <div class="form-my-account">
+          <p><input type="text" name="name" placeholder="Họ tên (*)" required></p>
+          <p><input type="email" name="email" placeholder="Email "></p>
+          <p><input type="text" name="phone" placeholder="Số điện thoại (*)" required inputmode="tel"></p>
+          <p><select name="province" id="province" required><option value="">Tỉnh / Thành Phố (*)</option></select></p>
+          <p><select name="district" id="district" required><option value="">Quận / Huyện (*)</option></select></p>
+          <p><select name="ward" id="ward" required><option value="">Phường / Xã (*)</option></select></p>
+          <p><input type="text" name="address" placeholder="Địa chỉ (*)" required></p>
+        </div>
+        <div class="ship-address"><input type="checkbox" id="same-as-billing" name="has_saddress" value="1"><label for="same-as-billing"><i class="fas fa-square"></i><i class="fas fa-check-square"></i>Giao hàng tới địa chỉ khác</label></div>
+        <div id="fieldset-shipping" class="form-my-account" style="display:none">
+          <p><input type="text" name="sname" placeholder="Họ tên (*)" required></p>
+          <p><input type="email" name="semail" placeholder="Email "></p>
+          <p><input type="text" name="sphone" placeholder="Số điện thoại (*)" required inputmode="tel"></p>
+          <p><select name="sprovince" id="sprovince" required><option value="">Tỉnh / Thành Phố(*) </option></select></p>
+          <p><select name="sdistrict" id="sdistrict" required><option value="">Quận / Huyện(*) </option></select></p>
+          <p><select name="sward" id="sward" required><option value="">Phường / Xã(*) </option></select></p>
+          <p><input type="text" name="saddress" placeholder="Địa chỉ (*)" required></p>
+        </div>
+        <div class="form-my-account"><p><textarea name="note" placeholder="Ghi chú"></textarea></p></div>
+      </div>
+      <div class="checkout-col">
+        <h5 class="order_review_heading">Chọn hình thức thanh toán</h5>
+        <ul class="payment_methods">
+          <li><input id="payment0" type="radio" name="payment" value="1" checked><label for="payment0"><span class="pm-icon"><i class="fas fa-money-bill"></i></span> Thu tiền tận nơi - COD</label>
+            <div class="payment_description"><em>Chúng tôi giao hàng và thu tiền tận nơi của bạn.</em></div></li>
+        </ul>
+      </div>
+      <div class="checkout-col">
+        <div class="order-review">
+          <div class="or-row or-head"><h5 class="order_review_heading">Đơn hàng của bạn </h5></div>
+          <div class="or-row" data-checkout-items></div>
+          <div class="or-row or-flex"><span>Tạm tính</span><span data-checkout-total></span></div>
+          <div class="or-row"><div class="coupon-row"><input type="text" placeholder="Mã giảm giá / Quà tặng" id="coupon_code"><button type="button" id="check-coupon" disabled>Áp dụng</button></div><p class="coupon-msg" hidden></p></div>
+          <div class="or-row or-flex or-total"><span>Thành tiền</span><strong data-checkout-total></strong></div>
+          <div class="or-row or-actions"><a href="/cart/" class="edit_cart"><i class="fas fa-angle-left"></i> Xem giỏ hàng</a><input type="submit" value="Đặt mua" id="submit-order"></div>
+        </div>
+        <p class="checkout-msg" hidden></p>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="/js/main.js?v=mv10pu6o"></script>
+<script src="/js/pages.js?v=mv10pu6o"></script>
+</body>
+</html>

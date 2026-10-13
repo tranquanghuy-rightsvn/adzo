@@ -1,0 +1,2286 @@
+{
+ "topbar": {
+  "phones": [
+   {
+    "t": "0564 77 88 67",
+    "href": "tel:0564 77 88 67"
+   },
+   {
+    "t": "035 510 58 38",
+    "href": "tel: 035 510 58 38"
+   }
+  ],
+  "social": [
+   {
+    "href": "https://www.facebook.com/Robotnhatban.tahawa",
+    "img": "https://static.loveitopcdn.com/themes/base/images/icons-link/icon-facebook.png",
+    "label": "facebook"
+   },
+   {
+    "href": "https://twitter.com/TahawaVN",
+    "img": "https://static.loveitopcdn.com/themes/base/images/icons-link/icon-twitter.png",
+    "label": "twitter"
+   },
+   {
+    "href": "https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw",
+    "img": "https://static.loveitopcdn.com/themes/base/images/icons-link/icon-youtube.png",
+    "label": "youtube"
+   },
+   {
+    "href": "https://www.instagram.com/tahawavn/",
+    "img": "https://static.loveitopcdn.com/themes/base/images/icons-link/icon-instagram.png",
+    "label": "instagram"
+   },
+   {
+    "href": "https://www.linkedin.com/in/tahawa-vn-972668227/",
+    "img": "https://static.loveitopcdn.com/themes/base/images/icons-link/icon-linkedin.png",
+    "label": "linkedin"
+   }
+  ],
+  "account": [
+   {
+    "t": "Đăng nhập",
+    "href": "https://tahawa.com.vn/login",
+    "icon": "fas fa-sign-in-alt"
+   },
+   {
+    "t": "Đăng ký",
+    "href": "https://tahawa.com.vn/register",
+    "icon": "fas fa-key"
+   },
+   {
+    "t": "Đăng nhập",
+    "href": "https://tahawa.com.vn/login",
+    "icon": "fas fa-sign-in-alt"
+   },
+   {
+    "t": "Đăng ký",
+    "href": "https://tahawa.com.vn/register",
+    "icon": "fas fa-key"
+   }
+  ]
+ },
+ "logo": "https://media.loveitopcdn.com/42178/logo-tahawa-den.png",
+ "logoFixed": "https://media.loveitopcdn.com/42178/logo-tahawa-den.png",
+ "searchPlaceholder": "Nhập từ khóa",
+ "menu": [
+  {
+   "t": "TRANG CHỦ",
+   "href": "https://tahawa.com.vn/",
+   "sub": [
+    {
+     "t": "TRANG CHỦ",
+     "href": "https://tahawa.com.vn/"
+    }
+   ]
+  },
+  {
+   "t": "GIỚI THIỆU",
+   "href": "https://tahawa.com.vn/gioi-thieu.html",
+   "sub": [
+    {
+     "t": "GIỚI THIỆU",
+     "href": "https://tahawa.com.vn/gioi-thieu.html"
+    }
+   ]
+  },
+  {
+   "t": "TIN TỨC",
+   "href": "https://tahawa.com.vn/tin-tuc-tahawa/",
+   "sub": [
+    {
+     "t": "TIN TỨC",
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/"
+    }
+   ]
+  },
+  {
+   "t": "CHÍNH SÁCH",
+   "href": "https://tahawa.com.vn/chinh-sach-cua-tahawa.html",
+   "sub": [
+    {
+     "t": "CHÍNH SÁCH",
+     "href": "https://tahawa.com.vn/chinh-sach-cua-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH TRẢ GÓP TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-tra-gop-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH BÁN HÀNG CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-ban-hang-cua-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH BẢO HÀNH CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-bao-hanh-cua-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH VẬN CHUYỂN - GIAO NHẬN CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-van-chuyen-giao-nhan-cua-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH ĐỔI TRẢ CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-doi-tra-cua-tahawa.html"
+    },
+    {
+     "t": "CHÍNH SÁCH THANH TOÁN CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-thanh-toan-cua-tahawa.html"
+    },
+    {
+     "t": "BẢO MẬT THÔNG TIN KHÁCH HÀNG CỦA TAHAWA",
+     "href": "https://tahawa.com.vn/chinh-sach-bao-mat-thong-tin-khach-hang-cua-tahawa.html"
+    }
+   ]
+  },
+  {
+   "t": "HỢP TÁC ĐẠI LÝ",
+   "href": "https://tahawa.com.vn/chinh-sach-dai-ly-tahawa.html",
+   "sub": [
+    {
+     "t": "HỢP TÁC ĐẠI LÝ",
+     "href": "https://tahawa.com.vn/chinh-sach-dai-ly-tahawa.html"
+    }
+   ]
+  }
+ ],
+ "category": [
+  {
+   "t": "MÁY HÚT BỤI CÔNG NGHIỆP",
+   "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "MÁY CHÀ SÀN",
+   "href": "https://tahawa.com.vn/may-cha-san/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "MÁY GIẶT THẢM, SẤY THẢM",
+   "href": "https://tahawa.com.vn/may-say-tham/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "MÁY RỬA XE ÁP LỰC CAO",
+   "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "MÁY HÀN",
+   "href": "https://tahawa.com.vn/san-pham-cong-nghiep/may-han-tahawa/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "THIẾT BỊ BẾP CÔNG NGHIỆP",
+   "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/",
+   "cls": " relative",
+   "sub": []
+  },
+  {
+   "t": "THIẾT BỊ NÂNG HẠ",
+   "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-nang-ha/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "XE ĐẨY HÀNG",
+   "href": "https://tahawa.com.vn/xe-day-hang/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "MÁY XOA TƯỜNG, XOA NỀN",
+   "href": "https://tahawa.com.vn/may-xoa-tuong/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "MÁY PHÁT ĐIỆN",
+   "href": "https://tahawa.com.vn/may-phat-dien-tahawa/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "MÁY BƠM NƯỚC",
+   "href": "https://tahawa.com.vn/do-gia-dung/may-bom/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "MÁY CẮT CỎ",
+   "href": "https://tahawa.com.vn/do-gia-dung/may-cat-co-tahawa-nhat-ban-bao-hanh-2-nam/",
+   "cls": "relative toggleable",
+   "sub": []
+  },
+  {
+   "t": "MÁY GIA DỤNG",
+   "href": "https://tahawa.com.vn/may-gia-dung/",
+   "cls": "has-sub dropdown relative toggleable",
+   "sub": [
+    {
+     "t": "ROBOT HÚT BỤI",
+     "href": "https://tahawa.com.vn/robot-hut-bui-tahawa/"
+    },
+    {
+     "t": "ROBOT LAU KÍNH",
+     "href": "https://tahawa.com.vn/robot-lau-kinh-nhat-ban/"
+    },
+    {
+     "t": "MÁY RỬA THỰC PHẨM",
+     "href": "https://tahawa.com.vn/may-rua-rau-cu-qua-tahawa/"
+    },
+    {
+     "t": "MÁY ÉP DẦU",
+     "href": "https://tahawa.com.vn/may-ep-dau/"
+    }
+   ]
+  },
+  {
+   "t": "PHỤ KIỆN THAY THẾ",
+   "href": "https://tahawa.com.vn/phu-kien-thay-the/",
+   "cls": "has-sub dropdown relative toggleable",
+   "sub": [
+    {
+     "t": "PHỤ KIỆN MÁY HÚT BỤI CÔNG NGHIỆP",
+     "href": "https://tahawa.com.vn/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep/"
+    },
+    {
+     "t": "PHỤ KIỆN MÁY CHÀ SÀN",
+     "href": "https://tahawa.com.vn/phu-kien-thay-the/phu-kien-may-cha-san/"
+    },
+    {
+     "t": "PHỤ KIỆN ROBOT HÚT BỤI",
+     "href": "https://tahawa.com.vn/phu-kien-thay-the/phu-kien-robot-hut-bui/"
+    },
+    {
+     "t": "PHỤ KIỆN ROBOT LAU KÍNH",
+     "href": "https://tahawa.com.vn/phu-kien-thay-the/phu-kien-robot-lau-kinh/"
+    }
+   ]
+  },
+  {
+   "t": "Xem thêm ...",
+   "href": "",
+   "cls": "more",
+   "sub": []
+  }
+ ],
+ "hero": [
+  {
+   "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/",
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/103926-may-hut-bui-cong-nghiep-1.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/103926-may-hut-bui-cong-nghiep-1.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/103926-may-hut-bui-cong-nghiep-1.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  },
+  {
+   "href": "https://tahawa.com.vn/may-cha-san/",
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-2.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/may-hut-bui-cong-nghiep-2.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-2.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  },
+  {
+   "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/",
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-3.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/may-hut-bui-cong-nghiep-3.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-3.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  },
+  {
+   "href": null,
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-4.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/may-hut-bui-cong-nghiep-4.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-4.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  },
+  {
+   "href": "https://tahawa.com.vn/san-pham-cong-nghiep/may-han-tahawa/",
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-6.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/may-hut-bui-cong-nghiep-6.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/may-hut-bui-cong-nghiep-6.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  },
+  {
+   "href": null,
+   "sources": [
+    {
+     "media": "(min-width: 650px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/1900x700/thuong-hieu.jpg?zc=1"
+    },
+    {
+     "media": "(min-width: 350px)",
+     "src": "https://media.loveitopcdn.com/42178/thumb/950x350/thuong-hieu.jpg?zc=1"
+    }
+   ],
+   "img": "https://media.loveitopcdn.com/42178/thumb/1900x700/thuong-hieu.jpg?zc=1",
+   "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+  }
+ ],
+ "widgets": [
+  {
+   "cls": "widget widget-slider widget-238 col-12 col-md-12  ",
+   "heading": "BẠN ĐANG TÌM GÌ",
+   "carousel": {
+    "data-total-item": "13",
+    "data-margin": "20",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "4",
+    "data-responsive-992": "5",
+    "data-autoheight": "true",
+    "data-width": "600",
+    "data-height": "600",
+    "data-animatein": "fadeIn",
+    "data-animateout": "fadeOut",
+    "data-autoplaytimeout": "5000",
+    "data-dots": "true",
+    "data-nav": "true",
+    "data-loop": "true",
+    "data-autoplay": "true"
+   },
+   "items": [
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162841-1.jpg?zc=1",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162841-3.jpg?zc=1",
+     "href": "https://tahawa.com.vn/may-cha-san/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162844-6.jpg?zc=1",
+     "href": "https://tahawa.com.vn/may-say-tham/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162841-4.jpg?zc=1",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162844-7.jpg?zc=1",
+     "href": "https://tahawa.com.vn/may-xoa-tuong/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162841-2.jpg?zc=1",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/may-han-tahawa/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162844-5.jpg?zc=1",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/may-hut-bui-cong-nghiep.jpg?zc=1",
+     "href": "https://tahawa.com.vn/xe-day-hang/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/may-hut-bui-cong-nghiep-1.jpg?zc=1",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-nang-ha/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/11.png?zc=1",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/135801-10.png?zc=1",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-cat-co-tahawa-nhat-ban-bao-hanh-2-nam/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162846-11.jpg?zc=1",
+     "href": "https://tahawa.com.vn/robot-lau-kinh-nhat-ban/"
+    },
+    {
+     "t": "",
+     "img": "https://media.loveitopcdn.com/42178/thumb/600x600/162845-10.jpg?zc=1",
+     "href": "https://tahawa.com.vn/robot-hut-bui-tahawa/"
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-banner widget-205 col-12 col-md-12  ",
+   "heading": null,
+   "carousel": null,
+   "banners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/top-30-1.jpg",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/robot-hut-nhat-ban-cao-cap.png",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/robot-hut-nhat-ban-cao-cap-1.jpg",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    }
+   ],
+   "text": ""
+  },
+  {
+   "cls": "widget widget-product widget-234 col-12 col-md-12  ",
+   "heading": "SẢN PHẨM BÁN CHẠY",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "4",
+    "data-responsive-992": "5",
+    "data-autoplay": "1",
+    "data-loop": "true"
+   },
+   "products": [
+    {
+     "name": "Robot Hút Bụi Lau Nhà Tự Giặt Giẻ Tahawa Nhật Bản TH-U200",
+     "href": "https://tahawa.com.vn/robot-hut-bui-tahawa/robot-hut-bui-lau-nha-tu-giat-gie-tahawa-nhat-ban-th-u200.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/thumnail-th-u200.png?zc=1",
+     "price": "30.050.000VND 35.500.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy ép dầu thực vật dùng trong gia đình Tahawa TH-888A",
+     "href": "https://tahawa.com.vn/may-ep-dau/may-ep-dau-thuc-vat-nong-lanh-dung-trong-gia-dinh-tahawa-th-888a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-ep-dau-thuc-vat-tahawa-th-888a.png?zc=1",
+     "price": "7.050.000VND 8.900.000VND -20%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy ép dầu thực vật Tahawa TH-X8S",
+     "href": "https://tahawa.com.vn/may-ep-dau/may-ep-dau-thuc-vat-tahawa-th-x8s.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-ep-dau-thuc-vat-tahawa-th-x8s.png?zc=1",
+     "price": "8.199.000VND 9.890.000VND -17%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy ép dầu thực vật Tahawa TH-S9S",
+     "href": "https://tahawa.com.vn/may-ep-dau/may-ep-dau-thuc-vat-tahawa-th-s9s.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-ep-dau-thuc-vat-tahawa-nhat-ban-th-s9s.png?zc=1",
+     "price": "20.500.000VND 24.500.000VND -16%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy ép dầu thực vật Tahawa TH-T3",
+     "href": "https://tahawa.com.vn/may-ep-dau/may-ep-dau-thuc-vat-tahawa-th-t3.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-ep-dau-thuc-vat-tahawa-th-t3.png?zc=1",
+     "price": "14.900.000VND 16.000.000VND -6%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy khử khuẩn thực phẩm, rửa thực phẩm đa năng Tahawa Nhật Bản COH15-C6B",
+     "href": "https://tahawa.com.vn/may-rua-rau-cu-qua-tahawa/may-rua-rau-cu-qua-tahawa-th-c6.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/114147-th-c6.png?zc=1",
+     "price": "7.050.000VND 9.150.000VND -22%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Robot lau kính tự phun nước Tahawa TH-YW509",
+     "href": "https://tahawa.com.vn/robot-lau-kinh-nhat-ban/robot-lau-kinh-tahawa-th-yw509.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/lau-kinh-tahawa-th-yw5092.jpg?zc=1",
+     "price": "8.500.000VND 9.490.000VND -10%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Robot Hút Bụi Nhật Bản Tahawa TH-06Plus",
+     "href": "https://tahawa.com.vn/robot-hut-bui-tahawa/robot-hut-bui-nhat-ban-tahawa-th-06plus.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/104308-robot-hut-bui.jpg?zc=1",
+     "price": "9.000.000VND 11.900.000VND -24%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-banner widget-201 col-12 col-md-12  ",
+   "heading": null,
+   "carousel": null,
+   "banners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-15.png",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/robot-hut-nhat-ban-cao-cap.png",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/robot-hut-nhat-ban-cao-cap-1.jpg",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    }
+   ],
+   "text": ""
+  },
+  {
+   "cls": "widget widget-product_category widget-230 col-12 col-md-12  ",
+   "heading": "MÁY HÚT BỤI CÔNG NGHIỆP",
+   "carousel": null,
+   "products": [
+    {
+     "name": "MÁY HÚT BỤI CÔNG NGHIỆP TAHAWA NHẬT BẢN TH-90 (90 lít)",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-tahawa-nhat-ban-th-90-90-lit.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-cong-nghiep-tahawa-th-hc90-2021-3.png?zc=1",
+     "price": "10.600.000VND 11.980.000VND -11%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "MÁY HÚT BỤI CÔNG NGHIỆP TAHAWA NHẬT BẢN TH-902 (90 lít)",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-tahawa-nhat-ban-th-902-90-lit.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-cong-nghiep-tahawa-th-hc902-90lit-3.png?zc=1",
+     "price": "10.650.000VND 12.360.000VND -13%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "MÁY HÚT BỤI CÔNG NGHIỆP TAHAWA NHẬT BẢN TH-903 (90 lít)",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-tahawa-nhat-ban-th-903.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-cong-nghiep-tahawa-th-hc903-90lit-2.png?zc=1",
+     "price": "12.450.000VND 14.500.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi Tahawa 12L công suất 1000W TH-12L2",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-tahawa-12l-cong-suat-1000w-th-12l2.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/110646-may-hut-bui-12l-1000w-tahawa-tvc12202-1704453492.png?zc=1",
+     "price": "2.100.000VND 2.600.000VND -19%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi Tahawa 12L công suất 1200W TH-12L1",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-tahawa-12l-cong-suat-1200w-th-12l1.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-12l-1000w-tahawa-tvc12202-1704453492.png?zc=1",
+     "price": "2.250.000VND 2.750.000VND -18%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi Tahawa TH-30L2 Công Suất 1400W",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-tahawa-th-30l2-cong-suat-1400w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-but-1400w-30-lit-tahawa-tvc14301-1697187658.jpg?zc=1",
+     "price": "3.500.000VND 3.950.000VND -11%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi Tahawa TH-30L1 Công Suất 1300W",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-tahawa-th-30l1-cong-suat-1300w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-kho-va-uot-30l-tahawa-tvc13301-1664265609.jpg?zc=1",
+     "price": "3.188.000VND 3.780.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi khô và ướt Tahawa TH-10L2 Công Suất 1000W",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-kho-va-uot-tahawa-th-10l2-cong-suat-1000w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-10l-1000w-tahawa-tvc10101-16921682111.jpg?zc=1",
+     "price": "1.800.000VND 2.100.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi khô và ướt Tahawa TH-10L1 Công Suất 1200W",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-gia-dinh-tahawa-th-10l1.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-hut-bui-10l-1200w-tahawa-tvc12101-1692168338.jpg?zc=1",
+     "price": "2.050.000VND 2.659.000VND -22%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi công nghiệp 30L TAHAWA TH-HC30P",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-tahawa-th-hc30p.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/a821400019b37027f8dd625db63fd7fb.jpg?zc=1",
+     "price": "2.550.000VND 3.400.000VND -25%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi gia đình 15L TAHAWA TH-HC15P",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-gia-dinh-tahawa-hc15p.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/113020-e4baec4c02d0410e9c83bcdb79f64fc9.jpg?zc=1",
+     "price": "2.550.000VND 4.200.000VND -39%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy hút bụi công nghiệp khô ướt 30L Tahawa TH-HC30",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-kho-uot-tahawa-th-hc30.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/z5546391179887-08509f730c7d0dd2245340fa2bfe1960.jpg?zc=1",
+     "price": "3.500.000VND 4.300.000VND -18%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy Hút Bụi Công Nghiệp Tahawa 3239W 55L",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-3239w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/111431-2.jpg?zc=1",
+     "price": "13.450.000VND 21.900.000VND -38%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy Hút Bụi Công Nghiệp Tahawa 3238W 77L",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-tahawa-3238w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/110758-2.jpg?zc=1",
+     "price": "16.490.000VND 21.000.000VND -21%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy Hút Bụi Công Nghiệp Tahawa KF70",
+     "href": "https://tahawa.com.vn/may-hut-bui-cong-nghiep/may-hut-bui-cong-nghiep-kf70.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/110104-2.jpg?zc=1",
+     "price": "6.700.000VND 7.900.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-product_category widget-117 col-12 col-md-12  ",
+   "heading": "MÁY CHÀ SÀN TAHAWA NHẬT BẢN",
+   "carousel": null,
+   "products": [
+    {
+     "name": "Máy lau sàn nhà Tahawa GM55B dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-gm55b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-cua-nhat-tahawa-gm55b-9.jpg?zc=1",
+     "price": "69.900.000VND 76.000.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn liên hợp mini Tahawa KF30 (2 bàn chải)",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf30.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-mini-tahawa-nhat-ban-kf30-2.jpg?zc=1",
+     "price": "41.900.000VND 49.000.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn nhà xưởng Tahawa KF60 dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf60.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-nha-xuong-cua-nhat-tahawa-kf60-1.jpg?zc=1",
+     "price": "69.900.000VND 76.000.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn liên hợp Tahawa KF35 dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf35.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-nha-xuong-tahawa-kf35.jpg?zc=1",
+     "price": "45.900.000VND 53.000.000VND -13%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy lau sàn nhà xưởng Tahawa KF450E dùng điện",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf450e.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-lien-hop-tahawa-nhat-ban-kf450e-6.jpg?zc=1",
+     "price": "41.900.000VND 49.500.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy lau sàn Tahawa Nhật Bản KF450B dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf450b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-lien-hop-cua-nhat-tahawa-kf450-6.jpg?zc=1",
+     "price": "49.900.000VND 56.700.000VND -11%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy lau sàn nhà ngồi lái Tahawa GM90B dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-gm90b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-lau-san-ngoi-lai-cua-nhat-tahawa-gm90b-3.jpg?zc=1",
+     "price": "165.900.000VND 171.000.000VND -2%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy lau sàn ngồi lái Tahawa GM150B dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-gm150b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-lau-nha-xuong-ngoi-lai-cua-nhat-tahawa-gm150b-3.jpg?zc=1",
+     "price": "289.900.000VND 315.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy lau sàn ngồi lái Tahawa GM190B dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-gm190b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-lau-san-ngoi-lai-cua-nhat-tahawa-gm190b-8.jpg?zc=1",
+     "price": "332.928.000VND 346.800.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa KF80T dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf80t.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-ngoi-lai-cua-nhat-tahawa-kf80t-4.jpg?zc=1",
+     "price": "115.900.000VND 128.000.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa KF80A dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf80a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-ngoi-lai-cua-nhat-tahawa-kf80a-3.jpg?zc=1",
+     "price": "149.000.000VND 160.000.000VND -6%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa KF150 dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf150.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-ngoi-lai-cua-nhat-tahawa-kf150-7.jpg?zc=1",
+     "price": "259.000.000VND 311.900.000VND -16%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa KF85 dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf85.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-nha-xuong-tahawa-kf85.jpg?zc=1",
+     "price": "139.000.000VND 148.000.000VND -6%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa KF85A dùng bình",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-kf85a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-nha-xuong-cua-nhat-tahawa-kf85a.jpg?zc=1",
+     "price": "116.000.000VND 125.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy chà sàn ngồi lái Tahawa A60B",
+     "href": "https://tahawa.com.vn/may-cha-san/may-cha-san-cua-nhat-tahawa-a60b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cha-san-ngoi-lai-cua-nhat-tahawa-a60b-2.jpg?zc=1",
+     "price": "157.900.000VND 171.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-product_category widget-232 col-12 col-md-12  ",
+   "heading": "MÁY GIẶT THẢM, SẤY THẢM TAHAWA NHẬT BẢN",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "3",
+    "data-responsive-992": "4",
+    "data-autoplay": "0",
+    "data-loop": "true"
+   },
+   "products": [
+    {
+     "name": "Máy phun hút giặt thảm Tahawa TH-602J",
+     "href": "https://tahawa.com.vn/may-say-tham/may-phun-hut-giat-tham-tahawa-th-602j.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-hut-giat-tham-tahawa-th602j.png?zc=1",
+     "price": "11.900.000VND 21.000.000VND -43%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun hút giặt thảm Tahawa TH-LC301J",
+     "href": "https://tahawa.com.vn/may-say-tham/may-phun-hut-giat-tham-tahawa-th-lc301j.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/140143-th-301j.png?zc=1",
+     "price": "12.600.000VND 14.900.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt thảm phun hút Tahawa TH-HC 602",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-tham-tahawa-th-hc-602.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-giat-tham-phun-hut-tahawa-hc-602-bosp.png?zc=1",
+     "price": "19.850.000VND 21.500.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt thảm phun hút Tahawa TH-HC401",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-tham-th-hc401.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-giat-tham-phun-hut-tahawahc401.png?zc=1",
+     "price": "15.500.000VND",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt ghế sofa Tahawa TH-HC730A",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-ghe-sofa-th-hc730a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-giat-ghe-sofa-tahawa-hc730a-g.png?zc=1",
+     "price": "28.130.000VND 31.000.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt thảm liên hợp Tahawa TH-HC3A",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-tham-tahawa-th-hc3a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-giat-tham-lien-hop-tahawa-hc3a-g.png?zc=1",
+     "price": "37.120.000VND 39.000.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt thảm liên hợp Tahawa TH-HC5A",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-tham-th-hc5a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-giat-tham-lien-hop-tahawahc5a-9-1.png?zc=1",
+     "price": "35.900.000VND 45.000.000VND -20%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy giặt ghế Sofa Tahawa C1/18F",
+     "href": "https://tahawa.com.vn/may-say-tham/may-giat-tham-tahawa-c1-18f.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/snapedit-1701221531749.png?zc=1",
+     "price": "27.930.000VND 33.000.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-product_category widget-236 col-12 col-md-12  ",
+   "heading": "MÁY RỬA XE, PHUN ÁP LỰC CAO",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "4",
+    "data-responsive-992": "5",
+    "data-autoplay": "0",
+    "data-loop": "true"
+   },
+   "products": [
+    {
+     "name": "Máy xịt rửa siêu cao áp TAHAWA S350, công suất 11kW",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s350.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-xit-rua-sieu-cao-ap-tahawa-s350-1-1.jpg?zc=1",
+     "price": "38.000.000VND 40.000.000VND -5%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun áp lực cao TAHAWA S250, công suất 7500W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s250.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-ap-luc-tahawa-s250-11-11.jpg?zc=1",
+     "price": "30.000.000VND 35.000.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun áp lực cao TAHAWA S180, công suất 4000W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s180.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-ap-luc-tahawa-s180-6-6.jpg?zc=1",
+     "price": "22.900.000VND 25.000.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun áp lực cao TAHAWA M16, công suất 2000W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-m16.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-ap-luc-tahawa-m16-4-copy.jpg?zc=1",
+     "price": "14.900.000VND 16.000.000VND -6%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun áp lực TAHAWA S24, công suất 2400W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s24.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-tahawa-s24-7.jpg?zc=1",
+     "price": "4.790.000VND 5.000.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun áp lực TAHAWA S24A, công suất 2400W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-ap-luc-cao-tahawa-s24a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-ap-luc-tahawa-s24a-6.jpg?zc=1",
+     "price": "4.790.000VND 5.000.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun rửa cao áp TAHAWA S26, công suất 2600W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s26.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-ap-luc-cao-tahawa-s26-4.jpg?zc=1",
+     "price": "6.700.000VND 7.000.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy xịt rửa cao áp TAHAWA S28, công suất 2800W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s28.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-ap-luc-tahawa-s28-1.jpg?zc=1",
+     "price": "8.990.000VND 10.000.000VND -10%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe gia đình TAHAWA S20, công suất 2000W",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-s20.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-tahawa-s20-3.jpg?zc=1",
+     "price": "2.990.000VND 3.500.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe cao áp TAHAWA HC 110",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-hc110.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-gia-dinh-tahawa-hc10.jpg?zc=1",
+     "price": "2.790.000VND 3.600.000VND -22%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy phun rửa áp lực cao TAHAWA M26",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-m26.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-tahawa-m26-1.jpg?zc=1",
+     "price": "24.335.000VND 28.900.000VND -15%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe áp lực cao TAHAWA M30",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-ap-luc-cao-tahawa-m30.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-phun-rua-ap-luc-tahawa-m30.jpg?zc=1",
+     "price": "24.900.000VND 27.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe cao áp TAHAWA M22",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-cao-ap-tahawa-m22.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-phun-ap-luc-tahawa-m22.jpg?zc=1",
+     "price": "17.220.000VND 19.000.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe cao áp TAHAWA M36",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-m36.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-cong-nghiep-tahawa-m36.jpg?zc=1",
+     "price": "31.315.000VND 35.500.000VND -11%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy rửa xe cao áp Tahawa S8",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-cao-ap-tahawa-s8.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-gia-dinh-tahawa-s8-5-5.jpg?zc=1",
+     "price": "3.290.000VND 3.500.000VND -6%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy xịt áp lực cao Tahawa M20",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-m20.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-tahawa-m20-1.jpg?zc=1",
+     "price": "15.650.000VND 19.000.000VND -17%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy xịt rửa siêu cao áp TAHAWA M58",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-tahawa-m58.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-phun-ap-luc-tahawa-m58.jpg?zc=1",
+     "price": "77.230.000VND 81.000.000VND -4%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy xịt rửa siêu cao áp TAHAWA M78",
+     "href": "https://tahawa.com.vn/may-rua-xe-phun-ap-luc-cao/may-rua-xe-cao-ap-m78.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-rua-xe-phun-ap-luc-tahawa-m78.jpg?zc=1",
+     "price": null,
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-product_category widget-231 col-12 col-md-12  ",
+   "heading": "THIẾT BỊ BẾP CÔNG NGHIỆP",
+   "carousel": null,
+   "products": [
+    {
+     "name": "Máy đun nước áp suất cao Tahawa YB - Z200",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-yb-z200.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-ap-suat-cao-tahawa-yb-z200-sl1-1.jpg?zc=1",
+     "price": "17.380.000VND 19.800.000VND -12%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy đun nước nóng Tahawa YB-K50L",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-yb-k50l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-nong-tahawa-yb-k50l-sl1-1.jpg?zc=1",
+     "price": "11.280.000VND 15.300.000VND -26%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy đun nước áp suất cao Tahawa NHA 8A",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-ap-suat-cao-tahawa-nha-8a-2.jpg?zc=1",
+     "price": "20.840.000VND 22.800.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy nước nóng Tahawa MT BOILER 8",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-mt-boiler-8.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tahawa-mt8-1-1.jpg?zc=1",
+     "price": "34.480.000VND 37.500.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy đun nước nóng Tahawa NHA 50",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-nah-50.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-nong-tahawa-nha50a-1jpg.png?zc=1",
+     "price": "21.200.000VND 23.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Cây Đun Nước Nóng Tahawa PA-B40L",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-pa-b40l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/110340-cay-dun-nuoc-nong-tahawa-pa-b40l-1-1.jpg?zc=1",
+     "price": "7.130.000VND 8.950.000VND -20%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Thiết Bị Lọc Nước Đầu Nguồn Tahawa MPOE-P",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/loc-tong-dau-nguon-tahawa-mpoe-p.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/loc-nuoc-dau-nguon-tahawa-mpoe-p-1.jpg?zc=1",
+     "price": "263.400.000VND 287.000.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ bàn mát 1500mm Tahawa KIS-XDT15R - 382 lít",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-mat-tahawa-kis-xdt15r.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-ban-mat-tahawa-kis-xdt15r.jpg?zc=1",
+     "price": "39.000.000VND 45.000.000VND -13%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ đông mát thông minh Tahawa 2 ngăn DMF-7699WS-2 - 770 lít",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-dong-tahawa-2-ngan-tahawa-dmf-7699ws-2.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-mat-2-canh-nam-ngang-tahawa.jpg?zc=1",
+     "price": "20.090.000VND 25.000.000VND -19%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ mát 3 cánh Tahawa 1500 lít LC-1500C3 (SL-16C3)",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-mat-3-canh-dung-tahawa-1500-lit-lc-1500c3.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-mat-3-canh-tahawa-1500-lit-sl-16c3-1-1.jpg?zc=1",
+     "price": "82.810.000VND 87.890.000VND -5%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ mát 4 cánh Tahawa BS4DUC/Z",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-mat-4-canh-tahawa-bs4duc-z.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-mat-tahawa-4-canh-1-1.jpg?zc=1",
+     "price": "77.000.000VND 85.000.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ mát 4 cửa Tahawa KIS-XD45R - 820 lít",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-mat-4-canh-tahawa-kis-xd45r-820l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-mat-4-cua-tahawa-kis-xd45r-820-lit-3-1.jpg?zc=1",
+     "price": "50.980.000VND 67.800.000VND -24%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ lạnh 4 cửa Tahawa KIS-XFGN45R",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-dong-4-canh-tahawa-kis-xfgn45r.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-4-cua-lanh-co-quat-tahawa-kis-xfgn45r-1-1.jpg?zc=1",
+     "price": "79.980.000VND 87.000.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Tủ bàn mát 1200mm Tahawa KIS-XDT12R - 271 lít",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/tu-mat-tahawa-kis-xdt12r-271l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/tu-mat-2-canh-tahawa-271l.jpg?zc=1",
+     "price": "33.080.000VND 37.980.000VND -12%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy cắt xương, thịt đông lạnh BC130 (750W)",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-cat-thit-dong-lanh-bc130-750w.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cat-xuong-thit-gia-xuc-gia-cam-dong-lanh-tahawa-bc130-750w.jpg?zc=1",
+     "price": "15.980.000VND 19.850.000VND -19%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy thái thịt đông lạnh tự động Tahawa MS10A, lưỡi 10 icnhes",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-cat-thit-tahawa-ms10a.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-thai-thit-dong-lanh-tu-dong-tahawa-ms10a-1.jpg?zc=1",
+     "price": "35.980.000VND 43.970.000VND -18%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy thái thịt Tahawa MS06-G2 (MS6)",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-thai-thit-tahawa-ms06-g2-ms6.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-cat-thit-tahawa.jpg?zc=1",
+     "price": "4.680.000VND 5.780.000VND -19%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy đun nước nóng tự động siêu tốc Tahawa YB-K30L",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-yb-k30l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-nong-sieu-toc-tahawa-ybk30l-sl1-1.jpg?zc=1",
+     "price": "9.480.000VND 11.090.000VND -14%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy đun nước nóng tự động Tahawa Z-30L",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/may-dun-nuoc-nong-tu-dong-tahawa-z-30l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-dun-nuoc-nong-tu-dong-tahawa-z-30l.jpg?zc=1",
+     "price": "6.280.000VND 7.890.000VND -20%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Bếp chiên công nghiệp 20L Tahawa NS-BC-20L",
+     "href": "https://tahawa.com.vn/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/bep-chien-cong-nghiep-20l-tahawa-ns-bc-20l.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/bep-chien-tach-dau-tahawa-20-lit-g-1.jpg?zc=1",
+     "price": "19.200.000VND 23.500.000VND -18%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-product_category widget-233 col-12 col-md-12  ",
+   "heading": "MÁY BƠM NƯỚC",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "4",
+    "data-responsive-992": "5",
+    "data-autoplay": "0",
+    "data-loop": "true"
+   },
+   "products": [
+    {
+     "name": "Máy bơm nước chạy xăng Tahawa WB30XT3DR",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-chay-xang-tahawa-wb30xt3dr.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nuoc-tahawa-wb30xt3dr-g-1.png?zc=1",
+     "price": "21.970.000VND 25.000.000VND -12%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nghiền bồn cầu Tahawa Saniflo",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-bon-cau-tahawa-saniflo.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nghien-bon-cau-tahawa-saniflo.jpg?zc=1",
+     "price": "39.000.000VND 42.000.000VND -7%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nước nóng Tahawa PB-228 BIT",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-nong-tahawa-pb-228-bit.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nuoc-nong-shimizu-pb-228-bit-4-1.jpg?zc=1",
+     "price": "6.490.000VND 7.200.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm hút giếng Tahawa PC 260",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-day-tahawa-pc-260.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-hut-gieng-tahawa-pc-260.png?zc=1",
+     "price": "6.550.000VND 7.200.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nước Tahawa 200W GP-200JXK",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-tahawa-200w-gp-200jxk.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nuoc-panasonic-200w-gp-200jxk-1.jpg?zc=1",
+     "price": "4.500.000VND 4.900.000VND -8%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nước tăng áp TAHAWA A130JAK (125W)",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-tang-ap-tahawa-a130jak.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/151335-may-bom-tang-ap-tahawa-a130jak-4.jpg?zc=1",
+     "price": "4.225.000VND 4.700.000VND -10%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm hóa chất dẫn động từ Tahawa QHX-F-665CSE-5V38AFAABS842",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-hoa-chat-tahawa-qhx-f-665cse.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/thiet-ke-chua-co-ten-13.png?zc=1",
+     "price": "58.850.000VND 65.000.000VND -9%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm bể bơi Tahawa SCPB 300E 3HP",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-be-boi-tahawa-scpb-300e-3hp.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-be-boi-tahawa-scpb-300e-3hp-3-1-removebg-preview.png?zc=1",
+     "price": "12.375.000VND 15.000.000VND -17%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nước chân không TAHAWA KGWP125",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-chan-khong-tahawa-kgwp125.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nuoc-chan-khong-tahawa-kgwp125-2.jpg?zc=1",
+     "price": "2.900.000VND 3.600.000VND -19%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm chìm nước thải Tahawa SPW-500 BIT",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-chim.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-chim-nuoc-thai-tahawa-spw-500-bit-g.jpg?zc=1",
+     "price": "8.525.000VND 9.600.000VND -11%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    },
+    {
+     "name": "Máy bơm nước Tahawa SHP-370CE",
+     "href": "https://tahawa.com.vn/do-gia-dung/may-bom/may-bom-nuoc-tahawa-shp-370ce.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x346/may-bom-nuoc-shining-shp-370ce.jpg?zc=1",
+     "price": "2.800.000VND 3.500.000VND -20%",
+     "old": null,
+     "disc": null,
+     "rating": "5",
+     "extra": "wrap-two-lines product-title|review|color-price f-size-large price|btn-purchased"
+    }
+   ],
+   "tabs": [],
+   "viewMore": []
+  },
+  {
+   "cls": "widget widget-partner widget-168 col-12 col-md-12  ",
+   "heading": "KHÁCH HÀNG TIÊU BIỂU TAHAWA",
+   "carousel": {
+    "data-loop": "true",
+    "data-autoplay": "0",
+    "data-autoplaytimeout": "5000",
+    "data-margin": "20",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "3",
+    "data-responsive-992": "4"
+   },
+   "partners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-20-removebg-preview.png",
+     "href": "https://dienmayquangthanh.vn/?fbclid=IwAR0Oml_mEnq8NfVU80MGofadm-YsVwKNhOwEVlqZTSDhtKOHJBTENJW7vXo",
+     "alt": "CỬA HÀNG ĐIỆN MÁY QUANG THÀNH"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-21-removebg-preview.png",
+     "href": "https://dienmayvuthe.com/",
+     "alt": "ĐIỆN MÁY VŨ THẾ "
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-17-removebg-preview.png",
+     "href": "https://noithatdoangiaphat.com/",
+     "alt": "CỬA HÀNG NỘI THẤT ĐOÀN GIA PHÁT"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-18.png",
+     "href": "https://www.facebook.com/noithatthangthinhphat/",
+     "alt": "ĐÈN TRANG TRÍ THẮNG THỊNH PHÁT"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/71-718698-hyundai-logo-hyundai-removebg-preview.png",
+     "href": "javascript:void(0)",
+     "alt": "HYUNDAI BÌNH DƯƠNG"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/hino-logo1-freelogovectorsnet.png",
+     "href": "javascript:void(0)",
+     "alt": "XA TẢI HINO"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-15-removebg-preview.png",
+     "href": "javascript:void(0)",
+     "alt": "THẨM MỸ VIỆN DƯỢC SỸ DUNG"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-34.png",
+     "href": "javascript:void(0)",
+     "alt": "AJINOMOTO"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-37.png",
+     "href": "javascript:void(0)",
+     "alt": "ĐIỆN MÁY CÔNG THÀNH"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-47.png",
+     "href": "javascript:void(0)",
+     "alt": "TOYOTA VŨNG TÀU"
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-banner widget-224 col-12 col-md-12  ",
+   "heading": "BÁO CHÍ NÓI GÌ VỀ CHÚNG TÔI",
+   "carousel": null,
+   "banners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/153608-thiet-ke-chua-co-ten-15.png",
+     "href": "https://phapluatnews.vn/tahawa-top-30-thuong-hieu-vang-chat-luong-quoc-te-2024-khang-dinh-vi-the-dan-dau-trong-linh-vuc-thiet-bi-gia-dung-cong-nghe-cao.html",
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/unnamed-2.png",
+     "href": "http://www.trungtamchonghanggia.com/doanh-nghiep/tahawa-%E2%80%93-top-30-thuong-hieu-vang-%E2%80%93-chat-luong-quoc-te-2024,-khang-dinh-vi-the-dan-dau-trong-linh-vuc-thiet-bi-gia-dung-cong-nghe-cao.html",
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/155217-them-tieu-de-3.png",
+     "href": "https://tinhte.vn/thread/gioi-thieu-robot-lau-kinh-cao-cap-tahawa-nhat-ban-th-09gl.3266039/",
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    }
+   ],
+   "text": ""
+  },
+  {
+   "cls": "widget widget-post_category widget-229 col-12 col-md-12  ",
+   "heading": "CÁC DỰ ÁN, ĐỐI TÁC ĐÃ TRIỂN KHAI",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "2",
+    "data-responsive-992": "3",
+    "data-autoplay": "0",
+    "data-loop": "true"
+   },
+   "posts": [
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/feed-back-khach-hang/tahawa-giao-may-hut-bui-cong-nghiep-80l-cho-huynh-dat-jsc.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-hut-bui-cong-nghiep-80l.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 05/06/2024 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 1188 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/feed-back-khach-hang/cong-ty-thuc-pham-gn-mua-may-hut-bui-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/tp-gn.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 26/03/2024 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 1476 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/feed-back-khach-hang/tahawa-cam-on-quy-doi-tac-hyundai-binh-duong-tin-dung-robot-lau-kinh-tahawa-cam-on-quy-doi-tac-hyundai-binh-duong-tin-dung-robot-lau-kinh.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/artboard-1robot-lau-kinh-tahawa-nhat-ban-th09gl-huyndai.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 28/10/2021 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 2458 Lượt xem\n                        </span>"
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-youtube widget-212 col-12 col-md-12  ",
+   "heading": "THƯ VIỆN VIDEO",
+   "carousel": null,
+   "videos": [
+    {
+     "tag": "LITE-YOUTUBE",
+     "videoid": "CeghyV4oLqw",
+     "style": "background-image: url(https://img.youtube.com/vi/CeghyV4oLqw/hqdefault.jpg)",
+     "params": null
+    },
+    {
+     "tag": "LITE-YOUTUBE",
+     "videoid": "XaodQYKBst8",
+     "style": "background-image: url(https://img.youtube.com/vi/XaodQYKBst8/hqdefault.jpg)",
+     "params": null
+    },
+    {
+     "tag": "LITE-YOUTUBE",
+     "videoid": "ghYyGqeRAH8",
+     "style": "background-image: url(https://img.youtube.com/vi/ghYyGqeRAH8/hqdefault.jpg)",
+     "params": null
+    },
+    {
+     "tag": "LITE-YOUTUBE",
+     "videoid": "Y9VJGZM-8sA",
+     "style": "background-image: url(https://img.youtube.com/vi/Y9VJGZM-8sA/hqdefault.jpg)",
+     "params": null
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-text_editor widget-180 col-12 col-md-12  ",
+   "heading": "CÁC GIẢI THƯỞNG ĐẠT ĐƯỢC",
+   "carousel": null,
+   "html": " <div class=\"block-wrapper style1 \" style=\"\"> <div class=\"container\"> <div class=\"row clearfix \"> <div class=\"col-12 blog-container\"> <div class=\"box_heading \"> <h2 class=\"heading\" style=\"color: #000000 !important\">CÁC GIẢI THƯỞNG ĐẠT ĐƯỢC</h2> <div class=\"line-hg\"><span></span></div> <div class=\"svg-wrap\"> <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"125.656px\" height=\"125.655px\" viewBox=\"0 0 125.656 125.655\" style=\"enable-background:new 0 0 125.656 125.655;\" xml:space=\"preserve\"> <g> <path d=\"M88.947,67.734c0,1.544-1.252,2.802-2.801,2.802H68.989c-1.401,0-2.583-1.028-2.763-2.419l-3.033-21.769l-6.123,56.013 c-0.147,1.319-1.216,2.375-2.561,2.474c-0.079,0.005-0.145,0.013-0.229,0.013c-1.251,0-2.354-0.822-2.685-2.043l-9.126-32.46 l-8.988,17.078c-0.539,1.028-1.667,1.653-2.813,1.479c-1.159-0.139-2.101-0.976-2.388-2.101l-4.375-17.49H2.803 C1.262,69.312,0,68.052,0,66.51c0-1.549,1.262-2.802,2.803-2.802h23.285c1.284,0,2.412,0.875,2.72,2.123l3.124,12.487l8.843-16.789 c0.528-1.023,1.631-1.638,2.764-1.488c1.137,0.121,2.089,0.925,2.412,2.024l7.117,25.319l7.018-64.09 c0.149-1.401,1.321-2.465,2.743-2.487c1.576,0.134,2.617,1.026,2.813,2.426l5.79,41.699h14.719 C87.695,64.933,88.947,66.192,88.947,67.734z M103.771,64.933h-8.862c-1.54,0-2.802,1.26-2.802,2.802 c0,1.544,1.262,2.802,2.802,2.802h8.862c1.537,0,2.802-1.258,2.802-2.802C106.573,66.192,105.308,64.933,103.771,64.933z M122.854,64.933h-9.431c-1.537,0-2.802,1.26-2.802,2.802c0,1.544,1.265,2.802,2.802,2.802h9.431c1.536,0,2.802-1.258,2.802-2.802 C125.656,66.192,124.39,64.933,122.854,64.933z\"></path> </g> </svg> </div> </div> <div class=\"ck_editor_content widget-content\"> </div>\n</div> </div> </div>\n</div> "
+  },
+  {
+   "cls": "widget widget-banner widget-184 col-12 col-md-12  ",
+   "heading": null,
+   "carousel": null,
+   "banners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/thuong-hieu-1.jpg",
+     "href": "https://tahawa.vn/gioi-thieu.html",
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    }
+   ],
+   "text": ""
+  },
+  {
+   "cls": "widget widget-youtube widget-226 col-12 col-md-12  ",
+   "heading": null,
+   "carousel": null,
+   "videos": [
+    {
+     "tag": "LITE-YOUTUBE",
+     "videoid": "xFRo2CM7EVM",
+     "style": "background-image: url(https://img.youtube.com/vi/xFRo2CM7EVM/mqdefault.jpg)",
+     "params": null
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-testimonial widget-190 col-12 col-md-12  ",
+   "heading": "CẢM NHẬN KHÁCH HÀNG",
+   "carousel": {
+    "data-autoplaytimeout": "5000",
+    "data-autoheight": "true",
+    "data-margin": "20",
+    "data-autoplay": "false",
+    "data-loop": "true",
+    "data-responsive-0": "2",
+    "data-responsive-576": "3",
+    "data-responsive-768": "3",
+    "data-responsive-992": "4"
+   },
+   "items": [
+    {
+     "name": "Diễn Viên Phi Phụng",
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-2.png",
+     "text": "Mình mua sản phẩm robot lau kính của Tahawa về để lau mấy tấm kính lớn trong nhà. Công nhận có con này tiện thật chứ, không phải bắc thang để lau, cũng không cần phải thuê người vệ sinh."
+    },
+    {
+     "name": "Diễn Viên Thanh Hiền",
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-6.png",
+     "text": "Mình cũng có tuổi rồi, đau nhức người thường xuyên, chính vì thế mình mua sản phẩm gối massage của Tahawa, mỗi ngày sử dụng có 15 phút là thấy khỏe hẳn á"
+    },
+    {
+     "name": "NSƯT Mạnh Dung",
+     "img": "https://media.loveitopcdn.com/42178/thiet-ke-chua-co-ten-7.png",
+     "text": "Tôi được con cái mua tặng mấy sản phẩm của Tahawa, robot hút bụi, gối massage, máy lọc không khí, giờ cũng thấy khỏe hẳn ra, máy sử dụng tốt cũng như khá tiện dụng"
+    },
+    {
+     "name": "Anh Thái - Quận 7",
+     "img": "https://media.loveitopcdn.com/42178/feedback14-th06plus.jpg",
+     "text": "Mình mua sản phẩm robot hút bụi lau nhà của Tahawa sử dụng rất tốt, tới giờ cũng gần 2 năm rồi mà không có vấn đề gì hết. Nó tự vẽ bản đồ, tự hút tự tự lau nhà cho mình luôn"
+    },
+    {
+     "name": "Chị Dung - quận 10",
+     "img": "https://media.loveitopcdn.com/42178/feedback17-th06plus.jpg",
+     "text": "Nhờ có sản phẩm robot hút bụi của Tahawa, mình tiết kiệm được rất nhiều thời gian, nó hút bụi và lau nhà giúp mình rất sạch"
+    },
+    {
+     "name": "Cô Nga - Bình Chánh",
+     "img": "https://media.loveitopcdn.com/42178/feedback1-th06plus.jpg",
+     "text": "Con Mình mua cho mình sản phẩm robot hút bụi lau nhà của Tahawa, giờ rảnh hẳn. Máy sử dụng rất bền nữa, giờ hơn 2 năm rồi mà chưa có vấn đề gì"
+    },
+    {
+     "name": "Anh Khoa - Bình Dương",
+     "img": "https://media.loveitopcdn.com/42178/110345-thiet-ke-chua-co-ten-3.png",
+     "text": "Nhà mình gần khu công nghiệp nên khá bụi bặm nên mình mua máy lọc không khí của Tahawa, máy sử dụng rất tốt, sau 6 tháng dùng mình thay màng lọc mới thấy nó hiệu quả tốt như thế nào."
+    },
+    {
+     "name": "Chị Thanh - Bình Thạnh",
+     "img": "https://media.loveitopcdn.com/42178/110343-thiet-ke-chua-co-ten-4.png",
+     "text": "Mình có mua máy lọc không khí của Tahawa - máy sử dụng rất ổn định, lọc cũng rất tốt, lâu lâu thay màng lọc 1 lần mới thấy không khí nhà mình nó dơ như thế nào."
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-post widget-221 col-12 col-md-12  ",
+   "heading": "TIN TỨC",
+   "carousel": {
+    "data-margin": "20",
+    "data-autoplaytimeout": "5000",
+    "data-responsive-0": "1",
+    "data-responsive-576": "2",
+    "data-responsive-768": "2",
+    "data-responsive-992": "3",
+    "data-autoplay": "1",
+    "data-loop": "true"
+   },
+   "posts": [
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/so-sanh-rua-xe-khong-cham-va-bot-tuyet.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/nuoc-rua-xe-khong-cham-2.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 06/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 10 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/kinh-nghiem-mua-may-rua-xe-cao-ap.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/094615-may-phun-ap-luc-tahawa-s180-6-6.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 05/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 24 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nhung-truong-hop-khong-nen-dung-may-rua-xe-cao-ap.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/nen-mang-xe-di-rua-the-nao-cho-dung.jpeg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 26 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-don-cong-nghiep-phu-hop-voi-nhung-cong-viec-ve-sinh-nao.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/d87eec5c-aa11-4c0d-871d-b6cd8636bf38.jpeg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 01/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 35 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cau-tao-va-nguyen-ly-hoat-dong-cua-may-rua-xe-cao-ap.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/cau-tao-chung-cua-may-rua-xe-ap-luc-cao.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 01/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 29 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-rua-xe-gia-dinh-bao-nhieu-bar-la-du.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-gia-dinh-khong-len-ap.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 01/10/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 30 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-tahawa-hc660-giai-phap-ve-sinh-san-dien-tich-lon.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/c4cd4c04-ee54-48ed-b89a-152431331735.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 19/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 58 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-dung-may-phun-rua-ap-luc-cao-de-lam-sach-hieu-qua.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/103944-may-phun-rua-ap-luc-cao-bia.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 16/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 67 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-danh-bong-san-nha.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/cea57fef-75cc-4195-99ec-ec284a01845e.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 15/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 68 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nguyen-ly-hoat-dong-cua-cac-dong-may-cha-san-cong-nghiep-pho-bien.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/10fc0e7e-6562-463e-9f49-d552afd09530.jpeg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 14/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 80 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cau-tao-may-hut-bui-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/nguyen-ly-hoat-dong-cua-may-hut-bui-cong-nghiep-1024x683.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 11/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 70 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/kinh-nghiem-chon-may-cha-san-cong-nghiep-phu-hop-voi-nhu-cau-su-dung.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/chatgpt-image-10-31-37-10-thg-9-2026.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 10/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 69 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nha-xuong-nho-nen-dung-may-cha-san-don-hay-may-cha-san-lien-hop.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/101208-screenshot-13.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 09/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 55 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/danh-gia-may-cha-san-lien-hop-tahawa-hc-50b.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/111024-may-cha-san-lien-hop-tahawa-hc50b-7.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 07/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 58 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-gach-men-giai-phap-lam-sach-nen-gach-nhanh-chong-hieu-qua.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/danh-bong-san-da-2.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 05/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 88 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-hut-bui-cong-nghiep-cong-suat-lon-dung-ve-sinh-cho-nha-hang.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-hut-bui-nha-hang-bao-ve-suc-khoe-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 04/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 70 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-chon-may-cha-san-cong-nghiep-phu-hop-cho-tung-loai-dien-tich.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-cha-san-lien-hop-co-phu-hop-cho-sieu-thi-va-benh-vien-khong-5.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/09/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 56 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-hut-bui-da-nang-mot-thiet-bi-nhieu-giai-phap-lam-sach.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/143517-may-hut-bui-da-nang.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 22/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 88 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/kinh-nghiem-chon-mua-may-cha-san-lien-hop.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/nhung-tieu-chi-quan-trong-khi-chon-mua-may-cha-san-lien-hop-2.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 15/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 85 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/lua-chon-quat-thoi-san-cong-nghiep-hieu-qua-ben-bi-va-tiet-kiem.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/top-tieu-chi-chon-quat-thoi-san-cong-nghiep-hieu-qua-1-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 14/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 86 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-rua-xe-cao-ap-dung-de-lam-gi-va-cach-chon-dung-nhu-cau-su-dung.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-cao-ap-dung-de-lam-gi-va-cach-chon-dung-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 12/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 94 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-hut-bui-cho-khong-gian-rong-kinh-nghiem-lua-chon-nam-2026.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-hut-bui-loai-nao-tot-cho-nhu-cau-ve-sinh-3-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 07/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 101 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cac-loai-may-hut-bui-pho-bien-nhat-hien-nay.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/cac-loai-may-hut-bui-pho-bien-hien-nay-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 105 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-giat-nem-sofa-loai-nao-tot.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-giat-nem-cong-nghiep-bia-5a092f6fe5.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 01/08/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 130 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/top-8-may-giat-tham-ghe-so-pha-tot-cho-cac-cong-ty-van-phong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-giat-tham-la-gi-khi-nao-nen-dau-tu-cho-doanh-nghiep-3.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 24/07/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 128 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-giat-tham-la-gi-co-nen-dau-tu-may-giat-tham-cho-doanh-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-giat-tham-la-gi-khi-nao-nen-dau-tu-cho-doanh-nghiep-2.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 23/07/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 102 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nen-chon-may-rua-xe-gia-dinh-loai-nao-tot-hien-nay.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/101814-may-rua-xe-gia-dinh-tahawa-s8-5-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 04/07/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 98 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-bao-duong-may-phun-rua-ap-luc-cao-de-dung-ben-lau.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/cach-bao-dung-may-phun-rua-ap-luc-cao-de-dung-ben-lau-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/07/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 106 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-hut-bui-cong-nghiep-tahawa-co-gi-noi-bat-so-voi-cac-dong-pho-thong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-hut-bui-cong-nghiep-tahawa-co-gi-noi-bat-so-voi-dong-pho-thong-3.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 18/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 136 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/kinh-nghiem-chon-may-giat-tham-phu-hop-cho-cong-ty-ve-sinh-chuyen-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/kinh-nghiem-chon-may-giat-tham-phu-hop-1-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 17/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 141 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-lien-hop-co-phu-hop-cho-sieu-thi-va-benh-vien-khong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-cha-san-lien-hop-co-phu-hop-cho-sieu-thi-va-benh-vien-khong-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 16/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 131 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/top-7-may-cha-san-cho-gia-dinh-doanh-nghiep-lon-nho.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/101208-screenshot-13.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 12/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 141 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-phun-ap-luc-co-gi-hon-cach-ve-sinh-truyen-thong-1.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/ung-dung-may-phun-rua-ap-luc-cao-bia.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 11/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 144 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/ung-dung-cua-may-phun-rua-ap-luc-cao.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/ung-dung-may-phun-rua-ap-luc-cao-2.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 08/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 168 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-phun-rua-ap-luc-cao-dung-trong-nhung-cong-viec-gi.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/095700-may-phun-ap-luc-cao-promac-m16-ct7.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 06/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 155 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/huong-dan-su-dung-may-cha-san-ngoi-lai-an-toan-va-hieu-qua.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/huong-dan-su-dung-may-cha-san-ngoi-lai-5.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 05/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 268 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nhung-sai-lam-can-tranh-khi-chon-mua-may-cha-san-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/dau-tu-may-cha-san-nha-xuong-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 141 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-cong-nghiep-loai-nao-tot.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/screenshot-21.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 02/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 150 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nhung-loi-thuong-gap-khi-su-dung-may-hut-bui-cong-nghiep-va-cach-khac-phuc.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/nhung-loi-thuong-gap-khi-su-dung-may-hut-bui-cong-nghiep-1-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 01/06/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 166 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-bao-duong-may-hut-bui-giup-may-chay-em.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/bao-duong-may-hut-bui-bia.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 27/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 143 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/co-nen-dau-tu-may-hut-bui-van-phong-va-cua-hang-kinh-doanh-khong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/co-nen-dau-tu-may-hut-bui-van-phong-va-cua-hang-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 26/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 171 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-xit-nuoc-ap-luc-cao-loai-nao-tot-cho-tiem-rua-xe.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-gia-dinh.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 25/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 147 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-rua-xe-cao-ap-loai-nao-tot-dang-mua-nhat-2026.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-phun-rua-ap-luc-tahawa-m30.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 18/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 178 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/so-sanh-may-cha-san-lien-hop-va-may-cha-san-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/so-sanh-may-cha-san-lien-hop-va-may-cha-san-cong-nghiep-6.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 11/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 166 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-phun-rua-ap-luc-cao-su-lua-chon-hang-dau.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/101814-may-rua-xe-gia-dinh-tahawa-s8-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 04/05/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 171 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-chon-may-hut-bui-cong-nghiep-nho-cho-van-phong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/cach-chon-may-hut-bui-cong-nghiep-nho-11.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 28/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 191 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/nen-mua-may-hut-bui-cong-nghiep-loai-nao.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/image-1776840209391.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 22/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 182 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/huong-dan-ve-sinh-may-rua-xe-dung-cach.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-bia.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 21/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 202 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/diem-danh-cac-tinh-nang-noi-bat-cua-may-cha-san-thong-minh.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/1863c71de0fef28def673f6d1ec2b6ea-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 18/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 181 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/tu-van-chon-mua-may-rua-xe-gia-dinh-2026.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-gia-dinh-sumika-s8-h4.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 14/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 214 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-rua-xe-gia-dinh-khong-len-ap-keu-to-nguyen-nhan-va-cach-xu-ly-nhanh.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-rua-xe-gia-dinh-khong-len-ap.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 13/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 918 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-rua-xe-ap-luc-cao-co-gi-ma-duoc-nhieu-nguoi-yeu-thich.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/095700-may-phun-ap-luc-cao-promac-m16-ct7.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 11/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 200 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/10-cong-dung-cua-may-rua-xe-ap-luc-cao-ma-ban-chua-biet.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-phun-rua-ap-luc-cao-3.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 10/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 197 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/kinh-nghiem-chon-may-cha-san-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-cha-san-nha-xuong-kraffer-gm50b-h1-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 09/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 223 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cham-dut-noi-lo-san-ban-voi-may-cha-san-cong-nghiep.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-cha-san-nha-xuong-kraffer-gm50b-h1-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 08/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 210 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/tu-rua-xe-tai-nha-hieu-qua-voi-may-rua-xe-gia-dinh-ap-luc-cao.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/101814-may-rua-xe-gia-dinh-tahawa-s8-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 07/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 208 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-phun-rua-ap-luc-cao-su-lua-chon-hang-dau-cho-nguoi-dung.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/132100-23.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 06/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 193 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/tang-cuong-nang-suat-giam-chi-phi-voi-may-cha-san-nha-xuong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/screenshot-21.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 03/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 206 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/may-cha-san-cong-nghiep-bi-ro-dien.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/may-cha-san-cong-nghiep-ro-dien-1.png?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 02/04/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 221 Lượt xem\n                        </span>"
+    },
+    {
+     "title": null,
+     "href": "https://tahawa.com.vn/tin-tuc-tahawa/cach-chon-may-hut-bui-cong-nghiep-cho-xuong.html",
+     "img": "https://media.loveitopcdn.com/42178/thumb/346x259/z4914019046742-167d68535d95702c2-1.jpg?zc=1",
+     "meta": null,
+     "desc": "<span class=\"post-date\">\n                            <i class=\"fas fa-calendar-alt\"></i> 20/03/2026 \n                                                        <span class=\"d-none-sidebar\"> | </span>\n                                                    </span>\n                                                                        <span class=\"post-item-view\">\n                            <i class=\"fas fa-eye\"></i> 232 Lượt xem\n                        </span>"
+    }
+   ]
+  },
+  {
+   "cls": "widget widget-banner widget-151 col-12 col-md-  ",
+   "heading": null,
+   "carousel": null,
+   "banners": [
+    {
+     "img": "https://media.loveitopcdn.com/42178/z3562879012587-9a571c9f91daf228c7c81cc6fdcad0fe.jpg",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    },
+    {
+     "img": "https://media.loveitopcdn.com/42178/z3562878989881-91a31ce0c7391a0f8f4d901508aa04bf.jpg",
+     "href": null,
+     "alt": "Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
+    }
+   ],
+   "text": ""
+  },
+  {
+   "cls": "widget widget-newsletter widget-203  ",
+   "heading": "ĐĂNG KÝ TƯ VẤN - TRẢI NGHIỆM TẬN NHÀ",
+   "carousel": null,
+   "html": " <div class=\"newsletter-section style-5 \" style=\"\"> <div class=\"container\"> <div class=\"box_heading \"> <div class=\"heading\">ĐĂNG KÝ TƯ VẤN - TRẢI NGHIỆM TẬN NHÀ</div> <div class=\"line-hg\"><span></span></div> <div class=\"svg-wrap\"> <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"125.656px\" height=\"125.655px\" viewBox=\"0 0 125.656 125.655\" style=\"enable-background:new 0 0 125.656 125.655;\" xml:space=\"preserve\"> <g> <path d=\"M88.947,67.734c0,1.544-1.252,2.802-2.801,2.802H68.989c-1.401,0-2.583-1.028-2.763-2.419l-3.033-21.769l-6.123,56.013 c-0.147,1.319-1.216,2.375-2.561,2.474c-0.079,0.005-0.145,0.013-0.229,0.013c-1.251,0-2.354-0.822-2.685-2.043l-9.126-32.46 l-8.988,17.078c-0.539,1.028-1.667,1.653-2.813,1.479c-1.159-0.139-2.101-0.976-2.388-2.101l-4.375-17.49H2.803 C1.262,69.312,0,68.052,0,66.51c0-1.549,1.262-2.802,2.803-2.802h23.285c1.284,0,2.412,0.875,2.72,2.123l3.124,12.487l8.843-16.789 c0.528-1.023,1.631-1.638,2.764-1.488c1.137,0.121,2.089,0.925,2.412,2.024l7.117,25.319l7.018-64.09 c0.149-1.401,1.321-2.465,2.743-2.487c1.576,0.134,2.617,1.026,2.813,2.426l5.79,41.699h14.719 C87.695,64.933,88.947,66.192,88.947,67.734z M103.771,64.933h-8.862c-1.54,0-2.802,1.26-2.802,2.802 c0,1.544,1.262,2.802,2.802,2.802h8.862c1.537,0,2.802-1.258,2.802-2.802C106.573,66.192,105.308,64.933,103.771,64.933z M122.854,64.933h-9.431c-1.537,0-2.802,1.26-2.802,2.802c0,1.544,1.265,2.802,2.802,2.802h9.431c1.536,0,2.802-1.258,2.802-2.802 C125.656,66.192,124.39,64.933,122.854,64.933z\"></path> </g> </svg> </div> </div> <div class=\"wb-inner-newsletter row justify-content-center\"> <div class=\"col-md-12 widget-content\"> <form method=\"post\" action=\"https://tahawa.com.vn/submit-subscribe\" style=\"width:100%\" class=\"wb-email-form-homepage wb-email-form\"> <input type=\"hidden\" name=\"_token\" value=\"qkQpoLemoXvgawrkdAmc71KR9NiKLNoZNoogPWs3\" style=\"\"> <div class=\"wb-inner-newsletter row reset-col-padding\"> <div class=\"col-md-10\"> <div class=\"row\"> <div class=\"col-md-3 half-column\"> <input class=\"f-size-medium form-control\" placeholder=\"Họ tên\" type=\"text\" name=\"name\" style=\"\"> </div> <div class=\"col-md-3 half-column\"> <input class=\"f-size-medium form-control\" placeholder=\"Email\" type=\"email\" name=\"email\" style=\"\"> </div> <div class=\"col-md-3 half-column\"> <input class=\"f-size-medium form-control\" placeholder=\"Số điện thoại*\" type=\"text\" name=\"phone\" required=\"\" style=\"\"> </div> <div class=\"col-md-3 half-column center-vertical-nojustify\"> <div class=\"form-captcha\"> <input type=\"text\" class=\"form-control f-size-medium float-left \" name=\"captcha\" autocomplete=\"off\" required=\"\" style=\"\"> <img src=\"https://tahawa.com.vn/captcha/default?9U5zzwQ6\" style=\"padding-top: 3px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"> <a href=\"javascript:void(0)\" class=\"regen-captcha\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><i class=\"fas fa-undo\" aria-hidden=\"true\"></i></a> </div> </div> </div> </div> <div class=\"c"
+  },
+  {
+   "cls": "widget widget-text_editor widget-239  ",
+   "heading": null,
+   "carousel": null,
+   "html": " <div class=\"block-wrapper style1 \" style=\"\"> <div class=\"container\"> <div class=\"row clearfix \"> <div class=\"col-12 blog-container\"> <div class=\"ck_editor_content widget-content\"> <!-- Histats.com (div with counter) --><div id=\"histats_counter\"><div id=\"histats_counter_4785\" style=\"display: block;\"><a href=\"http://www.histats.com/viewstats/?sid=5019302&amp;ccid=15\" target=\"_blank\"><canvas id=\"histats_counter_4785_canvas\" width=\"173\" height=\"43\"></canvas></a></div></div>\n<!-- Histats.com START (aync)-->\n<script type=\"text/javascript\">var _Hasync= _Hasync|| [];\n_Hasync.push(['Histats.start', '1,5019302,4,15,170,40,00010000']);\n_Hasync.push(['Histats.fasi', '1']);\n_Hasync.push(['Histats.track_hits', '']);\n_Hasync.push(['Histats.framed_page', '']);\n(function() {\nvar hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;\nhs.src = ('//s10.histats.com/js15_as.js');\n(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);\n})();</script>\n<noscript><a href=\"/\" target=\"_blank\"><img src=\"//sstatic1.histats.com/0.gif?5019302&101\" alt=\"\" border=\"0\"></a></noscript>\n<!-- Histats.com END --> </div>\n</div> </div> </div>\n</div> "
+  },
+  {
+   "cls": "widget widget-text_editor widget-107 ",
+   "heading": "CÔNG TY TNHH TM PHẠM GIA CÁT",
+   "carousel": null,
+   "html": " <div class=\"block-wrapper\"> <div class=\"\"> <div class=\"box_heading \"> <div class=\"heading\">CÔNG TY TNHH TM PHẠM GIA CÁT</div> <div class=\"line-hg\"><span></span></div> <div class=\"svg-wrap\"> <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"125.656px\" height=\"125.655px\" viewBox=\"0 0 125.656 125.655\" style=\"enable-background:new 0 0 125.656 125.655;\" xml:space=\"preserve\"> <g> <path d=\"M88.947,67.734c0,1.544-1.252,2.802-2.801,2.802H68.989c-1.401,0-2.583-1.028-2.763-2.419l-3.033-21.769l-6.123,56.013 c-0.147,1.319-1.216,2.375-2.561,2.474c-0.079,0.005-0.145,0.013-0.229,0.013c-1.251,0-2.354-0.822-2.685-2.043l-9.126-32.46 l-8.988,17.078c-0.539,1.028-1.667,1.653-2.813,1.479c-1.159-0.139-2.101-0.976-2.388-2.101l-4.375-17.49H2.803 C1.262,69.312,0,68.052,0,66.51c0-1.549,1.262-2.802,2.803-2.802h23.285c1.284,0,2.412,0.875,2.72,2.123l3.124,12.487l8.843-16.789 c0.528-1.023,1.631-1.638,2.764-1.488c1.137,0.121,2.089,0.925,2.412,2.024l7.117,25.319l7.018-64.09 c0.149-1.401,1.321-2.465,2.743-2.487c1.576,0.134,2.617,1.026,2.813,2.426l5.79,41.699h14.719 C87.695,64.933,88.947,66.192,88.947,67.734z M103.771,64.933h-8.862c-1.54,0-2.802,1.26-2.802,2.802 c0,1.544,1.262,2.802,2.802,2.802h8.862c1.537,0,2.802-1.258,2.802-2.802C106.573,66.192,105.308,64.933,103.771,64.933z M122.854,64.933h-9.431c-1.537,0-2.802,1.26-2.802,2.802c0,1.544,1.265,2.802,2.802,2.802h9.431c1.536,0,2.802-1.258,2.802-2.802 C125.656,66.192,124.39,64.933,122.854,64.933z\"></path> </g> </svg> </div> </div> <div class=\"ck_editor_content widget-content\"> <p><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/dc.png\" data-isrc=\"https://media.loveitopcdn.com/42178/dc.png\" style=\"height: 25px; width: 25px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\">&nbsp;&nbsp;<strong>Địa Chỉ: </strong>Số 14 Đường 2A, Phường An Lạc, TP Hồ Chí Minh, Việt Nam</span></p> <p style=\"text-align: justify;\"><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/alarm-clock-icon.png\" data-isrc=\"https://media.loveitopcdn.com/42178/alarm-clock-icon.png\" style=\"height: 25px; width: 25px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\">&nbsp;<strong>Thời Gian Làm Việc:&nbsp;</strong>08:00 – 17:30 Thứ 2-Thứ 7</span></p> <p style=\"text-align: justify;\"><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/icon-07-1-300x300.png\" data-isrc=\"https://media.loveitopcdn.com/42178/icon-07-1-300x300.png\" style=\"height: 31px; width: 31px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\"><strong style=\"text-align: center;\">MST:&nbsp;</strong><span style=\"text-align: center;\"><strong>0316208029</strong></span></span></p> <p style=\"text-align: justify;\"><span style=\"color:#ffffff;\"><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/phone-icon.png\" data-isrc=\"https://media.loveitopcdn.com/42178/phone-icon.png\" st"
+  },
+  {
+   "cls": "widget widget-text_editor widget-108 ",
+   "heading": "CHÍNH SÁCH CỦA TAHAWA",
+   "carousel": null,
+   "html": " <div class=\"block-wrapper\"> <div class=\"\"> <div class=\"box_heading \"> <div class=\"heading\">CHÍNH SÁCH CỦA TAHAWA</div> <div class=\"line-hg\"><span></span></div> <div class=\"svg-wrap\"> <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"125.656px\" height=\"125.655px\" viewBox=\"0 0 125.656 125.655\" style=\"enable-background:new 0 0 125.656 125.655;\" xml:space=\"preserve\"> <g> <path d=\"M88.947,67.734c0,1.544-1.252,2.802-2.801,2.802H68.989c-1.401,0-2.583-1.028-2.763-2.419l-3.033-21.769l-6.123,56.013 c-0.147,1.319-1.216,2.375-2.561,2.474c-0.079,0.005-0.145,0.013-0.229,0.013c-1.251,0-2.354-0.822-2.685-2.043l-9.126-32.46 l-8.988,17.078c-0.539,1.028-1.667,1.653-2.813,1.479c-1.159-0.139-2.101-0.976-2.388-2.101l-4.375-17.49H2.803 C1.262,69.312,0,68.052,0,66.51c0-1.549,1.262-2.802,2.803-2.802h23.285c1.284,0,2.412,0.875,2.72,2.123l3.124,12.487l8.843-16.789 c0.528-1.023,1.631-1.638,2.764-1.488c1.137,0.121,2.089,0.925,2.412,2.024l7.117,25.319l7.018-64.09 c0.149-1.401,1.321-2.465,2.743-2.487c1.576,0.134,2.617,1.026,2.813,2.426l5.79,41.699h14.719 C87.695,64.933,88.947,66.192,88.947,67.734z M103.771,64.933h-8.862c-1.54,0-2.802,1.26-2.802,2.802 c0,1.544,1.262,2.802,2.802,2.802h8.862c1.537,0,2.802-1.258,2.802-2.802C106.573,66.192,105.308,64.933,103.771,64.933z M122.854,64.933h-9.431c-1.537,0-2.802,1.26-2.802,2.802c0,1.544,1.265,2.802,2.802,2.802h9.431c1.536,0,2.802-1.258,2.802-2.802 C125.656,66.192,124.39,64.933,122.854,64.933z\"></path> </g> </svg> </div> </div> <div class=\"ck_editor_content widget-content\"> <p><a href=\"http://imgroup.vn\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><span style=\"color:null;\"></span></a><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/ezgifcom-gif-maker.png\" data-isrc=\"https://media.loveitopcdn.com/42178/ezgifcom-gif-maker.png\" style=\"height: 26px; width: 26px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\">&nbsp;</span><strong><a href=\"https://tahawa.vn/chinh-sach-tra-gop-tahawa.html\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><span style=\"color:#ffffff;\">Chính Sách Trả Góp</span></a></strong></p> <p><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/store.png\" data-isrc=\"https://media.loveitopcdn.com/42178/store.png\" style=\"width: 25px; height: 25px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\">&nbsp;</span><strong><a href=\"https://tahawa.vn/chinh-sach-ban-hang-cua-tahawa.html\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><span style=\"color:#ffffff;\">Chính&nbsp;Sách&nbsp;Bán Hàng</span></a></strong></p> <p><span style=\"color:#ffffff;\"><img src=\"https://media.loveitopcdn.com/42178/pos-icon-02-removebg-preview.png\" data-isrc=\"https://media.loveitopcdn.com/42178/pos-icon-02-removebg-preview.png\" style=\"width: 28px; height: 25px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\"><"
+  },
+  {
+   "cls": "widget widget-text_editor widget-110 ",
+   "heading": null,
+   "carousel": null,
+   "html": " <div class=\"block-wrapper\"> <div class=\"\"> <div class=\"ck_editor_content widget-content\"> <p style=\"text-align: center;\"><span style=\"color:#ffffff;\">© Bản quyền thuộc về công ty TNHH Thương Mại Phạm Gia Cát</span></p> </div>\n</div></div> "
+  },
+  {
+   "cls": "widget widget-text_editor widget-152 ",
+   "heading": "LIÊN KẾT VỚI TAHAWA:",
+   "carousel": null,
+   "html": " <div class=\"block-wrapper\"> <div class=\"\"> <div class=\"box_heading \"> <div class=\"heading\">LIÊN KẾT VỚI TAHAWA:</div> <div class=\"line-hg\"><span></span></div> <div class=\"svg-wrap\"> <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"125.656px\" height=\"125.655px\" viewBox=\"0 0 125.656 125.655\" style=\"enable-background:new 0 0 125.656 125.655;\" xml:space=\"preserve\"> <g> <path d=\"M88.947,67.734c0,1.544-1.252,2.802-2.801,2.802H68.989c-1.401,0-2.583-1.028-2.763-2.419l-3.033-21.769l-6.123,56.013 c-0.147,1.319-1.216,2.375-2.561,2.474c-0.079,0.005-0.145,0.013-0.229,0.013c-1.251,0-2.354-0.822-2.685-2.043l-9.126-32.46 l-8.988,17.078c-0.539,1.028-1.667,1.653-2.813,1.479c-1.159-0.139-2.101-0.976-2.388-2.101l-4.375-17.49H2.803 C1.262,69.312,0,68.052,0,66.51c0-1.549,1.262-2.802,2.803-2.802h23.285c1.284,0,2.412,0.875,2.72,2.123l3.124,12.487l8.843-16.789 c0.528-1.023,1.631-1.638,2.764-1.488c1.137,0.121,2.089,0.925,2.412,2.024l7.117,25.319l7.018-64.09 c0.149-1.401,1.321-2.465,2.743-2.487c1.576,0.134,2.617,1.026,2.813,2.426l5.79,41.699h14.719 C87.695,64.933,88.947,66.192,88.947,67.734z M103.771,64.933h-8.862c-1.54,0-2.802,1.26-2.802,2.802 c0,1.544,1.262,2.802,2.802,2.802h8.862c1.537,0,2.802-1.258,2.802-2.802C106.573,66.192,105.308,64.933,103.771,64.933z M122.854,64.933h-9.431c-1.537,0-2.802,1.26-2.802,2.802c0,1.544,1.265,2.802,2.802,2.802h9.431c1.536,0,2.802-1.258,2.802-2.802 C125.656,66.192,124.39,64.933,122.854,64.933z\"></path> </g> </svg> </div> </div> <div class=\"ck_editor_content widget-content\"> <p><a href=\"https://www.facebook.com/robotlaukinhtahawa\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><img src=\"https://media.loveitopcdn.com/42178/facebook1.png\" data-isrc=\"https://media.loveitopcdn.com/42178/facebook1.png\" style=\"height: 30px; width: 30px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\"></a>&nbsp;&nbsp;<a href=\"https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw\" target=\"_blank\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><img src=\"https://media.loveitopcdn.com/42178/142452-youtube.png\" data-isrc=\"https://media.loveitopcdn.com/42178/142452-youtube.png\" style=\"width: 30px; height: 30px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\"></a>&nbsp;&nbsp;<a href=\"https://www.instagram.com/tahawa_nhatban/\" target=\"_blank\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><img src=\"https://media.loveitopcdn.com/42178/instagram.png\" data-isrc=\"https://media.loveitopcdn.com/42178/instagram.png\" style=\"width: 30px; height: 30px;\" alt=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\" class=\"lazy-loaded\"></a>&nbsp;&nbsp;<a href=\"https://www.tiktok.com/@tahawanhatban\" target=\"_blank\" aria-label=\"Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng\"><img src=\"https://media.loveitopcdn.com/42178/tiktok-logo-1f4a5dcd45-seeklogocom.png\" data-isrc=\"https://media.loveitopcdn.com/42178/tikto"
+  }
+ ]
+}
