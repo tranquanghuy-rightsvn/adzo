@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  // URL /exec của trang quản trị (nhận form Liên hệ) - dán sau khi deploy lần đầu, xem gas/README.md.
+  var GAS_EXEC_URL = 'https://script.google.com/macros/s/AKfycbwkwoUlH6tZVjZ_BHGBcChEda34UZctWkeqaCSMhjhC7S-9HirQqDESZJq22rqsAFB7/exec';
+
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var esc = function (s) {
@@ -306,12 +309,55 @@
         if (alert) { alert.hidden = false; alert.className = 'form-alert is-error'; alert.textContent = 'Vui lòng nhập đầy đủ và đúng thông tin bắt buộc.'; }
         return;
       }
+      if (f.classList.contains('contact-form')) { sendContact(f, alert); return; }
       if (alert) { alert.hidden = false; alert.className = 'form-alert is-success'; alert.textContent = f.dataset.success || 'Gửi thành công!'; }
-      f.reset();
-      var c = $('.captcha-img', f);
-      if (c) drawCaptcha(c);
-      $$('.rating-input i', f).forEach(function (i) { i.classList.remove('is-on'); });
+      resetForm(f);
     });
+  }
+
+  function resetForm(f) {
+    f.reset();
+    var c = $('.captcha-img', f);
+    if (c) drawCaptcha(c);
+    $$('.rating-input i', f).forEach(function (i) { i.classList.remove('is-on'); });
+  }
+
+  // Form liên hệ -> lưu về trang quản trị. text/plain để là "simple request" (không có preflight
+  // OPTIONS - phía nhận không xử lý được). Ô _hp là bẫy bot, người thật không thấy.
+  function sendContact(f, alert) {
+    var say = function (t, ok) {
+      if (!alert) return;
+      alert.hidden = false;
+      alert.className = 'form-alert ' + (ok ? 'is-success' : 'is-error');
+      alert.textContent = t;
+    };
+    if (/^PASTE_/.test(GAS_EXEC_URL)) {
+      console.warn('[contact] chưa cấu hình GAS_EXEC_URL - liên hệ KHÔNG được lưu');
+      say(f.dataset.success || 'Gửi thành công!', true);
+      resetForm(f);
+      return;
+    }
+    var btn = $('[type="submit"]', f);
+    var val = function (n) { return f[n] ? String(f[n].value || '').trim() : ''; };
+    if (btn) btn.disabled = true;
+    fetch(GAS_EXEC_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        formType: 'contact', name: val('name'), email: val('email'), phone: val('phone'),
+        message: val('message'), page: location.pathname, _hp: val('_hp'),
+      }),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res || !res.ok) throw new Error((res && res.error) || 'Gửi không thành công');
+        say(f.dataset.success || 'Gửi thành công!', true);
+        resetForm(f);
+      })
+      .catch(function (err) {
+        say((err && err.message) || 'Gửi không thành công, vui lòng thử lại hoặc gọi hotline.', false);
+      })
+      .then(function () { if (btn) btn.disabled = false; });
   }
 
   /* ---------------- Tìm kiếm ---------------- */

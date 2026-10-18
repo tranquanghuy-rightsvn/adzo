@@ -55,6 +55,8 @@ textarea.form-control { height: auto; min-height: 62px; resize: vertical; }
 .form-control:focus { border-color: #80bdff; box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25); }
 .form-control.is-invalid, .is-invalid { border-color: #dc3545 !important; }
 .form-alert { padding: 10px 15px; border-radius: 4px; font-size: 15px; }
+/* Ô bẫy bot của form liên hệ - PHẢI luôn ẩn: lộ ra là khách thật điền vào và liên hệ bị bỏ qua im lặng */
+.hp-field { position: absolute !important; left: -10000px !important; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .form-alert.is-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
 .form-alert.is-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
 .btn-send {

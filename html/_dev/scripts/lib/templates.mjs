@@ -1,6 +1,15 @@
 // Template HTML (tự viết) cho toàn bộ các loại trang của bản clone.
-// Phiên bản tài nguyên: đổi mỗi lần sinh trang để trình duyệt không dùng CSS/JS cũ trong cache
-const V = Date.now().toString(36);
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+
+// Phiên bản tài nguyên = băm nội dung CSS/JS: đổi file thì trình duyệt tải bản mới, KHÔNG đổi thì
+// build lại ra y hệt (CI build sau mỗi lần Lưu trong CMS - dùng Date.now() sẽ đổi cả nghìn trang
+// mỗi lần build dù nội dung không đổi).
+const WEB_DIR = new URL('../../../', import.meta.url);
+const V = createHash('md5')
+  .update(['css/style.css', 'css/pages.css', 'js/carousel.js', 'js/main.js', 'js/pages.js']
+    .map((f) => readFileSync(new URL(f, WEB_DIR), 'utf8')).join('\n'))
+  .digest('hex').slice(0, 8);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const href = (h) => esc(h || '#');
 const SITE_NAME = 'Adzco - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
@@ -34,7 +43,11 @@ function mobileItems(items) {
 /* =========================================================
    Layout
    ========================================================= */
+// Đoạn script này có mặt ở MỌI trang do build sinh ra -> dùng luôn làm dấu nhận biết khi dọn
+// trang mồ côi (isGenerated); trang viết tay (vd admin/) không có nên không bị đụng tới.
 const REDIRECT_SNIPPET = `<script>/* /slug/index.html -> /slug/ */(function(l){var p=l.pathname;if(/\\/index\\.html?$/i.test(p)){l.replace(p.replace(/index\\.html?$/i,'')+l.search+l.hash);}})(location);</script>`;
+
+export const isGenerated = (html) => html.includes('/* /slug/index.html -> /slug/ */');
 
 export function layout(ctx, o) {
   const { MENU, P } = ctx;
@@ -147,9 +160,6 @@ export function sidebar(sb) {
   </div>
   <div class="sb-widget sb-products">${boxHeading(sb.featuredTitle || 'SẢN PHẨM NỔI BẬT', 'div')}<div class="sb-content">${featured}</div></div>
   <div class="sb-widget sb-posts">${boxHeading(sb.postsTitle || 'TIN CHO BẠN', 'div')}<div class="sb-content">${posts}</div></div>
-  <div class="sb-widget sb-form">${boxHeading(sb.formTitle || 'ĐĂNG KÝ NHẬN TIN', 'div')}
-    <div class="sb-content">${contactForm({ compact: true })}</div>
-  </div>
 </aside>`;
 }
 
@@ -163,20 +173,9 @@ export function contactForm({ compact = false } = {}) {
   <ul>
     ${nameEmail}
     <li><label class="required">Số điện thoại</label><input type="text" name="phone" required class="form-control"></li>
+    <li class="hp-field" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></li>
     <li><label class="required">Tin nhắn</label><textarea name="message" rows="10" required class="form-control"></textarea></li>
     <li class="clearfix form-actions">${captchaField(compact ? 'is-center' : '')}<div class="text-right"><button class="btn-send" type="submit">Gửi</button></div></li>
-    <li><div class="form-alert" hidden></div></li>
-  </ul>
-</form>`;
-}
-
-function commentForm() {
-  return `<form class="formcomment js-validate-form" action="#" novalidate data-success="Cảm ơn bạn! Bình luận của bạn đang chờ kiểm duyệt.">
-  <ul>
-    <li class="review-row"><span>Đánh giá của bạn</span> <span class="rating-input" role="radiogroup">${[1, 2, 3, 4, 5].map((v) => `<i class="fa fa-star" data-value="${v}" role="radio" aria-label="${v} sao"></i>`).join('')}</span><input type="hidden" name="review"></li>
-    <li class="clearfix"><div class="half-column"><input type="text" required name="name" class="form-control" placeholder="Họ tên*"></div></li>
-    <li><textarea name="content" required class="form-control" placeholder="Bình luận*"></textarea></li>
-    <li><div class="flow-root">${captchaField('float-left')}<div class="float-right"><button type="submit" class="btn-send">Gửi</button></div></div></li>
     <li><div class="form-alert" hidden></div></li>
   </ul>
 </form>`;
@@ -245,7 +244,6 @@ function productPage(ctx, p, d) {
     </div>
   </div>
   ${tabs}
-  <div class="comment-block">${boxHeading('Bình luận', 'div')}<div class="wb-comment">${commentForm()}</div></div>
   ${related}`;
   return layout(ctx, { path: p, bodyClass: 'product_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html, 'pd-main'), scripts: ['/js/pages.js'] });
 }
@@ -302,8 +300,7 @@ function postPage(ctx, p, d) {
   </article>
   ${share(d.shareUrl)}
   ${related}
-  <hr class="divider-3"><div class="m-bottom-30"></div>
-  <div class="wb-comment wb-comment--post"><span class="heading">Bình luận</span>${commentForm()}</div>`;
+  <hr class="divider-3"><div class="m-bottom-30"></div>`;
   return layout(ctx, { path: p, bodyClass: 'post_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: ['/js/pages.js'] });
 }
 

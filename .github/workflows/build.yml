@@ -1,0 +1,63 @@
+name: Build site tĩnh từ data/
+
+# Chỉ trigger ở đúng các file LUÔN là commit CHỐT của một thao tác trong CMS (GAS.md mục VIII) —
+# KHÔNG trigger theo cả thư mục data/**. Một lần Lưu sản phẩm sinh nhiều commit liên tiếp (ảnh ->
+# chi tiết -> danh sách tổng); trigger theo thư mục sẽ build ngay từ commit ĐẦU (lúc danh sách
+# chưa cập nhật) và deploy nhầm trạng thái dở dang.
+on:
+  push:
+    branches: [master]
+    paths:
+      - "data/products.json"
+      - "data/posts.json"
+      - "data/product-categories.json"
+      - "data/post-categories.json"
+      - "html/_dev/scripts/**"
+      - "html/_dev/src/**"
+      - "html/_dev/data/site.json"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Hai lần Lưu sát nhau có thể chạy chồng 2 job; job sau đợi job trước xong rồi build trên dữ liệu
+# mới nhất, tránh 2 job cùng push html/ và đá nhau.
+concurrency:
+  group: build-html
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Build chỉ dùng thư viện chuẩn của Node, không cần npm install.
+      - name: Build html/ từ data/
+        run: node html/_dev/scripts/build-site.mjs
+
+      # CMS ghi thẳng lên GitHub bất cứ lúc nào (độc lập với job này) nên lúc push có thể đã có
+      # commit mới -> rebase rồi push lại. Không đụng file chung: CMS chỉ ghi data/ + ảnh trong
+      # html/assets/img/{posts,products}/, còn job này chỉ ghi trang .html/js/sitemap.
+      - name: Commit html/ đã build
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A html/ data/reserved-paths.json
+          git diff --cached --quiet && echo "Không có thay đổi để commit." && exit 0
+          git commit -m "CI: build html từ data/"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            sleep $((i * 3))
+            git pull --rebase
+          done
+          exit 1
+
+      # KHÔNG có bước deploy: Vercel tự deploy khi có commit mới trên master. Commit của CI không
+      # tự trigger lại workflow này (GITHUB_TOKEN không kích hoạt workflow khác).

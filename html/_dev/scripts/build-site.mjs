@@ -1,15 +1,30 @@
-// Sinh toàn bộ site tĩnh: /index.html + /<slug>/index.html cho mọi trang trong data/site.json.
-// Layout, template và CSS/JS đều là code tự viết; data/site.json chỉ chứa dữ liệu.
+// Sinh toàn bộ site tĩnh: /index.html + /<slug>/index.html cho mọi trang trong data/site.json
+// (trang tĩnh, liên hệ...) + data/ ở gốc repo (sản phẩm, bài viết, danh mục - do CMS quản lý,
+// xem GAS.md). Layout, template và CSS/JS đều là code tự viết; file JSON chỉ chứa dữ liệu.
+// CI chạy lại script này sau mỗi lần Lưu/Xoá trong CMS (.github/workflows/build.yml) nên kết quả
+// PHẢI tất định: không có dữ liệu nào thay đổi thì build lại không được sinh diff.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { localPath, PATH_OVERRIDES } from './lib/urls.mjs';
 import * as T from './lib/templates.mjs';
+import { loadCms, buildCmsPages } from './lib/cms.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const WEB = path.resolve(ROOT, '..'); // thư mục gốc = web tĩnh
 const DIST = WEB;
 const read = (p) => fs.readFile(/^(js|css)\//.test(p) ? path.join(WEB, p) : path.join(ROOT, p), 'utf8');
 const site = JSON.parse(await read('data/site.json'));
+const REPO = path.resolve(WEB, '..');
+
+/* ---------- Dữ liệu CMS (data/) gộp vào site.pages ---------- */
+const cms = buildCmsPages(await loadCms(REPO));
+for (const p of Object.keys(cms.pages)) {
+  if (site.pages[p]) console.warn('CẢNH BÁO: trang CMS trùng URL với site.json, bỏ trang CMS:', p);
+  else site.pages[p] = cms.pages[p];
+}
+site.sidebar.posts = cms.latestPosts.slice(0, 5);
+const freshCard = (it) => cms.productCards.get(it.href) || null;
+site.sidebar.featured = site.sidebar.featured.map(freshCard).filter(Boolean);
 const readJsVar = (src) => JSON.parse(src.slice(src.indexOf('=') + 1).trim().replace(/;\s*$/, ''));
 
 /* ---------- Menu (đổi link sang /slug/) ---------- */
@@ -32,6 +47,10 @@ const fixHome = (v, key) => {
   return v;
 };
 const homeData = fixHome(HOME);
+// Khối tin tức trang chủ = bài mới nhất; thẻ sản phẩm trang chủ lấy lại tên/giá/ảnh hiện tại,
+// sản phẩm đã xoá qua CMS tự rơi khỏi khối (danh sách sản phẩm nào hiện ở đâu vẫn sửa tay).
+homeData.news = cms.latestPosts.slice(0, 15);
+for (const sec of Object.values(homeData.products || {})) sec.items = sec.items.map(freshCard).filter(Boolean);
 await fs.writeFile(path.join(WEB, 'js/data.js'), '/* Dữ liệu trang chủ (sản phẩm, bài viết, banner...) */\nwindow.TAHAWA_DATA = ' + JSON.stringify(homeData, null, 1) + ';\n');
 
 /* ---------- Partials ---------- */
@@ -64,16 +83,7 @@ for (const [p, d] of Object.entries(site.pages)) {
 }
 
 /* ---------- Trang tìm kiếm + chỉ mục sản phẩm cho tìm kiếm ---------- */
-const searchIndex = [];
-const seen = new Set();
-for (const [p, d] of Object.entries(site.pages)) {
-  if (d.type !== 'product' || seen.has(p)) continue;
-  seen.add(p);
-  searchIndex.push({
-    name: d.name, href: p, img: (d.gallery[0] && d.gallery[0].img) || null,
-    price: d.price, old: d.old, disc: d.disc, btn: d.orderButtons.some((b) => /lienhe/.test(b.cls)) ? 'contact' : 'cart',
-  });
-}
+const searchIndex = cms.searchIndex;
 await fs.writeFile(path.join(WEB, 'js/search-index.js'), 'window.TAHAWA_SEARCH = ' + JSON.stringify(searchIndex) + ';\n');
 write('/tim-kiem/', T.searchPage(ctx));
 write('/checkout/', T.checkoutPage());
@@ -90,6 +100,38 @@ for (const [urlPath, html] of outputs) {
   await fs.writeFile(file, html);
   count++;
 }
+// Dọn trang mồ côi: trang do build này sinh ra lần trước (mang dấu REDIRECT_SNIPPET của layout)
+// nhưng lần này không còn (vd sản phẩm/bài/danh mục vừa xoá qua CMS) -> xoá, kẻo vẫn truy cập
+// được và Google tiếp tục index. Trang tay không có dấu này (admin/...) không bị đụng.
+const outFiles = new Set(outputs.map(([u]) => (u.endsWith('.html') ? path.join(DIST, u) : path.join(DIST, decodeURI(u), 'index.html'))));
+const SKIP_DIRS = new Set(['_dev', 'assets', 'css', 'js', 'vendor', 'admin', 'node_modules']);
+let removed = 0;
+async function sweep(dir, top) {
+  for (const e of await fs.readdir(dir, { withFileTypes: true })) {
+    if (e.name.startsWith('.') || (top && SKIP_DIRS.has(e.name))) continue;
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) {
+      await sweep(p, false);
+      if (!(await fs.readdir(p)).length) await fs.rmdir(p);
+    } else if (e.name === 'index.html' && !outFiles.has(p) && T.isGenerated(await fs.readFile(p, 'utf8'))) {
+      await fs.unlink(p);
+      removed++;
+    }
+  }
+}
+await sweep(DIST, true);
+if (removed) console.log('removed', removed, 'orphan pages');
+
+// Đường dẫn ở gốc site KHÔNG thuộc CMS (trang tĩnh, thư mục hệ thống...) - CMS đọc file này để
+// chặn đặt URL sản phẩm/bài viết/danh mục trùng (GAS.md mục IV).
+const cmsPaths = new Set(Object.keys(cms.pages).map((u) => decodeURI(u).replace(/^\/|\/$/g, '')));
+const reserved = new Set(['admin', 'assets', 'css', 'js', 'vendor', '_dev', 'images', 'data']);
+for (const e of await fs.readdir(DIST, { withFileTypes: true })) if (e.isDirectory() && !e.name.startsWith('.')) reserved.add(e.name);
+for (const [u] of outputs) if (!u.endsWith('.html') && u !== '/') reserved.add(decodeURI(u).replace(/^\/|\/$/g, ''));
+for (const p of cmsPaths) reserved.delete(p);
+for (const p of cmsPaths) reserved.delete(p.split('/')[0]);
+await fs.writeFile(path.join(REPO, 'data/reserved-paths.json'), JSON.stringify([...reserved].sort(), null, 1) + '\n');
+
 // Danh sách trang đã sinh (dùng cho sitemap + kiểm tra link)
 const urls = outputs.map(([u]) => u).filter((u) => !u.endsWith('.html'));
 await fs.writeFile(path.join(DIST, 'sitemap.xml'),

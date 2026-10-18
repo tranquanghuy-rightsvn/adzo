@@ -263,8 +263,13 @@
   <url><loc>https://adzo.vn/bon-nuoc-megasun-5000l-ngang/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc-megasun-500l-ngang/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc-toan-my-310l-dung/</loc></url>
+  <url><loc>https://adzo.vn/bon-nuoc-trang-2/</loc></url>
+  <url><loc>https://adzo.vn/bon-nuoc-trang-3/</loc></url>
+  <url><loc>https://adzo.vn/bon-nuoc-trang-4/</loc></url>
+  <url><loc>https://adzo.vn/bon-nuoc-trang-5/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc/dai-phu/</loc></url>
+  <url><loc>https://adzo.vn/bon-nuoc/dai-thanh-trang-2/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc/dai-thanh/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc/dai-viet/</loc></url>
   <url><loc>https://adzo.vn/bon-nuoc/dapha/</loc></url>
@@ -420,6 +425,7 @@
   <url><loc>https://adzo.vn/dieu-khoan-dich-vu/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/bo-dung-cu-sua-chua-gia-dinh/</loc></url>
+  <url><loc>https://adzo.vn/do-gia-dung/may-bom-app-trang-2/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/may-bom-app/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/may-bom-atman/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/may-bom-dragonsea/</loc></url>
@@ -453,6 +459,7 @@
   <url><loc>https://adzo.vn/do-gia-dung/may-loc-nuoc/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/may-say-thuc-pham/</loc></url>
   <url><loc>https://adzo.vn/do-gia-dung/may-thai-rau-cu-qua/</loc></url>
+  <url><loc>https://adzo.vn/dong-co-motor-dien-trang-2/</loc></url>
   <url><loc>https://adzo.vn/dong-co-motor-dien/</loc></url>
   <url><loc>https://adzo.vn/dong-co-motor-dien/bao-long/</loc></url>
   <url><loc>https://adzo.vn/dong-co-motor-dien/hitachi/</loc></url>
@@ -1101,7 +1108,6 @@
   <url><loc>https://adzo.vn/may-bom-wilo-ph-400e-800w/</loc></url>
   <url><loc>https://adzo.vn/may-bom-wilo-ph-401e-900w/</loc></url>
   <url><loc>https://adzo.vn/may-bom-wilo-ts40-14a/</loc></url>
-  <url><loc>https://adzo.vn/may-cha-san-trang-2/</loc></url>
   <url><loc>https://adzo.vn/may-cha-san/</loc></url>
   <url><loc>https://adzo.vn/may-ep-dau/</loc></url>
   <url><loc>https://adzo.vn/may-gia-dung/</loc></url>
@@ -1126,7 +1132,6 @@
   <url><loc>https://adzo.vn/may-han-ong-ppr-phi-160/</loc></url>
   <url><loc>https://adzo.vn/may-han-ong-ppr-phi-200/</loc></url>
   <url><loc>https://adzo.vn/may-han/</loc></url>
-  <url><loc>https://adzo.vn/may-hut-bui-cong-nghiep-trang-2/</loc></url>
   <url><loc>https://adzo.vn/may-hut-bui-cong-nghiep/</loc></url>
   <url><loc>https://adzo.vn/may-loc-nuoc-neo-ambient-hot/</loc></url>
   <url><loc>https://adzo.vn/may-loc-nuoc-ro-dai-thanh-aqualast-7-cap/</loc></url>
@@ -1339,6 +1344,8 @@
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi-thai-duong-nang-240l-eco-2/</loc></url>
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi-thai-duong-nang-280l-eco/</loc></url>
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi-thai-duong-nang-eco-180l/</loc></url>
+  <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi-trang-2/</loc></url>
+  <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi-trang-3/</loc></url>
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi/</loc></url>
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi/aqua/</loc></url>
   <url><loc>https://adzo.vn/may-nuoc-nong-mat-troi/ariston/</loc></url>
@@ -1602,11 +1609,8 @@
   <url><loc>https://adzo.vn/phu-kien-dien-nuoc/lup-be-may-bom/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-dien-nuoc/ong-nhua/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-dien-nuoc/thiet-bi-dien-panasonic/</loc></url>
-  <url><loc>https://adzo.vn/phu-kien-thay-the-trang-2/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-thay-the/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-may-cha-san/</loc></url>
-  <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep-trang-2/</loc></url>
-  <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep-trang-3/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-robot-hut-bui/</loc></url>
   <url><loc>https://adzo.vn/phu-kien-thay-the/phu-kien-robot-lau-kinh/</loc></url>
