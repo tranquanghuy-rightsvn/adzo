@@ -182,8 +182,18 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
   `html/assets/img/payment/qr-code.svg` (+ `.png`). Chọn chuyển khoản: trang checkout hiện QR + số
   tài khoản; sau khi đặt hiện lại kèm số tiền và nội dung CK = mã đơn; email xác nhận cho khách
   kèm thông tin chuyển khoản. Đối soát tiền vào làm tay (đổi trạng thái đơn).
-- Mã đơn `DH<yyMMdd>-<4 số>`, hiện cho khách sau khi đặt. Honeypot `_hp`, rate-limit 30 giây/SĐT,
-  SĐT phải dạng `0xxxxxxxxx`.
+- Mã đơn 4 ký tự = 2 chữ + 2 số (vd `KT27`, chữ bỏ I/O cho khỏi nhầm 1/0). Trang checkout sinh mã
+  NGAY khi mở trang (giữ trong sessionStorage, F5 không đổi) và hiện luôn làm "Nội dung CK"; đơn gửi
+  kèm `code` và server GIỮ ĐÚNG mã đó (kiểm tra trùng trong khoá). Trùng (rất hiếm) → trả
+  `code: "DUPLICATE_CODE"`, trang tự đổi mã mới và yêu cầu khách kiểm tra lại rồi bấm đặt lần nữa
+  (không đổi âm thầm vì khách có thể đã chuyển khoản theo mã cũ). Đơn "Mua nhanh" không gửi mã →
+  server tự sinh. Hàm sinh mã ở 2 chỗ phải cùng quy tắc: `randomOrderCode()` (html/js/pages.js) và
+  `randomOrderCode_()` (gas/Code.js).
+- Chọn chuyển khoản: BẮT BUỘC tick "Tôi đã chuyển khoản..." mới đặt được — chặn ở trang (báo lỗi
+  "Bạn phải thanh toán") VÀ ở server (`paid !== true` → cùng lỗi). Đơn lưu payment = "Chuyển khoản
+  ngân hàng (khách báo đã chuyển)"; vẫn phải tự đối soát tiền vào.
+- Honeypot `_hp`, rate-limit 30 giây/SĐT (chỉ đánh dấu SAU khi lưu đơn thành công), SĐT phải dạng
+  `0xxxxxxxxx`.
 - Mail báo đơn mới tới `NOTIFY_EMAIL` (replyTo = email khách) + mail xác nhận cho khách nếu có
   email — dùng chung mẫu `email.html`, chung quota Gmail.
 - Trạng thái: `Mới` → `Đã xác nhận` → `Đang giao` → `Hoàn thành` | `Đã huỷ`. Sửa được trong Admin:

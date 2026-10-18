@@ -416,7 +416,8 @@ export function checkoutPage() {
           <h2 class="co-card__title"><span class="co-num">2</span>Phương thức thanh toán</h2>
           <label class="co-pay"><input type="radio" name="payment" value="COD" checked><span class="co-pay__box"><i class="fas fa-money-bill-wave"></i><span><b>Thanh toán khi nhận hàng (COD)</b><small>Giao hàng và thu tiền tận nơi.</small></span></span></label>
           <label class="co-pay"><input type="radio" name="payment" value="BANK"><span class="co-pay__box"><i class="fas fa-university"></i><span><b>Chuyển khoản ngân hàng</b><small>Quét mã QR bằng ứng dụng ngân hàng hoặc chuyển khoản theo thông tin bên dưới.</small></span></span></label>
-          <div class="co-bank" data-bank hidden>${bankBox('Mã đơn hàng (hiện sau khi đặt)')}</div>
+          <div class="co-bank" data-bank hidden>${bankBox('Mã đơn hàng')}</div>
+          <label class="co-paid" data-paid hidden><input type="checkbox" name="paid" value="1"> <span>Tôi đã chuyển khoản <b>đúng số tiền</b> với nội dung là mã đơn hàng ở trên</span></label>
         </section>
       </div>
       <aside class="co-side">
@@ -451,7 +452,7 @@ function bankBox(content) {
     <dt>Ngân hàng</dt><dd>${BANK.name}</dd>
     <dt>Số tài khoản</dt><dd><b data-copy>${BANK.account}</b> <button type="button" class="co-copy" data-copy-btn>Sao chép</button></dd>
     <dt>Chủ tài khoản</dt><dd>${esc(BANK.holder)}</dd>
-    <dt>Nội dung</dt><dd data-bank-content>${content}</dd>
+    <dt>Nội dung CK</dt><dd data-bank-content>${content}</dd>
   </dl>`;
 }
 

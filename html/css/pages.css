@@ -661,6 +661,10 @@ body.checkout-page { background: #f3f5f8; color: #1f2933; }
 .co-bank__info dt { color: #7b8794; }
 .co-bank__info dd { margin: 0; font-weight: 600; word-break: break-word; }
 .co-bank__info b { font-size: 18px; color: var(--primary-color); letter-spacing: .5px; }
+.co-paid { display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; padding: 12px 14px; border: 1.5px solid #d3d9e0; border-radius: 8px; background: #fff; font-size: 15px; cursor: pointer; }
+.co-paid[hidden] { display: none; }
+.co-paid input { flex: 0 0 auto; width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--primary-color); }
+.co-paid.is-invalid { border-color: #e12d39; background: #fdecee; }
 .co-copy { margin-left: 6px; padding: 2px 10px; border: 1px solid var(--primary-color); border-radius: 12px; background: #fff; color: var(--primary-color); font-size: 12px; cursor: pointer; }
 .co-side { position: sticky; top: 20px; }
 .co-items { max-height: 360px; overflow: auto; margin: 0 -8px 14px; padding: 8px 8px 0; }

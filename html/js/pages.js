@@ -292,6 +292,25 @@
     render();
   }
 
+  // Mã đơn 2 chữ + 2 số (vd "KT27") - sinh NGAY khi mở trang thanh toán để khách thấy nội dung
+  // chuyển khoản trước khi đặt; gửi kèm đơn và phía nhận giữ nguyên mã này (khớp gas/Code.js).
+  // Lưu sessionStorage: F5 trang vẫn giữ mã cũ, đặt xong mới bỏ.
+  var ORDER_CODE_KEY = 'adzo_order_code';
+  function randomOrderCode() {
+    var L = 'ABCDEFGHJKLMNPQRSTUVWXYZ'; // bỏ I, O cho khỏi nhầm với 1, 0
+    var pick = function () { return L.charAt(Math.floor(Math.random() * L.length)); };
+    return pick() + pick() + ('0' + Math.floor(Math.random() * 100)).slice(-2);
+  }
+  function orderCode(renew) {
+    var code = '';
+    try { code = renew ? '' : sessionStorage.getItem(ORDER_CODE_KEY) || ''; } catch (e) { /* bỏ qua */ }
+    if (!/^[A-Z]{2}\d{2}$/.test(code)) {
+      code = randomOrderCode();
+      try { sessionStorage.setItem(ORDER_CODE_KEY, code); } catch (e) { /* bỏ qua */ }
+    }
+    return code;
+  }
+
   // Dữ liệu giỏ -> dòng đơn gửi đi. Giá chỉ để tham khảo: phía nhận tính lại theo giá sản phẩm.
   function orderItems(items) {
     return items.map(function (i) { return { id: i.id, href: i.href, name: i.name, price: i.price, qty: i.qty }; });
@@ -331,11 +350,16 @@
       fetch('/assets/data/wards/' + o.dataset.id + '.json').then(function (r) { return r.json(); }).then(function (l) { fill(w, l, w.options[0].text); });
     });
 
-    // Thanh toán: chọn chuyển khoản thì hiện QR + số tài khoản
+    // Thanh toán: chọn chuyển khoản thì hiện QR + số tài khoản, nội dung CK = mã đơn
     var bank = $('[data-bank]');
+    var paid = $('[data-paid]');
+    paid.querySelector('input').addEventListener('change', function () { paid.classList.remove('is-invalid'); });
+    var code = orderCode();
+    var showCode = function () { $('[data-bank-content]', bank).innerHTML = '<b data-copy>' + esc(code) + '</b> <button type="button" class="co-copy" data-copy-btn>Sao chép</button>'; };
+    showCode();
     var payment = function () { var r = $('input[name="payment"]:checked', form); return r ? r.value : 'COD'; };
     $$('input[name="payment"]', form).forEach(function (r) {
-      r.addEventListener('change', function () { bank.hidden = payment() !== 'BANK'; });
+      r.addEventListener('change', function () { bank.hidden = paid.hidden = payment() !== 'BANK'; });
     });
     document.addEventListener('click', function (e) {
       var b = e.target.closest('[data-copy-btn]');
@@ -362,13 +386,19 @@
       if (!ok) return fail('Vui lòng nhập đầy đủ và đúng các thông tin bắt buộc (*).');
       var val = function (n) { return form[n] ? String(form[n].value || '').trim() : ''; };
       var pay = payment();
+      // Chuyển khoản: bắt buộc tick "Tôi đã chuyển khoản" mới cho đặt.
+      if (pay === 'BANK' && !form.paid.checked) {
+        paid.classList.add('is-invalid');
+        paid.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        return fail('Bạn phải thanh toán');
+      }
       var done = function (id) {
         C.set([]);
         var bankHtml = '';
+        try { sessionStorage.removeItem(ORDER_CODE_KEY); } catch (e) { /* bỏ qua */ }
         if (pay === 'BANK') {
           var box = bank.cloneNode(true);
           box.hidden = false;
-          $('[data-bank-content]', box).innerHTML = '<b>' + esc(id || val('phone')) + '</b>';
           bankHtml = '<p>Vui lòng chuyển khoản <strong>' + money(total) + '</strong> với nội dung là mã đơn hàng:</p>' + box.outerHTML;
         }
         form.innerHTML = '<div class="checkout-done"><i class="fas fa-check-circle"></i><h2>Đặt hàng thành công!</h2>' +
@@ -383,7 +413,7 @@
         formType: 'order', source: 'checkout',
         name: val('name'), email: val('email'), phone: val('phone').replace(/\s|\./g, ''),
         address: [val('address'), val('ward'), val('district'), val('province')].filter(Boolean).join(', '),
-        note: val('note'), payment: pay, _hp: form._hp ? form._hp.value : '',
+        note: val('note'), payment: pay, paid: pay === 'BANK' && form.paid.checked, code: code, _hp: form._hp ? form._hp.value : '',
         items: orderItems(items),
       });
       if (!req) return done();
@@ -393,6 +423,8 @@
       msg.hidden = true;
       req.then(function (res) { done(res.id); })
         .catch(function (err) {
+          // Mã vừa bị đơn khác dùng (rất hiếm): đổi mã, hiện lại để khách kiểm tra rồi đặt lại.
+          if (err && err.code === 'DUPLICATE_CODE') { code = orderCode(true); showCode(); }
           fail((err && err.message) || 'Đặt hàng không thành công, vui lòng thử lại hoặc gọi hotline.');
           btn.disabled = false;
           btn.textContent = 'Đặt hàng';

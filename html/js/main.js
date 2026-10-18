@@ -334,7 +334,11 @@
     })
       .then(function (r) { return r.json(); })
       .then(function (res) {
-        if (!res || !res.ok) throw new Error((res && res.error) || 'Gửi không thành công');
+        if (!res || !res.ok) {
+          var err = new Error((res && res.error) || 'Gửi không thành công');
+          err.code = res && res.code;
+          throw err;
+        }
         return res;
       });
   }
