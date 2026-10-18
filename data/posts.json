@@ -2,7 +2,7 @@
  {
   "slug": "kinh-nghiem-chon-mua-bon-nuoc-phu-hop-cho-gia-dinh",
   "title": "Kinh nghiệm chọn mua bồn nước phù hợp cho gia đình",
-  "category": "tin-tuc",
+  "category": "tin-tuc/bon-nuoc-bon-tu-hoai",
   "date": "2026-10-11",
   "cover": "/assets/img/images/2631.jpg",
   "description": "Bồn nước là thiết bị gắn liền với mọi công trình, nhưng không phải ai cũng biết cách chọn dung tích và chất liệu phù hợp với nhu cầu sử dụng thực tế. Bài viết dưới đây sẽ giúp bạn có cái nhìn tổng quan trước khi quyết định đầu tư.",
@@ -12,7 +12,7 @@
  {
   "slug": "bon-nuoc-inox-hay-bon-nhua-nen-chon-loai-nao",
   "title": "Bồn nước Inox hay bồn nhựa: Nên chọn loại nào?",
-  "category": "tin-tuc",
+  "category": "tin-tuc/bon-nuoc-bon-tu-hoai",
   "date": "2026-10-10",
   "cover": "/assets/img/images/373.jpg",
   "description": "Inox và nhựa là hai chất liệu bồn nước phổ biến nhất trên thị trường hiện nay, mỗi loại đều có ưu – nhược điểm riêng. Việc hiểu rõ sự khác biệt sẽ giúp bạn đưa ra lựa chọn phù hợp với công trình của mình.",
@@ -22,7 +22,7 @@
  {
   "slug": "huong-dan-chon-may-bom-nuoc-gia-dinh-dung-cong-suat",
   "title": "Hướng dẫn chọn máy bơm nước gia đình đúng công suất",
-  "category": "tin-tuc",
+  "category": "tin-tuc/may-bom-nuoc",
   "date": "2026-10-09",
   "cover": "/assets/img/images/7450.jpg",
   "description": "Chọn sai công suất máy bơm là nguyên nhân phổ biến khiến nước lên yếu, máy nhanh hỏng hoặc hao điện. Bài viết sau giúp bạn xác định công suất phù hợp trước khi mua máy bơm cho gia đình.",
@@ -32,7 +32,7 @@
  {
   "slug": "may-bom-tang-ap-la-gi-khi-nao-can-lap-dat",
   "title": "Máy bơm tăng áp là gì? Khi nào cần lắp đặt",
-  "category": "tin-tuc",
+  "category": "tin-tuc/may-bom-nuoc",
   "date": "2026-10-08",
   "cover": "/assets/img/media/thumb/600x600/11.png",
   "description": "Nhiều gia đình gặp tình trạng vòi sen, máy nước nóng chảy yếu dù bồn nước vẫn còn đầy. Đây thường là dấu hiệu cho thấy đã đến lúc cần lắp thêm máy bơm tăng áp.",
@@ -42,7 +42,7 @@
  {
   "slug": "may-nuoc-nong-nang-luong-mat-troi-loi-ich-va-kinh-nghiem-chon-mua",
   "title": "Máy nước nóng năng lượng mặt trời: Lợi ích và kinh nghiệm chọn mua",
-  "category": "tin-tuc",
+  "category": "tin-tuc/may-nuoc-nong",
   "date": "2026-10-07",
   "cover": "/assets/img/images/2600.jpg",
   "description": "Máy nước nóng năng lượng mặt trời ngày càng được nhiều gia đình Việt Nam lựa chọn nhờ khả năng tiết kiệm điện và thân thiện với môi trường. Vậy nên chọn mua loại nào và cần lưu ý gì khi lắp đặt?",
@@ -52,7 +52,7 @@
  {
   "slug": "cach-chon-dong-co-motor-dien-phu-hop-voi-nhu-cau-su-dung",
   "title": "Cách chọn động cơ motor điện phù hợp với nhu cầu sử dụng",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thong-tin-san-pham-cong-nghiep",
   "date": "2026-10-06",
   "cover": "/assets/img/images/7956.jpg",
   "description": "Động cơ motor điện là linh kiện quan trọng trong nhiều thiết bị công nghiệp và dân dụng. Chọn đúng loại motor không chỉ giúp máy vận hành hiệu quả mà còn kéo dài tuổi thọ thiết bị.",
@@ -62,7 +62,7 @@
  {
   "slug": "nhung-phu-kien-dien-nuoc-can-thiet-cho-moi-gia-dinh",
   "title": "Những phụ kiện điện nước cần thiết cho mọi gia đình",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thiet-bi-gia-dinh",
   "date": "2026-10-05",
   "cover": "/assets/img/images/2457.jpg",
   "description": "Bên cạnh các thiết bị chính như máy bơm, bồn nước, hệ thống phụ kiện điện nước đóng vai trò không thể thiếu để đảm bảo công trình vận hành an toàn, ổn định lâu dài.",
@@ -72,7 +72,7 @@
  {
   "slug": "may-thoi-khi-la-gi-ung-dung-trong-xu-ly-nuoc-va-ho-ca",
   "title": "Máy thổi khí là gì? Ứng dụng trong xử lý nước và hồ cá",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thong-tin-san-pham-cong-nghiep",
   "date": "2026-10-04",
   "cover": "/assets/img/images/7318.jpg",
   "description": "Máy thổi khí là thiết bị quen thuộc trong xử lý nước thải, nuôi trồng thủy sản và chăm sóc hồ cá cảnh. Bài viết giúp bạn hiểu rõ nguyên lý hoạt động và cách chọn máy phù hợp.",
@@ -82,7 +82,7 @@
  {
   "slug": "thiet-bi-cong-nghiep-thiet-yeu-cho-nha-xuong-xi-nghiep",
   "title": "Thiết bị công nghiệp thiết yếu cho nhà xưởng, xí nghiệp",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thong-tin-san-pham-cong-nghiep",
   "date": "2026-10-03",
   "cover": "/assets/img/images/8388.jpg",
   "description": "Một nhà xưởng vận hành trơn tru luôn cần đến hệ thống thiết bị công nghiệp được đầu tư bài bản. Dưới đây là những nhóm thiết bị thường được các doanh nghiệp ưu tiên trang bị.",
@@ -92,7 +92,7 @@
  {
   "slug": "kinh-nghiem-chon-mua-thiet-bi-bep-cong-nghiep-cho-nha-hang",
   "title": "Kinh nghiệm chọn mua thiết bị bếp công nghiệp cho nhà hàng",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thong-tin-san-pham-cong-nghiep",
   "date": "2026-10-02",
   "cover": "/assets/img/media/thumb/600x600/162844-5.jpg",
   "description": "Đầu tư thiết bị bếp công nghiệp phù hợp giúp nhà hàng, quán ăn vận hành hiệu quả hơn, tiết kiệm thời gian chế biến và đảm bảo vệ sinh an toàn thực phẩm.",
@@ -102,7 +102,7 @@
  {
   "slug": "may-nuoc-nong-truc-tiep-va-gian-tiep-nen-dung-loai-nao",
   "title": "Máy nước nóng trực tiếp và gián tiếp: Nên dùng loại nào",
-  "category": "tin-tuc",
+  "category": "tin-tuc/may-nuoc-nong",
   "date": "2026-10-01",
   "cover": "/assets/img/images/1980.jpg",
   "description": "Máy nước nóng trực tiếp và gián tiếp là hai dòng sản phẩm phổ biến nhất hiện nay, mỗi loại phù hợp với một kiểu nhu cầu sử dụng khác nhau.",
@@ -112,7 +112,7 @@
  {
   "slug": "bon-tu-hoai-la-gi-huong-dan-chon-dung-tich-phu-hop",
   "title": "Bồn tự hoại là gì? Hướng dẫn chọn dung tích phù hợp",
-  "category": "tin-tuc",
+  "category": "tin-tuc/bon-nuoc-bon-tu-hoai",
   "date": "2026-09-30",
   "cover": "/assets/img/images/997.jpg",
   "description": "Bồn tự hoại là giải pháp xử lý nước thải sinh hoạt phổ biến cho các công trình nhà ở, giúp tiết kiệm diện tích thi công so với bể tự hoại xây truyền thống.",
@@ -122,7 +122,7 @@
  {
   "slug": "chau-rua-chen-inox-304-vi-sao-nen-chon",
   "title": "Chậu rửa chén Inox 304: Vì sao nên chọn",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thiet-bi-gia-dinh",
   "date": "2026-09-29",
   "cover": "/assets/img/images/1822.jpg",
   "description": "Chậu rửa chén là vật dụng sử dụng hàng ngày trong gian bếp, vì vậy việc chọn đúng chất liệu và kích thước sẽ ảnh hưởng trực tiếp đến độ bền và sự tiện lợi khi sử dụng.",
@@ -132,7 +132,7 @@
  {
   "slug": "huong-dan-chon-may-han-dien-tu-cho-tho-co-khi",
   "title": "Hướng dẫn chọn máy hàn điện tử cho thợ cơ khí",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thong-tin-san-pham-cong-nghiep",
   "date": "2026-09-28",
   "cover": "/assets/img/images/8018.jpg",
   "description": "Máy hàn điện tử ngày càng được ưa chuộng nhờ thiết kế nhỏ gọn, tiết kiệm điện và cho mối hàn đẹp hơn so với máy hàn truyền thống. Vậy nên chọn máy hàn như thế nào cho phù hợp?",
@@ -142,7 +142,7 @@
  {
   "slug": "may-loc-nuoc-ro-la-gi-co-nen-dau-tu-cho-gia-dinh",
   "title": "Máy lọc nước RO là gì? Có nên đầu tư cho gia đình",
-  "category": "tin-tuc",
+  "category": "tin-tuc/thiet-bi-gia-dinh",
   "date": "2026-09-27",
   "cover": "/assets/img/images/2765.jpg",
   "description": "Máy lọc nước RO là một trong những giải pháp lọc nước phổ biến nhất hiện nay nhờ khả năng loại bỏ tạp chất, vi khuẩn hiệu quả, mang lại nguồn nước uống trực tiếp an toàn cho gia đình.",

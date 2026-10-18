@@ -322,8 +322,25 @@
     $$('.rating-input i', f).forEach(function (i) { i.classList.remove('is-on'); });
   }
 
-  // Form liên hệ -> lưu về trang quản trị. text/plain để là "simple request" (không có preflight
-  // OPTIONS - phía nhận không xử lý được). Ô _hp là bẫy bot, người thật không thấy.
+  // Gửi form (liên hệ, đặt hàng) về trang quản trị. text/plain để là "simple request" (không có
+  // preflight OPTIONS - phía nhận không xử lý được). Trả Promise<{ok, error?, id?}>; null nếu
+  // chưa cấu hình GAS_EXEC_URL.
+  function postToCms(payload) {
+    if (/^PASTE_/.test(GAS_EXEC_URL)) return null;
+    return fetch(GAS_EXEC_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res || !res.ok) throw new Error((res && res.error) || 'Gửi không thành công');
+        return res;
+      });
+  }
+  window.TahawaPost = postToCms;
+
+  // Form liên hệ -> lưu về trang quản trị. Ô _hp là bẫy bot, người thật không thấy.
   function sendContact(f, alert) {
     var say = function (t, ok) {
       if (!alert) return;
@@ -331,26 +348,21 @@
       alert.className = 'form-alert ' + (ok ? 'is-success' : 'is-error');
       alert.textContent = t;
     };
-    if (/^PASTE_/.test(GAS_EXEC_URL)) {
+    var btn = $('[type="submit"]', f);
+    var val = function (n) { return f[n] ? String(f[n].value || '').trim() : ''; };
+    var req = postToCms({
+      formType: 'contact', name: val('name'), email: val('email'), phone: val('phone'),
+      message: val('message'), page: location.pathname, _hp: val('_hp'),
+    });
+    if (!req) {
       console.warn('[contact] chưa cấu hình GAS_EXEC_URL - liên hệ KHÔNG được lưu');
       say(f.dataset.success || 'Gửi thành công!', true);
       resetForm(f);
       return;
     }
-    var btn = $('[type="submit"]', f);
-    var val = function (n) { return f[n] ? String(f[n].value || '').trim() : ''; };
     if (btn) btn.disabled = true;
-    fetch(GAS_EXEC_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify({
-        formType: 'contact', name: val('name'), email: val('email'), phone: val('phone'),
-        message: val('message'), page: location.pathname, _hp: val('_hp'),
-      }),
-    })
-      .then(function (r) { return r.json(); })
-      .then(function (res) {
-        if (!res || !res.ok) throw new Error((res && res.error) || 'Gửi không thành công');
+    req
+      .then(function () {
         say(f.dataset.success || 'Gửi thành công!', true);
         resetForm(f);
       })

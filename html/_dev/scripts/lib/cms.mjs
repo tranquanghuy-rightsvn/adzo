@@ -8,6 +8,21 @@ export const PRODUCTS_PER_PAGE = 60;
 export const POSTS_PER_PAGE = 9;
 const SITE_URL = 'https://adzo.vn';
 
+// /tin-tuc/ là trang TỔNG của mọi bài viết (không phải danh mục, không quản lý qua CMS - GAS.md
+// mục II-B). Danh mục bài viết nằm bên dưới: /tin-tuc/<slug>/.
+export const BLOG = {
+  path: 'tin-tuc',
+  name: 'TIN TỨC',
+  h1: 'Tin tức về Adzco',
+  pagedTitle: 'Tin Tức Adzco',
+  meta: {
+    title: 'Tin Tức Adzco - Kinh Nghiệm, Hướng Dẫn Chọn Mua Thiết Bị Công Nghiệp & Dân Dụng',
+    description: 'Cập nhật tin tức, kinh nghiệm chọn mua bồn nước, máy bơm, máy nước nóng mặt trời và các thiết bị công nghiệp, dân dụng chính hãng từ Adzco.',
+    keywords: 'Tin tức Adzco, Tin tuc Adzco',
+    ogImage: '/assets/img/media/logo-adzco.png',
+  },
+};
+
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const unesc = (s) => String(s).replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&lt;/g, '<')
   .replace(/&gt;/g, '>').replace(/&amp;/g, '&');
@@ -194,16 +209,21 @@ export function buildCmsPages(cms) {
     if (!c) continue;
     for (const k of [...BT.ancestors(c), c]) postsInCat.get(k.path).push(p);
   }
+  const HOME = { t: 'Trang chủ', href: '/' };
+  const BLOG_LINK = { t: BLOG.name, href: url(BLOG.path) };
+  const postCatCrumbs = (c, linkSelf) => [HOME, BLOG_LINK, ...crumbs(BT, c, linkSelf).slice(1)];
+  // Thanh chuyển danh mục ở đầu trang danh sách bài viết (Tất cả + từng danh mục theo cây).
+  const catNav = (current) => [{ t: 'Tất cả', href: url(BLOG.path), active: current === BLOG.path }]
+    .concat(cms.postCats.filter((c) => postsInCat.get(c.path).length)
+      .map((c) => ({ t: c.name, href: url(c.path), active: current === c.path })));
+
   for (const p of posts) {
     const d = cms.postDetails.get(p.slug);
     const cat = BT.by.get(d.category);
     const peers = cat ? postsInCat.get(cat.path) : posts;
     const at = peers.indexOf(p);
     const related = [];
-    for (let i = 1; i < peers.length && related.length < 4; i++) {
-      const r = peers[(at + i) % peers.length];
-      related.push({ id: r.slug, ...postCard(r) });
-    }
+    for (let i = 1; i < peers.length && related.length < 4; i++) related.push(postCard(peers[(at + i) % peers.length]));
     const hero = d.cover ? `<div class="post-hero"><img src="${esc(d.cover)}" alt="${esc(d.title)}" loading="lazy"></div>` : '';
     pages[url(p.slug)] = {
       type: 'post',
@@ -216,29 +236,38 @@ export function buildCmsPages(cms) {
       relatedTitle: 'Tin tức liên quan',
       shareUrl: SITE_URL + url(p.slug),
       meta: { title: d.meta_title || d.title + ' - Adzco', description: d.description || '', keywords: d.meta_keywords || '', ogImage: d.cover || null },
-      breadcrumbs: cat ? [...crumbs(BT, cat, true), { t: d.title }] : [{ t: 'Trang chủ', href: '/' }, { t: d.title }],
+      breadcrumbs: [...(cat ? postCatCrumbs(cat, true) : [HOME, BLOG_LINK]), { t: d.title }],
     };
   }
-  for (const c of cms.postCats) {
-    const list = postsInCat.get(c.path);
-    const total = Math.max(1, Math.ceil(list.length / POSTS_PER_PAGE));
+
+  // Trang tổng /tin-tuc/ + mỗi danh mục: cùng 1 kiểu trang danh sách, phân trang -trang-N.
+  const listings = [{
+    path: BLOG.path, h1: BLOG.h1, list: posts, meta: BLOG.meta, pagedTitle: BLOG.pagedTitle,
+    crumbs: (linkSelf) => [HOME, linkSelf ? BLOG_LINK : { t: BLOG.name }],
+  }].concat(cms.postCats.map((c) => ({
+    path: c.path, h1: c.h1 || c.name, list: postsInCat.get(c.path),
+    meta: { title: c.meta_title || c.name + ' - Tin tức Adzco', description: c.meta_description || '', keywords: c.meta_keywords || '', ogImage: c.og_image || null },
+    pagedTitle: c.meta_title || c.name + ' - Tin tức Adzco',
+    crumbs: (linkSelf) => postCatCrumbs(c, linkSelf),
+  })));
+  for (const L of listings) {
+    const total = Math.max(1, Math.ceil(L.list.length / POSTS_PER_PAGE));
     for (let n = 1; n <= total; n++) {
-      const slice = list.slice((n - 1) * POSTS_PER_PAGE, n * POSTS_PER_PAGE);
-      const title = c.meta_title || c.name;
-      pages[pagedUrl(c.path, n)] = {
+      const slice = L.list.slice((n - 1) * POSTS_PER_PAGE, n * POSTS_PER_PAGE);
+      pages[pagedUrl(L.path, n)] = {
         type: 'category_post',
-        h1: c.h1 || c.name,
+        h1: L.h1,
+        cats: catNav(L.path),
         posts: slice.map(postCard),
-        summary: list.length
-          ? `Hiển thị ${(n - 1) * POSTS_PER_PAGE + 1} - ${(n - 1) * POSTS_PER_PAGE + slice.length} / ${list.length} kết quả`
-          : '',
-        pagination: pagination(c.path, n, total),
-        meta: { title: n === 1 ? title : (c.meta_title ? c.meta_title.split(' - ')[0] : c.name) + ' - Trang ' + n, description: c.meta_description || '', keywords: c.meta_keywords || '', ogImage: c.og_image || null },
-        breadcrumbs: n === 1 ? crumbs(BT, c, false) : [...crumbs(BT, c, true), { t: 'Trang ' + n }],
+        summary: L.list.length
+          ? `Hiển thị ${(n - 1) * POSTS_PER_PAGE + 1} - ${(n - 1) * POSTS_PER_PAGE + slice.length} / ${L.list.length} kết quả`
+          : 'Hiện chưa có bài viết nào.',
+        pagination: pagination(L.path, n, total),
+        meta: n === 1 ? { ...L.meta } : { ...L.meta, title: L.pagedTitle + ' - Trang ' + n },
+        breadcrumbs: n === 1 ? L.crumbs(false) : [...L.crumbs(true), { t: 'Trang ' + n }],
       };
     }
   }
-
   return {
     pages,
     latestPosts: posts.map(postCard),

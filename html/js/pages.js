@@ -235,7 +235,7 @@
           '<tr><td colspan="2" class="coupon-cell"><p>Mã giảm giá / Quà tặng</p><div class="input-group"><input type="text" class="form-control" placeholder="Nhập ở đây" id="coupon_code"><button type="button" class="btn-apply" disabled>Áp dụng</button></div><p class="coupon-msg" hidden></p></td></tr>' +
           '<tr><td class="total-label">Thành tiền:</td><td class="text-right total-value">' + money(total) + '</td></tr>' +
           '<tr><td colspan="2"><a class="checkout-button" href="/checkout/">Tiến hành đặt hàng <i class="fa fa-arrow-right"></i></a></td></tr>' +
-          '<tr><td colspan="2" class="fast-order"><div class="fast-order-note">Mua nhanh bằng số điện thoại</div><form class="fast-order-form"><div class="input-group"><input type="tel" class="form-control" placeholder="Số điện thoại" name="phone" required><button class="btn-apply" type="submit" disabled>Mua ngay</button></div></form></td></tr>' +
+          '<tr><td colspan="2" class="fast-order"><div class="fast-order-note">Mua nhanh bằng số điện thoại</div><form class="fast-order-form"><span class="hp-field" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></span><div class="input-group"><input type="tel" class="form-control" placeholder="Số điện thoại" name="phone" required><button class="btn-apply" type="submit" disabled>Mua ngay</button></div></form></td></tr>' +
         '</tbody></table></div></div>';
       $('.cart-continue-slot', root).appendChild(cont);
     }
@@ -266,12 +266,35 @@
       msg.textContent = 'Mã giảm giá không hợp lệ hoặc đã hết hạn';
     });
     root.addEventListener('submit', function (e) {
-      if (!e.target.classList.contains('fast-order-form')) return;
+      var f = e.target;
+      if (!f.classList.contains('fast-order-form')) return;
       e.preventDefault();
-      C.set([]); render();
-      if (window.TahawaFlash) window.TahawaFlash('Đặt hàng thành công! Chúng tôi sẽ gọi lại cho bạn.');
+      var btn = $('button', f);
+      var done = function (id) {
+        C.set([]); render();
+        if (window.TahawaFlash) window.TahawaFlash('Đặt hàng thành công' + (id ? ' (mã ' + id + ')' : '') + '! Chúng tôi sẽ gọi lại cho bạn.');
+      };
+      // Mua nhanh: chỉ có SĐT, đơn gửi về trang quản trị để nhân viên gọi lại.
+      var req = window.TahawaPost && window.TahawaPost({
+        formType: 'order', source: 'fast', phone: f.phone.value.trim(), _hp: f._hp ? f._hp.value : '',
+        items: orderItems(C.get()),
+      });
+      if (!req) return done();
+      btn.disabled = true;
+      req.then(function (res) { done(res.id); })
+        .catch(function (err) {
+          var note = $('.fast-order-note', root);
+          note.textContent = (err && err.message) || 'Đặt hàng không thành công, vui lòng gọi hotline.';
+          note.style.color = '#dc3545';
+          btn.disabled = false;
+        });
     });
     render();
+  }
+
+  // Dữ liệu giỏ -> dòng đơn gửi đi. Giá chỉ để tham khảo: phía nhận tính lại theo giá sản phẩm.
+  function orderItems(items) {
+    return items.map(function (i) { return { id: i.id, href: i.href, name: i.name, price: i.price, qty: i.qty }; });
   }
 
   /* ---------------- Checkout ---------------- */
@@ -281,55 +304,99 @@
     var C = window.TahawaCart;
     var items = C.get();
     var total = items.reduce(function (s, i) { return s + parseMoney(i.price) * i.qty; }, 0);
+    var count = items.reduce(function (s, i) { return s + i.qty; }, 0);
+    $('[data-checkout-count]').textContent = count ? '(' + count + ' sản phẩm)' : '';
     $('[data-checkout-items]').innerHTML = items.length ? items.map(function (it) {
-      return '<div class="co-item"><div class="co-thumb"><img src="' + esc(it.img) + '" alt=""></div><div class="co-detail"><p><a class="title-cart" href="' + esc(it.href) + '" target="_blank">' + esc(it.name) + '</a></p>' +
-        '<div class="co-price"><span>' + esc(it.price) + '</span> <span>×</span> <span>' + it.qty + '</span><strong>' + money(parseMoney(it.price) * it.qty) + '</strong></div></div></div>';
-    }).join('') : '<p class="co-empty">Chưa có sản phẩm nào trong giỏ hàng</p>';
+      return '<div class="co-item"><div class="co-thumb"><img src="' + esc(it.img) + '" alt=""><span>' + it.qty + '</span></div>' +
+        '<div class="co-detail"><a href="' + esc(it.href) + '" target="_blank">' + esc(it.name) + '</a>' +
+        '<div class="co-price"><span>' + esc(it.price || 'Liên hệ') + ' × ' + it.qty + '</span><strong>' + (parseMoney(it.price) ? money(parseMoney(it.price) * it.qty) : 'Liên hệ') + '</strong></div></div></div>';
+    }).join('') : '<p class="co-empty">Chưa có sản phẩm nào trong giỏ hàng. <a href="/">Tiếp tục mua hàng</a></p>';
     $$('[data-checkout-total]').forEach(function (el) { el.textContent = money(total); });
 
     // Tỉnh / Quận / Phường (JSON tĩnh, giống API gốc)
     function fill(sel, list, ph) {
       sel.innerHTML = '<option value="">' + ph + '</option>' + list.map(function (x) { return '<option data-id="' + x.id + '" value="' + esc(x.name) + '">' + esc(x.name) + '</option>'; }).join('');
     }
-    function cascade(prefix) {
-      var p = $('#' + prefix + 'province'), d = $('#' + prefix + 'district'), w = $('#' + prefix + 'ward');
-      fetch('/assets/data/provinces.json').then(function (r) { return r.json(); }).then(function (list) { fill(p, list, p.options[0].text); });
-      p.addEventListener('change', function () {
-        var o = p.selectedOptions[0];
-        fill(w, [], w.options[0].text);
-        if (!o || !o.dataset.id) return fill(d, [], d.options[0].text);
-        fetch('/assets/data/districts/' + o.dataset.id + '.json').then(function (r) { return r.json(); }).then(function (l) { fill(d, l, d.options[0].text); });
-      });
-      d.addEventListener('change', function () {
-        var o = d.selectedOptions[0];
-        if (!o || !o.dataset.id) return fill(w, [], w.options[0].text);
-        fetch('/assets/data/wards/' + o.dataset.id + '.json').then(function (r) { return r.json(); }).then(function (l) { fill(w, l, w.options[0].text); });
-      });
-    }
-    cascade(''); cascade('s');
-    var same = $('#same-as-billing');
-    same.addEventListener('change', function () {
-      var fs = $('#fieldset-shipping');
-      fs.style.display = same.checked ? 'block' : 'none';
-      $$('[required]', fs).forEach(function (i) { i.disabled = !same.checked; });
+    var p = $('#province'), d = $('#district'), w = $('#ward');
+    fetch('/assets/data/provinces.json').then(function (r) { return r.json(); }).then(function (list) { fill(p, list, p.options[0].text); });
+    p.addEventListener('change', function () {
+      var o = p.selectedOptions[0];
+      fill(w, [], w.options[0].text);
+      if (!o || !o.dataset.id) return fill(d, [], d.options[0].text);
+      fetch('/assets/data/districts/' + o.dataset.id + '.json').then(function (r) { return r.json(); }).then(function (l) { fill(d, l, d.options[0].text); });
     });
-    $$('#fieldset-shipping [required]').forEach(function (i) { i.disabled = true; });
+    d.addEventListener('change', function () {
+      var o = d.selectedOptions[0];
+      if (!o || !o.dataset.id) return fill(w, [], w.options[0].text);
+      fetch('/assets/data/wards/' + o.dataset.id + '.json').then(function (r) { return r.json(); }).then(function (l) { fill(w, l, w.options[0].text); });
+    });
+
+    // Thanh toán: chọn chuyển khoản thì hiện QR + số tài khoản
+    var bank = $('[data-bank]');
+    var payment = function () { var r = $('input[name="payment"]:checked', form); return r ? r.value : 'COD'; };
+    $$('input[name="payment"]', form).forEach(function (r) {
+      r.addEventListener('change', function () { bank.hidden = payment() !== 'BANK'; });
+    });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-copy-btn]');
+      if (!b) return;
+      var text = b.parentNode.querySelector('[data-copy]').textContent.trim();
+      var ok = function () { b.textContent = 'Đã chép'; setTimeout(function () { b.textContent = 'Sao chép'; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(ok, function () {}); else ok();
+    });
+
     $('#coupon_code').addEventListener('input', function () { $('#check-coupon').disabled = !this.value.trim(); });
     $('#check-coupon').addEventListener('click', function () { var m = $('.coupon-msg'); m.hidden = false; m.textContent = 'Mã giảm giá không hợp lệ hoặc đã hết hạn'; });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var ok = true;
-      $$('[required]:not(:disabled)', form).forEach(function (i) {
-        var bad = !i.value.trim() || (i.name === 'phone' && !/^0\d{9}$/.test(i.value.trim()));
+      $$('[required]', form).forEach(function (i) {
+        var bad = !i.value.trim() || (i.name === 'phone' && !/^0\d{9}$/.test(i.value.replace(/\s|\./g, '')));
         i.classList.toggle('is-invalid', bad);
         if (bad) ok = false;
       });
       var msg = $('.checkout-msg');
-      if (!items.length) { msg.hidden = false; msg.className = 'checkout-msg is-error'; msg.textContent = 'Giỏ hàng của bạn đang trống.'; return; }
-      if (!ok) { msg.hidden = false; msg.className = 'checkout-msg is-error'; msg.textContent = 'Vui lòng nhập đầy đủ các thông tin bắt buộc (*).'; return; }
-      C.set([]);
-      form.innerHTML = '<div class="checkout-done"><i class="fas fa-check-circle"></i><h2>Đặt hàng thành công!</h2><p>Cảm ơn bạn đã mua hàng tại Adzco. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p><a href="/" class="btn-send">Tiếp tục mua hàng</a></div>';
-      window.scrollTo(0, 0);
+      var fail = function (t) { msg.hidden = false; msg.className = 'checkout-msg is-error'; msg.textContent = t; };
+      if (!items.length) return fail('Giỏ hàng của bạn đang trống.');
+      if (!ok) return fail('Vui lòng nhập đầy đủ và đúng các thông tin bắt buộc (*).');
+      var val = function (n) { return form[n] ? String(form[n].value || '').trim() : ''; };
+      var pay = payment();
+      var done = function (id) {
+        C.set([]);
+        var bankHtml = '';
+        if (pay === 'BANK') {
+          var box = bank.cloneNode(true);
+          box.hidden = false;
+          $('[data-bank-content]', box).innerHTML = '<b>' + esc(id || val('phone')) + '</b>';
+          bankHtml = '<p>Vui lòng chuyển khoản <strong>' + money(total) + '</strong> với nội dung là mã đơn hàng:</p>' + box.outerHTML;
+        }
+        form.innerHTML = '<div class="checkout-done"><i class="fas fa-check-circle"></i><h2>Đặt hàng thành công!</h2>' +
+          (id ? '<div class="co-order-code">Mã đơn: ' + esc(id) + '</div>' : '') + bankHtml +
+          '<p>Cảm ơn bạn đã mua hàng tại Adzco. Chúng tôi sẽ gọi điện xác nhận đơn trong thời gian sớm nhất.</p>' +
+          '<a href="/" class="btn-send">Tiếp tục mua hàng</a></div>';
+        var cur = $('.co-steps .is-current');
+        if (cur) { cur.classList.remove('is-current'); cur.nextElementSibling.classList.add('is-current'); }
+        window.scrollTo(0, 0);
+      };
+      var req = window.TahawaPost && window.TahawaPost({
+        formType: 'order', source: 'checkout',
+        name: val('name'), email: val('email'), phone: val('phone').replace(/\s|\./g, ''),
+        address: [val('address'), val('ward'), val('district'), val('province')].filter(Boolean).join(', '),
+        note: val('note'), payment: pay, _hp: form._hp ? form._hp.value : '',
+        items: orderItems(items),
+      });
+      if (!req) return done();
+      var btn = $('#submit-order');
+      btn.disabled = true;
+      btn.textContent = 'Đang gửi đơn...';
+      msg.hidden = true;
+      req.then(function (res) { done(res.id); })
+        .catch(function (err) {
+          fail((err && err.message) || 'Đặt hàng không thành công, vui lòng thử lại hoặc gọi hotline.');
+          btn.disabled = false;
+          btn.textContent = 'Đặt hàng';
+        });
     });
   }
 

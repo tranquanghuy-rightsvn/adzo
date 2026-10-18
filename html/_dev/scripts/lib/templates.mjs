@@ -201,7 +201,7 @@ const withSidebar = (ctx, mainHtml, mainCls = '') => `<div class="page-content">
    Pages
    ========================================================= */
 function productPage(ctx, p, d) {
-  const gallery = d.gallery.length ? d.gallery : [{ img: '/assets/img/media/logo-adzco-den.png', full: '/assets/img/media/logo-adzco-den.png' }];
+  const gallery = d.gallery.length ? d.gallery : [{ img: '/assets/img/media/logo-adzco.png', full: '/assets/img/media/logo-adzco.png' }];
   const main = gallery.map((g, i) => `<a class="img-main-href" href="${esc(g.full || g.img)}" data-index="${i}"${i ? ' hidden' : ''}><img class="img-main-detail" src="${esc(g.img)}" alt="${esc(d.name)}"${i ? ' loading="lazy"' : ''}><i class="fa fa-expand"></i></a>`).join('');
   const thumbs = d.thumbs.length > 1
     ? `<div class="pd-thumbs-wrap"><div class="carousel carousel--d pd-thumbs" data-items="4,4,4,4" data-margin="15" data-nav="true">${d.thumbs.map((t, i) => `<div class="pd-thumb${i ? '' : ' is-current'}" data-index="${i}"><a style="background-image:url(${esc(t)})"><img src="${esc(t)}" alt="" loading="lazy" draggable="false"></a></div>`).join('')}</div></div>`
@@ -279,6 +279,7 @@ function categoryPostPage(ctx, p, d) {
   const items = d.posts.map((ps) => `<div class="post-col">${postCard(ps)}</div>`).join('');
   const html = `<div class="post-view">
     <h1 class="list-title">${esc(d.h1)}</h1>
+    ${d.cats && d.cats.length > 1 ? `<ul class="post-cats">${d.cats.map((c) => `<li><a href="${href(c.href)}"${c.active ? ' class="is-active"' : ''}>${esc(c.t)}</a></li>`).join('')}</ul>` : ''}
     <div class="post-list-view">${items}</div>
     <hr class="divider-2">
     ${pagination(d)}
@@ -362,7 +363,13 @@ function accountPage(ctx, p, d, kind) {
   return layout(ctx, { path: p, bodyClass: login ? 'user-login' : 'user-register', meta: { title: login ? 'Adzco - Đăng nhập' : 'Adzco - Đăng ký' }, breadcrumbs: [{ t: 'Trang chủ', href: '/' }, { t: login ? 'Đăng nhập' : 'Đăng ký' }], main, scripts: ['/js/pages.js'] });
 }
 
+// Tài khoản nhận chuyển khoản - PHẢI khớp BANK_INFO trong gas/Code.js (email xác nhận đơn).
+// Mã QR sinh bằng _dev/scripts/make-bank-qr.py (đổi tài khoản thì chạy lại script đó).
+export const BANK = { name: 'ACB', account: '260613369', holder: 'CTY TNHH ALO MUA BÁN', qr: '/assets/img/payment/qr-code.svg' };
+
 export function checkoutPage() {
+  const field = (label, input, cls = '') => `<div class="co-field${cls ? ' ' + cls : ''}"><label>${label}</label>${input}</div>`;
+  const req = '<em>*</em>';
   return `<!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -377,60 +384,75 @@ export function checkoutPage() {
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
 </head>
 <body class="checkout-page">
-<div class="checkout-wrap">
-  <div class="checkout-logo"><a href="/"><img src="/assets/img/media/logo-adzco-den.png" alt="logo"></a></div>
+<header class="co-header"><div class="co-container">
+  <a class="co-logo" href="/"><img src="/assets/img/media/logo-adzco.png" alt="Adzo.vn - Máy móc, thiết bị, vật tư" width="188" height="40"></a>
+  <ol class="co-steps"><li><a href="/cart/">Giỏ hàng</a></li><li class="is-current">Thanh toán</li><li>Hoàn tất</li></ol>
+  <a class="co-hotline" href="tel:0933110083"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>0933 11 00 83</span></a>
+</div></header>
+<main class="co-container co-main-wrap">
   <form action="#" id="checkout-order-form" novalidate>
-    <h2 class="title-checkout">Thông tin đặt hàng</h2>
-    <div class="checkout-row">
-      <div class="checkout-col">
-        <h5 class="order_review_heading">Thông tin mua hàng</h5>
-        <div class="form-my-account">
-          <p><input type="text" name="name" placeholder="Họ tên (*)" required></p>
-          <p><input type="email" name="email" placeholder="Email "></p>
-          <p><input type="text" name="phone" placeholder="Số điện thoại (*)" required inputmode="tel"></p>
-          <p><select name="province" id="province" required><option value="">Tỉnh / Thành Phố (*)</option></select></p>
-          <p><select name="district" id="district" required><option value="">Quận / Huyện (*)</option></select></p>
-          <p><select name="ward" id="ward" required><option value="">Phường / Xã (*)</option></select></p>
-          <p><input type="text" name="address" placeholder="Địa chỉ (*)" required></p>
-        </div>
-        <div class="ship-address"><input type="checkbox" id="same-as-billing" name="has_saddress" value="1"><label for="same-as-billing"><i class="fas fa-square"></i><i class="fas fa-check-square"></i>Giao hàng tới địa chỉ khác</label></div>
-        <div id="fieldset-shipping" class="form-my-account" style="display:none">
-          <p><input type="text" name="sname" placeholder="Họ tên (*)" required></p>
-          <p><input type="email" name="semail" placeholder="Email "></p>
-          <p><input type="text" name="sphone" placeholder="Số điện thoại (*)" required inputmode="tel"></p>
-          <p><select name="sprovince" id="sprovince" required><option value="">Tỉnh / Thành Phố(*) </option></select></p>
-          <p><select name="sdistrict" id="sdistrict" required><option value="">Quận / Huyện(*) </option></select></p>
-          <p><select name="sward" id="sward" required><option value="">Phường / Xã(*) </option></select></p>
-          <p><input type="text" name="saddress" placeholder="Địa chỉ (*)" required></p>
-        </div>
-        <div class="form-my-account"><p><textarea name="note" placeholder="Ghi chú"></textarea></p></div>
+    <span class="hp-field" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></span>
+    <h1 class="co-title">Thanh toán đơn hàng</h1>
+    <div class="co-layout">
+      <div class="co-main">
+        <section class="co-card">
+          <h2 class="co-card__title"><span class="co-num">1</span>Thông tin nhận hàng</h2>
+          <div class="co-grid">
+            ${field('Họ tên ' + req, '<input type="text" name="name" placeholder="Nguyễn Văn A" required autocomplete="name">')}
+            ${field('Số điện thoại ' + req, '<input type="tel" name="phone" placeholder="0901 234 567" required inputmode="tel" autocomplete="tel">')}
+            ${field('Email', '<input type="email" name="email" placeholder="Không bắt buộc - để nhận xác nhận đơn" autocomplete="email">', 'co-span-full')}
+          </div>
+          <div class="co-grid co-grid--3">
+            ${field('Tỉnh / Thành phố ' + req, '<select name="province" id="province" required><option value="">Chọn tỉnh / thành</option></select>')}
+            ${field('Quận / Huyện ' + req, '<select name="district" id="district" required><option value="">Chọn quận / huyện</option></select>')}
+            ${field('Phường / Xã ' + req, '<select name="ward" id="ward" required><option value="">Chọn phường / xã</option></select>')}
+          </div>
+          <div class="co-grid">
+            ${field('Địa chỉ ' + req, '<input type="text" name="address" placeholder="Số nhà, tên đường" required autocomplete="street-address">', 'co-span-full')}
+            ${field('Ghi chú', '<textarea name="note" rows="3" placeholder="Thời gian nhận hàng, yêu cầu xuất hoá đơn..."></textarea>', 'co-span-full')}
+          </div>
+        </section>
+        <section class="co-card">
+          <h2 class="co-card__title"><span class="co-num">2</span>Phương thức thanh toán</h2>
+          <label class="co-pay"><input type="radio" name="payment" value="COD" checked><span class="co-pay__box"><i class="fas fa-money-bill-wave"></i><span><b>Thanh toán khi nhận hàng (COD)</b><small>Giao hàng và thu tiền tận nơi.</small></span></span></label>
+          <label class="co-pay"><input type="radio" name="payment" value="BANK"><span class="co-pay__box"><i class="fas fa-university"></i><span><b>Chuyển khoản ngân hàng</b><small>Quét mã QR bằng ứng dụng ngân hàng hoặc chuyển khoản theo thông tin bên dưới.</small></span></span></label>
+          <div class="co-bank" data-bank hidden>${bankBox('Mã đơn hàng (hiện sau khi đặt)')}</div>
+        </section>
       </div>
-      <div class="checkout-col">
-        <h5 class="order_review_heading">Chọn hình thức thanh toán</h5>
-        <ul class="payment_methods">
-          <li><input id="payment0" type="radio" name="payment" value="1" checked><label for="payment0"><span class="pm-icon"><i class="fas fa-money-bill"></i></span> Thu tiền tận nơi - COD</label>
-            <div class="payment_description"><em>Chúng tôi giao hàng và thu tiền tận nơi của bạn.</em></div></li>
-        </ul>
-      </div>
-      <div class="checkout-col">
-        <div class="order-review">
-          <div class="or-row or-head"><h5 class="order_review_heading">Đơn hàng của bạn </h5></div>
-          <div class="or-row" data-checkout-items></div>
-          <div class="or-row or-flex"><span>Tạm tính</span><span data-checkout-total></span></div>
-          <div class="or-row"><div class="coupon-row"><input type="text" placeholder="Mã giảm giá / Quà tặng" id="coupon_code"><button type="button" id="check-coupon" disabled>Áp dụng</button></div><p class="coupon-msg" hidden></p></div>
-          <div class="or-row or-flex or-total"><span>Thành tiền</span><strong data-checkout-total></strong></div>
-          <div class="or-row or-actions"><a href="/cart/" class="edit_cart"><i class="fas fa-angle-left"></i> Xem giỏ hàng</a><input type="submit" value="Đặt mua" id="submit-order"></div>
-        </div>
-        <p class="checkout-msg" hidden></p>
-      </div>
+      <aside class="co-side">
+        <section class="co-card co-summary">
+          <h2 class="co-card__title">Đơn hàng <span class="co-count" data-checkout-count></span></h2>
+          <div class="co-items" data-checkout-items></div>
+          <div class="coupon-row"><input type="text" placeholder="Mã giảm giá / Quà tặng" id="coupon_code"><button type="button" id="check-coupon" disabled>Áp dụng</button></div>
+          <p class="coupon-msg" hidden></p>
+          <div class="co-line"><span>Tạm tính</span><span data-checkout-total></span></div>
+          <div class="co-line"><span>Phí vận chuyển</span><span class="co-muted">Báo khi xác nhận đơn</span></div>
+          <div class="co-line co-line--total"><span>Thành tiền</span><strong data-checkout-total></strong></div>
+          <button type="submit" id="submit-order" class="co-submit">Đặt hàng</button>
+          <p class="checkout-msg" hidden></p>
+          <a href="/cart/" class="co-back"><i class="fas fa-angle-left"></i> Quay lại giỏ hàng</a>
+        </section>
+      </aside>
     </div>
   </form>
-</div>
+</main>
 <script src="/js/main.js?v=${V}"></script>
 <script src="/js/pages.js?v=${V}"></script>
 </body>
 </html>
 `;
+}
+
+/** Khung thông tin chuyển khoản (QR + số tài khoản). pages.js dựng lại khung này ở màn hình đặt
+ * hàng thành công với nội dung chuyển khoản = mã đơn thật. */
+function bankBox(content) {
+  return `<div class="co-bank__qr"><img src="${BANK.qr}" alt="Mã QR chuyển khoản ${BANK.name} ${BANK.account}" width="220" height="220"></div>
+  <dl class="co-bank__info">
+    <dt>Ngân hàng</dt><dd>${BANK.name}</dd>
+    <dt>Số tài khoản</dt><dd><b data-copy>${BANK.account}</b> <button type="button" class="co-copy" data-copy-btn>Sao chép</button></dd>
+    <dt>Chủ tài khoản</dt><dd>${esc(BANK.holder)}</dd>
+    <dt>Nội dung</dt><dd data-bank-content>${content}</dd>
+  </dl>`;
 }
 
 export function searchPage(ctx) {

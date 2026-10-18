@@ -7,7 +7,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { localPath, PATH_OVERRIDES } from './lib/urls.mjs';
 import * as T from './lib/templates.mjs';
-import { loadCms, buildCmsPages } from './lib/cms.mjs';
+import { loadCms, buildCmsPages, BLOG } from './lib/cms.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const WEB = path.resolve(ROOT, '..'); // thư mục gốc = web tĩnh
@@ -130,6 +130,7 @@ for (const e of await fs.readdir(DIST, { withFileTypes: true })) if (e.isDirecto
 for (const [u] of outputs) if (!u.endsWith('.html') && u !== '/') reserved.add(decodeURI(u).replace(/^\/|\/$/g, ''));
 for (const p of cmsPaths) reserved.delete(p);
 for (const p of cmsPaths) reserved.delete(p.split('/')[0]);
+reserved.add(BLOG.path); // trang tổng tin tức: build sinh, CMS không được đặt URL trùng
 await fs.writeFile(path.join(REPO, 'data/reserved-paths.json'), JSON.stringify([...reserved].sort(), null, 1) + '\n');
 
 // Danh sách trang đã sinh (dùng cho sitemap + kiểm tra link)

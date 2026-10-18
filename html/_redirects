@@ -1,0 +1,5 @@
+# Cloudflare Pages: chuyển hướng 301 cho URL cũ đã gỡ (danh mục bài viết cũ, 18/10/2026).
+/feed-back-khach-hang /tin-tuc/ 301
+/feed-back-khach-hang/ /tin-tuc/ 301
+/tin-tuc/thong-tin-xe-dien /tin-tuc/ 301
+/tin-tuc/thong-tin-xe-dien/ /tin-tuc/ 301

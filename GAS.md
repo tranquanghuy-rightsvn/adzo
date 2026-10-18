@@ -17,6 +17,7 @@
 | Danh mục sản phẩm | GitHub `data/product-categories.json` | CMS |
 | Người dùng | Google Sheet, sheet `Users` | CMS |
 | Liên hệ | Google Sheet, sheet `Contacts` | Form public trên site → `doPost` |
+| Đơn hàng | Google Sheet, sheet `Orders` | Trang Thanh toán + "Mua nhanh" ở Giỏ hàng → `doPost` |
 
 KHÔNG thuộc CMS (sửa tay trong repo, như cũ): trang tĩnh (giới thiệu, chính sách, liên hệ…),
 landing page, menu (`html/js/menu-data.js`), khối banner/danh mục/sản phẩm nổi bật ở trang chủ
@@ -38,6 +39,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    |---|---|---|---|
    | Bài viết, danh mục bài viết, sản phẩm, danh mục sản phẩm (thêm/sửa/xoá) | ✔ | ✔ | ✔ |
    | Liên hệ (xem, đổi trạng thái, xoá) | ✘ | ✔ | ✔ |
+   | Đơn hàng (xem, đổi trạng thái, ghi chú nội bộ, xoá) | ✘ | ✔ | ✔ |
    | Người dùng (thêm/sửa/xoá tài khoản `admin`/`editor`) | ✘ | ✔ | ✔ |
 
    - Quyền `root` không cấp/sửa/xoá được qua CMS (chỉ sửa tay trong Sheet) — tránh lỡ tay khoá
@@ -76,6 +78,17 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    Bài cũ (migrate) dùng ảnh chung ở `/assets/img/images/` — KHÔNG bao giờ bị xoá theo bài.
 
 ## II-B. Danh mục bài viết
+
+- `/tin-tuc/` là trang TỔNG hiện mọi bài viết (build sinh từ hằng `BLOG` trong
+  `html/_dev/scripts/lib/cms.mjs`), KHÔNG phải danh mục, không sửa qua CMS. Breadcrumb mọi bài/danh
+  mục: Trang chủ › TIN TỨC › <danh mục> › <bài>. Đầu trang tin tức + mỗi trang danh mục có thanh
+  chọn danh mục (Tất cả + các danh mục đang có bài).
+- Danh mục bài viết luôn nằm dưới `/tin-tuc/<slug>/` (server tự thêm tiền tố `tin-tuc/`).
+- Danh mục hiện có (sắp xếp lại 18/10/2026): Bồn nước & bồn tự hoại, Máy bơm nước, Máy nước nóng,
+  Thiết bị gia đình, Thiết bị công nghiệp (giữ URL cũ `/tin-tuc/thong-tin-san-pham-cong-nghiep/`).
+  Đã gỡ `/feed-back-khach-hang/`, `/tin-tuc/thong-tin-xe-dien/` (rỗng) → 301 về `/tin-tuc/` trong
+  `html/_redirects`.
+- `<title>` danh mục để trống = `<Tên> - Tin tức Adzco`.
 
 - Field có ô nhập: Tên (hiện ở breadcrumb), Tiêu đề trang H1 (trống = Tên), URL (bất biến sau
   khi lưu lần đầu; danh mục con mới có URL `/<url-cha>/<slug>/`), Danh mục cha (tuỳ chọn; đổi cha
@@ -152,10 +165,29 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
   cho Gmail/Outlook, logo + màu thương hiệu), render bằng `renderEmail_()`, luôn kèm bản chữ
   thường. Mail báo liên hệ đặt `replyTo` = email khách (nếu có) để bấm Trả lời là gửi thẳng cho khách.
 
-## VI. Form công khai loại 2
+## VI. Form công khai loại 2: Đặt hàng
 
-Không áp dụng cho dự án này (giỏ hàng/đặt hàng/bình luận/tài khoản trên site vẫn là xử lý phía
-trình duyệt như cũ, CMS không nhận).
+- Giỏ hàng vẫn lưu ở trình duyệt (localStorage) như cũ. Khi khách đặt, đơn gửi về `doPost`
+  (`formType: "order"`) từ 2 nơi: trang `/checkout/` (`source: checkout` — họ tên*, SĐT*, email,
+  địa chỉ* + tỉnh/quận/phường, ghi chú; ĐÃ BỎ "giao tới địa chỉ khác" 18/10/2026, cột `ship_to`
+  chỉ còn cho đơn cũ) và ô "Mua nhanh bằng số điện thoại" ở `/cart/` (`source: fast` — chỉ SĐT,
+  tên = "Khách mua nhanh").
+- Giá KHÔNG tin client: server tra lại theo `data/products.json` (sản phẩm "Liên hệ" hoặc không
+  còn tồn tại → giá trống, không cộng vào tổng). Mã giảm giá trên site vẫn chỉ là giao diện (luôn
+  báo không hợp lệ).
+- Thanh toán (`payment`): `COD` → "Thanh toán khi nhận hàng (COD)" | `BANK` → "Chuyển khoản ngân
+  hàng" (giá trị lạ → COD). Tài khoản: **ACB 260613369 — CTY TNHH ALO MUA BÁN**, khai ở 2 chỗ phải
+  khớp nhau: `BANK` trong `html/_dev/scripts/lib/templates.mjs` (trang checkout) và `BANK_INFO`
+  trong `gas/Code.js` (email). Mã QR VietQR sinh bằng `html/_dev/scripts/make-bank-qr.py` →
+  `html/assets/img/payment/qr-code.svg` (+ `.png`). Chọn chuyển khoản: trang checkout hiện QR + số
+  tài khoản; sau khi đặt hiện lại kèm số tiền và nội dung CK = mã đơn; email xác nhận cho khách
+  kèm thông tin chuyển khoản. Đối soát tiền vào làm tay (đổi trạng thái đơn).
+- Mã đơn `DH<yyMMdd>-<4 số>`, hiện cho khách sau khi đặt. Honeypot `_hp`, rate-limit 30 giây/SĐT,
+  SĐT phải dạng `0xxxxxxxxx`.
+- Mail báo đơn mới tới `NOTIFY_EMAIL` (replyTo = email khách) + mail xác nhận cho khách nếu có
+  email — dùng chung mẫu `email.html`, chung quota Gmail.
+- Trạng thái: `Mới` → `Đã xác nhận` → `Đang giao` → `Hoàn thành` | `Đã huỷ`. Sửa được trong Admin:
+  trạng thái + ghi chú nội bộ (`admin_note`). Không sửa được nội dung đơn.
 
 ## VII. UX chung
 
@@ -177,6 +209,9 @@ trình duyệt như cũ, CMS không nhận).
   - `Users`: `email`, `role` (`root` | `admin` | `editor`)
   - `Contacts`: `id`, `created_at` (UTC ISO), `name`, `email`, `phone`, `message`, `page`,
     `status` (`Mới` | `Đã xử lý`)
+  - `Orders`: `id`, `created_at`, `source` (`checkout` | `fast`), `name`, `phone`, `email`,
+    `address`, `ship_to`, `note`, `items` (JSON `[{id, slug, name, price, qty}]`), `items_text`
+    (bản dễ đọc khi mở Sheet), `total`, `payment`, `status`, `admin_note`
 - GitHub (repo `adzo`, qua Contents API):
   - `data/posts.json` — index bài viết (commit CHỐT)
   - `data/posts/<slug>.json` — chi tiết 1 bài
@@ -201,6 +236,10 @@ trình duyệt như cũ, CMS không nhận).
   CI build tự động, build thử và so diff với HTML đang chạy.
 - `templates.mjs` dùng `Date.now()` làm phiên bản CSS/JS → mỗi lần build đổi cả ~1.700 trang dù
   nội dung không đổi. Đã đổi sang băm nội dung CSS/JS.
+- Đăng nhập báo `SyntaxError: Unexpected token ';'`: comment trong `gas/email.html` có chuỗi ký
+  hiệu scriptlet in giá trị (dấu mở + `=` + dấu đóng, rỗng ở giữa) — HtmlService biên dịch scriptlet
+  kể cả nằm trong `<!-- -->` → lỗi khi render email OTP. Không bao giờ viết ký hiệu scriptlet trong
+  comment của file template (`email.html`, `index.html`, `app.html`).
 - `seo.mjs` quét mọi file `.html` nên đã chèn `index, follow` vào `/admin/` → đã cho bỏ qua
   `admin/` và `vendor/`.
 

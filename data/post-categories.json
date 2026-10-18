@@ -1,50 +1,62 @@
 [
  {
-  "path": "tin-tuc",
-  "name": "TIN TỨC",
-  "h1": "Tin tức về Adzco",
+  "path": "tin-tuc/bon-nuoc-bon-tu-hoai",
+  "name": "Bồn nước & bồn tự hoại",
+  "h1": "Kinh nghiệm chọn bồn nước, bồn tự hoại",
   "parent": "",
   "order": 1,
-  "meta_title": "Tin Tức Adzco - Kinh Nghiệm, Hướng Dẫn Chọn Mua Thiết Bị Công Nghiệp & Dân Dụng",
-  "meta_description": "Cập nhật tin tức, kinh nghiệm chọn mua bồn nước, máy bơm, máy nước nóng mặt trời và các thiết bị công nghiệp, dân dụng chính hãng từ Adzco.",
-  "meta_keywords": "Tin tức Adzco, Tin tuc Adzco",
-  "og_image": "/assets/img/media/logo-adzco-den.png",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "meta_title": "",
+  "meta_description": "Kinh nghiệm chọn mua bồn nước inox, bồn nhựa, bồn tự hoại: dung tích, chất liệu, vị trí lắp đặt và cách sử dụng bền lâu.",
+  "meta_keywords": "kinh nghiệm chọn bồn nước, bồn nước inox, bồn nhựa, bồn tự hoại",
+  "og_image": "",
+  "updated_at": "2026-10-18T08:00:00Z"
  },
  {
-  "path": "feed-back-khach-hang",
-  "name": "Feed back Khách Hàng",
-  "h1": "",
+  "path": "tin-tuc/may-bom-nuoc",
+  "name": "Máy bơm nước",
+  "h1": "Kinh nghiệm chọn và sử dụng máy bơm nước",
   "parent": "",
   "order": 2,
   "meta_title": "",
-  "meta_description": "",
-  "meta_keywords": "Feed back Khách Hàng",
+  "meta_description": "Hướng dẫn chọn máy bơm nước gia đình, máy bơm tăng áp đúng công suất, mẹo sử dụng giúp máy bơm bền và tiết kiệm điện.",
+  "meta_keywords": "máy bơm nước, máy bơm tăng áp, chọn máy bơm",
   "og_image": "",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-18T08:00:00Z"
  },
  {
-  "path": "tin-tuc/thong-tin-xe-dien",
-  "name": "THÔNG TIN XE ĐIỆN",
-  "h1": "THÔNG TIN, MẸO VẶT, KINH NGHIỆM HAY VỀ XE ĐẠP ĐIỆN, XE MÁY ĐIỆN",
-  "parent": "tin-tuc",
+  "path": "tin-tuc/may-nuoc-nong",
+  "name": "Máy nước nóng",
+  "h1": "Kinh nghiệm chọn máy nước nóng",
+  "parent": "",
   "order": 3,
   "meta_title": "",
-  "meta_description": "Các tin tức và chia sẻ kinh nghiệm, hướng dẫn sử dụng các dòng sản phẩm xe điệnm xe điện mini, xe đạp điện, xe máy điện mới nhất từ Adzco.",
-  "meta_keywords": "Thông tin xe điện, Thông tin xe đạp điện, Thông tin xe Máy điện",
+  "meta_description": "So sánh máy nước nóng năng lượng mặt trời, máy nước nóng trực tiếp và gián tiếp; kinh nghiệm chọn mua và lắp đặt.",
+  "meta_keywords": "máy nước nóng năng lượng mặt trời, máy nước nóng trực tiếp, máy nước nóng gián tiếp",
   "og_image": "",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-18T08:00:00Z"
+ },
+ {
+  "path": "tin-tuc/thiet-bi-gia-dinh",
+  "name": "Thiết bị gia đình",
+  "h1": "Kinh nghiệm chọn thiết bị gia đình",
+  "parent": "",
+  "order": 4,
+  "meta_title": "",
+  "meta_description": "Kinh nghiệm chọn chậu rửa chén, máy lọc nước, phụ kiện điện nước cho gia đình: chất liệu, công năng và cách lắp đặt.",
+  "meta_keywords": "chậu rửa chén inox, máy lọc nước RO, phụ kiện điện nước",
+  "og_image": "",
+  "updated_at": "2026-10-18T08:00:00Z"
  },
  {
   "path": "tin-tuc/thong-tin-san-pham-cong-nghiep",
-  "name": "THÔNG TIN SẢN PHẨM CÔNG NGHIỆP",
-  "h1": "Thông tin sản phẩm công nghiệp",
-  "parent": "tin-tuc",
-  "order": 4,
+  "name": "Thiết bị công nghiệp",
+  "h1": "Thông tin thiết bị công nghiệp",
+  "parent": "",
+  "order": 5,
   "meta_title": "",
-  "meta_description": "Các tin tức và chia sẻ kinh nghiệm, hướng dẫn sử dụng các dòng sản phẩm máy hút bụi công nghiệp, máy chà sàn bê tông, máy chà giặt thảm, máy thổi sàn mới nhất từ Adzco.",
-  "meta_keywords": "thông tin các sản phẩm công nghiệp",
+  "meta_description": "Kinh nghiệm chọn motor điện, máy thổi khí, máy hàn, thiết bị bếp công nghiệp và thiết bị cho nhà xưởng, xí nghiệp.",
+  "meta_keywords": "thiết bị công nghiệp, motor điện, máy thổi khí, máy hàn, bếp công nghiệp",
   "og_image": "",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-18T08:00:00Z"
  }
 ]
