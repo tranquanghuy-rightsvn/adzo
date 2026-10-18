@@ -59,5 +59,6 @@ jobs:
           done
           exit 1
 
-      # KHÔNG có bước deploy: Vercel tự deploy khi có commit mới trên master. Commit của CI không
+      # KHÔNG có bước deploy: Cloudflare Pages tự deploy commit này (commit của CMS mang "[CI-Skip]"
+      # nên Pages bỏ qua, xem gas/Code.js commitMessage_). Commit của CI không
       # tự trigger lại workflow này (GITHUB_TOKEN không kích hoạt workflow khác).

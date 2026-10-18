@@ -188,9 +188,11 @@ trình duyệt như cũ, CMS không nhận).
   - `html/assets/img/posts/<slug>/…`, `html/assets/img/products/<slug>/…` — ảnh upload
 - File index/commit CHỐT luôn ghi SAU CÙNG; CI (`.github/workflows/build.yml`) chỉ trigger
   theo 4 file chốt (+ code build) → chạy `node html/_dev/scripts/build-site.mjs` → commit `html/`.
-- Vercel bỏ qua deploy các commit bắt đầu bằng `CMS:` (`html/vercel.json` → `ignoreCommand`),
-  chỉ deploy commit build của CI — tránh đốt quota deploy/ngày vì mỗi ảnh là 1 commit.
-- Độ trễ Lưu → thấy trên site: ~1-3 phút (CI build ~30-60s + Vercel deploy).
+- Hosting: Cloudflare Pages (thư mục xuất bản `html/`). Mọi commit của CMS có hậu tố `[CI-Skip]`
+  → Pages bỏ qua, chỉ deploy commit build của CI — tránh đốt quota build/tháng vì mỗi ảnh là 1
+  commit. GitHub Actions không nhận dạng `[CI-Skip]` (có gạch ngang) nên workflow vẫn chạy; KHÔNG
+  đổi thành `[skip ci]`. Header `noindex` cho `/admin/` khai ở `html/_headers`.
+- Độ trễ Lưu → thấy trên site: ~1-3 phút (CI build ~30-60s + Cloudflare Pages deploy).
 
 ## IX. Bug đã gặp ở dự án này
 

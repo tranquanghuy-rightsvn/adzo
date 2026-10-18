@@ -1,0 +1,8 @@
+# Cloudflare Pages: header HTTP. Trang quản trị chặn index bằng header (lớp mạnh nhất, phủ cả file
+# con) - CỐ Ý không khai Disallow trong robots.txt để không quảng cáo đường dẫn quản trị.
+/admin
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+  Referrer-Policy: no-referrer
+/admin/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+  Referrer-Policy: no-referrer
