@@ -41,6 +41,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    | Liên hệ (xem, đổi trạng thái, xoá) | ✘ | ✔ | ✔ |
    | Đơn hàng (xem, đổi trạng thái, ghi chú nội bộ, xoá) | ✘ | ✔ | ✔ |
    | Người dùng (thêm/sửa/xoá tài khoản `admin`/`editor`) | ✘ | ✔ | ✔ |
+   | Thống kê: Tổng quan, Từ khoá & SEO, Truy cập | ✘ | ✔ | ✔ |
 
    - Quyền `root` không cấp/sửa/xoá được qua CMS (chỉ sửa tay trong Sheet) — tránh lỡ tay khoá
      chủ hệ thống. Không ai tự sửa/xoá được tài khoản của chính mình.
@@ -64,7 +65,9 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
      file picker, chọn nhiều ảnh), ảnh bọc `<figure>` + caption; alt/title = caption, rơi về
      tiêu đề bài nếu caption trống; caption placeholder bị xoá lúc lưu. KHÔNG cho dán/kéo-thả
      ảnh trực tiếp (`paste_data_images: false` — ảnh sẽ nằm nguyên base64 trong nội dung).
-   - Từ khoá SEO (tuỳ chọn)
+   - Từ khoá SEO (tuỳ chọn, phân cách dấu phẩy)
+   - Từ khoá chính (`focus_keyword`, tuỳ chọn) — CHỈ dùng cho bộ chấm điểm SEO trong Admin, build
+     không dùng.
 2. Server/build tự suy (không có ô nhập):
    - `<title>` = `<Tiêu đề> - Adzco`.
    - Mục lục (TOC) + ảnh đầu bài: build tự sinh từ các thẻ H2/H3 trong nội dung (giữ đúng cấu
@@ -76,6 +79,21 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    Ảnh RIÊNG 1-1 cho từng bài, thư mục `html/assets/img/posts/<slug>/`:
    `cover.jpg` (ảnh bìa, tải lại = ghi đè), `cNN.jpg` (ảnh trong nội dung, đánh số bất biến).
    Bài cũ (migrate) dùng ảnh chung ở `/assets/img/images/` — KHÔNG bao giờ bị xoá theo bài.
+
+5. Bộ chấm điểm SEO (kiểu Rank Math / SEOMath của Web100) — file `gas/rank-math-seo-js.html`
+   (nạp qua `index.html`, có trong mã băm `clientBuild_()`), CHỈ có ở form thêm/sửa bài viết:
+   - Nút nổi góc phải "Điểm SEO" (luôn hiện điểm) → mở panel: vòng điểm 0-100, 4 ô thống kê
+     (số từ, số lần xuất hiện từ khoá, số ảnh, số liên kết) và 38 tiêu chí chia 4 nhóm: Bắt buộc ·
+     Tiêu đề & mô tả · Nội dung & khả năng đọc · Hình ảnh & liên kết. Mỗi tiêu chí: ✓ đạt / ! đạt một
+     phần / ✕ chưa đạt / – không áp dụng, kèm số liệu và gợi ý sửa.
+   - Điểm có trọng số: mỗi tiêu chí trả mức đạt 0-1, nhân trọng số (nhóm Bắt buộc 4-10, các nhóm
+     khác 2-6), chia tổng trọng số các tiêu chí áp dụng được. ≥ 80 Tốt · 50-79 Khá · < 50 Cần cải
+     thiện. Ngưỡng chính: nội dung 800-2.000 từ, tiêu đề SEO 40-65 ký tự (đã gồm " - Adzco"), mô tả
+     120-160 ký tự, mật độ từ khoá 0,5-2,5%, 3-6 từ khoá SEO, ~1 ảnh/400 từ, ≥ 2 H2, ≥ 2 liên kết nội
+     bộ. KHÔNG kiểm tra sitemap/JSON-LD (build tự sinh).
+   - Bộ đếm tự động dưới từng ô: Tiêu đề (ký tự + độ dài tiêu đề SEO /65), Mô tả (/160), Nội dung
+     (số từ · ký tự · phút đọc), Từ khoá SEO (số từ khoá). Màu xanh/cam/đỏ theo ngưỡng.
+   - Chạy hoàn toàn trên trình duyệt, không gọi server, KHÔNG chặn việc Lưu.
 
 ## II-B. Danh mục bài viết
 
@@ -239,6 +257,32 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
   đổi thành `[skip ci]`. Header `noindex` cho `/admin/` khai ở `html/_headers`.
 - Độ trễ Lưu → thấy trên site: ~1-3 phút (CI build ~30-60s + Cloudflare Pages deploy).
 
+## VIII-B. Thống kê: Google Search Console + Google Analytics 4
+
+- 3 tab (admin/root, editor không thấy; admin/root mở Admin là vào thẳng Tổng quan):
+  - **Tổng quan**: người truy cập, lượt xem trang, lượt nhấp từ Google (kèm % so với kỳ trước), số
+    đơn + doanh thu tạm tính (trừ đơn huỷ) + đơn chờ xử lý, liên hệ mới; biểu đồ phiên truy cập +
+    lượt nhấp Google theo ngày; top 10 từ khoá; top trang được xem.
+  - **Từ khoá & SEO** (Search Console): lượt nhấp, lượt hiển thị, CTR, vị trí TB; biểu đồ theo ngày;
+    bảng tối đa 250 từ khoá (tìm, sắp xếp theo cột, lọc "top 3" / "cơ hội vị trí 4-15" / "hiển thị
+    nhiều nhưng CTR < 2%"); top trang nhận lượt nhấp. Ghi chú rõ: "lượt hiển thị" ≠ tổng lượt tìm
+    của từ khoá trên Google (số đó cần Google Ads Keyword Planner - không làm).
+  - **Truy cập** (GA4): người dùng, phiên, lượt xem, thời gian TB/phiên, trang/phiên; biểu đồ theo
+    ngày; nguồn truy cập, thiết bị, tỉnh/thành, top 20 trang.
+  - Chọn 7 / 28 / 90 ngày; nút "Làm mới" bỏ qua cache.
+- Server `getAnalytics(token, days, force)` gọi Search Console API + GA4 Data API bằng
+  `ScriptApp.getOAuthToken()` của tài khoản DEPLOY (phải được thêm vào cả 2 property). Scope khai
+  tường minh trong `gas/appsscript.json` (`analytics.readonly`, `webmasters.readonly` + các scope cũ)
+  → sau khi `clasp push` phải chạy 1 hàm trong editor để cấp quyền mới.
+- Script Properties: `GSC_SITE_URL` (`sc-domain:adzo.vn` cho property dạng Miền, hoặc
+  `https://adzo.vn/`), `GA4_PROPERTY_ID` (dãy số, KHÔNG phải mã G-). Thiếu cái nào thì tab tương ứng
+  báo "Chưa kết nối…", nguồn còn lại vẫn chạy.
+- Cache: server 3 giờ (CacheService), trình duyệt 30 phút (localStorage, key có `CLIENT_BUILD`).
+  Search Console lấy dữ liệu tới 3 ngày trước (dữ liệu Google chậm 2-3 ngày).
+- Website: thẻ GA4 gắn qua hằng `GA4_ID` trong `html/_dev/scripts/lib/templates.mjs` (trống = không
+  gắn). Có sự kiện `purchase` (đặt hàng thành công, kèm mã đơn/giá trị/sản phẩm) và `generate_lead`
+  (gửi form liên hệ).
+
 ## IX. Bug đã gặp ở dự án này
 
 - HTML đang chạy trên site đã bị sửa tay sau lần build cuối (gỡ form bình luận, gỡ form sidebar)
@@ -258,4 +302,5 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
 - `GITHUB_TOKEN` — fine-grained PAT, quyền Contents: Read and write trên repo site.
 - `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH` — bắt buộc.
 - `NOTIFY_EMAIL` — nhận mail báo liên hệ mới (tuỳ chọn).
+- `GSC_SITE_URL`, `GA4_PROPERTY_ID` — kết nối Search Console / GA4 cho tab thống kê (tuỳ chọn, mục VIII-B).
 - `SPREADSHEET_ID` — KHÔNG cần điền, code tự tạo Sheet lần đầu và tự lưu.

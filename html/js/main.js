@@ -367,6 +367,7 @@
     if (btn) btn.disabled = true;
     req
       .then(function () {
+        if (window.gtag) window.gtag('event', 'generate_lead', { form: 'contact' });
         say(f.dataset.success || 'Gửi thành công!', true);
         resetForm(f);
       })

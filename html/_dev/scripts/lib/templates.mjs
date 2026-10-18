@@ -12,6 +12,14 @@ const V = createHash('md5')
   .digest('hex').slice(0, 8);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const href = (h) => esc(h || '#');
+
+// Google Analytics 4 - Measurement ID dạng "G-XXXXXXXXXX" (GA4 > Quản trị > Luồng dữ liệu > Web).
+// Để trống = không gắn thẻ. Đổi xong chạy lại build (CI tự chạy khi file này đổi).
+const GA4_ID = 'G-1KJK81JVB8';
+const GA4_TAG = GA4_ID
+  ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`
+  : '';
 const SITE_NAME = 'Adzco - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
 const stars = (n = 5) => Array.from({ length: 5 }, (_, i) => `<i class="fa fa-star${i < n ? ' is-on' : ''}"></i>`).join('');
 
@@ -75,6 +83,7 @@ ${m.ogImage ? `  <meta property="og:image" content="${esc(m.ogImage)}">\n` : ''}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
+  ${GA4_TAG}
 </head>
 <body class="${esc(o.bodyClass || '')}">
 <div class="wrapper">
@@ -382,6 +391,7 @@ export function checkoutPage() {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
+  ${GA4_TAG}
 </head>
 <body class="checkout-page">
 <header class="co-header"><div class="co-container">

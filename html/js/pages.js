@@ -396,6 +396,13 @@
         C.set([]);
         var bankHtml = '';
         try { sessionStorage.removeItem(ORDER_CODE_KEY); } catch (e) { /* bỏ qua */ }
+        // Sự kiện mua hàng cho Google Analytics (nếu website đã gắn thẻ GA4).
+        if (window.gtag && id) {
+          window.gtag('event', 'purchase', {
+            transaction_id: id, value: total, currency: 'VND', payment_type: pay,
+            items: items.map(function (i) { return { item_id: i.id, item_name: i.name, price: parseMoney(i.price), quantity: i.qty }; }),
+          });
+        }
         if (pay === 'BANK') {
           var box = bank.cloneNode(true);
           box.hidden = false;
