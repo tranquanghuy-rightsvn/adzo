@@ -294,6 +294,10 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
   hiệu scriptlet in giá trị (dấu mở + `=` + dấu đóng, rỗng ở giữa) — HtmlService biên dịch scriptlet
   kể cả nằm trong `<!-- -->` → lỗi khi render email OTP. Không bao giờ viết ký hiệu scriptlet trong
   comment của file template (`email.html`, `index.html`, `app.html`).
+- Mở Admin khi đã có cache báo `Cannot access 'PRODUCT_LIST_LIMIT' before initialization`: lời
+  gọi khởi động `bootApp()` nằm giữa `gas/js.html`; có cache thì giao diện vẽ ĐỒNG BỘ ngay, đụng hằng
+  `const`/`let` khai báo phía dưới (vùng TDZ). Lần đầu (không cache) boot bất đồng bộ nên không lộ.
+  Đã dời khối khởi động xuống CUỐI file. Test admin phải chạy CẢ 2 trường hợp: có cache và không cache.
 - `seo.mjs` quét mọi file `.html` nên đã chèn `index, follow` vào `/admin/` → đã cho bỏ qua
   `admin/` và `vendor/`.
 

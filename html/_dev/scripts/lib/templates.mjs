@@ -164,9 +164,6 @@ export function sidebar(sb) {
   const featured = sb.featured.map((p) => `<div class="sb-product">${productCard(p)}</div>`).join('');
   const posts = sb.posts.map((p) => postCard(p)).join('');
   return `<aside class="widget-sidebar">
-  <div class="sb-widget sb-fanpage">${boxHeading('FANPAGE', 'div')}
-    <div class="sb-content text-center"><iframe loading="lazy" title="Fanpage Adzco" src="${esc(sb.fanpage)}" width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
-  </div>
   <div class="sb-widget sb-products">${boxHeading(sb.featuredTitle || 'SẢN PHẨM NỔI BẬT', 'div')}<div class="sb-content">${featured}</div></div>
   <div class="sb-widget sb-posts">${boxHeading(sb.postsTitle || 'TIN CHO BẠN', 'div')}<div class="sb-content">${posts}</div></div>
 </aside>`;
@@ -190,15 +187,25 @@ export function contactForm({ compact = false } = {}) {
 </form>`;
 }
 
-function share(url, media) {
+/** Hàng nút chia sẻ ở trang chi tiết (sản phẩm, bài viết, trang tĩnh). Link mạng xã hội là link
+ * thường (chạy cả khi tắt JS); Zalo / Sao chép / "Khác" cần JS (main.js, bindShare): trên điện thoại
+ * mở bảng chia sẻ của máy, trên máy tính sao chép link để dán vào Zalo. */
+function share(url, media, title) {
   const u = encodeURIComponent(url);
-  return `<div class="share-container"><p>Chia sẻ:</p><ul class="social-icons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=${u}" rel="nofollow" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="https://twitter.com/intent/tweet?url=${u}" rel="nofollow" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}" rel="nofollow" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-  <li><a href="http://pinterest.com/pin/create/link/?url=${u}${media ? '&amp;media=' + encodeURIComponent(media) : ''}" rel="nofollow" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
-  <li><a href="https://www.tumblr.com/share/link?url=${u}" rel="nofollow" target="_blank" aria-label="Tumblr"><i class="fab fa-tumblr"></i></a></li>
-</ul></div>`;
+  const t = encodeURIComponent(title || '');
+  const origin = (() => { try { return new URL(url).origin; } catch { return ''; } })();
+  const img = media ? (/^https?:/.test(media) ? media : origin + media) : '';
+  const btn = (cls, label, inner, attrs) => `<li><a class="share-btn share-btn--${cls}" ${attrs} aria-label="${label}" title="${label}">${inner}</a></li>`;
+  const ext = (href) => `href="${href}" target="_blank" rel="nofollow noopener"`;
+  return `<div class="share-box" data-share-url="${esc(url)}" data-share-title="${esc(title || '')}"><span class="share-box__label">Chia sẻ:</span><ul class="share-list">
+  ${btn('fb', 'Chia sẻ lên Facebook', '<i class="fab fa-facebook-f"></i>', ext(`https://www.facebook.com/sharer/sharer.php?u=${u}`))}
+  ${btn('zalo', 'Chia sẻ qua Zalo', '<img src="/assets/img/static/themes/base/images/icons/icon-zalo.svg" alt="" width="20" height="20">', `href="#" role="button" data-share="zalo"`)}
+  ${btn('x', 'Chia sẻ lên X (Twitter)', '<i class="fab fa-twitter"></i>', ext(`https://twitter.com/intent/tweet?url=${u}&amp;text=${t}`))}
+  ${img ? btn('pin', 'Lưu lên Pinterest', '<i class="fab fa-pinterest-p"></i>', ext(`https://pinterest.com/pin/create/button/?url=${u}&amp;media=${encodeURIComponent(img)}&amp;description=${t}`)) : ''}
+  ${btn('mail', 'Gửi qua email', '<i class="fas fa-envelope"></i>', `href="mailto:?subject=${t}&amp;body=${u}" rel="nofollow"`)}
+  ${btn('copy', 'Sao chép link', '<i class="fas fa-link"></i>', `href="#" role="button" data-share="copy"`)}
+  <li class="share-native" hidden>${'<a class="share-btn share-btn--more" href="#" role="button" data-share="native" aria-label="Chia sẻ qua ứng dụng khác" title="Chia sẻ qua ứng dụng khác"><i class="fas fa-share-alt"></i></a>'}</li>
+</ul><span class="share-box__msg" role="status" aria-live="polite"></span></div>`;
 }
 
 const withSidebar = (ctx, mainHtml, mainCls = '') => `<div class="page-content"><div class="container"><div class="row-main">
@@ -249,7 +256,7 @@ function productPage(ctx, p, d) {
         <div class="product-oder">${buttons}</div>
         <hr class="divider">
       </form>
-      ${share(d.shareUrl, (gallery[0] || {}).full)}
+      ${share(d.shareUrl, (gallery[0] || {}).full, d.name)}
     </div>
   </div>
   ${tabs}
@@ -308,14 +315,14 @@ function postPage(ctx, p, d) {
     </div>
     <div class="decription ck-content">${d.html}</div>
   </article>
-  ${share(d.shareUrl)}
+  ${share(d.shareUrl, d.meta && d.meta.ogImage, d.title)}
   ${related}
   <hr class="divider-3"><div class="m-bottom-30"></div>`;
   return layout(ctx, { path: p, bodyClass: 'post_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: ['/js/pages.js'] });
 }
 
 function staticPage(ctx, p, d) {
-  const html = `<article class="article-detail article-detail--page"><h1 class="page-title">${esc(d.h1)}</h1><div class="ck-content">${d.html}</div></article>${share(d.shareUrl)}`;
+  const html = `<article class="article-detail article-detail--page"><h1 class="page-title">${esc(d.h1)}</h1><div class="ck-content">${d.html}</div></article>${share(d.shareUrl, null, d.h1)}`;
   return layout(ctx, { path: p, bodyClass: 'page_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: ['/js/pages.js'] });
 }
 

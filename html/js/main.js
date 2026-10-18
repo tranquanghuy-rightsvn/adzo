@@ -377,6 +377,42 @@
       .then(function () { if (btn) btn.disabled = false; });
   }
 
+  /* ---------------- Chia sẻ (trang chi tiết) ---------------- */
+  // Zalo không có link chia sẻ công khai cho web: điện thoại -> bảng chia sẻ của máy (có Zalo,
+  // Messenger...), máy tính -> sao chép link để dán vào Zalo.
+  function bindShare() {
+    var canNative = !!navigator.share;
+    $$('.share-native').forEach(function (li) { li.hidden = !canNative; });
+    function copy(text) {
+      if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+      return new Promise(function (resolve, reject) {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy') ? resolve() : reject(); } catch (e) { reject(e); }
+        document.body.removeChild(ta);
+      });
+    }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-share]');
+      if (!b) return;
+      e.preventDefault();
+      var box = b.closest('.share-box');
+      var url = box.dataset.shareUrl || location.href;
+      var title = box.dataset.shareTitle || document.title;
+      var msg = $('.share-box__msg', box);
+      var say = function (t) { msg.textContent = t; clearTimeout(msg._t); msg._t = setTimeout(function () { msg.textContent = ''; }, 3500); };
+      var kind = b.dataset.share;
+      if ((kind === 'native' || kind === 'zalo') && canNative) {
+        navigator.share({ title: title, url: url }).catch(function () { /* người dùng đóng bảng chia sẻ */ });
+        return;
+      }
+      copy(url).then(function () {
+        say(kind === 'zalo' ? 'Đã sao chép link - mở Zalo và dán để gửi.' : 'Đã sao chép link!');
+      }, function () { window.prompt('Sao chép link:', url); });
+    });
+  }
+
   /* ---------------- Tìm kiếm ---------------- */
   function bindSearch() {
     $$('.search-form').forEach(function (form) {
@@ -462,6 +498,7 @@
     bindCart();
     bindForms();
     bindSearch();
+    bindShare();
     bindToc();
     bindMobileBuyBar();
     window.addEventListener('resize', setPanelHeight);

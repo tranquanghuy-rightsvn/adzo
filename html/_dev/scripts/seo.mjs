@@ -19,7 +19,6 @@ const ORG = {
   street: '39/14A Đường Phú Thọ, Phường 1, Quận 11',
   city: 'TP Hồ Chí Minh',
   zalo: 'https://zalo.me/0933110083',
-  facebook: 'https://www.facebook.com/profile.php?id=100085742332614',
 };
 const HOME_DESC = 'Adzco.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng: máy bơm nước, bồn nước inox, bồn nhựa, ' +
   'máy nước nóng năng lượng mặt trời, motor điện, máy thổi khí. Giao hàng tận nơi, hotline 0933 11 00 83.';
@@ -96,7 +95,7 @@ const orgLd = () => ({
     opens: '07:00', closes: '22:00',
   },
   contactPoint: { '@type': 'ContactPoint', telephone: ORG.phone, contactType: 'customer service', areaServed: 'VN', availableLanguage: 'vi' },
-  sameAs: [ORG.facebook, ORG.zalo],
+  sameAs: [ORG.zalo],
 });
 
 const siteLd = () => ({
