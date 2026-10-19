@@ -20,7 +20,7 @@ const GA4_TAG = GA4_ID
   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`
   : '';
-const SITE_NAME = 'Adzco - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
+const SITE_NAME = 'Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
 const stars = (n = 5) => Array.from({ length: 5 }, (_, i) => `<i class="fa fa-star${i < n ? ' is-on' : ''}"></i>`).join('');
 
 /* =========================================================
@@ -217,7 +217,7 @@ const withSidebar = (ctx, mainHtml, mainCls = '') => `<div class="page-content">
    Pages
    ========================================================= */
 function productPage(ctx, p, d) {
-  const gallery = d.gallery.length ? d.gallery : [{ img: '/assets/img/media/logo-adzco.png', full: '/assets/img/media/logo-adzco.png' }];
+  const gallery = d.gallery.length ? d.gallery : [{ img: '/assets/img/media/logo-adzo.png', full: '/assets/img/media/logo-adzo.png' }];
   const main = gallery.map((g, i) => `<a class="img-main-href" href="${esc(g.full || g.img)}" data-index="${i}"${i ? ' hidden' : ''}><img class="img-main-detail" src="${esc(g.img)}" alt="${esc(d.name)}"${i ? ' loading="lazy"' : ''}><i class="fa fa-expand"></i></a>`).join('');
   const thumbs = d.thumbs.length > 1
     ? `<div class="pd-thumbs-wrap"><div class="carousel carousel--d pd-thumbs" data-items="4,4,4,4" data-margin="15" data-nav="true">${d.thumbs.map((t, i) => `<div class="pd-thumb${i ? '' : ' is-current'}" data-index="${i}"><a style="background-image:url(${esc(t)})"><img src="${esc(t)}" alt="" loading="lazy" draggable="false"></a></div>`).join('')}</div></div>`
@@ -350,7 +350,7 @@ function cartPage(ctx, p, d) {
     </div>
     <div class="cart-continue"><a class="continue_shopping" href="/"><i class="fa fa-arrow-left"></i> Tiếp tục mua hàng</a></div>
   </div></div>`;
-  return layout(ctx, { path: p, bodyClass: 'cart', meta: { title: 'Adzco - Giỏ hàng' }, main, scripts: ['/js/pages.js'] });
+  return layout(ctx, { path: p, bodyClass: 'cart', meta: { title: 'Adzo - Giỏ hàng' }, main, scripts: ['/js/pages.js'] });
 }
 
 function accountPage(ctx, p, d, kind) {
@@ -376,7 +376,7 @@ function accountPage(ctx, p, d, kind) {
       </div></div></div>
     </form>
   </div></div></div>`;
-  return layout(ctx, { path: p, bodyClass: login ? 'user-login' : 'user-register', meta: { title: login ? 'Adzco - Đăng nhập' : 'Adzco - Đăng ký' }, breadcrumbs: [{ t: 'Trang chủ', href: '/' }, { t: login ? 'Đăng nhập' : 'Đăng ký' }], main, scripts: ['/js/pages.js'] });
+  return layout(ctx, { path: p, bodyClass: login ? 'user-login' : 'user-register', meta: { title: login ? 'Adzo - Đăng nhập' : 'Adzo - Đăng ký' }, breadcrumbs: [{ t: 'Trang chủ', href: '/' }, { t: login ? 'Đăng nhập' : 'Đăng ký' }], main, scripts: ['/js/pages.js'] });
 }
 
 // Tài khoản nhận chuyển khoản - PHẢI khớp BANK_INFO trong gas/Code.js (email xác nhận đơn).
@@ -392,7 +392,7 @@ export function checkoutPage() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   ${REDIRECT_SNIPPET}
-  <title>Adzco - Thanh toán đơn hàng</title>
+  <title>Adzo - Thanh toán đơn hàng</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="/assets/img/media/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -402,7 +402,7 @@ export function checkoutPage() {
 </head>
 <body class="checkout-page">
 <header class="co-header"><div class="co-container">
-  <a class="co-logo" href="/"><img src="/assets/img/media/logo-adzco.png" alt="Adzo.vn - Máy móc, thiết bị, vật tư" width="188" height="40"></a>
+  <a class="co-logo" href="/"><img src="/assets/img/media/logo-adzo.png" alt="Adzo.vn - Máy móc, thiết bị, vật tư" width="188" height="40"></a>
   <ol class="co-steps"><li><a href="/cart/">Giỏ hàng</a></li><li class="is-current">Thanh toán</li><li>Hoàn tất</li></ol>
   <a class="co-hotline" href="tel:0933110083"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>0933 11 00 83</span></a>
 </div></header>
@@ -480,7 +480,7 @@ export function searchPage(ctx) {
     <div class="product-grid product-grid--cat" data-search-results></div>
     <p class="search-empty" hidden>Không tìm thấy sản phẩm nào phù hợp.</p>
   </div>`;
-  return layout(ctx, { path: '/tim-kiem/', bodyClass: 'category_product search', meta: { title: 'Tìm kiếm - Adzco' }, breadcrumbs: [{ t: 'Trang chủ', href: '/' }, { t: 'Tìm kiếm' }], main: withSidebar(ctx, html), scripts: ['/js/search-index.js', '/js/pages.js'] });
+  return layout(ctx, { path: '/tim-kiem/', bodyClass: 'category_product search', meta: { title: 'Tìm kiếm - Adzo' }, breadcrumbs: [{ t: 'Trang chủ', href: '/' }, { t: 'Tìm kiếm' }], main: withSidebar(ctx, html), scripts: ['/js/search-index.js', '/js/pages.js'] });
 }
 
 export function notFoundPage(ctx, overrides) {
@@ -500,7 +500,7 @@ export function notFoundPage(ctx, overrides) {
     <h1>404</h1><p>Trang bạn tìm không tồn tại hoặc đã được chuyển.</p>
     <p><a href="/" class="btn-send">Về trang chủ</a></p>
   </div></div>`;
-  return layout(ctx, { path: '/404.html', bodyClass: 'not-found-page', meta: { title: 'Không tìm thấy trang - Adzco' }, main }).replace('</head>', script + '\n</head>');
+  return layout(ctx, { path: '/404.html', bodyClass: 'not-found-page', meta: { title: 'Không tìm thấy trang - Adzo' }, main }).replace('</head>', script + '\n</head>');
 }
 
 export function renderPage(ctx, p, d) {

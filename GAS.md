@@ -1,4 +1,4 @@
-# GAS.md — Guideline CMS Adzco (Google Apps Script)
+# GAS.md — Guideline CMS Adzo (Google Apps Script)
 
 > Nguồn quyết định CHỐT cho mọi file trong `gas/` (`Code.js`, `index.html`, `app.html`,
 > `css.html`, `js.html`). Đọc toàn bộ trước khi sửa code. Sửa code xong 1 quyết định → cập nhật
@@ -69,7 +69,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    - Từ khoá chính (`focus_keyword`, tuỳ chọn) — CHỈ dùng cho bộ chấm điểm SEO trong Admin, build
      không dùng.
 2. Server/build tự suy (không có ô nhập):
-   - `<title>` = `<Tiêu đề> - Adzco`.
+   - `<title>` = `<Tiêu đề> - Adzo`.
    - Mục lục (TOC) + ảnh đầu bài: build tự sinh từ các thẻ H2/H3 trong nội dung (giữ đúng cấu
      trúc HTML các bài cũ), tự gắn `id` cho H2/H3.
    - Lượt xem/đánh giá: giữ nguyên giá trị bài cũ; bài mới = "0 Lượt xem", "0 Đánh giá".
@@ -88,7 +88,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
      phần / ✕ chưa đạt / – không áp dụng, kèm số liệu và gợi ý sửa.
    - Điểm có trọng số: mỗi tiêu chí trả mức đạt 0-1, nhân trọng số (nhóm Bắt buộc 4-10, các nhóm
      khác 2-6), chia tổng trọng số các tiêu chí áp dụng được. ≥ 80 Tốt · 50-79 Khá · < 50 Cần cải
-     thiện. Ngưỡng chính: nội dung 800-2.000 từ, tiêu đề SEO 40-65 ký tự (đã gồm " - Adzco"), mô tả
+     thiện. Ngưỡng chính: nội dung 800-2.000 từ, tiêu đề SEO 40-65 ký tự (đã gồm " - Adzo"), mô tả
      120-160 ký tự, mật độ từ khoá 0,5-2,5%, 3-6 từ khoá SEO, ~1 ảnh/400 từ, ≥ 2 H2, ≥ 2 liên kết nội
      bộ. KHÔNG kiểm tra sitemap/JSON-LD (build tự sinh).
    - Bộ đếm tự động dưới từng ô: Tiêu đề (ký tự + độ dài tiêu đề SEO /65), Mô tả (/160), Nội dung
@@ -106,7 +106,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
   Thiết bị gia đình, Thiết bị công nghiệp (giữ URL cũ `/tin-tuc/thong-tin-san-pham-cong-nghiep/`).
   Đã gỡ `/feed-back-khach-hang/`, `/tin-tuc/thong-tin-xe-dien/` (rỗng) → 301 về `/tin-tuc/` trong
   `html/_redirects`.
-- `<title>` danh mục để trống = `<Tên> - Tin tức Adzco`.
+- `<title>` danh mục để trống = `<Tên> - Tin tức Adzo`.
 
 - Field có ô nhập: Tên (hiện ở breadcrumb), Tiêu đề trang H1 (trống = Tên), URL (bất biến sau
   khi lưu lần đầu; danh mục con mới có URL `/<url-cha>/<slug>/`), Danh mục cha (tuỳ chọn; đổi cha
@@ -233,7 +233,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
 
 ## VIII. Kiến trúc lưu trữ (tên cố định)
 
-- Google Sheet `Adzco CMS Data` (tự tạo lần đầu):
+- Google Sheet `Adzo CMS Data` (tự tạo lần đầu):
   - `Users`: `email`, `role` (`root` | `admin` | `editor`)
   - `Contacts`: `id`, `created_at` (UTC ISO), `name`, `email`, `phone`, `message`, `page`,
     `status` (`Mới` | `Đã xử lý`)

@@ -13,13 +13,13 @@ const SITE_URL = 'https://adzo.vn';
 export const BLOG = {
   path: 'tin-tuc',
   name: 'TIN TỨC',
-  h1: 'Tin tức về Adzco',
-  pagedTitle: 'Tin Tức Adzco',
+  h1: 'Tin tức về Adzo',
+  pagedTitle: 'Tin Tức Adzo',
   meta: {
-    title: 'Tin Tức Adzco - Kinh Nghiệm, Hướng Dẫn Chọn Mua Thiết Bị Công Nghiệp & Dân Dụng',
-    description: 'Cập nhật tin tức, kinh nghiệm chọn mua bồn nước, máy bơm, máy nước nóng mặt trời và các thiết bị công nghiệp, dân dụng chính hãng từ Adzco.',
-    keywords: 'Tin tức Adzco, Tin tuc Adzco',
-    ogImage: '/assets/img/media/logo-adzco.png',
+    title: 'Tin Tức Adzo - Kinh Nghiệm, Hướng Dẫn Chọn Mua Thiết Bị Công Nghiệp & Dân Dụng',
+    description: 'Cập nhật tin tức, kinh nghiệm chọn mua bồn nước, máy bơm, máy nước nóng mặt trời và các thiết bị công nghiệp, dân dụng chính hãng từ Adzo.',
+    keywords: 'Tin tức Adzo, Tin tuc Adzo',
+    ogImage: '/assets/img/media/logo-adzo.png',
   },
 };
 
@@ -235,7 +235,7 @@ export function buildCmsPages(cms) {
       related,
       relatedTitle: 'Tin tức liên quan',
       shareUrl: SITE_URL + url(p.slug),
-      meta: { title: d.meta_title || d.title + ' - Adzco', description: d.description || '', keywords: d.meta_keywords || '', ogImage: d.cover || null },
+      meta: { title: d.meta_title || d.title + ' - Adzo', description: d.description || '', keywords: d.meta_keywords || '', ogImage: d.cover || null },
       breadcrumbs: [...(cat ? postCatCrumbs(cat, true) : [HOME, BLOG_LINK]), { t: d.title }],
     };
   }
@@ -246,8 +246,8 @@ export function buildCmsPages(cms) {
     crumbs: (linkSelf) => [HOME, linkSelf ? BLOG_LINK : { t: BLOG.name }],
   }].concat(cms.postCats.map((c) => ({
     path: c.path, h1: c.h1 || c.name, list: postsInCat.get(c.path),
-    meta: { title: c.meta_title || c.name + ' - Tin tức Adzco', description: c.meta_description || '', keywords: c.meta_keywords || '', ogImage: c.og_image || null },
-    pagedTitle: c.meta_title || c.name + ' - Tin tức Adzco',
+    meta: { title: c.meta_title || c.name + ' - Tin tức Adzo', description: c.meta_description || '', keywords: c.meta_keywords || '', ogImage: c.og_image || null },
+    pagedTitle: c.meta_title || c.name + ' - Tin tức Adzo',
     crumbs: (linkSelf) => postCatCrumbs(c, linkSelf),
   })));
   for (const L of listings) {

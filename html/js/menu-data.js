@@ -21,31 +21,31 @@ window.TAHAWA_MENU = {
    "href": "https://tahawa.com.vn/chinh-sach.html",
    "sub": [
     {
-     "t": "CHÍNH SÁCH TRẢ GÓP ADZCO",
+     "t": "CHÍNH SÁCH TRẢ GÓP ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-tra-gop.html"
     },
     {
-     "t": "CHÍNH SÁCH BÁN HÀNG CỦA ADZCO",
+     "t": "CHÍNH SÁCH BÁN HÀNG CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-ban-hang.html"
     },
     {
-     "t": "CHÍNH SÁCH BẢO HÀNH CỦA ADZCO",
+     "t": "CHÍNH SÁCH BẢO HÀNH CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-bao-hanh.html"
     },
     {
-     "t": "CHÍNH SÁCH VẬN CHUYỂN - GIAO NHẬN CỦA ADZCO",
+     "t": "CHÍNH SÁCH VẬN CHUYỂN - GIAO NHẬN CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-van-chuyen-giao-nhan.html"
     },
     {
-     "t": "CHÍNH SÁCH ĐỔI TRẢ CỦA ADZCO",
+     "t": "CHÍNH SÁCH ĐỔI TRẢ CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-doi-tra.html"
     },
     {
-     "t": "CHÍNH SÁCH THANH TOÁN CỦA ADZCO",
+     "t": "CHÍNH SÁCH THANH TOÁN CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-thanh-toan.html"
     },
     {
-     "t": "BẢO MẬT THÔNG TIN KHÁCH HÀNG CỦA ADZCO",
+     "t": "BẢO MẬT THÔNG TIN KHÁCH HÀNG CỦA ADZO",
      "href": "https://tahawa.com.vn/chinh-sach-bao-mat-thong-tin-khach-hang.html"
     }
    ]

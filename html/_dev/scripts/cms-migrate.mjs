@@ -129,7 +129,7 @@ for (const [u, d] of Object.entries(P).filter(([, x]) => x.type === 'post')) {
     content_html: content,
     views: parseInt(d.views, 10) || 0,
     rating: parseInt(d.rating, 10) || 0,
-    meta_title: d.meta.title && d.meta.title !== title + ' - Adzco' ? d.meta.title : '',
+    meta_title: d.meta.title && d.meta.title !== title + ' - Adzo' ? d.meta.title : '',
     meta_keywords: d.meta.keywords || '',
     created_at: NOW,
     updated_at: NOW,

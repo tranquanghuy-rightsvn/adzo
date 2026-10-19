@@ -410,7 +410,7 @@
         }
         form.innerHTML = '<div class="checkout-done"><i class="fas fa-check-circle"></i><h2>Đặt hàng thành công!</h2>' +
           (id ? '<div class="co-order-code">Mã đơn: ' + esc(id) + '</div>' : '') + bankHtml +
-          '<p>Cảm ơn bạn đã mua hàng tại Adzco. Chúng tôi sẽ gọi điện xác nhận đơn trong thời gian sớm nhất.</p>' +
+          '<p>Cảm ơn bạn đã mua hàng tại Adzo. Chúng tôi sẽ gọi điện xác nhận đơn trong thời gian sớm nhất.</p>' +
           '<a href="/" class="btn-send">Tiếp tục mua hàng</a></div>';
         var cur = $('.co-steps .is-current');
         if (cur) { cur.classList.remove('is-current'); cur.nextElementSibling.classList.add('is-current'); }

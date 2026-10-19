@@ -10,17 +10,17 @@ const WEB = path.resolve(ROOT, '..');
 
 export const SITE_URL = 'https://adzo.vn';
 const ORG = {
-  name: 'Adzco',
-  legalName: 'Công Ty TNHH Adzco',
+  name: 'Adzo',
+  legalName: 'Công Ty TNHH Adzo',
   slogan: 'Thiết bị công nghiệp & gia dụng chính hãng Nhật Bản',
-  logo: '/assets/img/media/logo-adzco.png',
+  logo: '/assets/img/media/logo-adzo.png',
   phone: '+84933110083',
   taxID: '0314983819',
   street: '39/14A Đường Phú Thọ, Phường 1, Quận 11',
   city: 'TP Hồ Chí Minh',
   zalo: 'https://zalo.me/0933110083',
 };
-const HOME_DESC = 'Adzco.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng: máy bơm nước, bồn nước inox, bồn nhựa, ' +
+const HOME_DESC = 'Adzo.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng: máy bơm nước, bồn nước inox, bồn nhựa, ' +
   'máy nước nóng năng lượng mặt trời, motor điện, máy thổi khí. Giao hàng tận nơi, hotline 0933 11 00 83.';
 const DEFAULT_IMAGE = ORG.logo;
 const OLD_HOSTS = /https?%3A%2F%2F(?:www\.)?(?:tahawa\.com\.vn|tahawa\.vn|adzco\.com\.vn|adzco\.vn)/gi;
@@ -206,8 +206,8 @@ function processPage(html, urlPath) {
     const body = text(pick(html, /<div class="(?:category-description|detail-descript|decription|page-detail-content)[^"]*">([\s\S]*?)<\/div>/));
     if (body.length > 60) description = body.slice(0, 157).replace(/\s+\S*$/, '') + '...';
     else if (noindex) description = title;
-    else if (bodyClass.includes('category_product')) description = `${title.replace(/\s*-\s*Adzco$/, '')} chính hãng, giá tốt tại Adzco. Giao hàng tận nơi, hotline 0933 11 00 83.`;
-    else if (urlPath !== '/') description = `${title.replace(/\s*-\s*Adzco$/, '')} - Adzco.vn: ${ORG.slogan}. Hotline 0933 11 00 83.`;
+    else if (bodyClass.includes('category_product')) description = `${title.replace(/\s*-\s*Adzo$/, '')} chính hãng, giá tốt tại Adzo. Giao hàng tận nơi, hotline 0933 11 00 83.`;
+    else if (urlPath !== '/') description = `${title.replace(/\s*-\s*Adzo$/, '')} - Adzo.vn: ${ORG.slogan}. Hotline 0933 11 00 83.`;
   }
   const descTag = `<meta name="description" content="${esc(description)}">`;
   html = /<meta name="description"/.test(html)
@@ -225,11 +225,11 @@ function processPage(html, urlPath) {
   lines.push(`  <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}">`);
   if (!is404) lines.push(`  <link rel="canonical" href="${esc(url)}">`);
   if (!noindex) lines.push(`  <link rel="alternate" hreflang="vi" href="${esc(url)}">`);
-  lines.push('  <meta name="author" content="Adzco">',
+  lines.push('  <meta name="author" content="Adzo">',
     '  <meta name="theme-color" content="#ffffff">',
     '  <meta name="format-detection" content="telephone=no">',
     '  <meta property="og:locale" content="vi_VN">',
-    '  <meta property="og:site_name" content="Adzco">',
+    '  <meta property="og:site_name" content="Adzo">',
     `  <meta property="og:type" content="${ogType}">`,
     `  <meta property="og:title" content="${esc(title)}">`,
     `  <meta property="og:description" content="${esc(description)}">`);

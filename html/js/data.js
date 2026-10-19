@@ -1615,42 +1615,42 @@ window.TAHAWA_DATA = {
   {
    "name": "Diễn Viên Phi Phụng",
    "img": "/assets/img/media/thiet-ke-chua-co-ten-2.png",
-   "text": "Mình mua sản phẩm robot lau kính của Adzco về để lau mấy tấm kính lớn trong nhà. Công nhận có con này tiện thật chứ, không phải bắc thang để lau, cũng không cần phải thuê người vệ sinh."
+   "text": "Mình mua sản phẩm robot lau kính của Adzo về để lau mấy tấm kính lớn trong nhà. Công nhận có con này tiện thật chứ, không phải bắc thang để lau, cũng không cần phải thuê người vệ sinh."
   },
   {
    "name": "Diễn Viên Thanh Hiền",
    "img": "/assets/img/media/thiet-ke-chua-co-ten-6.png",
-   "text": "Mình cũng có tuổi rồi, đau nhức người thường xuyên, chính vì thế mình mua sản phẩm gối massage của Adzco, mỗi ngày sử dụng có 15 phút là thấy khỏe hẳn á"
+   "text": "Mình cũng có tuổi rồi, đau nhức người thường xuyên, chính vì thế mình mua sản phẩm gối massage của Adzo, mỗi ngày sử dụng có 15 phút là thấy khỏe hẳn á"
   },
   {
    "name": "NSƯT Mạnh Dung",
    "img": "/assets/img/media/thiet-ke-chua-co-ten-7.png",
-   "text": "Tôi được con cái mua tặng mấy sản phẩm của Adzco, robot hút bụi, gối massage, máy lọc không khí, giờ cũng thấy khỏe hẳn ra, máy sử dụng tốt cũng như khá tiện dụng"
+   "text": "Tôi được con cái mua tặng mấy sản phẩm của Adzo, robot hút bụi, gối massage, máy lọc không khí, giờ cũng thấy khỏe hẳn ra, máy sử dụng tốt cũng như khá tiện dụng"
   },
   {
    "name": "Anh Thái - Quận 7",
    "img": "/assets/img/media/feedback14-th06plus.jpg",
-   "text": "Mình mua sản phẩm robot hút bụi lau nhà của Adzco sử dụng rất tốt, tới giờ cũng gần 2 năm rồi mà không có vấn đề gì hết. Nó tự vẽ bản đồ, tự hút tự tự lau nhà cho mình luôn"
+   "text": "Mình mua sản phẩm robot hút bụi lau nhà của Adzo sử dụng rất tốt, tới giờ cũng gần 2 năm rồi mà không có vấn đề gì hết. Nó tự vẽ bản đồ, tự hút tự tự lau nhà cho mình luôn"
   },
   {
    "name": "Chị Dung - quận 10",
    "img": "/assets/img/media/feedback17-th06plus.jpg",
-   "text": "Nhờ có sản phẩm robot hút bụi của Adzco, mình tiết kiệm được rất nhiều thời gian, nó hút bụi và lau nhà giúp mình rất sạch"
+   "text": "Nhờ có sản phẩm robot hút bụi của Adzo, mình tiết kiệm được rất nhiều thời gian, nó hút bụi và lau nhà giúp mình rất sạch"
   },
   {
    "name": "Cô Nga - Bình Chánh",
    "img": "/assets/img/media/feedback1-th06plus.jpg",
-   "text": "Con Mình mua cho mình sản phẩm robot hút bụi lau nhà của Adzco, giờ rảnh hẳn. Máy sử dụng rất bền nữa, giờ hơn 2 năm rồi mà chưa có vấn đề gì"
+   "text": "Con Mình mua cho mình sản phẩm robot hút bụi lau nhà của Adzo, giờ rảnh hẳn. Máy sử dụng rất bền nữa, giờ hơn 2 năm rồi mà chưa có vấn đề gì"
   },
   {
    "name": "Anh Khoa - Bình Dương",
    "img": "/assets/img/media/110345-thiet-ke-chua-co-ten-3.png",
-   "text": "Nhà mình gần khu công nghiệp nên khá bụi bặm nên mình mua máy lọc không khí của Adzco, máy sử dụng rất tốt, sau 6 tháng dùng mình thay màng lọc mới thấy nó hiệu quả tốt như thế nào."
+   "text": "Nhà mình gần khu công nghiệp nên khá bụi bặm nên mình mua máy lọc không khí của Adzo, máy sử dụng rất tốt, sau 6 tháng dùng mình thay màng lọc mới thấy nó hiệu quả tốt như thế nào."
   },
   {
    "name": "Chị Thanh - Bình Thạnh",
    "img": "/assets/img/media/110343-thiet-ke-chua-co-ten-4.png",
-   "text": "Mình có mua máy lọc không khí của Adzco - máy sử dụng rất ổn định, lọc cũng rất tốt, lâu lâu thay màng lọc 1 lần mới thấy không khí nhà mình nó dơ như thế nào."
+   "text": "Mình có mua máy lọc không khí của Adzo - máy sử dụng rất ổn định, lọc cũng rất tốt, lâu lâu thay màng lọc 1 lần mới thấy không khí nhà mình nó dơ như thế nào."
   }
  ]
 };
