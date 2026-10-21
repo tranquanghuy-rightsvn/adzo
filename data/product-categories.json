@@ -1468,5 +1468,19 @@
   "updated_at": "2026-10-18T06:05:40Z",
   "description": "",
   "has_filter": true
+ },
+ {
+  "path": "do-gia-dung/may-bom/may-bom-bentas",
+  "name": "Máy Bơm Bentas",
+  "h1": "",
+  "parent": "do-gia-dung/may-bom",
+  "order": 106,
+  "meta_title": "",
+  "meta_description": "",
+  "meta_keywords": "",
+  "og_image": "",
+  "updated_at": "2026-10-21T00:01:22Z",
+  "description": "",
+  "has_filter": true
  }
 ]
