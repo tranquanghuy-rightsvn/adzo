@@ -404,7 +404,7 @@ export function checkoutPage() {
 <header class="co-header"><div class="co-container">
   <a class="co-logo" href="/"><img src="/assets/img/media/logo-adzo.png" alt="Adzo.vn - Máy móc, thiết bị, vật tư" width="188" height="40"></a>
   <ol class="co-steps"><li><a href="/cart/">Giỏ hàng</a></li><li class="is-current">Thanh toán</li><li>Hoàn tất</li></ol>
-  <a class="co-hotline" href="tel:0933110083"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>0933 11 00 83</span></a>
+  <a class="co-hotline" href="tel:0903889102"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>0903 88 91 02</span></a>
 </div></header>
 <main class="co-container co-main-wrap">
   <form action="#" id="checkout-order-form" novalidate>

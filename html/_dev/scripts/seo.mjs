@@ -14,14 +14,14 @@ const ORG = {
   legalName: 'Công Ty TNHH Adzo',
   slogan: 'Thiết bị công nghiệp & gia dụng chính hãng Nhật Bản',
   logo: '/assets/img/media/logo-adzo.png',
-  phone: '+84933110083',
+  phone: '+84903889102',
   taxID: '0314983819',
   street: '39/14A Đường Phú Thọ, Phường 1, Quận 11',
   city: 'TP Hồ Chí Minh',
-  zalo: 'https://zalo.me/0933110083',
+  zalo: 'https://zalo.me/0903889102',
 };
 const HOME_DESC = 'Adzo.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng: máy bơm nước, bồn nước inox, bồn nhựa, ' +
-  'máy nước nóng năng lượng mặt trời, motor điện, máy thổi khí. Giao hàng tận nơi, hotline 0933 11 00 83.';
+  'máy nước nóng năng lượng mặt trời, motor điện, máy thổi khí. Giao hàng tận nơi, hotline 0903 88 91 02.';
 const DEFAULT_IMAGE = ORG.logo;
 const OLD_HOSTS = /https?%3A%2F%2F(?:www\.)?(?:tahawa\.com\.vn|tahawa\.vn|adzco\.com\.vn|adzco\.vn)/gi;
 // Trang không cho index (giỏ hàng, thanh toán, tài khoản, tìm kiếm, 404)
@@ -206,8 +206,8 @@ function processPage(html, urlPath) {
     const body = text(pick(html, /<div class="(?:category-description|detail-descript|decription|page-detail-content)[^"]*">([\s\S]*?)<\/div>/));
     if (body.length > 60) description = body.slice(0, 157).replace(/\s+\S*$/, '') + '...';
     else if (noindex) description = title;
-    else if (bodyClass.includes('category_product')) description = `${title.replace(/\s*-\s*Adzo$/, '')} chính hãng, giá tốt tại Adzo. Giao hàng tận nơi, hotline 0933 11 00 83.`;
-    else if (urlPath !== '/') description = `${title.replace(/\s*-\s*Adzo$/, '')} - Adzo.vn: ${ORG.slogan}. Hotline 0933 11 00 83.`;
+    else if (bodyClass.includes('category_product')) description = `${title.replace(/\s*-\s*Adzo$/, '')} chính hãng, giá tốt tại Adzo. Giao hàng tận nơi, hotline 0903 88 91 02.`;
+    else if (urlPath !== '/') description = `${title.replace(/\s*-\s*Adzo$/, '')} - Adzo.vn: ${ORG.slogan}. Hotline 0903 88 91 02.`;
   }
   const descTag = `<meta name="description" content="${esc(description)}">`;
   html = /<meta name="description"/.test(html)

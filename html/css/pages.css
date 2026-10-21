@@ -146,16 +146,16 @@ textarea.form-control { height: auto; min-height: 62px; resize: vertical; }
 .pd-gallery { flex: 0 0 41.6667%; max-width: 41.6667%; padding: 0 15px; }
 .pd-info { flex: 0 0 58.3333%; max-width: 58.3333%; padding: 0 15px; }
 @media (max-width: 767px) { .pd-gallery, .pd-info { flex: 0 0 100%; max-width: 100%; } }
-.qv-preview { position: relative; text-align: center; }
+.qv-preview { position: relative; text-align: center; touch-action: pan-y; }
 .qv-preview a { display: block; position: relative; cursor: zoom-in; }
 .qv-preview a[hidden] { display: none; }
 .qv-preview img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
 .qv-preview .fa-expand { position: absolute; right: 0; bottom: 0; font-size: 21.6px; color: #000; z-index: 99; }
 .pd-thumbs-wrap { margin: 15px 0; position: relative; }
-.pd-thumb { width: 100%; border: 1px solid transparent; cursor: pointer; }
-.pd-thumb.is-current { border-color: #000; }
+.pd-thumb { width: 100%; border: 2px solid transparent; border-radius: 4px; cursor: pointer; transition: border-color .15s ease; overflow: hidden; }
+.pd-thumb.is-current { border-color: var(--primary-color); }
 .pd-thumb { height: 82px; }
-.pd-thumb a { display: block; height: 80px; background-size: cover; background-position: center; }
+.pd-thumb a { display: block; height: 78px; background-size: cover; background-position: center; }
 .pd-thumb img { width: 100%; height: 100%; opacity: 0; }
 .product-detail-title { margin: 0 0 10px; font-size: 135%; font-weight: 700; line-height: 1.6; }
 .product-price { display: flex; flex-wrap: wrap; align-items: center; margin-top: 10px; }

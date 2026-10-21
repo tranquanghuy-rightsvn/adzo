@@ -21,16 +21,59 @@
     var root = $('.pd-gallery');
     if (!root) return;
     var mains = $$('.img-main-href', root);
+    var preview = $('.qv-preview', root);
+    var thumbsEl = $('.pd-thumbs', root);
+    var current = mains.findIndex(function (a) { return !a.hidden; });
+    if (current < 0) current = 0;
+
+    // Đưa thumbnail đang active vào vùng nhìn thấy của carousel (chỉ cuộn khi nằm ngoài khung).
+    function ensureThumbVisible(i) {
+      var c = thumbsEl && thumbsEl.__carousel;
+      if (!c || c.count <= c.items) return;
+      if (i < c.index) c.go(i);
+      else if (i >= c.index + c.items) c.go(i - c.items + 1);
+    }
+
     function show(i) {
+      i = ((i % mains.length) + mains.length) % mains.length;
+      if (i === current) return;
+      current = i;
       mains.forEach(function (a, k) { a.hidden = k !== i; });
       $$('.pd-thumb', root).forEach(function (t) { t.classList.toggle('is-current', Number(t.dataset.index) === i); });
+      ensureThumbVisible(i);
     }
+
     root.addEventListener('click', function (e) {
       var th = e.target.closest('.pd-thumb');
       if (th) { e.preventDefault(); show(Number(th.dataset.index)); return; }
       var m = e.target.closest('.img-main-href');
-      if (m) { e.preventDefault(); openLightbox(mains.map(function (a) { return a.getAttribute('href'); }), Number(m.dataset.index)); }
+      if (m) { e.preventDefault(); openLightbox(mains.map(function (a) { return a.getAttribute('href'); }), current); }
     });
+
+    // Vuốt/kéo trên ảnh chính để chuyển ảnh, đồng bộ lại thumbnail.
+    if (mains.length > 1 && preview) {
+      var startX = 0, dx = 0, dragging = false, moved = false, pid = null;
+      preview.addEventListener('pointerdown', function (e) {
+        if (e.button !== 0) return;
+        dragging = true; moved = false; dx = 0; pid = e.pointerId; startX = e.clientX;
+      });
+      window.addEventListener('pointermove', function (e) {
+        if (!dragging || e.pointerId !== pid) return;
+        dx = e.clientX - startX;
+        if (Math.abs(dx) > 4) moved = true;
+      });
+      var endDrag = function (e) {
+        if (!dragging || (e && e.pointerId !== pid)) return;
+        dragging = false;
+        if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+      };
+      window.addEventListener('pointerup', endDrag);
+      window.addEventListener('pointercancel', endDrag);
+      // Click sau khi vuốt thì không mở lightbox.
+      preview.addEventListener('click', function (e) {
+        if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+      }, true);
+    }
   }
 
   /* Lightbox (thay fancybox) */

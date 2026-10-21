@@ -490,7 +490,7 @@
   /* ---------------- Init ---------------- */
   document.addEventListener('DOMContentLoaded', function () {
     (window.TAHAWA_BEFORE_INIT || []).forEach(function (fn) { fn(); });
-    if (window.TahawaCarousel) $$('.carousel').forEach(function (el) { new window.TahawaCarousel(el); });
+    if (window.TahawaCarousel) $$('.carousel').forEach(function (el) { el.__carousel = new window.TahawaCarousel(el); });
     bindCategory();
     bindMobileMenu();
     bindSticky();
