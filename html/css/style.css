@@ -187,7 +187,7 @@ strong, b { font-weight: 700; }
 }
 .cat-menu .wrap-popup {
   display: none; position: absolute; top: 0; left: 110%; width: 100%; margin-top: -1px;
-  z-index: 100; transition: all .3s ease-out;
+  z-index: 100; transition: all .3s ease-out; overflow-y: auto;
 }
 .cat-menu li:hover > .wrap-popup { display: block; left: 100%; }
 .cat-menu .popup { border: 1px solid rgba(0, 0, 0, .2); box-shadow: 0 0 3px rgba(0, 0, 0, .2); background: #fff; }

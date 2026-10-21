@@ -46,6 +46,40 @@
     });
   }
 
+  /* ---------------- Danh mục: tránh sub-dropdown bị tràn xuống dưới viewport ---------------- */
+  function bindCatSubmenu() {
+    var MARGIN = 10;
+    $$('.cat-menu li.has-sub').forEach(function (li) {
+      var wrap = $('.wrap-popup', li);
+      if (!wrap) return;
+      var panel = li.closest('.cat-menu');
+      function reset() {
+        wrap.style.top = '';
+        wrap.style.maxHeight = '';
+      }
+      li.addEventListener('mouseenter', function () {
+        reset();
+        requestAnimationFrame(function () {
+          var vh = window.innerHeight;
+          var rect = wrap.getBoundingClientRect();
+          var overflowBottom = rect.bottom - (vh - MARGIN);
+          if (overflowBottom > 0) {
+            var liTop = li.getBoundingClientRect().top;
+            // Không kéo lên quá mép trên của khung "Danh mục" (kẻo đè lên menu ngang phía trên).
+            var panelTop = panel ? panel.getBoundingClientRect().top : 0;
+            var maxShift = Math.max(0, liTop - panelTop);
+            var shift = Math.min(overflowBottom, maxShift);
+            wrap.style.top = (-shift) + 'px';
+          }
+          if (wrap.getBoundingClientRect().height > vh - MARGIN * 2) {
+            wrap.style.maxHeight = (vh - MARGIN * 2) + 'px';
+          }
+        });
+      });
+      li.addEventListener('mouseleave', reset);
+    });
+  }
+
   /* ---------------- Mobile menu ---------------- */
   function setPanelHeight() {
     var panel = $('.m-nav__panel');
@@ -492,6 +526,7 @@
     (window.TAHAWA_BEFORE_INIT || []).forEach(function (fn) { fn(); });
     if (window.TahawaCarousel) $$('.carousel').forEach(function (el) { el.__carousel = new window.TahawaCarousel(el); });
     bindCategory();
+    bindCatSubmenu();
     bindMobileMenu();
     bindSticky();
     bindYouTube();
