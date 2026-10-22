@@ -1652,5 +1652,6 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/media/110343-thiet-ke-chua-co-ten-4.png",
    "text": "Mình có mua máy lọc không khí của Adzo - máy sử dụng rất ổn định, lọc cũng rất tốt, lâu lâu thay màng lọc 1 lần mới thấy không khí nhà mình nó dơ như thế nào."
   }
- ]
+ ],
+ "alt": "Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng"
 };
