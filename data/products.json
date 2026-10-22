@@ -15,32 +15,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "6396",
-  "slug": "hop-giam-toc-lb-soco-gt10",
-  "name": "Hộp giảm tốc LB SOCO GT10",
-  "price": 2250000,
-  "old_price": null,
-  "img": "/assets/img/images/6396.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "6392",
-  "slug": "hop-giam-toc-lb-soco-gt15",
-  "name": "Hộp giảm tốc LB SOCO GT15",
-  "price": 2750000,
-  "old_price": null,
-  "img": "/assets/img/images/6392.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7450",
   "slug": "may-bom-bentas-aqn-5am",
   "name": "Máy Bơm Bentas AQN-5AM",
@@ -2577,32 +2551,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "7659",
-  "slug": "nha-4x7-2-tang-duong-702-hong-bang-q11",
-  "name": "Nhà 4×7-2 tầng-Đường 702 Hồng Bàng-Q11",
-  "price": 4500,
-  "old_price": null,
-  "img": "/assets/img/images/7659.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3863",
-  "slug": "binh-tich-ap-cbs-24cl",
-  "name": "Bình tích áp CBS 24CL",
-  "price": 1390000,
-  "old_price": null,
-  "img": "/assets/img/images/3863.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "685",
   "slug": "may-bom-vipsun-fish-ap-5800-360w",
   "name": "Máy Bơm VipSun Fish AP-5800 360W",
@@ -3211,19 +3159,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "524",
-  "slug": "may-nang-luong-thai-duong-nang-150l-flat-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 150L Flat Gold",
-  "price": 17500000,
-  "old_price": null,
-  "img": "/assets/img/images/524.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "499",
   "slug": "may-nang-luong-mat-troi-son-ha-280l-eco",
   "name": "Máy Năng Lượng Mặt Trời Sơn Hà 280L Eco",
@@ -3234,19 +3169,6 @@
    "san-pham-cong-nghiep",
    "may-nuoc-nong-mat-troi",
    "may-nuoc-nong-mat-troi/son-ha"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "523",
-  "slug": "may-nang-luong-thai-duong-nang-300l-flat-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 300L Flat Gold",
-  "price": 26300000,
-  "old_price": null,
-  "img": "/assets/img/images/523.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -3266,32 +3188,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1152",
-  "slug": "may-nang-luong-thai-duong-nang-140l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 140L Gold",
-  "price": 5001600,
-  "old_price": null,
-  "img": "/assets/img/images/1152.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1151",
-  "slug": "may-nang-luong-thai-duong-nang-160l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 160L Gold",
-  "price": 5858000,
-  "old_price": null,
-  "img": "/assets/img/images/1151.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1966",
   "slug": "may-nuoc-nong-160l-thai-duong-nang-gold-nano",
   "name": "Máy Nước Nóng 160L Thái Dương Năng Gold Nano",
@@ -3306,19 +3202,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1150",
-  "slug": "may-nang-luong-thai-duong-nang-180l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 180L Gold",
-  "price": 5913760,
-  "old_price": null,
-  "img": "/assets/img/images/1150.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1135",
   "slug": "may-nuoc-nong-mat-troi-thai-duong-nang-200l-eco",
   "name": "Máy nước nóng mặt trời Thái Dương Năng 200l Eco",
@@ -3328,19 +3211,6 @@
   "categories": [
    "san-pham-cong-nghiep",
    "may-nuoc-nong-mat-troi"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1149",
-  "slug": "may-nang-luong-thai-duong-nang-200l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 200L Gold",
-  "price": 8338000,
-  "old_price": null,
-  "img": "/assets/img/images/1149.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -3484,19 +3354,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1975",
-  "slug": "may-nuoc-nong-nang-luong-thai-duong-nang-180l-titan",
-  "name": "Máy nước nóng năng lượng Thái Dương Năng 180l Titan",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/1975.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1807",
   "slug": "bon-rua-chen-inox-304-hwata-bdv1",
   "name": "Bồn Rửa Chén Inox 304 Hwata BDV1",
@@ -3513,19 +3370,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1974",
-  "slug": "may-nuoc-nong-nang-luong-thai-duong-nang-200l-titan",
-  "name": "Máy nước nóng năng lượng Thái Dương Năng 200l Titan",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/1974.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2145",
   "slug": "bon-rua-tay-tiet-trung",
   "name": "Bồn rửa tay tiệt trùng 1 Vòi",
@@ -3535,19 +3379,6 @@
   "categories": [
    "san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep",
    "tag/san-pham/thiet-bi-bep-cong-nghiep",
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1973",
-  "slug": "may-nuoc-nong-nang-luong-thai-duong-nang-220l-titan",
-  "name": "Máy nước nóng năng lượng Thái Dương Năng 220l Titan",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/1973.jpg",
-  "categories": [
    "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
@@ -3569,19 +3400,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1972",
-  "slug": "may-nuoc-nong-nang-luong-thai-duong-nang-260l-titan",
-  "name": "Máy nước nóng năng lượng Thái Dương Năng 260l Titan",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/1972.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "996",
   "slug": "bon-tu-hoai-dai-thanh-1-500-lit",
   "name": "Bồn tự hoại Đại Thành 1.500 lít",
@@ -3592,19 +3410,6 @@
    "san-pham-cong-nghiep",
    "bon-tu-hoai",
    "bon-tu-hoai/dai-thanh"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1971",
-  "slug": "may-nang-luong-thai-duong-nang-320l-titan",
-  "name": "Máy năng lượng Thái Dương Năng 320l Titan",
-  "price": 15000000,
-  "old_price": null,
-  "img": "/assets/img/images/1971.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -3775,19 +3580,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "795",
-  "slug": "may-oxy-resun-acd-130-90w",
-  "name": "Máy oxy Resun ACD 130 90W",
-  "price": 2480000,
-  "old_price": null,
-  "img": "/assets/img/images/795.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1101",
   "slug": "bon-tu-hoai-roto-6800-lit",
   "name": "Bồn tự hoại RoTo 6800 lít",
@@ -3798,19 +3590,6 @@
    "san-pham-cong-nghiep",
    "bon-tu-hoai",
    "bon-tu-hoai/roto"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "797",
-  "slug": "may-oxy-resun-acd-80-60w",
-  "name": "Máy oxy Resun ACD 80 60W",
-  "price": 2150000,
-  "old_price": null,
-  "img": "/assets/img/images/797.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -3936,84 +3715,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "793",
-  "slug": "may-oxy-resun-mpq-902-12v-18w",
-  "name": "Máy oxy Resun MPQ-902 12V-18w",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/793.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1642",
-  "slug": "cau-thang-hop-kim",
-  "name": "Cầu Thang Hợp Kim",
-  "price": 4199000,
-  "old_price": null,
-  "img": "/assets/img/images/1642.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "791",
-  "slug": "may-oxy-resun-mpq-903-12v-35w",
-  "name": "Máy oxy Resun MPQ-903 12V-35w",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/791.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2552",
-  "slug": "cau-thang-kinh",
-  "name": "Cầu thang kính",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/2552.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2417",
-  "slug": "cau-thang-sat",
-  "name": "Cầu thang sắt",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/2417.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "787",
-  "slug": "may-oxy-resun-mpq-905-12v-100w",
-  "name": "Máy oxy Resun MPQ-905 12V-100w",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/787.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2457",
   "slug": "cb-panasonic-1-cuc-06a-bbd1061cnv",
   "name": "CB Panasonic 1 cực 06A BBD1061CNV",
@@ -4059,19 +3760,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2883",
-  "slug": "may-quat-super-win-spw-750tp",
-  "name": "Máy quạt Super Win SPW-750TP",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2883.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2455",
   "slug": "cb-panasonic-1-cuc-16a-bbd1161cnv",
   "name": "CB Panasonic 1 cực 16A BBD1161CNV",
@@ -4082,19 +3770,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/thiet-bi-dien-panasonic"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "768",
-  "slug": "may-rua-dung-cu-bang-song-sieu-am",
-  "name": "Máy rửa dụng cụ bằng sóng siêu âm",
-  "price": 22000000,
-  "old_price": null,
-  "img": "/assets/img/images/768.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -4130,19 +3805,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "3242",
-  "slug": "may-sui-oxy-resun-mpq-907-24v-130w",
-  "name": "Máy Sủi Oxy Resun MPQ-907 24V 130w",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/3242.png",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2452",
   "slug": "cb-panasonic-1-cuc-32a-bbd1321cnv",
   "name": "CB Panasonic 1 cực 32A BBD1321CNV",
@@ -4153,19 +3815,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/thiet-bi-dien-panasonic"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3106",
-  "slug": "may-thoi-hong-helong-gb-1100-1100w",
-  "name": "Máy thổi Hong Helong GB-1100 (1100w)",
-  "price": 7090000,
-  "old_price": null,
-  "img": "/assets/img/images/3106.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -4196,19 +3845,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/thiet-bi-dien-panasonic"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3104",
-  "slug": "may-thoi-hong-helong-gb-2200-2200w",
-  "name": "Máy thổi Hong Helong GB-2200 (2200w)",
-  "price": 9230000,
-  "old_price": null,
-  "img": "/assets/img/images/3104.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -4254,19 +3890,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/thiet-bi-dien-panasonic"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3109",
-  "slug": "may-thoi-hong-helong-gb-370-370w",
-  "name": "Máy thổi Hong Helong GB-370 (370w)",
-  "price": 4880000,
-  "old_price": null,
-  "img": "/assets/img/images/3109.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5009,19 +4632,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2341",
-  "slug": "chot-khoa-am",
-  "name": "Chốt khóa âm",
-  "price": 350000,
-  "old_price": null,
-  "img": "/assets/img/images/2341.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3182",
   "slug": "may-thoi-khi-saverti-sb510-1500s-1-5kw",
   "name": "Máy thổi khí SAVERTI SB510-1500S (1.5Kw)",
@@ -5082,97 +4692,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1667",
-  "slug": "cua-cong-biet-thu-dep",
-  "name": "Cửa Cổng Biệt Thự đẹp",
-  "price": 11699000,
-  "old_price": null,
-  "img": "/assets/img/images/1667.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1456",
-  "slug": "cua-cong-hop-kim-nhom-duc",
-  "name": "Cửa cổng hợp kim nhôm đúc",
-  "price": 10499000,
-  "old_price": null,
-  "img": "/assets/img/images/1456.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1634",
-  "slug": "cua-cong-nhom-duc-4-canh",
-  "name": "Cửa Cổng Nhôm Đúc 4 cánh",
-  "price": 11498000,
-  "old_price": null,
-  "img": "/assets/img/images/1634.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1436",
-  "slug": "cua-cong-sat",
-  "name": "Cửa cổng sắt",
-  "price": 1410000,
-  "old_price": null,
-  "img": "/assets/img/images/1436.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1431",
-  "slug": "cua-cong-sat-cat-cnc",
-  "name": "Cửa Cổng Sắt cắt CNC",
-  "price": 2298000,
-  "old_price": null,
-  "img": "/assets/img/images/1431.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2147",
-  "slug": "may-xet-nghiem",
-  "name": "Máy xét nghiệm",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/2147.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1470",
-  "slug": "cua-go-at",
-  "name": "Cửa Gỗ Ắt",
-  "price": 4500000,
-  "old_price": null,
-  "img": "/assets/img/images/1470.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7381",
   "slug": "motor-bao-long-2hp-tua-cham",
   "name": "Motor Bảo Long 2Hp tua chậm",
@@ -5218,32 +4737,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1468",
-  "slug": "cua-go-cam-xe",
-  "name": "Cửa Gỗ Căm Xe",
-  "price": 4500000,
-  "old_price": null,
-  "img": "/assets/img/images/1468.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "502",
-  "slug": "cua-go-cam-xe-gia-re",
-  "name": "Cửa gỗ căm xe giá rẻ",
-  "price": 4200000,
-  "old_price": null,
-  "img": "/assets/img/images/502.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3297",
   "slug": "motor-bao-long-5hp-tua-cham",
   "name": "Motor Bảo Long 5Hp tua chậm",
@@ -5254,19 +4747,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/bao-long"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2180",
-  "slug": "cua-go-go-cham-1-canh",
-  "name": "Cửa Gỗ Gõ Chạm 1 cánh",
-  "price": 11000000,
-  "old_price": null,
-  "img": "/assets/img/images/2180.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5287,45 +4767,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1462",
-  "slug": "cua-go-go-cham-2-canh",
-  "name": "Cửa Gỗ Gõ Chạm 2 cánh",
-  "price": 13960000,
-  "old_price": null,
-  "img": "/assets/img/images/1462.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2178",
-  "slug": "cua-go-go-do",
-  "name": "Cửa Gỗ Gõ Đỏ",
-  "price": 5800000,
-  "old_price": null,
-  "img": "/assets/img/images/2178.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1473",
-  "slug": "cua-go-soi",
-  "name": "Cửa Gỗ sồi",
-  "price": 4200000,
-  "old_price": null,
-  "img": "/assets/img/images/1473.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3162",
   "slug": "motor-hitachi-2hp-380v-4p",
   "name": "Motor Hitachi 2Hp 380V 4P",
@@ -5336,19 +4777,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/hitachi"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2182",
-  "slug": "cua-go-xoan-dao",
-  "name": "Cửa Gỗ Xoan đào",
-  "price": 3700000,
-  "old_price": null,
-  "img": "/assets/img/images/2182.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5369,19 +4797,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1413",
-  "slug": "cua-nhom-viet-nhat",
-  "name": "Cửa Nhôm Việt Nhật",
-  "price": 2149000,
-  "old_price": null,
-  "img": "/assets/img/images/1413.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3160",
   "slug": "motor-keo-hitachi-3hp-1450-vong",
   "name": "Motor kéo Hitachi 3Hp 1450 vòng",
@@ -5392,19 +4807,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/hitachi"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1411",
-  "slug": "cua-nhom-xingfa",
-  "name": "Cửa Nhôm XingFa",
-  "price": 1950000,
-  "old_price": null,
-  "img": "/assets/img/images/1411.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5425,19 +4827,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2550",
-  "slug": "cua-sat-4-canh",
-  "name": "Cửa sắt 4 cánh",
-  "price": 750000,
-  "old_price": null,
-  "img": "/assets/img/images/2550.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3157",
   "slug": "motor-keo-hitachi-7-5hp-1450-vong",
   "name": "Motor kéo Hitachi 7.5Hp 1450 vòng",
@@ -5448,19 +4837,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/hitachi"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2257",
-  "slug": "cuc-sui-oxy-den",
-  "name": "Cục sủi oxy đen",
-  "price": 2750,
-  "old_price": null,
-  "img": "/assets/img/images/2257.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5481,19 +4857,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2691",
-  "slug": "da-cuc-sui-oxy-lon",
-  "name": "Đá cục sủi oxy lớn",
-  "price": 2990,
-  "old_price": null,
-  "img": "/assets/img/images/2691.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7397",
   "slug": "motor-olbin-1100w-220v-tua-1450",
   "name": "Motor OLBIN 1100w 220V tua 1450",
@@ -5504,19 +4867,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/olbin"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2260",
-  "slug": "da-sui-oxy-min",
-  "name": "Đá sủi oxy mịn",
-  "price": 4950,
-  "old_price": null,
-  "img": "/assets/img/images/2260.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5592,19 +4942,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/vtc"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3090",
-  "slug": "dau-rua-xe-oshima-os30-2hp",
-  "name": "Đầu rửa xe Oshima OS30 2Hp",
-  "price": 2070000,
-  "old_price": null,
-  "img": "/assets/img/images/3090.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -5910,214 +5247,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2509",
-  "slug": "den-roi-ray-10w-cob-cr1",
-  "name": "Đèn rọi ray 10w COB (CR1)",
-  "price": 230000,
-  "old_price": null,
-  "img": "/assets/img/images/2509.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2488",
-  "slug": "den-roi-ray-12w-cob-r9",
-  "name": "Đèn rọi ray 12w (COB R9)",
-  "price": 240000,
-  "old_price": null,
-  "img": "/assets/img/images/2488.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2504",
-  "slug": "den-roi-ray-18w",
-  "name": "Đèn rọi ray 18w",
-  "price": 150000,
-  "old_price": null,
-  "img": "/assets/img/images/2504.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2493",
-  "slug": "den-roi-ray-20w-cob-hd1",
-  "name": "Đèn rọi ray 20w (COB HD1)",
-  "price": 140000,
-  "old_price": null,
-  "img": "/assets/img/images/2493.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2487",
-  "slug": "den-roi-ray-20w-cob-r9",
-  "name": "Đèn rọi ray 20w (COB R9)",
-  "price": 260000,
-  "old_price": null,
-  "img": "/assets/img/images/2487.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2508",
-  "slug": "den-roi-ray-20w-cob-cr1",
-  "name": "Đèn rọi ray 20w COB (CR1)",
-  "price": 270000,
-  "old_price": null,
-  "img": "/assets/img/images/2508.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2500",
-  "slug": "den-roi-ray-20w-cob-cao-cap",
-  "name": "Đèn rọi ray 20w COB cao cấp",
-  "price": 180000,
-  "old_price": null,
-  "img": "/assets/img/images/2500.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2503",
-  "slug": "den-roi-ray-24w",
-  "name": "Đèn rọi ray 24w",
-  "price": 190000,
-  "old_price": null,
-  "img": "/assets/img/images/2503.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2496",
-  "slug": "den-roi-ray-25w-cob",
-  "name": "Đèn rọi ray 25w (COB)",
-  "price": 280000,
-  "old_price": null,
-  "img": "/assets/img/images/2496.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2492",
-  "slug": "den-roi-ray-30w-cob-hd1",
-  "name": "Đèn rọi ray 30w (COB HD1)",
-  "price": 200000,
-  "old_price": null,
-  "img": "/assets/img/images/2492.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2486",
-  "slug": "den-roi-ray-30w-cob-r9",
-  "name": "Đèn rọi ray 30w (COB R9)",
-  "price": 260000,
-  "old_price": null,
-  "img": "/assets/img/images/2486.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2507",
-  "slug": "den-roi-ray-30w-cob-cr1",
-  "name": "Đèn rọi ray 30w COB (CR1)",
-  "price": 340000,
-  "old_price": null,
-  "img": "/assets/img/images/2507.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2499",
-  "slug": "den-roi-ray-30w-cob-cao-cap",
-  "name": "Đèn rọi ray 30w COB cao cấp",
-  "price": 220000,
-  "old_price": null,
-  "img": "/assets/img/images/2499.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2489",
-  "slug": "den-roi-ray-7w-cob-r9",
-  "name": "Đèn rọi ray 7w (COB R9)",
-  "price": 180000,
-  "old_price": null,
-  "img": "/assets/img/images/2489.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2513",
-  "slug": "den-roi-ray-cob-20w",
-  "name": "Đèn rọi ray COB 20w",
-  "price": 240000,
-  "old_price": null,
-  "img": "/assets/img/images/2513.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2512",
-  "slug": "den-roi-ray-cob-30w",
-  "name": "Đèn rọi ray COB 30w",
-  "price": 280000,
-  "old_price": null,
-  "img": "/assets/img/images/2512.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1511",
   "slug": "dien-nang-luong-mat-troi-megasun-3kwp",
   "name": "Điện Năng Lượng Mặt Trời Megasun 3KWp",
@@ -6163,279 +5292,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2813",
-  "slug": "dung-cu-cat-ong-xoay-phi-50-110",
-  "name": "Dụng cụ cắt ống xoay phi 50 110",
-  "price": 949000,
-  "old_price": null,
-  "img": "/assets/img/images/2813.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3029",
-  "slug": "dung-cu-cat-ong-hdpe-14-63",
-  "name": "Dụng cụ cắt ống HDPE 14-63",
-  "price": 649000,
-  "old_price": null,
-  "img": "/assets/img/images/3029.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1779",
-  "slug": "ghe-dau-inox-chan-vong-gd04",
-  "name": "Ghế đẩu inox chân vòng GD04",
-  "price": 149000,
-  "old_price": null,
-  "img": "/assets/img/images/1779.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1783",
-  "slug": "ghe-dau-inox-gd02",
-  "name": "Ghế đẩu inox GD02",
-  "price": 139000,
-  "old_price": null,
-  "img": "/assets/img/images/1783.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1776",
-  "slug": "ghe-dau-inox-mat-nem-simili-gd05",
-  "name": "Ghế đẩu inox mặt nệm Simili GD05",
-  "price": 108000,
-  "old_price": null,
-  "img": "/assets/img/images/1776.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1773",
-  "slug": "ghe-dau-inox-mat-nem-simili-gd08",
-  "name": "Ghế đẩu inox mặt nệm simili GD08",
-  "price": 98000,
-  "old_price": null,
-  "img": "/assets/img/images/1773.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1789",
-  "slug": "ghe-dua-co-dinh-go-gg1",
-  "name": "Ghế dựa cố định gỗ GG1",
-  "price": 685000,
-  "old_price": null,
-  "img": "/assets/img/images/1789.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1786",
-  "slug": "ghe-dua-co-dinh-go-gg2",
-  "name": "Ghế đựa cố định gỗ GG2",
-  "price": 606000,
-  "old_price": null,
-  "img": "/assets/img/images/1786.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1770",
-  "slug": "ghe-dua-lung-mat-inox-gcd10",
-  "name": "Ghế dựa lưng mặt Inox GCD10",
-  "price": 297000,
-  "old_price": null,
-  "img": "/assets/img/images/1770.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1766",
-  "slug": "ghe-inox-mat-inox-hwata-gcd12",
-  "name": "Ghế Inox Mặt inox Hwata GCD12",
-  "price": 315000,
-  "old_price": null,
-  "img": "/assets/img/images/1766.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1760",
-  "slug": "ghe-inox-mat-nem-simili-gcd24",
-  "name": "Ghế Inox Mặt Nệm Simili GCD24",
-  "price": 287000,
-  "old_price": null,
-  "img": "/assets/img/images/1760.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1753",
-  "slug": "ghe-inox-mat-nem-simili-gcd27",
-  "name": "Ghế Inox Mặt Nệm Simili GCD27",
-  "price": 315000,
-  "old_price": null,
-  "img": "/assets/img/images/1753.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1730",
-  "slug": "ghe-inox-mat-nem-simili-gx20",
-  "name": "Ghế Inox Mặt Nệm Simili GX20",
-  "price": 298000,
-  "old_price": null,
-  "img": "/assets/img/images/1730.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1742",
-  "slug": "ghe-inox-mat-nem-simili-gx204",
-  "name": "Ghế inox mặt nệm Simili GX204",
-  "price": 385000,
-  "old_price": null,
-  "img": "/assets/img/images/1742.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1746",
-  "slug": "ghe-inox-mat-nem-simili-gx206",
-  "name": "Ghế inox mặt nệm simili GX206",
-  "price": 396000,
-  "old_price": null,
-  "img": "/assets/img/images/1746.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1728",
-  "slug": "ghe-inox-mat-nem-simili-gx21",
-  "name": "Ghế Inox Mặt Nệm Simili GX21",
-  "price": 464000,
-  "old_price": null,
-  "img": "/assets/img/images/1728.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1725",
-  "slug": "ghe-inox-mat-nem-simili-gx23",
-  "name": "Ghế inox mặt nệm Simili GX23",
-  "price": 298000,
-  "old_price": null,
-  "img": "/assets/img/images/1725.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1722",
-  "slug": "ghe-inox-mat-nem-simili-gx23-1",
-  "name": "Ghế Inox Mặt Nệm Simili GX23-1",
-  "price": 329000,
-  "old_price": null,
-  "img": "/assets/img/images/1722.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1719",
-  "slug": "ghe-inox-mat-nem-simili-gx24",
-  "name": "Ghế Inox Mặt Nệm Simili GX24",
-  "price": 315000,
-  "old_price": null,
-  "img": "/assets/img/images/1719.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1715",
-  "slug": "ghe-inox-mat-nem-simili-gx25",
-  "name": "Ghế Inox Mặt Nệm Simili GX25",
-  "price": 439000,
-  "old_price": null,
-  "img": "/assets/img/images/1715.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1712",
-  "slug": "ghe-inox-mat-nem-simili-gx26",
-  "name": "Ghế Inox Mặt Nệm Simili GX26",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/1712.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2631",
   "slug": "nap-bon-nuoc-inox-450mm",
   "name": "Nắp bồn nước inox 450mm",
@@ -6445,84 +5301,6 @@
   "categories": [
    "san-pham-cong-nghiep",
    "bon-nuoc"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1708",
-  "slug": "ghe-inox-mat-nem-simili-gx26a",
-  "name": "Ghế inox mặt nệm simili GX26A",
-  "price": 315000,
-  "old_price": null,
-  "img": "/assets/img/images/1708.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1705",
-  "slug": "ghe-inox-mat-nem-simili-gx27",
-  "name": "Ghế Inox Mặt Nệm Simili GX27",
-  "price": 335000,
-  "old_price": null,
-  "img": "/assets/img/images/1705.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1703",
-  "slug": "ghe-inox-mat-nem-simili-gx28",
-  "name": "Ghế Inox Mặt Nệm Simili GX28",
-  "price": 299000,
-  "old_price": null,
-  "img": "/assets/img/images/1703.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "807",
-  "slug": "nha-duong-ong-binh-khiem-quan-11-gia-8-ty",
-  "name": "Nhà 3.6×16, 4 tầng, đường Ông Bính Khiêm. Quận 11. Nhỉnh 8 tỷ",
-  "price": 7980000000,
-  "old_price": null,
-  "img": "/assets/img/images/807.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1750",
-  "slug": "ghe-inox-mat-nem-vai-gcd31",
-  "name": "Ghế inox mặt nệm vải GCD31",
-  "price": 385000,
-  "old_price": null,
-  "img": "/assets/img/images/1750.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1756",
-  "slug": "ghe-inox-mat-nhua-gcd25",
-  "name": "Ghế inox mặt nhựa GCD25",
-  "price": 395000,
-  "old_price": null,
-  "img": "/assets/img/images/1756.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -6543,19 +5321,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1763",
-  "slug": "ghe-inox-mat-vai-hwata-gcd22",
-  "name": "Ghế inox mặt vải Hwata GCD22",
-  "price": 365000,
-  "old_price": null,
-  "img": "/assets/img/images/1763.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2423",
   "slug": "o-cam-don-panasonic-wev1081sw-wev1081-7sw",
   "name": "Ổ cắm đơn Panasonic WEV1081SW/WEV1081-7SW",
@@ -6571,45 +5336,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1739",
-  "slug": "ghe-xep-inox-mat-inox-gx10",
-  "name": "Ghế xếp inox mặt inox GX10",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/1739.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2351",
-  "slug": "o-khoa-am",
-  "name": "Ổ khóa âm",
-  "price": 575000,
-  "old_price": null,
-  "img": "/assets/img/images/2351.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1736",
-  "slug": "ghe-xep-mat-inox-gx11",
-  "name": "Ghế xếp mặt inox GX11",
-  "price": 397000,
-  "old_price": null,
-  "img": "/assets/img/images/1736.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "851",
   "slug": "ong-nhua-luoi-men-phi-40",
   "name": "Ống nhựa lưới mền phi 40",
@@ -6620,19 +5346,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/ong-nhua"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1734",
-  "slug": "ghe-xep-tua-lung-mat-inox-gx16",
-  "name": "Ghế xếp tựa lưng mặt inox GX16",
-  "price": 395000,
-  "old_price": null,
-  "img": "/assets/img/images/1734.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -6757,110 +5470,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "802",
-  "slug": "hem-2-sec-591-binh-thoi-quan-11-gia-11-ty",
-  "name": "Nhà đường Bình Thới. Quận 11. 11 tỷ nhỉnh",
-  "price": 11300000000,
-  "old_price": null,
-  "img": "/assets/img/images/802.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2283",
-  "slug": "hop-dung-ban-chai-phau-thuat",
-  "name": "Hộp đựng bàn chải phẫu thuật",
-  "price": 2699000,
-  "old_price": null,
-  "img": "/assets/img/images/2283.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1792",
-  "slug": "ke-giay-go-xoay-co-hoc-keo-kegg2",
-  "name": "Kệ Giày Gỗ Xoay Có Hộc Kéo KEGG2",
-  "price": 5222000,
-  "old_price": null,
-  "img": "/assets/img/images/1792.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1796",
-  "slug": "ke-giay-mfc-xoay-co-hoc-keo-kegg3",
-  "name": "Kệ giày MFC xoay có hộc kéo KEGG3",
-  "price": 2173000,
-  "old_price": null,
-  "img": "/assets/img/images/1796.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1794",
-  "slug": "ke-giay-xoay-go-ghep-co-hoc-keo-kegg1",
-  "name": "Kệ Giày Xoay Gỗ  Ghép Có Hộc Kéo KEGG1",
-  "price": 3840000,
-  "old_price": null,
-  "img": "/assets/img/images/1794.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1803",
-  "slug": "ke-giay-xoay-mamilut-kegv2",
-  "name": "Kệ giày xoay MAMILUT KEGV2",
-  "price": 1558000,
-  "old_price": null,
-  "img": "/assets/img/images/1803.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1805",
-  "slug": "ke-giay-xoay-mfc-kegv1",
-  "name": "Kệ giày xoay MFC KEGV1",
-  "price": 924000,
-  "old_price": null,
-  "img": "/assets/img/images/1805.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1640",
-  "slug": "lan-can-duc-hop-kim",
-  "name": "Lan Can Đúc Hợp Kim",
-  "price": 4199000,
-  "old_price": null,
-  "img": "/assets/img/images/1640.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2816",
   "slug": "lup-be-gieng-taijaan-phi-114",
   "name": "Lúp bê giếng TAIJAAN phi 114",
@@ -6891,19 +5500,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2199",
-  "slug": "san-go-rainforest-rf585",
-  "name": "Sàn gỗ RainForest RF585",
-  "price": 515000,
-  "old_price": null,
-  "img": "/assets/img/images/2199.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2818",
   "slug": "lup-be-nhua-90",
   "name": "Lúp bê nhựa 90",
@@ -6919,19 +5515,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2197",
-  "slug": "san-go-rainforest-rf586",
-  "name": "Sàn gỗ RAINFOREST RF586",
-  "price": 515000,
-  "old_price": null,
-  "img": "/assets/img/images/2197.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2951",
   "slug": "lup-be-nhua-90-tru",
   "name": "Lúp bê nhựa 90 (trụ)",
@@ -6942,19 +5525,6 @@
    "san-pham-cong-nghiep",
    "phu-kien-dien-nuoc",
    "phu-kien-dien-nuoc/lup-be-may-bom"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2195",
-  "slug": "san-go-rainforest-rf588",
-  "name": "Sàn gỗ RAINFOREST RF588",
-  "price": 550000,
-  "old_price": null,
-  "img": "/assets/img/images/2195.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7229,19 +5799,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1659",
-  "slug": "ban-cau-khoi-lucky-ad-2068",
-  "name": "Bàn Cầu Khối LUCKY AD 2068",
-  "price": 4659000,
-  "old_price": null,
-  "img": "/assets/img/images/1659.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1699",
   "slug": "may-bom-app-eks-164t-5hp-380v",
   "name": "Máy bơm APP EKS-164T 5HP 380v",
@@ -7252,19 +5809,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "732",
-  "slug": "ban-nha-1-sec-gia-8-3-ty-duong-van-duong-tan-phu",
-  "name": "Nhà đường Dương Văn Dương. Quận Tân Phú. Nhỉnh 8 Tỷ",
-  "price": 8300000000,
-  "old_price": null,
-  "img": "/assets/img/images/732.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7285,19 +5829,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "764",
-  "slug": "ban-nha-2-sec-duong-binh-tri-dong-binh-tan",
-  "name": "Bán Đường Bình Trị Đông. Bình Tân. Nhỉnh 3 tỷ",
-  "price": 3750000000,
-  "old_price": null,
-  "img": "/assets/img/images/764.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1690",
   "slug": "may-bom-app-eks-85-3hp",
   "name": "Máy bơm APP EKS-85 3HP",
@@ -7308,19 +5839,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "812",
-  "slug": "ban-nha-6-ty-duong-thai-phien-quan-11",
-  "name": "Bán đường Thái Phiên quận 11. Nhỉnh 6 tỷ",
-  "price": 6700000000,
-  "old_price": null,
-  "img": "/assets/img/images/812.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7341,19 +5859,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "753",
-  "slug": "ban-nha-can-goc-duong-nguyen-van-yen",
-  "name": "Nhà Đường Nguyễn Văn Yến. Quận Tân Phú. Nhỉnh 4 Tỷ",
-  "price": 4680000000,
-  "old_price": null,
-  "img": "/assets/img/images/753.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1685",
   "slug": "may-bom-app-eks-86t-5hp",
   "name": "Máy bơm APP EKS-86T 5HP",
@@ -7364,19 +5869,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "837",
-  "slug": "ban-nha-hem-103-thai-phien-q11",
-  "name": "Nhà đường Thái Phiên, Quận 11, khoảng 7 Tỷ, 4×12, 5 tầng",
-  "price": 7990000000,
-  "old_price": null,
-  "img": "/assets/img/images/837.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7397,45 +5889,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "842",
-  "slug": "nha-3-5x11-3-tang-duong-binh-thoi-quan-11-5-ty-x",
-  "name": "Bán Nhà 3.5×11. 3 tầng. Đường Bình Thới. Quận 11. khoảng 5 tỷ x.",
-  "price": 5400000000,
-  "old_price": null,
-  "img": "/assets/img/images/842.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "6187",
-  "slug": "nha-3x11-2-tang-duong-phu-tho-quan-11-khoang-4-ty-x",
-  "name": "Nhà 3×11, 2 tầng, đường Phú Thọ, quận 11, khoảng 4 tỷ x",
-  "price": 4700000000,
-  "old_price": null,
-  "img": "/assets/img/images/6187.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "6182",
-  "slug": "nha-4-2x12-4-tang-duong-702-hong-bang-quan-11-khoang-6-ty-x",
-  "name": "Nhà 4.2×12, 4 tầng, đường 702 Hồng Bàng, quận 11, khoảng 6 tỷ x",
-  "price": 6800000000,
-  "old_price": null,
-  "img": "/assets/img/images/6182.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1500",
   "slug": "may-bom-app-hi-400-400w",
   "name": "Máy bơm APP HI-400 400w",
@@ -7446,19 +5899,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "738",
-  "slug": "ban-nha-hem-185-go-dau-tan-phu",
-  "name": "Nhà đường Gò Dầu. Quận Tân Phú. Nhỉnh 4 tỷ",
-  "price": 4990000000,
-  "old_price": null,
-  "img": "/assets/img/images/738.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7479,19 +5919,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "824",
-  "slug": "ban-nha-hem-195-binh-thoi-quan-11",
-  "name": "Nhà Đường Bình Thới. Quận 11. Nhỉnh 7 tỷ",
-  "price": 7980000000,
-  "old_price": null,
-  "img": "/assets/img/images/824.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2652",
   "slug": "may-bom-app-home-10-1hp",
   "name": "Máy bơm APP Home-10 1HP",
@@ -7502,19 +5929,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "726",
-  "slug": "ban-nha-hem-367-thoai-ngoc-hau-tan-phu",
-  "name": "Nhà đường Thoại Ngọc Hầu. Quận Tân Phú, Nhỉnh 9 Tỷ",
-  "price": 9150000000,
-  "old_price": null,
-  "img": "/assets/img/images/726.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7535,19 +5949,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "830",
-  "slug": "ban-nha-hem-506-lac-long-quan-quan-11",
-  "name": "Nhà 3.5×10. 3 tầng. Đường Lạc Long Quân. Quận 11.  Nhỉnh 6 tỷ",
-  "price": 6600000000,
-  "old_price": null,
-  "img": "/assets/img/images/830.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2649",
   "slug": "may-bom-app-home-400-400w",
   "name": "Máy bơm APP Home-400 400w",
@@ -7558,19 +5959,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "818",
-  "slug": "ban-nha-mat-tien-duong-do-ngoc-thach-quan-11",
-  "name": "Bán nhà mặt tiền đường Đỗ Ngọc Thạch quận 11",
-  "price": 18800000000,
-  "old_price": null,
-  "img": "/assets/img/images/818.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7591,19 +5979,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "759",
-  "slug": "ban-nha-mat-tien-duong-so-8-binh-hung-hoa-a",
-  "name": "Nhà mặt tiền đường số 8. Bình Hưng Hòa A. Bình Tân. Nhỉnh 13 tỷ",
-  "price": 13950000000,
-  "old_price": null,
-  "img": "/assets/img/images/759.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1358",
   "slug": "may-bom-app-mt-44-1100w",
   "name": "Máy bơm APP MT-44 1100W",
@@ -7614,19 +5989,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "744",
-  "slug": "ban-nha-mat-tien-duong-to-hieu-quan-tan-phu",
-  "name": "Bán nhà mặt tiền đường Tô Hiệu. Quận Tân Phú. Nhỉnh 10 tỷ",
-  "price": 10500000000,
-  "old_price": null,
-  "img": "/assets/img/images/744.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7676,19 +6038,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2965",
-  "slug": "binh-nuoc-phu-25-lit",
-  "name": "Bình Nước Phụ 25 lít",
-  "price": 450000,
-  "old_price": null,
-  "img": "/assets/img/images/2965.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7027",
   "slug": "may-bom-app-mt-83",
   "name": "Máy bơm APP MT-83 (1.5Hp)",
@@ -7714,19 +6063,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2960",
-  "slug": "binh-nuoc-phu-50l",
-  "name": "Bình Nước Phụ 50L",
-  "price": 889000,
-  "old_price": null,
-  "img": "/assets/img/images/2960.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7772,19 +6108,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2956",
-  "slug": "binh-phu-60-lit",
-  "name": "Bình Phụ 60 lít",
-  "price": 650000,
-  "old_price": null,
-  "img": "/assets/img/images/2956.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -7845,19 +6168,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-app"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2461",
-  "slug": "bon-dun-sap-paraffin-30-lit",
-  "name": "Bồn Dun Sáp PARAFFIN 30 lít",
-  "price": 26920000,
-  "old_price": null,
-  "img": "/assets/img/images/2461.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -14805,19 +13115,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2741",
-  "slug": "may-thoi-oxy-hailea-aco-318-45w",
-  "name": "Máy thổi Oxy HAILEA ACO-318 45w",
-  "price": 490000,
-  "old_price": null,
-  "img": "/assets/img/images/2741.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7219",
   "slug": "bon-inox-dai-viet-2000-lit-dung",
   "name": "Bồn inox Đại Việt 2000 lít đứng",
@@ -14848,19 +13145,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2737",
-  "slug": "may-sui-oxy-hailea-aco-328-60w",
-  "name": "Máy Sủi Oxy HAILEA ACO-328 (60w)",
-  "price": 650000,
-  "old_price": null,
-  "img": "/assets/img/images/2737.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7218",
   "slug": "bon-inox-dai-viet-2000-lit-ngang",
   "name": "Bồn inox Đại Việt 2000 lít ngang",
@@ -14871,19 +13155,6 @@
    "san-pham-cong-nghiep",
    "bon-nuoc",
    "bon-nuoc/dai-viet"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2728",
-  "slug": "may-thoi-oxy-hailea-aco-380",
-  "name": "Máy Thổi Oxy HAILEA ACO-380 (380w)",
-  "price": 1695000,
-  "old_price": null,
-  "img": "/assets/img/images/2728.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -14980,19 +13251,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2724",
-  "slug": "may-thoi-oxy-hailea-aco-500",
-  "name": "Máy Thổi Oxy HAILEA ACO-500 (500W)",
-  "price": 2760000,
-  "old_price": null,
-  "img": "/assets/img/images/2724.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "7215",
   "slug": "bon-inox-dai-viet-5000l-dung",
   "name": "Bồn inox Đại Việt 5000L đứng",
@@ -15019,19 +13277,6 @@
    "tag/san-pham/thiet-bi-bep-cong-nghiep",
    "san-pham-cong-nghiep",
    "chau-rua-chen-bat"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2925",
-  "slug": "may-thoi-oxy-hailea-cp-60",
-  "name": "Máy thổi Oxy HAILEA CP-60 (80w)",
-  "price": 2250000,
-  "old_price": null,
-  "img": "/assets/img/images/2925.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -17002,45 +15247,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "3340",
-  "slug": "may-loc-robot-sping-pro-410g-ur",
-  "name": "Máy Lọc ROBOT Sping Pro 410G-UR",
-  "price": 7950000,
-  "old_price": null,
-  "img": "/assets/img/images/3340.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3334",
-  "slug": "may-loc-robot-sping-pro-410gh-ur",
-  "name": "Máy Lọc ROBOT Sping Pro 410GH-UR",
-  "price": 9550000,
-  "old_price": null,
-  "img": "/assets/img/images/3334.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3337",
-  "slug": "may-loc-robot-sping-pro-9gh-ur",
-  "name": "Máy Lọc ROBOT Sping Pro 9GH-UR",
-  "price": 6350000,
-  "old_price": null,
-  "img": "/assets/img/images/3337.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2603",
   "slug": "may-mat-troi-nang-luong-200l-megasun-tach-roi",
   "name": "Máy mặt trời năng lượng 200l Megasun tách rời",
@@ -17738,214 +15944,6 @@
    "san-pham-cong-nghiep",
    "may-nuoc-nong-mat-troi",
    "may-nuoc-nong-mat-troi/toan-my"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3113",
-  "slug": "may-nen-khi-fusheng-15hp-ta-120",
-  "name": "Máy nén khí Fusheng 15Hp (TA-120)",
-  "price": 69970000,
-  "old_price": null,
-  "img": "/assets/img/images/3113.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3143",
-  "slug": "may-nen-khi-fusheng-d-2-1hp-220v",
-  "name": "Máy nén khí Fusheng D-2 1Hp 220v",
-  "price": 13400000,
-  "old_price": null,
-  "img": "/assets/img/images/3143.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3141",
-  "slug": "may-nen-khi-fusheng-d-3-2hp-220v",
-  "name": "Máy nén khí Fusheng D-3 2Hp 220V",
-  "price": 14920000,
-  "old_price": null,
-  "img": "/assets/img/images/3141.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3139",
-  "slug": "may-nen-khi-fusheng-d-3-2hp-380v",
-  "name": "Máy nén khí Fusheng D-3 2Hp 380v",
-  "price": 13400000,
-  "old_price": null,
-  "img": "/assets/img/images/3139.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3114",
-  "slug": "may-nen-khi-fusheng-hta-100-10hp",
-  "name": "Máy nén khí Fusheng HTA-100 (10Hp)",
-  "price": 73103000,
-  "old_price": null,
-  "img": "/assets/img/images/3114.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3116",
-  "slug": "may-nen-khi-fusheng-hta-100-7-5hp",
-  "name": "Máy nén khí Fusheng HTA-100 (7.5Hp)",
-  "price": 62322000,
-  "old_price": null,
-  "img": "/assets/img/images/3116.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3112",
-  "slug": "may-nen-khi-fusheng-hta-120-15hp",
-  "name": "Máy nén khí Fusheng HTA-120 (15Hp)",
-  "price": 71100000,
-  "old_price": null,
-  "img": "/assets/img/images/3112.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3129",
-  "slug": "may-nen-khi-fusheng-hta-65-2hp",
-  "name": "Máy nén khí Fusheng HTA-65 2Hp",
-  "price": 23143000,
-  "old_price": null,
-  "img": "/assets/img/images/3129.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3127",
-  "slug": "may-nen-khi-fusheng-hta-65h-3hp-380v",
-  "name": "Máy nén khí Fusheng HTA-65H 3Hp 380v",
-  "price": 29561000,
-  "old_price": null,
-  "img": "/assets/img/images/3127.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3118",
-  "slug": "may-nen-khi-fusheng-hta-80-5hp",
-  "name": "Máy nén khí Fusheng HTA-80 (5Hp)",
-  "price": 40528000,
-  "old_price": null,
-  "img": "/assets/img/images/3118.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3145",
-  "slug": "may-nen-khi-fusheng-hva-65-1hp-220v",
-  "name": "Máy nén khí Fusheng HVA-65 1Hp 220V",
-  "price": 19430000,
-  "old_price": null,
-  "img": "/assets/img/images/3145.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3115",
-  "slug": "may-nen-khi-fusheng-ta-100-10hp",
-  "name": "Máy nén khí Fusheng TA-100 (10Hp)",
-  "price": 49980000,
-  "old_price": null,
-  "img": "/assets/img/images/3115.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3133",
-  "slug": "may-nen-khi-fusheng-ta-65-2hp",
-  "name": "Máy nén khí Fusheng TA-65 2Hp",
-  "price": 15290000,
-  "old_price": null,
-  "img": "/assets/img/images/3133.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3122",
-  "slug": "may-nen-khi-fusheng-ta-80-5-5hp",
-  "name": "Máy nén khí Fusheng TA-80 5.5Hp",
-  "price": 26220000,
-  "old_price": null,
-  "img": "/assets/img/images/3122.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3117",
-  "slug": "may-nen-khi-fusheng-va-100-7-5hp",
-  "name": "Máy nén khí Fusheng VA-100 (7.5Hp)",
-  "price": 43290000,
-  "old_price": null,
-  "img": "/assets/img/images/3117.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3123",
-  "slug": "may-nen-khi-fusheng-va-80-5hp",
-  "name": "Máy nén khí Fusheng VA-80 5Hp",
-  "price": 23110000,
-  "old_price": null,
-  "img": "/assets/img/images/3123.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -19136,19 +17134,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "1148",
-  "slug": "may-nang-luong-thai-duong-nang-240l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 240L Gold",
-  "price": 8510000,
-  "old_price": null,
-  "img": "/assets/img/images/1148.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "1963",
   "slug": "may-nuoc-nong-240l-thai-duong-nang-gold-nano",
   "name": "Máy Nước Nóng 240L Thái Dương Năng Gold Nano",
@@ -19186,19 +17171,6 @@
   "categories": [
    "san-pham-cong-nghiep",
    "may-nuoc-nong-mat-troi"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1146",
-  "slug": "may-nang-luong-thai-duong-nang-300l-gold",
-  "name": "Máy Năng Lượng Thái Dương Năng 300L Gold",
-  "price": 9998000,
-  "old_price": null,
-  "img": "/assets/img/images/1146.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -19289,19 +17261,6 @@
    "san-pham-cong-nghiep",
    "may-nuoc-nong-mat-troi",
    "may-nuoc-nong-mat-troi/megasun"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1565",
-  "slug": "may-nang-luong-megasun-150l-kss",
-  "name": "Máy năng lượng Megasun 150l KSS",
-  "price": 7221000,
-  "old_price": null,
-  "img": "/assets/img/images/1565.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -19457,58 +17416,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "789",
-  "slug": "may-oxy-resun-mpq-904-12v-60w",
-  "name": "Máy oxy Resun MPQ-904 12V-60w",
-  "price": null,
-  "old_price": null,
-  "img": "/assets/img/images/789.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2885",
-  "slug": "may-quat-super-win-spw-600tp",
-  "name": "Máy quạt Super Win SPW-600TP",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2885.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2884",
-  "slug": "may-quat-super-win-spw-650tp",
-  "name": "Máy quạt Super Win SPW-650TP",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2884.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "1093",
-  "slug": "may-sui-oxy-resun-aco-001-18w",
-  "name": "Máy sủi oxy Resun ACO-001 18w",
-  "price": 380700,
-  "old_price": null,
-  "img": "/assets/img/images/1093.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "3105",
   "slug": "may-thoi-khi-hong-helong-hb-1500",
   "name": "Máy Thổi Khí Hong Helong HB-1500 (2Hp)",
@@ -19519,19 +17426,6 @@
    "san-pham-cong-nghiep",
    "may-thoi-khi",
    "may-thoi-khi/hong-helong"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3110",
-  "slug": "may-thoi-hong-helong-gb-250-250w",
-  "name": "Máy thổi Hong Helong GB-250 (250w)",
-  "price": 3870000,
-  "old_price": null,
-  "img": "/assets/img/images/3110.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -19697,19 +17591,6 @@
    "san-pham-cong-nghiep",
    "may-thoi-khi",
    "may-thoi-khi/hailea"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "3055",
-  "slug": "may-ve-sinh-ho-ca-hailea-pc8000-155w",
-  "name": "Máy Vệ Sinh Hồ Cá HAILEA PC8000 155W",
-  "price": 4710000,
-  "old_price": null,
-  "img": "/assets/img/images/3055.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -19980,19 +17861,6 @@
    "san-pham-cong-nghiep",
    "dong-co-motor-dien",
    "dong-co-motor-dien/vtc"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2920",
-  "slug": "may-thoi-oxy-hailea-cpa-100-22w",
-  "name": "Máy thổi oxy HAILEA CPA-100 22w",
-  "price": 2460000,
-  "old_price": null,
-  "img": "/assets/img/images/2920.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -20881,19 +18749,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "774",
-  "slug": "nha-ban-5-ty-8-duong-100-binh-thoi",
-  "name": "Nhà đường 100 Bình Thới. Quận 11. Nhỉnh 5 tỷ",
-  "price": 5800000000,
-  "old_price": null,
-  "img": "/assets/img/images/774.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2544",
   "slug": "may-bom-rheken-rjm60-200",
   "name": "Máy bơm RHEKEN RJm60-200 (200w)",
@@ -20904,19 +18759,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-rheken"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "781",
-  "slug": "nha-ban-7-ty-x-duong-lanh-binh-thang-quan-11",
-  "name": "Nhà đường Lãnh Binh Thăng quận 11. Nhỉnh 7 tỷ",
-  "price": 7860000000,
-  "old_price": null,
-  "img": "/assets/img/images/781.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21162,19 +19004,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "3084",
-  "slug": "ong-va-phu-kien-ppr-vesbo",
-  "name": "Ống và phụ kiện PPR VESBO",
-  "price": 12000,
-  "old_price": null,
-  "img": "/assets/img/images/3084.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2536",
   "slug": "may-bom-rheken-jlm90-1100-1100w",
   "name": "Máy bơm RHEKEN JLM90-1100 1100w",
@@ -21185,19 +19014,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-rheken"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2360",
-  "slug": "phao-dien-rada",
-  "name": "Phao điện Rada",
-  "price": 115000,
-  "old_price": null,
-  "img": "/assets/img/images/2360.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21218,19 +19034,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2878",
-  "slug": "quat-treo-super-win-spw-650tw",
-  "name": "Quạt treo Super Win SPW-650TW",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2878.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2515",
   "slug": "may-bom-rheken-jlm90-1500-2hp",
   "name": "Máy bơm RHEKEN JLM90-1500 2HP",
@@ -21241,19 +19044,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-rheken"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2877",
-  "slug": "quat-treo-super-win-spw-750tw",
-  "name": "Quạt treo Super Win SPW-750TW",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2877.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21274,19 +19064,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2879",
-  "slug": "quat-treo-tuong-super-win-spw-600tw",
-  "name": "Quạt treo tường Super Win SPW-600TW",
-  "price": 1350000,
-  "old_price": null,
-  "img": "/assets/img/images/2879.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2901",
   "slug": "may-bom-shimge-1-5hp-hong-114-shfm6cr",
   "name": "Máy bơm Shimge 1.5HP họng 114 (SHFm6CR)",
@@ -21297,19 +19074,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2233",
-  "slug": "san-go-pergo-03366",
-  "name": "Sàn gỗ Pergo 03366",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2233.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21330,19 +19094,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2231",
-  "slug": "san-go-rainforest-rf311",
-  "name": "Sàn gỗ RAINFOREST RF311",
-  "price": 354500,
-  "old_price": null,
-  "img": "/assets/img/images/2231.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2902",
   "slug": "may-bom-shimge-1-5hp-hong-90-shfm6c",
   "name": "Máy bơm Shimge 1.5HP họng 90 (SHFm6C)",
@@ -21353,19 +19104,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2227",
-  "slug": "san-go-rainforest-rf312",
-  "name": "Sàn gỗ RAINFOREST RF312",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2227.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21386,19 +19124,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2223",
-  "slug": "san-go-rainforest-rf313",
-  "name": "Sàn gỗ RAINFOREST RF313",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2223.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2904",
   "slug": "may-bom-shimge-1hp-hong-60-shfm5b",
   "name": "Máy bơm Shimge 1HP họng 60 (SHFm5B)",
@@ -21409,19 +19134,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2221",
-  "slug": "san-go-rainforest-rf315",
-  "name": "Sàn gỗ RainForest RF315",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2221.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21442,19 +19154,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2217",
-  "slug": "san-go-rainforest-rf316",
-  "name": "Sàn gỗ RainForest RF316",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2217.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2899",
   "slug": "may-bom-shimge-2hp-hong-60-shfm5am",
   "name": "Máy bơm Shimge 2HP họng 60 (SHFm5AM)",
@@ -21465,19 +19164,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2214",
-  "slug": "san-go-rainforest-rf318",
-  "name": "Sàn gỗ RAINFOREST RF318",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2214.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21498,19 +19184,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2210",
-  "slug": "san-go-rainforest-rf380",
-  "name": "Sàn gỗ RAINFOREST RF380",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2210.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2912",
   "slug": "may-bom-shimge-2hp-mat-bich",
   "name": "Máy bơm Shimge 2HP mặt bích",
@@ -21521,19 +19194,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2208",
-  "slug": "san-go-rainforest-rf382",
-  "name": "Sàn gỗ RAINFOREST RF382",
-  "price": 355000,
-  "old_price": null,
-  "img": "/assets/img/images/2208.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21554,19 +19214,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2206",
-  "slug": "san-go-rainforest-rf515",
-  "name": "Sàn gỗ RAINFOREST RF515",
-  "price": 515000,
-  "old_price": null,
-  "img": "/assets/img/images/2206.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2894",
   "slug": "may-bom-shimge-3hp-hong-90-shfm6a",
   "name": "Máy bơm Shimge 3HP họng 90 (SHFm6A)",
@@ -21582,19 +19229,6 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "2204",
-  "slug": "san-go-rainforest-rf516",
-  "name": "Sàn gỗ RAINFOREST RF516",
-  "price": 515000,
-  "old_price": null,
-  "img": "/assets/img/images/2204.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
   "id": "2911",
   "slug": "may-bom-shimge-3hp-mat-bich",
   "name": "Máy bơm Shimge 3HP mặt bích",
@@ -21605,19 +19239,6 @@
    "do-gia-dung/may-bom",
    "san-pham-cong-nghiep",
    "do-gia-dung/may-bom-shimge"
-  ],
-  "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
- },
- {
-  "id": "2202",
-  "slug": "san-go-rainforest-rf518",
-  "name": "Sàn gỗ RAINFOREST RF518",
-  "price": 515000,
-  "old_price": null,
-  "img": "/assets/img/images/2202.jpg",
-  "categories": [
-   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
   "updated_at": "2026-10-18T06:05:40Z"
@@ -21788,55 +19409,1017 @@
   "updated_at": "2026-10-18T06:05:40Z"
  },
  {
-  "id": "922",
-  "slug": "xa-tieu-nam-uf-5v",
-  "name": "xả tiểu nam UF-5V",
-  "price": null,
+  "id": "8389",
+  "slug": "bon-inox-316-dai-thanh-1000l-ngang",
+  "name": "Bồn Inox Đại Thành Vigo 1000 lít ngang",
+  "price": 4600000,
   "old_price": null,
-  "img": "/assets/img/images/922.jpg",
+  "img": "/assets/img/images/8389.jpg",
   "categories": [
-   "san-pham-cong-nghiep"
+   "bon-nuoc/dai-thanh"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-21T16:17:13Z"
  },
  {
-  "id": "3155",
-  "slug": "xe-day-bang-ca-da-nang",
-  "name": "Xe đẩy băng ca da năng",
-  "price": 3528000,
+  "id": "8390",
+  "slug": "bon-inox-dai-thanh-1000l-ngang",
+  "name": "Bồn inox Đại Thành 1000 lít ngang",
+  "price": 3849000,
   "old_price": null,
-  "img": "/assets/img/images/3155.jpg",
+  "img": "/assets/img/images/8390.jpg",
   "categories": [
-   "san-pham-cong-nghiep"
+   "bon-nuoc/dai-thanh"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-21T16:17:13Z"
  },
  {
-  "id": "2466",
-  "slug": "xe-day-dung-cu-tiet-trung",
-  "name": "Xe đẩy dụng cụ tiệt trùng",
-  "price": 34900000,
+  "id": "8391",
+  "slug": "bon-nhua-1000-lit-ngang-dai-thanh",
+  "name": "Bồn Nhựa Tân Á 1000 lít ngang Gold",
+  "price": 2480000,
   "old_price": null,
-  "img": "/assets/img/images/2466.jpg",
+  "img": "/assets/img/images/8391.jpg",
   "categories": [
-   "san-pham-cong-nghiep"
+   "bon-nuoc/tan-a"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-21T16:17:13Z"
  },
  {
-  "id": "1626",
-  "slug": "yen-xe-67",
-  "name": "YÊN XE 67",
-  "price": 479000,
+  "id": "8392",
+  "slug": "bon-nhua-10m3-dung-dai-thanh",
+  "name": "Bồn nhựa 10m3 đứng Đại Thành THM",
+  "price": 18290000,
   "old_price": null,
-  "img": "/assets/img/images/1626.jpg",
+  "img": "/assets/img/images/8392.jpg",
   "categories": [
-   "san-pham-cong-nghiep"
+   "bon-nuoc/dai-thanh"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8393",
+  "slug": "bon-nhua-1500l-ngang-dai-thanh",
+  "name": "Bồn Nhựa Tân Á 500 lít đứng Gold",
+  "price": 3985000,
+  "old_price": null,
+  "img": "/assets/img/images/8393.jpg",
+  "categories": [
+   "bon-nuoc/tan-a"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8394",
+  "slug": "bon-nhua-500l-ngang-dai-thanh",
+  "name": "Bồn Nhựa Tân Á 5000 lít đứng Gold",
+  "price": 1384000,
+  "old_price": null,
+  "img": "/assets/img/images/8394.jpg",
+  "categories": [
+   "bon-nuoc/tan-a"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8395",
+  "slug": "bon-nhua-dai-phu-1000l-ngang",
+  "name": "Bồn Nhựa Đại Phú 5000L ngang",
+  "price": 16000000,
+  "old_price": null,
+  "img": "/assets/img/images/8395.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8396",
+  "slug": "bon-nhua-dai-phu-2000l-dung",
+  "name": "Bồn Nhựa Đại Phú 2000 lít đứng",
+  "price": 3300000,
+  "old_price": null,
+  "img": "/assets/img/images/8396.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8397",
+  "slug": "bon-nhua-dai-phu-500l-ngang",
+  "name": "Bồn Nhựa Đại Phú 3000L ngang",
+  "price": 7800000,
+  "old_price": null,
+  "img": "/assets/img/images/8397.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8398",
+  "slug": "bon-nhua-dai-thanh-300-lit",
+  "name": "Bồn Nhựa Tân Á 3000 lít đứng Gold",
+  "price": 1050000,
+  "old_price": null,
+  "img": "/assets/img/images/8398.jpg",
+  "categories": [
+   "bon-nuoc/tan-a"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8399",
+  "slug": "bon-nhua-dai-thanh-4000-lit-dung-thm",
+  "name": "Bồn Nhựa Đại Thành 4000 lít đứng Gold",
+  "price": 6521000,
+  "old_price": null,
+  "img": "/assets/img/images/8399.jpg",
+  "categories": [
+   "bon-nuoc/dai-thanh"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8400",
+  "slug": "bon-nhua-dai-thanh-700l-ngang-thm",
+  "name": "Bồn Nhựa Đại Phú 3000 lít đứng",
+  "price": 5300000,
+  "old_price": null,
+  "img": "/assets/img/images/8400.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8401",
+  "slug": "bon-nhua-dai-thanh-750l-dung-thm",
+  "name": "Bồn Nhựa Đại Phú 5000 lít đứng",
+  "price": 9050000,
+  "old_price": null,
+  "img": "/assets/img/images/8401.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8402",
+  "slug": "bon-nhua-nam-thanh-300-lit-dung",
+  "name": "Bồn Nhựa Nam Thành 300L đứng",
+  "price": 1200000,
+  "old_price": null,
+  "img": "/assets/img/images/8402.jpg",
+  "categories": [
+   "bon-nuoc"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8403",
+  "slug": "bon-nhua-son-ha-1000l-dung",
+  "name": "Bồn Nhựa DEKO 1000L đứng",
+  "price": 1885000,
+  "old_price": null,
+  "img": "/assets/img/images/8403.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8404",
+  "slug": "bon-nhua-son-ha-1000l-ngang",
+  "name": "Bồn Nhựa DEKO 1000L ngang",
+  "price": 2432640,
+  "old_price": null,
+  "img": "/assets/img/images/8404.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8405",
+  "slug": "bon-nhua-son-ha-1500l-dung",
+  "name": "Bồn Nhựa Deko 1500L đứng",
+  "price": 2805000,
+  "old_price": null,
+  "img": "/assets/img/images/8405.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8406",
+  "slug": "bon-nhua-son-ha-2000l-dung",
+  "name": "Bồn Nhựa Deko 2000L đứng",
+  "price": 3498000,
+  "old_price": null,
+  "img": "/assets/img/images/8406.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8407",
+  "slug": "bon-nhua-son-ha-3000l-dung",
+  "name": "Bồn Nhựa Deko 3000L đứng",
+  "price": 5305000,
+  "old_price": null,
+  "img": "/assets/img/images/8407.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8408",
+  "slug": "bon-nhua-son-ha-300l-dung",
+  "name": "Bồn Nhựa DEKO 300 lít đứng",
+  "price": 948000,
+  "old_price": null,
+  "img": "/assets/img/images/8408.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8409",
+  "slug": "bon-nhua-son-ha-4000l-dung",
+  "name": "Bồn Nhựa Deko 5000L đứng",
+  "price": 6133500,
+  "old_price": null,
+  "img": "/assets/img/images/8409.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8410",
+  "slug": "bon-nhua-son-ha-500l-dung",
+  "name": "Bồn Nhựa DEKO 500 lít đứng",
+  "price": 1278000,
+  "old_price": null,
+  "img": "/assets/img/images/8410.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8411",
+  "slug": "bon-nhua-son-ha-700l-dung",
+  "name": "Bồn Nhựa Deko 10000L đứng",
+  "price": 18300000,
+  "old_price": null,
+  "img": "/assets/img/images/8411.jpg",
+  "categories": [
+   "bon-nuoc/deko"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8412",
+  "slug": "bon-nhua-tan-a-2000l-dung",
+  "name": "Bồn Nhựa Đại Phú 10000 lít đứng",
+  "price": 17100000,
+  "old_price": null,
+  "img": "/assets/img/images/8412.jpg",
+  "categories": [
+   "bon-nuoc/dai-phu"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8413",
+  "slug": "may-bom-app-mts-163t-3hp-380v",
+  "name": "Máy bơm APP MTS-163T (3HP 380v)",
+  "price": 9450000,
+  "old_price": null,
+  "img": "/assets/img/images/8413.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-app"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8414",
+  "slug": "may-bom-app-mts-86t-5hp-380v",
+  "name": "Máy bơm APP MTS-86T (5HP 380v)",
+  "price": 13938000,
+  "old_price": null,
+  "img": "/assets/img/images/8414.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-app"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8415",
+  "slug": "may-bom-app-sv-1500-1500t",
+  "name": "Máy bơm APP SV-1500",
+  "price": 7660000,
+  "old_price": null,
+  "img": "/assets/img/images/8415.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-app"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8416",
+  "slug": "may-bom-bentas-aqn-5b",
+  "name": "Máy Bơm Bentas MHF-5B (1HP họng 60)",
+  "price": 1750000,
+  "old_price": null,
+  "img": "/assets/img/images/8416.jpg",
+  "categories": [
+   "do-gia-dung/may-bom/may-bom-bentas"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8417",
+  "slug": "may-bom-dragonsea-1-5hp-hong-114",
+  "name": "Máy bơm Dragonsea 1100w họng 114 (SHFm6CR)",
+  "price": 3575000,
+  "old_price": null,
+  "img": "/assets/img/images/8417.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-dragonsea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8418",
+  "slug": "may-bom-dragonsea-1-5hp-hong-60-shfm5bm",
+  "name": "Máy bơm Dragonsea 1100w họng 60 (SHFm5BM)",
+  "price": 2920000,
+  "old_price": null,
+  "img": "/assets/img/images/8418.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-dragonsea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8419",
+  "slug": "may-bom-dragonsea-1-5hp-hong-90-shfm6c",
+  "name": "Máy Bơm Nước Dragonsea SHFm6C (1.5HP họng 90)",
+  "price": 3425000,
+  "old_price": null,
+  "img": "/assets/img/images/8419.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-dragonsea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8420",
+  "slug": "may-bom-lepono-2hp-hong-114-acm150b4",
+  "name": "Máy bơm Lepono 2HP họng 114 (ACm150B4)",
+  "price": 4230000,
+  "old_price": null,
+  "img": "/assets/img/images/8420.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8421",
+  "slug": "may-bom-lepono-2hp-hong-60-acm150b2",
+  "name": "Máy bơm Lepono 2HP họng 60 (ACm150B2)",
+  "price": 3050000,
+  "old_price": null,
+  "img": "/assets/img/images/8421.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8422",
+  "slug": "may-bom-lepono-2hp-hong-90-acm150b3",
+  "name": "Máy bơm Lepono 2HP họng 90 (ACm150B3)",
+  "price": 3250000,
+  "old_price": null,
+  "img": "/assets/img/images/8422.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8423",
+  "slug": "may-bom-lepono-3hp-hong-114-acm220b4",
+  "name": "Máy bơm Lepono 3HP họng 114 (ACm220B4)",
+  "price": 5310000,
+  "old_price": null,
+  "img": "/assets/img/images/8423.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8424",
+  "slug": "may-bom-lepono-3hp-hong-90-ac220b3",
+  "name": "Máy bơm Lepono 3HP họng 90 (ACm220B3)",
+  "price": 4450000,
+  "old_price": null,
+  "img": "/assets/img/images/8424.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8425",
+  "slug": "may-bom-lepono-4hp-hong-114-ac300b4",
+  "name": "Máy bơm Lepono 4HP họng 90 (ACm300B3)",
+  "price": 4935000,
+  "old_price": null,
+  "img": "/assets/img/images/8425.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8426",
+  "slug": "may-bom-lepono-5hp-hong-114-ac400b4",
+  "name": "Máy bơm Lepono AC400BF4 (5.5HP họng 114)",
+  "price": 8380000,
+  "old_price": null,
+  "img": "/assets/img/images/8426.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-lepono"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8427",
+  "slug": "may-bom-maro-1-5hp-hong-60",
+  "name": "Máy bơm Maro XGm-5BM (1.5Hp họng 60)",
+  "price": 2550000,
+  "old_price": null,
+  "img": "/assets/img/images/8427.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-maro"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8428",
+  "slug": "may-bom-maro-1-5hp-hong-90",
+  "name": "Máy bơm Maro XGm-6C (1.5Hp Họng 90)",
+  "price": 2990000,
+  "old_price": null,
+  "img": "/assets/img/images/8428.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-maro"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8429",
+  "slug": "may-bom-maro-2hp-hong-60",
+  "name": "Máy bơm Maro XGm-5AM (2Hp họng 60)",
+  "price": 2770000,
+  "old_price": null,
+  "img": "/assets/img/images/8429.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-maro"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8430",
+  "slug": "may-bom-maro-4hp-xgm-7br",
+  "name": "Máy bơm Maro 4Hp họng 114 (XGm/7BR)",
+  "price": 4500000,
+  "old_price": null,
+  "img": "/assets/img/images/8430.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-maro"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8431",
+  "slug": "may-bom-maro-5-5hp-xgm-7ar",
+  "name": "Máy bơm Maro XGm7AR (5.5H họng 114)",
+  "price": 4800000,
+  "old_price": null,
+  "img": "/assets/img/images/8431.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-maro"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8432",
+  "slug": "may-bom-oxy-hailea-aco-328-60w",
+  "name": "Máy Sủi Oxy HAILEA ACO-328 (60w)",
+  "price": 650000,
+  "old_price": null,
+  "img": "/assets/img/images/8432.jpg",
+  "categories": [
+   "may-thoi-khi/hailea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8433",
+  "slug": "may-bom-oxy-hailea-aco-380-380w",
+  "name": "Máy Thổi Oxy HAILEA ACO-380 (380w)",
+  "price": 1695000,
+  "old_price": null,
+  "img": "/assets/img/images/8433.jpg",
+  "categories": [
+   "may-thoi-khi/hailea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8434",
+  "slug": "may-bom-oxy-hailea-aco-500-500w",
+  "name": "Máy Thổi Oxy HAILEA ACO-500 (500W)",
+  "price": 2760000,
+  "old_price": null,
+  "img": "/assets/img/images/8434.jpg",
+  "categories": [
+   "may-thoi-khi/hailea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8435",
+  "slug": "may-bom-oxy-hailea-cp-60-80w",
+  "name": "Máy thổi Oxy HAILEA CP-60 (80w)",
+  "price": 2250000,
+  "old_price": null,
+  "img": "/assets/img/images/8435.jpg",
+  "categories": [
+   "may-thoi-khi/hailea"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8436",
+  "slug": "may-bom-rheken-jlm60-200-200w",
+  "name": "Máy bơm RHEKEN RJm60-200 (200w)",
+  "price": 1050000,
+  "old_price": null,
+  "img": "/assets/img/images/8436.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-rheken"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8437",
+  "slug": "may-bom-rheken-jlm90-1100a-1100w",
+  "name": "Máy bơm RHEKEN RJm90-1100A (1.5Hp)",
+  "price": 3150000,
+  "old_price": null,
+  "img": "/assets/img/images/8437.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-rheken"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8438",
+  "slug": "may-bom-super-win-sp-1100-1100w",
+  "name": "Máy bơm Tân Hoàn Cầu 1100w họng 49-42 (SP-1100)",
+  "price": 3795000,
+  "old_price": null,
+  "img": "/assets/img/images/8438.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8439",
+  "slug": "may-bom-super-win-sp-370",
+  "name": "Máy bơm Tân Hoàn Cầu 370w (SP-370)",
+  "price": 1850000,
+  "old_price": null,
+  "img": "/assets/img/images/8439.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8440",
+  "slug": "may-bom-tan-hoan-cau-1hp-42-34",
+  "name": "Máy bơm Tân Hoàn Cầu 1Hp họng 42-34 (SP-750)",
+  "price": 2020000,
+  "old_price": null,
+  "img": "/assets/img/images/8440.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8441",
+  "slug": "may-bom-tan-hoan-cau-2hp-60-49",
+  "name": "Máy bơm Tân Hoàn Cầu 2Hp họng 60-49 (SP-1500)",
+  "price": 3220000,
+  "old_price": null,
+  "img": "/assets/img/images/8441.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8442",
+  "slug": "may-bom-tan-hoan-cau-2hp-60-60",
+  "name": "Máy bơm Super Win SP-1500 (2Hp 380v)",
+  "price": 2870000,
+  "old_price": null,
+  "img": "/assets/img/images/8442.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8443",
+  "slug": "may-bom-tan-hoan-cau-3hp-90-90",
+  "name": "Máy bơm Super Win SP-2200 (3HP 380V)",
+  "price": 3880000,
+  "old_price": null,
+  "img": "/assets/img/images/8443.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8444",
+  "slug": "may-bom-techrumi-ss120-2-0",
+  "name": "Máy bơm TECHRUMI SS120-2.0 (2Hp)",
+  "price": 3030000,
+  "old_price": null,
+  "img": "/assets/img/images/8444.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8445",
+  "slug": "may-bom-techrumi-ss80-0-5",
+  "name": "Máy bơm TECHRUMI SS80-05 (SS80/0.5)",
+  "price": 1560000,
+  "old_price": null,
+  "img": "/assets/img/images/8445.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8446",
+  "slug": "may-bom-vina-pump-vn-1100-hong-90-60",
+  "name": "Máy bơm Tân Hoàn Cầu 1100w họng 90-60 (VN-1100 1.5HP)",
+  "price": 2290000,
+  "old_price": null,
+  "img": "/assets/img/images/8446.jpg",
+  "categories": [
+   "do-gia-dung/may-bom"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8447",
+  "slug": "may-bom-wilo-pd-300ea",
+  "name": "Máy bơm Wilo PD-300EA 300w",
+  "price": 4055000,
+  "old_price": null,
+  "img": "/assets/img/images/8447.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8448",
+  "slug": "may-bom-wilo-pd-s751e",
+  "name": "Máy bơm Wilo PD-S951EA 1Hp",
+  "price": 9182000,
+  "old_price": null,
+  "img": "/assets/img/images/8448.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8449",
+  "slug": "may-bom-wilo-ph-101e",
+  "name": "Máy bơm WiLo PH-101E 200w",
+  "price": 2975000,
+  "old_price": null,
+  "img": "/assets/img/images/8449.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8450",
+  "slug": "may-bom-wilo-ph-2200q",
+  "name": "Máy bơm WiLo PH-2200Q 3Hp 380v",
+  "price": 13363000,
+  "old_price": null,
+  "img": "/assets/img/images/8450.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8451",
+  "slug": "may-bom-wilo-ph-251e",
+  "name": "Máy bơm WiLo PH 254E 330w",
+  "price": 3673000,
+  "old_price": null,
+  "img": "/assets/img/images/8451.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8452",
+  "slug": "may-bom-wilo-ph-254e",
+  "name": "Máy bơm WiLo PH-251E 330w",
+  "price": 5395000,
+  "old_price": null,
+  "img": "/assets/img/images/8452.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8453",
+  "slug": "may-bom-wilo-ph-400e",
+  "name": "Máy bơm WiLo PH-400E 800w",
+  "price": 7245000,
+  "old_price": null,
+  "img": "/assets/img/images/8453.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8454",
+  "slug": "may-bom-wilo-ts-32-12a",
+  "name": "Máy bơm Wilo PD-S550EA 550W",
+  "price": 7531000,
+  "old_price": null,
+  "img": "/assets/img/images/8454.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8455",
+  "slug": "may-bom-wilo-ts-32-9a",
+  "name": "Máy bơm Wilo PD-S300EA",
+  "price": 6963000,
+  "old_price": null,
+  "img": "/assets/img/images/8455.jpg",
+  "categories": [
+   "do-gia-dung/may-bom-wilo"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8456",
+  "slug": "may-nang-luong-mat-troi-dai-thanh-130-lit",
+  "name": "Máy Nước Nóng Đại Thành 130L",
+  "price": 5990000,
+  "old_price": null,
+  "img": "/assets/img/images/8456.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/dai-thanh"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8457",
+  "slug": "may-nang-luong-mat-troi-thai-duong-nang-180l-gold-nano",
+  "name": "Máy Nước Nóng 180L Thái Dương Năng Gold Nano",
+  "price": 7600000,
+  "old_price": null,
+  "img": "/assets/img/images/8457.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8458",
+  "slug": "may-nuoc-nong-mat-troi-thai-duong-nang-160l-gold-nano",
+  "name": "Máy Nước Nóng 160L Thái Dương Năng Gold Nano",
+  "price": 6100000,
+  "old_price": null,
+  "img": "/assets/img/images/8458.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8459",
+  "slug": "may-nuoc-nong-mat-troi-thai-duong-nang-200l-gold-nano",
+  "name": "Máy Nước Nóng 220L Thái Dương Năng Gold Nano",
+  "price": 10090000,
+  "old_price": null,
+  "img": "/assets/img/images/8459.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8460",
+  "slug": "may-nuoc-nong-mat-troi-thai-duong-nang-200l-gold-nano-2",
+  "name": "Máy Nước Nóng 200L Thái Dương Năng Gold Nano",
+  "price": 9300000,
+  "old_price": null,
+  "img": "/assets/img/images/8460.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8461",
+  "slug": "may-nuoc-nong-mat-troi-thai-duong-nang-240l-gold-nano",
+  "name": "Máy Nước Nóng 240L Thái Dương Năng Gold Nano",
+  "price": 10500000,
+  "old_price": null,
+  "img": "/assets/img/images/8461.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8462",
+  "slug": "may-nuoc-nong-nang-luong-thai-duong-nang-320l-titan",
+  "name": "Máy năng lượng Thái Dương Năng 320l Titan",
+  "price": 15000000,
+  "old_price": null,
+  "img": "/assets/img/images/8462.jpg",
+  "categories": [
+   "may-nuoc-nong-mat-troi/son-ha"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8463",
+  "slug": "may-thoi-hong-helong-gb-1500-1500w",
+  "name": "Máy Thổi Khí Hong Helong HB-1500 (2Hp)",
+  "price": 7950000,
+  "old_price": null,
+  "img": "/assets/img/images/8463.jpg",
+  "categories": [
+   "may-thoi-khi/hong-helong"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8464",
+  "slug": "may-thoi-hong-helong-gb-550-550w",
+  "name": "Máy Thổi Khí Hong Helong HB-550",
+  "price": 5995000,
+  "old_price": null,
+  "img": "/assets/img/images/8464.jpg",
+  "categories": [
+   "may-thoi-khi/hong-helong"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8465",
+  "slug": "may-thoi-hong-helong-gb-750-750w",
+  "name": "Máy thổi Khí Hong Helong HB-750",
+  "price": 5995000,
+  "old_price": null,
+  "img": "/assets/img/images/8465.jpg",
+  "categories": [
+   "may-thoi-khi/hong-helong"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
+ },
+ {
+  "id": "8466",
+  "slug": "motor-bao-long-5hp-tua-1400",
+  "name": "Motor Bảo Long 5Hp tua chậm",
+  "price": 2438000,
+  "old_price": null,
+  "img": "/assets/img/images/8466.jpg",
+  "categories": [
+   "dong-co-motor-dien/bao-long"
+  ],
+  "status": "Còn hàng",
+  "updated_at": "2026-10-21T16:17:13Z"
  }
 ]
