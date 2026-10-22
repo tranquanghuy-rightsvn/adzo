@@ -7,7 +7,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { localPath, PATH_OVERRIDES } from './lib/urls.mjs';
 import * as T from './lib/templates.mjs';
-import { loadCms, buildCmsPages, BLOG } from './lib/cms.mjs';
+import { loadCms, buildCmsPages, mediaIndex, BLOG } from './lib/cms.mjs';
+import { loadSettings, fillSettings } from './lib/settings.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const WEB = path.resolve(ROOT, '..'); // thư mục gốc = web tĩnh
@@ -15,9 +16,12 @@ const DIST = WEB;
 const read = (p) => fs.readFile(/^(js|css)\//.test(p) ? path.join(WEB, p) : path.join(ROOT, p), 'utf8');
 const site = JSON.parse(await read('data/site.json'));
 const REPO = path.resolve(WEB, '..');
+const S = await loadSettings(REPO);
+T.setSettings(S);
 
 /* ---------- Dữ liệu CMS (data/) gộp vào site.pages ---------- */
-const cms = buildCmsPages(await loadCms(REPO));
+const cmsData = await loadCms(REPO);
+const cms = buildCmsPages(cmsData);
 for (const p of Object.keys(cms.pages)) {
   if (site.pages[p]) console.warn('CẢNH BÁO: trang CMS trùng URL với site.json, bỏ trang CMS:', p);
   else site.pages[p] = cms.pages[p];
@@ -50,16 +54,20 @@ const homeData = fixHome(HOME);
 // Khối tin tức trang chủ = bài mới nhất; thẻ sản phẩm trang chủ lấy lại tên/giá/ảnh hiện tại,
 // sản phẩm đã xoá qua CMS tự rơi khỏi khối (danh sách sản phẩm nào hiện ở đâu vẫn sửa tay).
 homeData.news = cms.latestPosts.slice(0, 15);
+homeData.alt = S.home_title; // alt mặc định của ảnh banner (js/home.js)
+// Banner trang chủ quản lý ở tab "Quản lý website" (data/settings.json); chưa lưu lần nào = giữ data.js.
+if (S.hero) homeData.hero = S.hero.map((h) => ({ href: h.href ? localPath(h.href) : null, lg: h.img, sm: h.img_mobile || h.img, img: h.img }));
+if (S.home_banners) homeData.banners['151'] = S.home_banners.map((b) => ({ img: b.img, href: b.href ? localPath(b.href) : null, target: b.new_tab ? '_blank' : null }));
 for (const sec of Object.values(homeData.products || {})) sec.items = sec.items.map(freshCard).filter(Boolean);
 await fs.writeFile(path.join(WEB, 'js/data.js'), '/* Dữ liệu trang chủ (sản phẩm, bài viết, banner...) */\nwindow.TAHAWA_DATA = ' + JSON.stringify(homeData, null, 1) + ';\n');
 
 /* ---------- Partials ---------- */
 const P = {
-  header: await read('src/partials/header.html'),
-  hero: await read('src/partials/hero.html'),
-  footer: await read('src/partials/footer.html'),
-  floats: await read('src/partials/floats.html'),
-  homeMain: await read('src/home-main.html'),
+  header: fillSettings(await read('src/partials/header.html'), S),
+  hero: fillSettings(await read('src/partials/hero.html'), S),
+  footer: fillSettings(await read('src/partials/footer.html'), S),
+  floats: fillSettings(await read('src/partials/floats.html'), S),
+  homeMain: fillSettings(await read('src/home-main.html'), S),
 };
 
 const ctx = { site, MENU, P, pages: site.pages };
@@ -72,7 +80,7 @@ function write(urlPath, html) {
 /* ---------- Trang chủ ---------- */
 write('/', T.layout(ctx, {
   path: '/', bodyClass: 'homepage', isHome: true,
-  meta: { title: 'Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng', description: 'Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng' },
+  meta: { title: S.home_title, description: S.home_description, keywords: S.home_keywords, ogImage: S.og_image },
   main: P.homeMain, scripts: ['/js/data.js', '/js/home.js'],
 }));
 
@@ -132,6 +140,10 @@ for (const p of cmsPaths) reserved.delete(p);
 for (const p of cmsPaths) reserved.delete(p.split('/')[0]);
 reserved.add(BLOG.path); // trang tổng tin tức: build sinh, CMS không được đặt URL trùng
 await fs.writeFile(path.join(REPO, 'data/reserved-paths.json'), JSON.stringify([...reserved].sort(), null, 1) + '\n');
+
+// Thư viện ảnh cho trình soạn thảo trong CMS (GAS.md mục II.6) - 1 dòng/ảnh để diff gọn.
+const media = mediaIndex(cmsData);
+await fs.writeFile(path.join(REPO, 'data/media-index.json'), '[\n' + media.map((r) => JSON.stringify(r)).join(',\n') + '\n]\n');
 
 // Danh sách trang đã sinh (dùng cho sitemap + kiểm tra link)
 const urls = outputs.map(([u]) => u).filter((u) => !u.endsWith('.html'));

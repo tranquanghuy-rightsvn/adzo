@@ -18,10 +18,12 @@
 | Người dùng | Google Sheet, sheet `Users` | CMS |
 | Liên hệ | Google Sheet, sheet `Contacts` | Form public trên site → `doPost` |
 | Đơn hàng | Google Sheet, sheet `Orders` | Trang Thanh toán + "Mua nhanh" ở Giỏ hàng → `doPost` |
+| Thông tin website (logo, hotline, banner trang chủ...) | GitHub `data/settings.json` | CMS, tab "Quản lý website" |
+| Thư viện ảnh (chỉ mục) | GitHub `data/media-index.json` | Build (CI) |
 
 KHÔNG thuộc CMS (sửa tay trong repo, như cũ): trang tĩnh (giới thiệu, chính sách, liên hệ…),
-landing page, menu (`html/js/menu-data.js`), khối banner/danh mục/sản phẩm nổi bật ở trang chủ
-(`html/js/data.js`), giỏ hàng/thanh toán. Riêng các khối "tự động" sau do build tự cập nhật từ
+landing page, menu (`html/js/menu-data.js`), khối danh mục/sản phẩm nổi bật ở trang chủ
+(`html/js/data.js`; RIÊNG banner slide + dải banner giữa trang chủ đã chuyển sang mục II-C), giỏ hàng/thanh toán. Riêng các khối "tự động" sau do build tự cập nhật từ
 `data/`: tin tức trang chủ, "TIN CHO BẠN" ở sidebar (5 bài mới nhất), dữ liệu thẻ sản phẩm ở
 trang chủ + "SẢN PHẨM NỔI BẬT" (tên/giá/ảnh lấy lại theo sản phẩm hiện tại; sản phẩm đã xoá tự
 biến mất khỏi khối).
@@ -41,6 +43,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    | Liên hệ (xem, đổi trạng thái, xoá) | ✘ | ✔ | ✔ |
    | Đơn hàng (xem, đổi trạng thái, ghi chú nội bộ, xoá) | ✘ | ✔ | ✔ |
    | Người dùng (thêm/sửa/xoá tài khoản `admin`/`editor`) | ✘ | ✔ | ✔ |
+   | Quản lý website (logo, liên hệ, banner trang chủ — mục II-C) | ✘ | ✔ | ✔ |
    | Thống kê: Tổng quan, Từ khoá & SEO, Truy cập | ✘ | ✔ | ✔ |
 
    - Quyền `root` không cấp/sửa/xoá được qua CMS (chỉ sửa tay trong Sheet) — tránh lỡ tay khoá
@@ -95,6 +98,43 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
      (số từ · ký tự · phút đọc), Từ khoá SEO (số từ khoá). Màu xanh/cam/đỏ theo ngưỡng.
    - Chạy hoàn toàn trên trình duyệt, không gọi server, KHÔNG chặn việc Lưu.
 
+6. Thư viện ảnh — dùng lại ảnh đã có (bài viết VÀ sản phẩm): nút "Chọn ảnh từ thư viện" (icon
+   gallery) trên thanh công cụ TinyMCE, nút "Chọn từ thư viện ảnh" cạnh ô Ảnh bìa và ô Ảnh sản phẩm.
+   - Chỉ mục `data/media-index.json` do BUILD sinh (`mediaIndex()` trong
+     `html/_dev/scripts/lib/cms.mjs`): mọi ảnh `/assets/...` ở ảnh bìa, ảnh sản phẩm, nội dung
+     bài/sản phẩm; mỗi dòng `[src, caption/alt, nơi dùng (tối đa 3 tên + "(+N)")]`. Ảnh mới chỉ vào
+     thư viện sau khi Lưu + build xong (~1-3 phút; nút "Làm mới" trong hộp chọn).
+   - Hộp chọn: ô tìm kiếm bỏ dấu, mọi từ gõ vào phải có trong chú thích / tên bài-sản phẩm / tên
+     file; hiện 60 ảnh/lượt + "Xem thêm"; chọn nhiều ảnh (nội dung, ảnh sản phẩm — theo thứ tự bấm)
+     hoặc 1 ảnh (ảnh bìa).
+   - Ảnh CHUNG (`/assets/img/images/`, `/assets/img/media/`...) dùng lại bằng cách trỏ thẳng tới,
+     không chép. Ảnh trong thư mục RIÊNG của bài/sản phẩm khác (`/assets/img/{posts,products}/<slug>/`)
+     bị xoá theo chủ của nó → server CHÉP sang thư mục riêng của chỗ dùng mới (`cNN`/`gNN`) qua
+     `reuseImage()`. Ảnh bìa luôn được chép thành `cover.jpg` của bài. Quy tắc "có cần chép" khai ở 2
+     chỗ phải khớp: `reuseImage()` (Code.js) và `mediaNeedsCopy_()` (js.html).
+   - `saveProduct` chấp nhận thêm ảnh CHUNG có trong thư viện (ngoài ảnh cũ + `gNN` riêng).
+7. Danh sách bài viết và sản phẩm có nút "Xem" mở trang thật `https://adzo.vn/<slug>/` (tab mới).
+
+## II-C. Quản lý website (thông tin chung)
+
+- Tab "Quản lý website" (admin trở lên), lưu `data/settings.json` (1 commit, kích hoạt build).
+  Build đọc qua `html/_dev/scripts/lib/settings.mjs`: `DEFAULTS` trong file đó = nội dung site trước
+  khi có tab này; thiếu file/ô chữ để trống = dùng mặc định (riêng Từ khoá trang chủ, Zalo → dùng
+  hotline, Bản đồ → dùng Địa chỉ được phép trống).
+- Field: Tên thương hiệu, Tên công ty, Tiêu đề / Mô tả / Từ khoá trang chủ, dòng chữ topbar (trái),
+  slogan (topbar phải), câu giới thiệu chân trang; Logo, Favicon, Ảnh chia sẻ mặc định (og:image);
+  Hotline, Zalo, Địa chỉ, Tỉnh/Thành phố, Giờ mở cửa, MST, dòng bản quyền, địa chỉ bản đồ; Banner
+  slide đầu trang chủ (`hero`: ảnh máy tính + ảnh điện thoại tuỳ chọn + link, ≥ 1, tối đa 10, đổi
+  thứ tự được); Dải banner giữa trang chủ (`home_banners`: ảnh + link + mở tab mới, tối đa 4).
+- Dùng ở: header (logo, hotline, Zalo, topbar), footer (logo, tagline, địa chỉ, giờ, MST, hotline,
+  Zalo, bản đồ, bản quyền), nút gọi/Zalo nổi, `<title>`/mô tả/từ khoá trang chủ, favicon mọi trang,
+  trang thanh toán (logo, hotline), JSON-LD tổ chức + câu mô tả tự sinh (`seo.mjs`), banner trang
+  chủ (`html/js/data.js` do build ghi lại). Partial dùng token `{{S:key}}` (`fillSettings`, key sai
+  → build báo lỗi).
+- Ảnh: tải lên `html/assets/img/site/<loại>-<thời điểm>.<ext>` (tên mới mỗi lần, không ghi đè; logo
+  và favicon xuất PNG giữ nền trong, cạnh dài 512px; ảnh khác JPEG 1900px), hoặc chọn từ thư viện
+  ảnh (mục II.6; ảnh riêng của bài/sản phẩm được chép sang `site/lib-*.jpg`). Ảnh cũ không tự xoá.
+
 ## II-B. Danh mục bài viết
 
 - `/tin-tuc/` là trang TỔNG hiện mọi bài viết (build sinh từ hằng `BLOG` trong
@@ -144,6 +184,11 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    — KHÔNG bao giờ bị xoá.
 5. Thứ tự: sản phẩm mới đứng đầu danh sách (trang danh mục hiện theo thứ tự trong
    `data/products.json`), 60 sản phẩm/trang, trang 2 trở đi ở `/<url>-trang-N/`.
+6. "Có thể bạn sẽ thích": khối ở sidebar trang chi tiết sản phẩm, NGAY TRÊN "SẢN PHẨM NỔI BẬT",
+   cùng kiểu hiển thị. Field `suggested` (tối đa 4 slug, chọn ở form sản phẩm bằng ô tìm theo tên;
+   server bỏ slug không tồn tại/trùng/chính nó). Thiếu (hoặc chưa chọn) thì build bù cho đủ 4 bằng
+   chọn "ngẫu nhiên" CỐ ĐỊNH (`suggestFor()` trong `cms.mjs`, rendezvous hashing theo slug — thêm/xoá
+   1 sản phẩm không làm đổi khối này ở cả nghìn trang). Sản phẩm đã chọn mà sau bị xoá → tự bỏ qua.
 
 ## III-B. Danh mục sản phẩm
 

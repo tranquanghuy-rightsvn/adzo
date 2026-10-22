@@ -12,6 +12,7 @@ on:
       - "data/posts.json"
       - "data/product-categories.json"
       - "data/post-categories.json"
+      - "data/settings.json"
       - "html/_dev/scripts/**"
       - "html/_dev/src/**"
       - "html/_dev/data/site.json"
@@ -44,12 +45,12 @@ jobs:
 
       # CMS ghi thẳng lên GitHub bất cứ lúc nào (độc lập với job này) nên lúc push có thể đã có
       # commit mới -> rebase rồi push lại. Không đụng file chung: CMS chỉ ghi data/ + ảnh trong
-      # html/assets/img/{posts,products}/, còn job này chỉ ghi trang .html/js/sitemap.
+      # html/assets/img/{posts,products}/, còn job này chỉ ghi trang .html/js/sitemap + 2 file chỉ mục data/.
       - name: Commit html/ đã build
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A html/ data/reserved-paths.json
+          git add -A html/ data/reserved-paths.json data/media-index.json
           git diff --cached --quiet && echo "Không có thay đổi để commit." && exit 0
           git commit -m "CI: build html từ data/"
           for i in 1 2 3 4 5; do

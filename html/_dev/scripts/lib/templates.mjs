@@ -20,7 +20,9 @@ const GA4_TAG = GA4_ID
   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`
   : '';
-const SITE_NAME = 'Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
+// Thông tin chung (logo, hotline...) - lib/settings.mjs; build-site.mjs gọi setSettings() trước khi render.
+let S = null;
+export function setSettings(s) { S = s; }
 const stars = (n = 5) => Array.from({ length: 5 }, (_, i) => `<i class="fa fa-star${i < n ? ' is-on' : ''}"></i>`).join('');
 
 /* =========================================================
@@ -60,7 +62,7 @@ export const isGenerated = (html) => html.includes('/* /slug/index.html -> /slug
 export function layout(ctx, o) {
   const { MENU, P } = ctx;
   const m = o.meta || {};
-  const title = m.title || SITE_NAME;
+  const title = m.title || S.home_title;
   const header = P.header
     .replace('{{HERO}}', o.isHome ? P.hero : '')
     .replace('{{MAIN_MENU}}', mainMenu(MENU, o.path))
@@ -79,7 +81,7 @@ export function layout(ctx, o) {
 ${m.keywords ? `  <meta name="keywords" content="${esc(m.keywords)}">\n` : ''}  <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(m.description || title)}">
 ${m.ogImage ? `  <meta property="og:image" content="${esc(m.ogImage)}">\n` : ''}  <link rel="canonical" href="${esc(o.path)}">
-  <link rel="icon" href="/assets/img/media/favicon.png">
+  <link rel="icon" href="${esc(S.favicon)}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
@@ -159,12 +161,17 @@ function captchaField(cls = '') {
     '<a href="#" class="regen-captcha" aria-label="Đổi mã"><i class="fas fa-undo"></i></a></div>';
 }
 
-export function sidebar(sb) {
+/** extra.suggest: "Có thể bạn sẽ thích" - chỉ trang chi tiết sản phẩm, nằm trên SẢN PHẨM NỔI BẬT. */
+export function sidebar(sb, extra = {}) {
   if (!sb) return '';
-  const featured = sb.featured.map((p) => `<div class="sb-product">${productCard(p)}</div>`).join('');
+  const cards = (list) => list.map((p) => `<div class="sb-product">${productCard(p)}</div>`).join('');
+  const featured = cards(sb.featured);
   const posts = sb.posts.map((p) => postCard(p)).join('');
+  const suggest = extra.suggest && extra.suggest.length
+    ? `<div class="sb-widget sb-products sb-suggest">${boxHeading('CÓ THỂ BẠN SẼ THÍCH', 'div')}<div class="sb-content">${cards(extra.suggest)}</div></div>`
+    : '';
   return `<aside class="widget-sidebar">
-  <div class="sb-widget sb-products">${boxHeading(sb.featuredTitle || 'SẢN PHẨM NỔI BẬT', 'div')}<div class="sb-content">${featured}</div></div>
+  ${suggest}<div class="sb-widget sb-products">${boxHeading(sb.featuredTitle || 'SẢN PHẨM NỔI BẬT', 'div')}<div class="sb-content">${featured}</div></div>
   <div class="sb-widget sb-posts">${boxHeading(sb.postsTitle || 'TIN CHO BẠN', 'div')}<div class="sb-content">${posts}</div></div>
 </aside>`;
 }
@@ -208,16 +215,16 @@ function share(url, media, title) {
 </ul><span class="share-box__msg" role="status" aria-live="polite"></span></div>`;
 }
 
-const withSidebar = (ctx, mainHtml, mainCls = '') => `<div class="page-content"><div class="container"><div class="row-main">
+const withSidebar = (ctx, mainHtml, mainCls = '', extra = {}) => `<div class="page-content"><div class="container"><div class="row-main">
   <section class="col-main ${mainCls}">${mainHtml}</section>
-  ${sidebar(ctx.site.sidebar)}
+  ${sidebar(ctx.site.sidebar, extra)}
 </div></div></div>`;
 
 /* =========================================================
    Pages
    ========================================================= */
 function productPage(ctx, p, d) {
-  const gallery = d.gallery.length ? d.gallery : [{ img: '/assets/img/media/logo-adzo.png', full: '/assets/img/media/logo-adzo.png' }];
+  const gallery = d.gallery.length ? d.gallery : [{ img: S.logo, full: S.logo }];
   const main = gallery.map((g, i) => `<a class="img-main-href" href="${esc(g.full || g.img)}" data-index="${i}"${i ? ' hidden' : ''}><img class="img-main-detail" src="${esc(g.img)}" alt="${esc(d.name)}"${i ? ' loading="lazy"' : ''}><i class="fa fa-expand"></i></a>`).join('');
   const thumbs = d.thumbs.length > 1
     ? `<div class="pd-thumbs-wrap"><div class="carousel carousel--d pd-thumbs" data-items="4,4,4,4" data-margin="15" data-nav="true">${d.thumbs.map((t, i) => `<div class="pd-thumb${i ? '' : ' is-current'}" data-index="${i}"><a style="background-image:url(${esc(t)})"><img src="${esc(t)}" alt="" loading="lazy" draggable="false"></a></div>`).join('')}</div></div>`
@@ -261,7 +268,7 @@ function productPage(ctx, p, d) {
   </div>
   ${tabs}
   ${related}`;
-  return layout(ctx, { path: p, bodyClass: 'product_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html, 'pd-main'), scripts: ['/js/pages.js'] });
+  return layout(ctx, { path: p, bodyClass: 'product_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html, 'pd-main', { suggest: d.suggest || [] }), scripts: ['/js/pages.js'] });
 }
 
 function pagination(d) {
@@ -392,9 +399,9 @@ export function checkoutPage() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   ${REDIRECT_SNIPPET}
-  <title>Adzo - Thanh toán đơn hàng</title>
+  <title>${esc(S.brand_name)} - Thanh toán đơn hàng</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="/assets/img/media/favicon.png">
+  <link rel="icon" href="${esc(S.favicon)}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
@@ -402,9 +409,9 @@ export function checkoutPage() {
 </head>
 <body class="checkout-page">
 <header class="co-header"><div class="co-container">
-  <a class="co-logo" href="/"><img src="/assets/img/media/logo-adzo.png" alt="Adzo.vn - Máy móc, thiết bị, vật tư" width="188" height="40"></a>
+  <a class="co-logo" href="/"><img src="${esc(S.logo)}" alt="${esc(S.brand_name)}" width="188" height="40"></a>
   <ol class="co-steps"><li><a href="/cart/">Giỏ hàng</a></li><li class="is-current">Thanh toán</li><li>Hoàn tất</li></ol>
-  <a class="co-hotline" href="tel:0903889102"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>0903 88 91 02</span></a>
+  <a class="co-hotline" href="tel:${esc(S.hotline_tel)}"><i class="fa fa-phone-alt"></i><span><small>Hỗ trợ đặt hàng</small>${esc(S.hotline)}</span></a>
 </div></header>
 <main class="co-container co-main-wrap">
   <form action="#" id="checkout-order-form" novalidate>

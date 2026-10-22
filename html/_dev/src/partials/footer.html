@@ -4,18 +4,18 @@
         <div class="footer-grid">
           <div class="footer-col footer-col--brand">
             <div class="footer-brand">
-              <div class="footer-logo"><img src="/assets/img/media/logo-adzo.png" alt="Adzo" width="148" height="32"></div>
-              <p class="footer-tagline">Thiết bị công nghiệp &amp; gia dụng chính hãng Nhật Bản</p>
+              <div class="footer-logo"><img src="{{S:logo}}" alt="{{S:brand_name}}" width="148" height="32"></div>
+              <p class="footer-tagline">{{S:tagline}}</p>
             </div>
             <ul class="footer-info">
-              <li><i class="fas fa-map-marker-alt"></i><span>39/14A Đường Phú Thọ, Phường 1, Quận 11, TP Hồ Chí Minh, Việt Nam</span></li>
-              <li><i class="fas fa-clock"></i><span>07:00 – 22:00, Thứ 2 - Chủ Nhật</span></li>
-              <li><i class="fas fa-id-card"></i><span>MST: 0314983819</span></li>
-              <li><i class="fas fa-phone-alt"></i><span>Hotline: <a href="tel:0903889102">0903 88 91 02</a></span></li>
+              <li><i class="fas fa-map-marker-alt"></i><span>{{S:address}}</span></li>
+              <li><i class="fas fa-clock"></i><span>{{S:hours}}</span></li>
+              <li><i class="fas fa-id-card"></i><span>MST: {{S:tax_code}}</span></li>
+              <li><i class="fas fa-phone-alt"></i><span>Hotline: <a href="tel:{{S:hotline_tel}}">{{S:hotline}}</a></span></li>
             </ul>
             <div class="footer-social">
-              <a href="https://zalo.me/0903889102" class="footer-social__btn" aria-label="Zalo" target="_blank" rel="noopener"><img src="/assets/img/media/zalo-icon.png" alt="Zalo"></a>
-              <a href="tel:0903889102" class="footer-social__btn" aria-label="Gọi điện"><i class="fas fa-phone-alt"></i></a>
+              <a href="{{S:zalo_url}}" class="footer-social__btn" aria-label="Zalo" target="_blank" rel="noopener"><img src="/assets/img/media/zalo-icon.png" alt="Zalo"></a>
+              <a href="tel:{{S:hotline_tel}}" class="footer-social__btn" aria-label="Gọi điện"><i class="fas fa-phone-alt"></i></a>
             </div>
           </div>
 
@@ -36,8 +36,8 @@
           <div class="footer-col footer-col--map">
             <div class="footer-heading">Vị Trí Cửa Hàng</div>
             <div class="footer-map">
-              <iframe title="Bản đồ Adzo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
-                src="https://www.google.com/maps?q=39%2F14A+%C4%91%C6%B0%E1%BB%9Dng+Ph%C3%BA+Th%E1%BB%8D%2C+Ph%C6%B0%E1%BB%9Dng+1%2C+Qu%E1%BA%ADn+11%2C+TP.HCM&output=embed"></iframe>
+              <iframe title="Bản đồ {{S:brand_name}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+                src="{{S:map_src}}"></iframe>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
 
     <div class="footer-bottom">
       <div class="container footer-bottom__row">
-        <p class="footer-copyright">© Bản quyền thuộc về Công Ty TNHH Adzo</p>
+        <p class="footer-copyright">{{S:copyright}}</p>
         <a href="#header" class="footer-top-link"><i class="fas fa-angle-up"></i> Lên đầu trang</a>
       </div>
     </div>

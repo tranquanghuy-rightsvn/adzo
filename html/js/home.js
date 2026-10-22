@@ -73,7 +73,7 @@
   function renderSections() {
     var heroEl = $('[data-hero]');
     if (heroEl) heroEl.innerHTML = D.hero.map(function (h) {
-      var pic = picture(h.lg, h.sm, 'Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng');
+      var pic = picture(h.lg, h.sm, h.alt || D.alt || '');
       return '<div class="hero-item">' + (h.href ? '<a href="' + link(h.href) + '">' + pic + '</a>' : pic) + '</div>';
     }).join('');
 
@@ -88,7 +88,7 @@
     $$('[data-banners]').forEach(function (box) {
       var list = D.banners[box.dataset.banners] || [];
       box.innerHTML = list.map(function (b) {
-        var img = '<img src="' + esc(b.img) + '" alt="Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng" loading="lazy">';
+        var img = '<img src="' + esc(b.img) + '" alt="' + esc(b.alt || D.alt || '') + '" loading="lazy">';
         var inner = b.href ? '<a href="' + link(b.href) + '"' + (b.target ? ' target="_blank" rel="noopener"' : '') + '>' + img + '</a>' : img;
         return box.classList.contains('banner-single') ? inner : '<div>' + inner + '</div>';
       }).join('');

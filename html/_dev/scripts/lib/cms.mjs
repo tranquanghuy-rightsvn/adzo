@@ -82,6 +82,47 @@ export async function loadCms(repoRoot) {
   return { products, posts, productCats, postCats, productDetails, postDetails };
 }
 
+/**
+ * Thư viện ảnh cho CMS (nút "Thư viện ảnh" trong trình soạn thảo, GAS.md mục II.6): mọi ảnh
+ * /assets/... đang dùng ở bài viết + sản phẩm, kèm chữ để tìm (caption/alt + tên bài/sản phẩm).
+ * Dòng = [src, caption, nơi dùng]; 1 ảnh dùng nhiều nơi gộp làm 1 dòng. Bài viết (mới nhất) trước.
+ */
+export function mediaIndex(cms) {
+  const by = new Map();
+  const add = (src, caption, owner) => {
+    src = String(src || '').trim();
+    if (!/^\/assets\/[^"'<>\s]+\.(jpe?g|png|gif|webp|svg)$/i.test(src)) return;
+    let it = by.get(src);
+    if (!it) by.set(src, (it = { caption: '', owners: [] }));
+    if (!it.caption && caption) it.caption = caption;
+    if (owner && !it.owners.includes(owner)) it.owners.push(owner);
+  };
+  const attr = (tag, name) => { const m = new RegExp('\\s' + name + '="([^"]*)"', 'i').exec(tag); return m ? text(m[1]) : ''; };
+  const fromHtml = (html, owner) => {
+    html = String(html || '');
+    const rest = html.replace(/<figure\b[^>]*>([\s\S]*?)<\/figure>/gi, (m, inner) => {
+      const cap = /<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/i.exec(inner);
+      for (const img of inner.match(/<img\b[^>]*>/gi) || []) add(attr(img, 'src'), (cap && text(cap[1])) || attr(img, 'alt'), owner);
+      return '';
+    });
+    for (const img of rest.match(/<img\b[^>]*>/gi) || []) add(attr(img, 'src'), attr(img, 'alt'), owner);
+  };
+  for (const p of cms.posts) {
+    const d = cms.postDetails.get(p.slug) || {};
+    add(p.cover, '', p.title);
+    fromHtml(d.content_html, p.title);
+  }
+  for (const p of cms.products) {
+    const d = cms.productDetails.get(p.slug) || {};
+    for (const img of d.images || [p.img]) add(img, '', p.name);
+    fromHtml(d.content_html, p.name);
+  }
+  return [...by].map(([src, it]) => {
+    const more = it.owners.length > 3 ? ' (+' + (it.owners.length - 3) + ')' : '';
+    return [src, it.caption, it.owners.slice(0, 3).join(' · ') + more];
+  });
+}
+
 /** Cây danh mục: tổ tiên, độ sâu, tập con cháu. Danh mục cha không tồn tại = coi như gốc. */
 function tree(cats) {
   const by = new Map(cats.map((c) => [c.path, c]));
@@ -122,6 +163,36 @@ export function postCard(p) {
   };
 }
 
+/** Băm FNV-1a 32 bit - dùng chọn ngẫu nhiên nhưng CỐ ĐỊNH (build phải tất định). */
+function hash32(str) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193); }
+  return h >>> 0;
+}
+
+const SUGGEST_COUNT = 4;
+
+/**
+ * "Có thể bạn sẽ thích" (GAS.md mục III.6): sản phẩm người dùng chọn (field `suggested`, tối đa 4,
+ * bỏ slug đã xoá), thiếu thì bù "ngẫu nhiên" trong toàn bộ sản phẩm. Ngẫu nhiên kiểu rendezvous
+ * hashing: điểm = hash(slug trang + slug ứng viên), lấy điểm nhỏ nhất -> thêm/xoá 1 sản phẩm chỉ đổi
+ * vài trang, không làm cả 1.500 trang đổi theo mỗi lần build.
+ */
+function suggestFor(p, d, bySlug, all) {
+  const picked = [];
+  const seen = new Set([p.slug]);
+  for (const s of d.suggested || []) {
+    const q = bySlug.get(s);
+    if (q && !seen.has(s) && picked.length < SUGGEST_COUNT) { picked.push(q); seen.add(s); }
+  }
+  if (picked.length < SUGGEST_COUNT) {
+    const pool = all.filter((q) => !seen.has(q.slug)).map((q) => [hash32(p.slug + '|' + q.slug), q]);
+    pool.sort((a, b) => a[0] - b[0] || (a[1].slug < b[1].slug ? -1 : 1));
+    for (const [, q] of pool.slice(0, SUGGEST_COUNT - picked.length)) picked.push(q);
+  }
+  return picked.map(productCard);
+}
+
 export function buildCmsPages(cms) {
   const pages = {};
   const PT = tree(cms.productCats);
@@ -139,6 +210,7 @@ export function buildCmsPages(cms) {
     }
     for (const c of cats) inCat.get(c).push(p);
   }
+  const bySlug = new Map(products.map((p) => [p.slug, p]));
   const primaryCat = (p) => (p.categories || []).map((c) => PT.by.get(c)).filter(Boolean)
     .sort((a, b) => PT.ancestors(b).length - PT.ancestors(a).length)[0] || null;
 
@@ -173,6 +245,7 @@ export function buildCmsPages(cms) {
       thumbs: images.length > 1 ? images : [],
       tabs: [{ title: 'Mô tả', id: 'tab-mo-ta', html: d.content_html || '' }],
       related,
+      suggest: suggestFor(p, d, bySlug, products),
       breadcrumbs: primary ? [...crumbs(PT, primary, true), { t: d.name }] : [{ t: 'Trang chủ', href: '/' }, { t: d.name }],
       meta: { title: d.meta_title || d.name, description: desc, keywords: d.meta_keywords || '', ogImage: images[0] || null },
       shareUrl: SITE_URL + url(p.slug),
