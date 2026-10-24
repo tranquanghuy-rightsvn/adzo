@@ -9,7 +9,7 @@ import { loadSettings } from './lib/settings.mjs';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const WEB = path.resolve(ROOT, '..');
 
-export const SITE_URL = 'https://adzo.vn';
+export const SITE_URL = 'https://www.adzo.vn';
 // Thông tin doanh nghiệp lấy từ data/settings.json (tab "Quản lý website" trong CMS).
 const S = await loadSettings(path.resolve(WEB, '..'));
 const ORG = {

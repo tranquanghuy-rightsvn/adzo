@@ -28,7 +28,7 @@ landing page, menu (`html/js/menu-data.js`), khối danh mục/sản phẩm nổ
 trang chủ + "SẢN PHẨM NỔI BẬT" (tên/giá/ảnh lấy lại theo sản phẩm hiện tại; sản phẩm đã xoá tự
 biến mất khỏi khối).
 
-Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
+Trang quản trị: `https://www.adzo.vn/admin/` (nhúng web app GAS bằng iframe).
 
 ## I. Đăng nhập & phân quyền
 
@@ -115,7 +115,7 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
      `reuseImage()`. Ảnh bìa luôn được chép thành `cover.jpg` của bài. Quy tắc "có cần chép" khai ở 2
      chỗ phải khớp: `reuseImage()` (Code.js) và `mediaNeedsCopy_()` (js.html).
    - `saveProduct` chấp nhận thêm ảnh CHUNG có trong thư viện (ngoài ảnh cũ + `gNN` riêng).
-7. Danh sách bài viết và sản phẩm có nút "Xem" mở trang thật `https://adzo.vn/<slug>/` (tab mới).
+7. Danh sách bài viết và sản phẩm có nút "Xem" mở trang thật `https://www.adzo.vn/<slug>/` (tab mới).
 
 ## II-D. Smart content (AI Gemini dàn trang bài viết + mô tả sản phẩm)
 
@@ -145,7 +145,7 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    (+ `style` màu riêng), nạp `/css/smart.css` (reset + biến `--smc-*` theo màu site) + `<style>` CSS
    của bài đã gắn phạm vi `.smc-a.smc-a.smc-a` + `/js/smart.js` (slider, tab, phóng to ảnh, video,
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
-   trước của Admin (Admin nạp từ `https://adzo.vn/js/...` → sửa file này phải deploy site trước).
+   trước của Admin (Admin nạp từ `https://www.adzo.vn/js/...` → sửa file này phải deploy site trước).
 5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
 6. AI viết bài (nút "✍️ Viết bài / mô tả bằng AI" ở cùng thanh; port SMC_Writer của plugin):
    - Bước 1: Tiêu đề/Tên, Từ khoá chính, Từ khoá phụ, Ý chính + thông tin thực tế, Độ dài (bài viết
@@ -379,7 +379,7 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
   tường minh trong `gas/appsscript.json` (`analytics.readonly`, `webmasters.readonly` + các scope cũ)
   → sau khi `clasp push` phải chạy 1 hàm trong editor để cấp quyền mới.
 - Script Properties: `GSC_SITE_URL` (`sc-domain:adzo.vn` cho property dạng Miền, hoặc
-  `https://adzo.vn/`), `GA4_PROPERTY_ID` (dãy số, KHÔNG phải mã G-). Thiếu cái nào thì tab tương ứng
+  `https://www.adzo.vn/`), `GA4_PROPERTY_ID` (dãy số, KHÔNG phải mã G-). Thiếu cái nào thì tab tương ứng
   báo "Chưa kết nối…", nguồn còn lại vẫn chạy.
 - Cache: server 3 giờ (CacheService), trình duyệt 30 phút (localStorage, key có `CLIENT_BUILD`).
   Search Console lấy dữ liệu tới 3 ngày trước (dữ liệu Google chậm 2-3 ngày).

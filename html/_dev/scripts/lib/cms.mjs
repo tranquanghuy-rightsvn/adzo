@@ -7,7 +7,7 @@ import path from 'node:path';
 
 export const PRODUCTS_PER_PAGE = 60;
 export const POSTS_PER_PAGE = 9;
-const SITE_URL = 'https://adzo.vn';
+const SITE_URL = 'https://www.adzo.vn';
 
 // /tin-tuc/ là trang TỔNG của mọi bài viết (không phải danh mục, không quản lý qua CMS - GAS.md
 // mục II-B). Danh mục bài viết nằm bên dưới: /tin-tuc/<slug>/.

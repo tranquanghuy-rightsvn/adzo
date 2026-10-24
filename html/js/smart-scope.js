@@ -1,5 +1,5 @@
 /* Smart content: gắn phạm vi cho CSS do AI viết - DÙNG CHUNG cho trang quản trị (xem trước, nạp từ
- * https://adzo.vn/js/smart-scope.js) và build (html/_dev/scripts/lib/smart.mjs đọc file này).
+ * https://www.adzo.vn/js/smart-scope.js) và build (html/_dev/scripts/lib/smart.mjs đọc file này).
  * ".smc-card h3" -> ".smc-a.smc-a.smc-a .smc-card h3" (lặp class để thắng CSS của site và phần reset
  * trong smart.css). Bỏ @import/@charset, chú thích, "</style". Mỗi trang chỉ có 1 bài Smart content
  * nên dùng 1 class phạm vi cố định. */

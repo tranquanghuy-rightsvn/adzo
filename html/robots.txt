@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_dev/
 
-Sitemap: https://adzo.vn/sitemap.xml
+Sitemap: https://www.adzo.vn/sitemap.xml
