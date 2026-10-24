@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 // mỗi lần build dù nội dung không đổi).
 const WEB_DIR = new URL('../../../', import.meta.url);
 const V = createHash('md5')
-  .update(['css/style.css', 'css/pages.css', 'js/carousel.js', 'js/main.js', 'js/pages.js']
+  .update(['css/style.css', 'css/pages.css', 'css/smart.css', 'js/carousel.js', 'js/main.js', 'js/pages.js', 'js/smart.js']
     .map((f) => readFileSync(new URL(f, WEB_DIR), 'utf8')).join('\n'))
   .digest('hex').slice(0, 8);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -85,7 +85,7 @@ ${m.ogImage ? `  <meta property="og:image" content="${esc(m.ogImage)}">\n` : ''}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
-  ${GA4_TAG}
+${o.smartCss != null ? `  <link rel="stylesheet" href="/css/smart.css?v=${V}">\n  <style>${o.smartCss}</style>\n` : ''}  ${GA4_TAG}
 </head>
 <body class="${esc(o.bodyClass || '')}">
 <div class="wrapper">
@@ -268,7 +268,7 @@ function productPage(ctx, p, d) {
   </div>
   ${tabs}
   ${related}`;
-  return layout(ctx, { path: p, bodyClass: 'product_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html, 'pd-main', { suggest: d.suggest || [] }), scripts: ['/js/pages.js'] });
+  return layout(ctx, { path: p, bodyClass: 'product_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html, 'pd-main', { suggest: d.suggest || [] }), scripts: smartScripts(d), smartCss: d.smartCss });
 }
 
 function pagination(d) {
@@ -310,6 +310,9 @@ function categoryPostPage(ctx, p, d) {
   return layout(ctx, { path: p, bodyClass: 'category_post', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: ['/js/pages.js'] });
 }
 
+/** Trang có bài Smart content (lib/smart.mjs) nạp thêm js/smart.js (slider, tab, phóng to ảnh...). */
+const smartScripts = (d) => (d.smartCss != null ? ['/js/pages.js', '/js/smart.js'] : ['/js/pages.js']);
+
 function postPage(ctx, p, d) {
   const related = d.related.length ? `<hr class="divider-3"><div class="related-posts">${boxHeading(d.relatedTitle)}
     <div class="carousel carousel--d carousel--equal" data-items="1,2,2,3" data-margin="16" data-loop="false" data-nav="true">${d.related.map((r) => postCard(r, { readMore: true })).join('')}</div></div>` : '';
@@ -325,7 +328,7 @@ function postPage(ctx, p, d) {
   ${share(d.shareUrl, d.meta && d.meta.ogImage, d.title)}
   ${related}
   <hr class="divider-3"><div class="m-bottom-30"></div>`;
-  return layout(ctx, { path: p, bodyClass: 'post_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: ['/js/pages.js'] });
+  return layout(ctx, { path: p, bodyClass: 'post_detail', meta: d.meta, breadcrumbs: d.breadcrumbs, main: withSidebar(ctx, html), scripts: smartScripts(d), smartCss: d.smartCss });
 }
 
 function staticPage(ctx, p, d) {

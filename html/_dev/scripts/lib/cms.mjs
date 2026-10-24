@@ -2,6 +2,7 @@
 // templates.mjs đang dùng (product, category_product, post, category_post).
 // CMS chỉ ghi data/; mọi thứ suy ra được (giá hiển thị, phân trang, liên quan, mục lục...) tính ở đây.
 import fs from 'node:fs/promises';
+import { smartContent } from './smart.mjs';
 import path from 'node:path';
 
 export const PRODUCTS_PER_PAGE = 60;
@@ -111,11 +112,13 @@ export function mediaIndex(cms) {
     const d = cms.postDetails.get(p.slug) || {};
     add(p.cover, '', p.title);
     fromHtml(d.content_html, p.title);
+    if (d.smart) fromHtml(d.smart.html, p.title);
   }
   for (const p of cms.products) {
     const d = cms.productDetails.get(p.slug) || {};
     for (const img of d.images || [p.img]) add(img, '', p.name);
     fromHtml(d.content_html, p.name);
+    if (d.smart) fromHtml(d.smart.html, p.name);
   }
   return [...by].map(([src, it]) => {
     const more = it.owners.length > 3 ? ' (+' + (it.owners.length - 3) + ')' : '';
@@ -224,8 +227,10 @@ export function buildCmsPages(cms) {
     const related = [];
     for (let i = 1; i < peers.length && related.length < 4; i++) related.push(productCard(peers[(at + i) % peers.length]));
     const desc = d.meta_description || (text(d.content_html || d.short_desc).slice(0, 160) + '...');
+    const smart = smartContent(d);
     pages[url(p.slug)] = {
       type: 'product',
+      smartCss: smart ? smart.css : null,
       name: d.name,
       id: String(d.id),
       price,
@@ -243,7 +248,7 @@ export function buildCmsPages(cms) {
         : [{ text: 'Liên hệ', cls: 'lienhe btn btn--l btn-primary btn-order wb-main-order btn-item buy_now' }],
       gallery: images.map((img) => ({ full: img, img })),
       thumbs: images.length > 1 ? images : [],
-      tabs: [{ title: 'Mô tả', id: 'tab-mo-ta', html: d.content_html || '' }],
+      tabs: [{ title: 'Mô tả', id: 'tab-mo-ta', html: smart ? smart.html : d.content_html || '' }],
       related,
       suggest: suggestFor(p, d, bySlug, products),
       breadcrumbs: primary ? [...crumbs(PT, primary, true), { t: d.name }] : [{ t: 'Trang chủ', href: '/' }, { t: d.name }],
@@ -298,13 +303,15 @@ export function buildCmsPages(cms) {
     const related = [];
     for (let i = 1; i < peers.length && related.length < 4; i++) related.push(postCard(peers[(at + i) % peers.length]));
     const hero = d.cover ? `<div class="post-hero"><img src="${esc(d.cover)}" alt="${esc(d.title)}" loading="lazy"></div>` : '';
+    const smart = smartContent(d);
     pages[url(p.slug)] = {
       type: 'post',
+      smartCss: smart ? smart.css : null,
       title: d.title,
       date: dmy(d.date),
       views: (d.views || 0) + ' Lượt xem',
       rating: (d.rating || 0) + ' Đánh giá',
-      html: hero + withToc(p.slug, d.title, d.content_html || ''),
+      html: hero + withToc(p.slug, d.title, smart ? smart.html : d.content_html || ''),
       related,
       relatedTitle: 'Tin tức liên quan',
       shareUrl: SITE_URL + url(p.slug),

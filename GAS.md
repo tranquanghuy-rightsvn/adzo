@@ -84,7 +84,9 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    Bài cũ (migrate) dùng ảnh chung ở `/assets/img/images/` — KHÔNG bao giờ bị xoá theo bài.
 
 5. Bộ chấm điểm SEO (kiểu Rank Math / SEOMath của Web100) — file `gas/rank-math-seo-js.html`
-   (nạp qua `index.html`, có trong mã băm `clientBuild_()`), CHỈ có ở form thêm/sửa bài viết:
+   (nạp qua `index.html`, có trong mã băm `clientBuild_()`), có ở form thêm/sửa bài viết VÀ sản
+   phẩm (sản phẩm: xem mục III.7). Mỗi form có 1 bộ nút/panel/bộ đếm riêng trong `app.html`, tìm theo
+   thuộc tính `data-seo` trong tab của form đang mở:
    - Nút nổi góc phải "Điểm SEO" (luôn hiện điểm) → mở panel: vòng điểm 0-100, 4 ô thống kê
      (số từ, số lần xuất hiện từ khoá, số ảnh, số liên kết) và 38 tiêu chí chia 4 nhóm: Bắt buộc ·
      Tiêu đề & mô tả · Nội dung & khả năng đọc · Hình ảnh & liên kết. Mỗi tiêu chí: ✓ đạt / ! đạt một
@@ -114,6 +116,37 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
      chỗ phải khớp: `reuseImage()` (Code.js) và `mediaNeedsCopy_()` (js.html).
    - `saveProduct` chấp nhận thêm ảnh CHUNG có trong thư viện (ngoài ảnh cũ + `gNN` riêng).
 7. Danh sách bài viết và sản phẩm có nút "Xem" mở trang thật `https://adzo.vn/<slug>/` (tab mới).
+
+## II-D. Smart content (AI Gemini dàn trang bài viết + mô tả sản phẩm)
+
+Port từ plugin WordPress "Smart Content SEO" (`~/Desktop/smart-content-wp`): AI đọc nội dung đã viết
+trong TinyMCE (chữ, ảnh, bảng, link) rồi trình bày lại bằng HTML + CSS riêng cho từng bài (bảng thông
+số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có ở form bài viết VÀ form sản phẩm.
+
+1. Dưới ô nội dung có thanh Smart content: "✨ Chuyển sang Smart content" / "Mở trình thiết kế" /
+   "Bỏ Smart content". Trình thiết kế (lớp phủ toàn màn hình, `gas/smart-content-js.html`):
+   - Khung xem trước dùng CSS thật của site, đổi bề rộng Máy tính / Máy tính bảng / Điện thoại;
+     chế độ "Chọn để góp ý" (bấm/bôi đen chỗ cần sửa) hoặc "Xem thử" (slider, tab chạy thật).
+   - Tab Thiết kế: chữ "Giữ nguyên, chỉ dàn trang" (mặc định) hoặc "Cho phép viết lại"; yêu cầu thêm
+     cho AI; màu chính/màu nhấn riêng của bài (đổi thấy ngay, không gọi AI); Chuyển / Thiết kế lại
+     (làm lại từ nội dung gốc).
+   - Tab Góp ý: nhiều góp ý (mỗi góp ý gắn số vào chỗ đã chọn) → "Nhờ AI sửa" gửi 1 lần. AI trả các
+     chỗ thay thế find/replace, áp tất cả hoặc không gì; tìm không thấy thì AI thử lại 1 lần.
+   - Tab Phiên bản: mỗi lần AI làm xong lưu 1 phiên bản, giữ 5 bản gần nhất, khôi phục được.
+2. Lưu: bản đang soạn nằm ở trình duyệt, CHỈ lên web khi bấm Lưu bài viết / Lưu sản phẩm — field
+   `smart` trong file chi tiết: `{html, css, primary, accent, mode, instructions, versions[]}`
+   (`cleanSmart_()` lọc script/iframe/on*/style=""; tối đa ~600KB, thừa thì bỏ phiên bản cũ).
+   `content_html` KHÔNG bị đụng tới — là bản gốc: "Bỏ Smart content" (+ Lưu) là quay về nó.
+3. Gọi AI: client → `smartGenerate` / `smartRevise` (Code.js) → Gemini `generateContent` (không
+   stream, kết quả JSON theo schema). Server không lưu gì ở bước này. Ảnh gửi cho AI = ảnh trong
+   nội dung gốc (+ ảnh sản phẩm), kèm kích thước thật đo ở trình duyệt; AI chỉ được dùng các ảnh đó.
+4. Build (`html/_dev/scripts/lib/smart.mjs`): có `smart.html` thì trang dùng nó thay `content_html`
+   (bài viết: vẫn sinh mục lục từ H2/H3; sản phẩm: tab "Mô tả"), bọc `<div class="smc-root smc-a">`
+   (+ `style` màu riêng), nạp `/css/smart.css` (reset + biến `--smc-*` theo màu site) + `<style>` CSS
+   của bài đã gắn phạm vi `.smc-a.smc-a.smc-a` + `/js/smart.js` (slider, tab, phóng to ảnh, video,
+   hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
+   trước của Admin (Admin nạp từ `https://adzo.vn/js/...` → sửa file này phải deploy site trước).
+5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
 
 ## II-C. Quản lý website (thông tin chung)
 
@@ -172,6 +205,8 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    - Mô tả chi tiết: TinyMCE (cùng cấu hình bài viết, CÓ chèn ảnh nhanh) — tab "Mô tả".
    - Tiêu đề SEO (trống = Tên), Mô tả SEO (trống = tự trích 160 ký tự đầu mô tả chi tiết),
      Từ khoá SEO (tuỳ chọn).
+   - Từ khoá chính (`focus_keyword`, tuỳ chọn) — CHỈ dùng cho bộ chấm điểm SEO trong Admin, build
+     không dùng.
 2. Server/build tự suy: mã sản phẩm `id` (số tăng dần, server cấp), giá hiển thị
    "48.000.000VND", nhãn giảm giá, 4 sản phẩm liên quan (cùng danh mục chính), og:image = ảnh
    chính, dữ liệu tìm kiếm (`html/js/search-index.js`).
@@ -189,6 +224,12 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
    server bỏ slug không tồn tại/trùng/chính nó). Thiếu (hoặc chưa chọn) thì build bù cho đủ 4 bằng
    chọn "ngẫu nhiên" CỐ ĐỊNH (`suggestFor()` trong `cms.mjs`, rendezvous hashing theo slug — thêm/xoá
    1 sản phẩm không làm đổi khối này ở cả nghìn trang). Sản phẩm đã chọn mà sau bị xoá → tự bỏ qua.
+7. Bộ chấm điểm SEO sản phẩm (cùng file/cách tính với mục II.5) — chỉ chấm **Tiêu đề + Nội dung**
+   (25 tiêu chí; bỏ các tiêu chí mô tả, URL, ảnh bìa, liên kết của bài viết):
+   - Tiêu đề SEO = ô Tiêu đề SEO, trống thì = Tên sản phẩm (không có hậu tố, khớp `<title>` ở build).
+     Có thêm tiêu chí "Tiêu đề có thông số (dung tích, công suất, model…)".
+   - Nội dung = Mô tả chi tiết; ngưỡng độ dài 300-1.500 từ (bài viết 800-2.000). Có tiêu chí "Nội
+     dung có ảnh minh hoạ" (ngoài ảnh sản phẩm); kiểm tra trùng tên với sản phẩm khác.
 
 ## III-B. Danh mục sản phẩm
 
@@ -353,3 +394,6 @@ Trang quản trị: `https://adzo.vn/admin/` (nhúng web app GAS bằng iframe).
 - `NOTIFY_EMAIL` — nhận mail báo liên hệ mới (tuỳ chọn).
 - `GSC_SITE_URL`, `GA4_PROPERTY_ID` — kết nối Search Console / GA4 cho tab thống kê (tuỳ chọn, mục VIII-B).
 - `SPREADSHEET_ID` — KHÔNG cần điền, code tự tạo Sheet lần đầu và tự lưu.
+- `GEMINI_API_KEY` — key Gemini (https://aistudio.google.com/apikey) cho Smart content (mục II-D).
+- `GEMINI_MODEL` — tuỳ chọn, mặc định `gemini-3.8-flash`. `GEMINI_THINKING` — tuỳ chọn, `low`
+  (mặc định) | `medium` | `high`: cao hơn đẹp hơn nhưng lâu hơn (Apps Script dừng ở 6 phút).
