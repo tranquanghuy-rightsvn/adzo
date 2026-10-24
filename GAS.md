@@ -147,6 +147,24 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
    trước của Admin (Admin nạp từ `https://adzo.vn/js/...` → sửa file này phải deploy site trước).
 5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
+6. AI viết bài (nút "✍️ Viết bài / mô tả bằng AI" ở cùng thanh; port SMC_Writer của plugin):
+   - Bước 1: Tiêu đề/Tên, Từ khoá chính, Từ khoá phụ, Ý chính + thông tin thực tế, Độ dài (bài viết
+     1.000-2.500 chữ, sản phẩm 400-1.500), tuỳ chọn lấy thêm ảnh trong thư viện. Tiêu đề/từ khoá điền
+     sẵn từ form và ghi ngược lại (để URL tự sinh, cần cho việc chép ảnh).
+   - Bước 2: `smartOutline` → dàn ý: hướng bài, mô tả SEO 120-160 ký tự, các mục (mở bài / thân bài /
+     hỏi đáp / kết bài) với số chữ từng mục (không chia đều), ý chính, H3/câu hỏi, ảnh. Sửa được mọi
+     thứ: tiêu đề, số chữ, ý, thứ tự, thêm/xoá mục, thêm/bỏ ảnh (chọn từ thư viện).
+   - Bước 3: viết TỪNG MỤC (`smartWriteSection`, mỗi mục 1 lần gọi - tránh giới hạn thời gian Apps
+     Script, thấy tiến độ, mục lỗi thì "Viết tiếp" từ mục đó). Xong thì THAY nội dung ô soạn thảo,
+     điền Từ khoá chính/phụ + Mô tả (bài viết: Mô tả ngắn; sản phẩm: Mô tả SEO) nếu đang trống. KHÔNG
+     tự Lưu.
+   - Ảnh CHỈ từ: ảnh người viết đã chèn sẵn trong ô nội dung (AI phải dùng hết) + tối đa 14 ảnh thư
+     viện gần chủ đề nhất (điểm = số từ của tiêu đề/từ khoá có trong chú thích/tên bài của ảnh). Server
+     tải ảnh (≤ 1,5MB) gửi kèm để AI nhìn rồi chọn. Không dùng ảnh ngoài. Ảnh thư viện của bài/sản phẩm
+     khác được chép sang thư mục của bài này (`adoptLibraryFigure_` trong js.html, như chèn tay).
+   - Link nội bộ: tối đa 12 sản phẩm/bài viết gần chủ đề; AI chèn tối đa 1 link mỗi mục, không lặp.
+   - Không bịa số liệu: chỉ dùng thông tin có trong ô Ý chính hoặc nội dung đang có (sản phẩm: cấm tự
+     đưa thông số, model, công suất, bảo hành...).
 
 ## II-C. Quản lý website (thông tin chung)
 
