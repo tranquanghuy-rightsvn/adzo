@@ -147,10 +147,11 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
    trước của Admin (Admin nạp từ `https://www.adzo.vn/js/...` → sửa file này phải deploy site trước).
 5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
-6. AI viết bài (nút "✍️ Viết bài / mô tả bằng AI" ở cùng thanh; port SMC_Writer của plugin):
-   - Bước 1: Tiêu đề/Tên, Từ khoá chính, Từ khoá phụ, Ý chính + thông tin thực tế, Độ dài (bài viết
-     1.000-2.500 chữ, sản phẩm 400-1.500), tuỳ chọn lấy thêm ảnh trong thư viện. Tiêu đề/từ khoá điền
-     sẵn từ form và ghi ngược lại (để URL tự sinh, cần cho việc chép ảnh).
+6. AI viết bài — **CHỈ bài viết** (sản phẩm không có AI tự sinh nội dung — yêu cầu khách; port
+   SMC_Writer của plugin). Nút "✍️ Viết bài bằng AI" + chọn độ dài (1.000-2.500 chữ) ở **đầu form**
+   bài viết (`.aiw-bar` trong app.html):
+   - Không có form riêng: lấy luôn Tiêu đề, Từ khoá chính, Từ khoá SEO (phụ), Mô tả ngắn (làm thông tin
+     thêm cho AI) đang có trong form; luôn lấy thêm ảnh thư viện gần chủ đề. Thiếu Tiêu đề thì báo.
    - Bước 2: `smartOutline` → dàn ý: hướng bài, mô tả SEO 120-160 ký tự, các mục (mở bài / thân bài /
      hỏi đáp / kết bài) với số chữ từng mục (không chia đều), ý chính, H3/câu hỏi, ảnh. Sửa được mọi
      thứ: tiêu đề, số chữ, ý, thứ tự, thêm/xoá mục, thêm/bỏ ảnh (chọn từ thư viện).
