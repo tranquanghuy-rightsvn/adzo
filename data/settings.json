@@ -1,23 +1,23 @@
 {
  "brand_name": "Adzo",
- "legal_name": "Công Ty TNHH Adzo",
+ "legal_name": "Công Ty TNHH Alo Mua Bán",
  "home_title": "Adzo - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng",
  "home_description": "Adzo.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng: máy bơm nước, bồn nước inox, bồn nhựa, máy nước nóng năng lượng mặt trời, motor điện, máy thổi khí. Giao hàng tận nơi, hotline 0903 88 91 02.",
- "home_keywords": "",
- "logo": "/assets/img/media/logo-adzo.png",
- "favicon": "/assets/img/media/favicon.png",
- "og_image": "/assets/img/media/logo-adzo.png",
+ "home_keywords": "ado, azo, adzo",
  "topbar_text": "Adzo.vn - Cửa hàng thiết bị công nghiệp & gia dụng chính hãng Nhật Bản",
  "slogan": "Đồng hành cùng hiệu suất",
- "tagline": "Thiết bị công nghiệp & gia dụng chính hãng Nhật Bản",
+ "tagline": "Thiết bị công nghiệp & gia dụng chính hãng",
  "hotline": "0903 88 91 02",
- "zalo": "",
+ "zalo": "0903889102",
  "address": "39/14A Đường Phú Thọ, Phường 1, Quận 11, TP Hồ Chí Minh, Việt Nam",
  "city": "TP Hồ Chí Minh",
  "hours": "07:00 – 22:00, Thứ 2 - Chủ Nhật",
  "tax_code": "0314983819",
- "copyright": "© Bản quyền thuộc về Công Ty TNHH Adzo",
- "map_query": "39/14A đường Phú Thọ, Phường 1, Quận 11, TP.HCM",
+ "copyright": "© Bản quyền thuộc về Công Ty TNHH Alo Mua Bán",
+ "map_query": "39/14A đường Phú Thọ, Phường Minh, TP.HCM (Phường 1, Quận 11)",
+ "logo": "/assets/img/media/logo-adzo.png",
+ "favicon": "/assets/img/media/favicon.png",
+ "og_image": "/assets/img/media/logo-adzo.png",
  "hero": [
   {
    "img": "/assets/img/media/thumb/1900x700/may-hut-bui-cong-nghiep-4.jpg",
@@ -41,5 +41,6 @@
    "href": "",
    "new_tab": false
   }
- ]
+ ],
+ "updated_at": "2026-10-27T09:11:48Z"
 }
