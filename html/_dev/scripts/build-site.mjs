@@ -29,11 +29,25 @@ for (const p of Object.keys(cms.pages)) {
 site.sidebar.posts = cms.latestPosts.slice(0, 5);
 const freshCard = (it) => cms.productCards.get(it.href) || null;
 site.sidebar.featured = site.sidebar.featured.map(freshCard).filter(Boolean);
+// Link viết tay (menu, khối trang chủ, banner) trỏ tới URL cũ đã chuyển hướng 301 trong _redirects
+// (vd danh mục vừa đổi URL qua CMS) -> trỏ thẳng URL mới, khỏi đi vòng qua redirect.
+const REDIRECTS = new Map();
+for (const line of (await fs.readFile(path.join(WEB, '_redirects'), 'utf8').catch(() => '')).split('\n')) {
+  const [src, dst] = line.trim().split(/\s+/);
+  if (!src || src.startsWith('#') || !dst || src.includes('*') || dst.includes(':')) continue;
+  REDIRECTS.set(src.endsWith('/') ? src : src + '/', dst);
+}
+const follow = (href) => {
+  if (typeof href !== 'string' || !href.startsWith('/')) return href;
+  const [p, hash = ''] = href.split('#');
+  const to = REDIRECTS.get(decodeURI(p.split('?')[0]));
+  return to ? to + (hash ? '#' + hash : '') : href;
+};
 const readJsVar = (src) => JSON.parse(src.slice(src.indexOf('=') + 1).trim().replace(/;\s*$/, ''));
 
 /* ---------- Menu (đổi link sang /slug/) ---------- */
 const MENU = readJsVar(await read('js/menu-data.js'));
-const mapMenu = (items) => items.map((m) => ({ ...m, href: localPath(m.href), sub: mapMenu(m.sub || []) }));
+const mapMenu = (items) => items.map((m) => ({ ...m, href: follow(localPath(m.href)), sub: mapMenu(m.sub || []) }));
 MENU.menu = mapMenu(MENU.menu);
 MENU.cats = mapMenu(MENU.cats);
 
@@ -42,7 +56,7 @@ const HOME = readJsVar(await read('js/data.js'));
 const fixHome = (v, key) => {
   if (typeof v === 'string') {
     if (/^assets\//.test(v)) return '/' + v;
-    if (/^(href|bhref)$/.test(key)) return localPath(v);
+    if (/^(href|bhref)$/.test(key)) return follow(localPath(v));
     if (key === 'desc') return v.replace(/href="([^"]+)"/g, (m, h) => `href="${localPath(h)}"`);
     return v;
   }
@@ -56,8 +70,8 @@ const homeData = fixHome(HOME);
 homeData.news = cms.latestPosts.slice(0, 15);
 homeData.alt = S.home_title; // alt mặc định của ảnh banner (js/home.js)
 // Banner trang chủ quản lý ở tab "Quản lý website" (data/settings.json); chưa lưu lần nào = giữ data.js.
-if (S.hero) homeData.hero = S.hero.map((h) => ({ href: h.href ? localPath(h.href) : null, lg: h.img, sm: h.img_mobile || h.img, img: h.img }));
-if (S.home_banners) homeData.banners['151'] = S.home_banners.map((b) => ({ img: b.img, href: b.href ? localPath(b.href) : null, target: b.new_tab ? '_blank' : null }));
+if (S.hero) homeData.hero = S.hero.map((h) => ({ href: h.href ? follow(localPath(h.href)) : null, lg: h.img, sm: h.img_mobile || h.img, img: h.img }));
+if (S.home_banners) homeData.banners['151'] = S.home_banners.map((b) => ({ img: b.img, href: b.href ? follow(localPath(b.href)) : null, target: b.new_tab ? '_blank' : null }));
 for (const sec of Object.values(homeData.products || {})) sec.items = sec.items.map(freshCard).filter(Boolean);
 await fs.writeFile(path.join(WEB, 'js/data.js'), '/* Dữ liệu trang chủ (sản phẩm, bài viết, banner...) */\nwindow.TAHAWA_DATA = ' + JSON.stringify(homeData, null, 1) + ';\n');
 

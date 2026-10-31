@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 // mỗi lần build dù nội dung không đổi).
 const WEB_DIR = new URL('../../../', import.meta.url);
 const V = createHash('md5')
-  .update(['css/style.css', 'css/pages.css', 'css/smart.css', 'js/carousel.js', 'js/main.js', 'js/pages.js', 'js/smart.js']
+  .update(['css/style.css', 'css/pages.css', 'css/smart.css', 'css/smart-blocks.css', 'js/carousel.js', 'js/main.js', 'js/pages.js', 'js/smart.js']
     .map((f) => readFileSync(new URL(f, WEB_DIR), 'utf8')).join('\n'))
   .digest('hex').slice(0, 8);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -85,7 +85,7 @@ ${m.ogImage ? `  <meta property="og:image" content="${esc(m.ogImage)}">\n` : ''}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css?v=${V}">
   <link rel="stylesheet" href="/css/pages.css?v=${V}">
-${o.smartCss != null ? `  <link rel="stylesheet" href="/css/smart.css?v=${V}">\n  <style>${o.smartCss}</style>\n` : ''}  ${GA4_TAG}
+${o.smartCss != null ? `  <link rel="stylesheet" href="/css/smart.css?v=${V}">\n  <link rel="stylesheet" href="/css/smart-blocks.css?v=${V}">\n  <style>${o.smartCss}</style>\n` : ''}  ${GA4_TAG}
 </head>
 <body class="${esc(o.bodyClass || '')}">
 <div class="wrapper">

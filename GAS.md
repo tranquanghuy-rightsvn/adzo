@@ -147,6 +147,21 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
    trước của Admin (Admin nạp từ `https://www.adzo.vn/js/...` → sửa file này phải deploy site trước).
 5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
+5b. Thư viện khối dựng sẵn (mặc định, rẻ): tab Thiết kế có "Cách thiết kế" = **Ghép từ khối có sẵn**
+   (mặc định) hoặc **AI tự thiết kế riêng** (cách cũ, AI viết cả CSS). Field `smart.design` = `blocks` | `free`
+   (bài cũ chưa có field: có CSS riêng = `free`).
+   - 14 khối, mỗi khối 5-6 kiểu (77 kiểu): faq, list, cards (item), slider, steps, callout (hộp đặc biệt),
+     stats, table, compare, tabs, media (ảnh + chữ), gallery, quote, cta; + `smb-prose` cho chữ thường,
+     24 biểu tượng `smb-ico--<tên>`, `smb-tone-accent` đổi khối sang màu nhấn. Màu lấy từ biến `--smc-*`.
+   - Mỗi khối MỘT cấu trúc HTML, kiểu = class `smb-<khối>--<số>` → AI chỉ viết HTML (không CSS, server bỏ
+     mọi CSS AI trả về ở chế độ này); thư viện đặt đầu prompt để Gemini cache. Trong trình thiết kế, bấm
+     vào 1 khối → ô "Kiểu" + "Dùng màu nhấn" đổi ngay, KHÔNG gọi AI.
+   - Nguồn duy nhất: `html/_dev/scripts/lib/smart-blocks.mjs` (danh mục, HTML mẫu, biểu tượng) +
+     `html/_dev/src/smart-blocks.css`. Chạy Ở MÁY LOCAL `node html/_dev/scripts/smart-blocks.mjs` sinh
+     `html/css/smart-blocks.css` (đã gắn phạm vi, trang Smart content + khung xem trước nạp), trang xem thử
+     `html/_dev/smart-blocks.html` và `gas/smart-blocks.js` (prompt + danh sách kiểu). CI KHÔNG sinh lại
+     các file này: file site commit + push từ local; file GAS đưa lên Apps Script (gas/README.md mục
+     "Thư viện khối Smart content"). Thứ tự: push site TRƯỚC (admin nạp CSS từ https://www.adzo.vn) → GAS.
 6. AI viết bài — **CHỈ bài viết** (sản phẩm không có AI tự sinh nội dung — yêu cầu khách; port
    SMC_Writer của plugin). Nút "✍️ Viết bài bằng AI" + chọn độ dài (1.000-2.500 chữ) ở **đầu form**
    bài viết (`.aiw-bar` trong app.html):
@@ -199,9 +214,21 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
   Đã gỡ `/feed-back-khach-hang/`, `/tin-tuc/thong-tin-xe-dien/` (rỗng) → 301 về `/tin-tuc/` trong
   `html/_redirects`.
 - `<title>` danh mục để trống = `<Tên> - Tin tức Adzo`.
+- Đổi URL danh mục (bài viết + sản phẩm, `saveCategory` -> `renameCategory_` trong `gas/Code.js`):
+  chỉ đổi đoạn CUỐI của URL, phần trước giữ nguyên. Không để site có 2 URL cho cùng 1 danh mục:
+  - Một commit duy nhất (Git Data API, `ghCommitFiles_`) gồm: file danh mục (URL mới + danh mục
+    con/cháu nằm dưới URL cũ đổi theo + con trỏ `parent`), `posts.json` + `data/posts/<slug>.json`
+    (field `category`) hoặc `products.json` (field `categories`), và `html/_redirects` -> CI build 1 lần.
+  - `html/_redirects` thêm 301: `/cu`, `/cu/` -> `/moi/` và `/cu-trang-*` -> `/moi-trang-:splat`;
+    dòng cũ đang trỏ tới `/cu/` được trỏ thẳng sang `/moi/`; dòng ĐI TỪ URL mới bị gỡ (đổi ngược
+    lại không tạo vòng lặp).
+  - Trang ở URL cũ do build tự xoá (trang mồ côi); sitemap chỉ còn URL mới. Link viết tay (menu
+    `menu-data.js`, khối trang chủ, banner) trỏ tới URL đang có redirect được build tự đổi sang URL đích.
+  - URL cũ đang redirect coi như đã dùng: bài viết/sản phẩm mới không lấy được; danh mục được lấy
+    lại (gỡ dòng redirect trong cùng commit).
 
-- Field có ô nhập: Tên (hiện ở breadcrumb), Tiêu đề trang H1 (trống = Tên), URL (bất biến sau
-  khi lưu lần đầu; danh mục con mới có URL `/<url-cha>/<slug>/`), Danh mục cha (tuỳ chọn; đổi cha
+- Field có ô nhập: Tên (hiện ở breadcrumb), Tiêu đề trang H1 (trống = Tên), URL (danh mục con
+  mới có URL `/<url-cha>/<slug>/`; SỬA ĐƯỢC sau khi lưu — xem "Đổi URL danh mục" bên dưới), Danh mục cha (tuỳ chọn; đổi cha
   của danh mục đã có chỉ đổi breadcrumb, không đổi URL; chặn chọn chính nó/con cháu làm cha),
   Tiêu đề SEO (trống = Tên), Mô tả SEO, Từ khoá SEO.
 - Field giữ nguyên, không có ô nhập: `order` (chỉ là thứ tự lúc migrate, site không dùng), `og_image`.
@@ -263,7 +290,7 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
 
 ## IV. Sửa / Xoá (mọi loại nội dung)
 
-- URL bất biến sau khi lưu lần đầu: server throw nếu đổi, client disable ô URL; mở form "tạo mới"
+- URL bài viết/sản phẩm bất biến sau khi lưu lần đầu (URL danh mục sửa được, mục II-B): server throw nếu đổi, client disable ô URL; mở form "tạo mới"
   luôn bật lại ô URL. Tải ảnh lên cũng khoá URL (ảnh đặt tên theo URL).
 - URL mới không được trùng bất kỳ đường dẫn nào đang có ở gốc site (sản phẩm, bài viết, danh mục,
   trang tĩnh, landing, thư mục hệ thống — danh sách đặt trước ở `data/reserved-paths.json` do

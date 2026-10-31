@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Thư viện khối Smart content</title>
+<!-- FILE SINH TỰ ĐỘNG (html/_dev/scripts/smart-blocks.mjs) - đừng sửa tay. -->
+<link rel="stylesheet" href="/css/smart.css">
+<link rel="stylesheet" href="/css/smart-blocks.css">
+<style>
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f4f5f7;color:#222}
+.demo-top{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #ddd}
+.demo-top b{font-size:15px}.demo-top label{display:flex;gap:6px;align-items:center;font-size:14px}
+.demo-top button{padding:5px 10px;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer}.demo-top button.on{background:#222;color:#fff;border-color:#222}
+.demo-wrap{display:grid;grid-template-columns:220px 1fr;gap:24px;max-width:1240px;margin:0 auto;padding:20px 16px}
+.demo-nav{position:sticky;top:70px;align-self:start;display:grid;gap:2px}
+.demo-nav a{padding:6px 10px;border-radius:6px;color:#333;text-decoration:none;font-size:14px}.demo-nav a:hover{background:#e8eaee}.demo-nav small{color:#999}
+.demo-main{min-width:0}.demo-block{margin-bottom:48px}
+.demo-block>h1{font-size:22px;margin:0 0 14px}.demo-block code{font-size:13px;color:#c7254e;background:#f9f2f4;padding:1px 6px;border-radius:4px}
+.demo-style{margin:0 auto 18px;padding:22px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);max-width:var(--demo-w,920px)}
+.demo-label{margin:-6px 0 16px;font-size:13px;color:#666}
+@media (max-width:760px){.demo-wrap{grid-template-columns:1fr}.demo-nav{position:static;grid-auto-flow:column;overflow-x:auto}}
+</style></head>
+<body>
+<div class="demo-top"><b>Thư viện khối Smart content — 14 khối, 77 kiểu</b>
+<label>Màu chính <input type="color" id="c1" value="#139bce"></label>
+<label>Màu nhấn <input type="color" id="c2" value="#ff6600"></label>
+<span>Bề rộng khung bài:</span><button data-w="920px" class="on">Máy tính</button><button data-w="620px">Máy tính bảng</button><button data-w="360px">Điện thoại</button>
+</div>
+<div class="demo-wrap"><nav class="demo-nav"><a href="#b-faq">Hỏi đáp (FAQ) <small>6</small></a><a href="#b-list">Danh sách ý <small>6</small></a><a href="#b-cards">Thẻ (item) <small>6</small></a><a href="#b-slider">Slide ảnh <small>6</small></a><a href="#b-steps">Quy trình từng bước <small>6</small></a><a href="#b-callout">Hộp nổi bật (lưu ý / mẹo) <small>6</small></a><a href="#b-stats">Con số nổi bật <small>6</small></a><a href="#b-table">Bảng / thông số <small>5</small></a><a href="#b-compare">So sánh / ưu nhược <small>5</small></a><a href="#b-tabs">Tab nội dung <small>5</small></a><a href="#b-media">Ảnh + chữ <small>5</small></a><a href="#b-gallery">Lưới ảnh <small>5</small></a><a href="#b-quote">Trích dẫn / cảm nhận <small>5</small></a><a href="#b-cta">Kêu gọi liên hệ <small>5</small></a></nav><main class="demo-main">
+<section class="demo-block" id="b-faq">
+<h1>Hỏi đáp (FAQ) <code>smb-faq</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--1</code> Cổ điển 1 khung</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--1">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--2</code> Thẻ rời có bóng</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--2">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--3</code> Huy hiệu Q / A</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--3">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--4</code> Đánh số 01, 02</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--4">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--5</code> Vạch trái, 2 cột</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--5">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-faq--6</code> Tối giản + / −</div>
+<div class="smc-root smc-a"><section class="smb smb-faq smb-faq--6">
+  <h2 class="smb-title">Câu hỏi thường gặp</h2>
+  <div class="smb-faq__list">
+    <details class="smb-faq__item" open>
+      <summary class="smb-faq__q">Bồn inox nên đặt ở đâu là tốt nhất?</summary>
+      <div class="smb-faq__a"><p>Nên đặt trên chân đế chắc chắn, mặt bằng phẳng, cao hơn vòi sử dụng ít nhất 3m để nước có áp lực tốt.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Bao lâu cần vệ sinh bồn một lần?</summary>
+      <div class="smb-faq__a"><p>Khoảng 6 tháng một lần, hoặc sớm hơn nếu nguồn nước nhiều cặn.</p></div>
+    </details>
+    <details class="smb-faq__item">
+      <summary class="smb-faq__q">Có lắp được máy bơm tăng áp không?</summary>
+      <div class="smb-faq__a"><p>Có. Nên chọn máy bơm có công suất phù hợp với số tầng và số thiết bị dùng nước.</p></div>
+    </details>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-list">
+<h1>Danh sách ý <code>smb-list</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-list--1</code> Dấu tích tròn</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--1">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-list--2</code> Số tròn</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--2">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-list--3</code> Lưới 2 cột</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--3">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-list--4</code> Vạch màu trái</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--4">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-list--5</code> Thẻ tag</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--5">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-list--6</code> Mũi tên</div>
+<div class="smc-root smc-a"><section class="smb smb-list smb-list--6">
+  <h2 class="smb-title">Ưu điểm nổi bật</h2>
+  <ul class="smb-list__items">
+    <li class="smb-list__item"><b class="smb-list__label">Inox 304:</b> chống gỉ sét, an toàn cho nước sinh hoạt.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Dập nổi gân tăng cứng:</b> chịu được áp lực nước lớn.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Chân đế chắc chắn:</b> lắp đặt nhanh trên sân thượng.</li>
+    <li class="smb-list__item"><b class="smb-list__label">Bảo hành dài hạn:</b> yên tâm sử dụng nhiều năm.</li>
+  </ul>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-cards">
+<h1>Thẻ (item) <code>smb-cards</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--1</code> Ảnh trên, khung viền</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--1">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--2</code> Hàng ngang</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--2">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--3</code> Ô tính năng</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--3">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--4</code> Chữ đè lên ảnh</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--4">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--5</code> So le trái/phải</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--5">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cards--6</code> Tối giản căn giữa</div>
+<div class="smc-root smc-a"><section class="smb smb-cards smb-cards--6">
+  <h2 class="smb-title">Vì sao chọn sản phẩm này?</h2>
+  <div class="smb-cards__grid">
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/2631.jpg" alt="Bồn nước inox" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bền bỉ theo năm tháng</h3>
+        <p class="smb-card__text">Inox cao cấp, mối hàn chắc chắn, không rò rỉ.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <img class="smb-card__img" src="/assets/img/images/373.jpg" alt="Lắp đặt bồn nước" width="600" height="450" loading="lazy">
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Lắp đặt nhanh</h3>
+        <p class="smb-card__text">Đội kỹ thuật lắp đặt tận nơi trong ngày.</p>
+      </div>
+    </article>
+    <article class="smb-card">
+      <span class="smb-card__icon"><span class="smb-ico smb-ico--shield"></span></span>
+      <div class="smb-card__body">
+        <h3 class="smb-card__title">Bảo hành chính hãng</h3>
+        <p class="smb-card__text">Đổi mới nếu lỗi do nhà sản xuất.</p>
+        <a class="smb-card__link" href="/chinh-sach-bao-hanh/">Xem chính sách →</a>
+      </div>
+    </article>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-slider">
+<h1>Slide ảnh <code>smb-slider</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--1</code> Ảnh toàn khung</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--1" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--2</code> Nhiều thẻ một lượt</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--2" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--3</code> Chú thích đè ảnh</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--3" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--4</code> Chia đôi ảnh/chữ</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--4" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--5</code> Cảm nhận khách hàng</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--5" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-slider--6</code> Lộ slide kế</div>
+<div class="smc-root smc-a"><section class="smb smb-slider smb-slider--6" data-smc-slider data-smc-gallery>
+  <h2 class="smb-title">Hình ảnh thực tế</h2>
+  <div class="smb-slider__track" data-smc-track>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7450.jpg" alt="Bồn nước lắp trên sân thượng" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Công trình nhà phố</strong>Bồn 1.500 lít đặt trên sân thượng.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2600.jpg" alt="Bồn nước nằm ngang" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Bồn ngang</strong>Phù hợp nơi có chiều cao hạn chế.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/7956.jpg" alt="Kho hàng bồn nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Kho hàng</strong>Luôn sẵn hàng, giao nhanh.</figcaption></figure>
+    <figure class="smb-slide"><img class="smb-slide__img" src="/assets/img/images/2457.jpg" alt="Máy bơm nước" width="900" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-slide__cap"><strong>Phụ kiện đi kèm</strong>Đầy đủ van, phao, ống.</figcaption></figure>
+  </div>
+  <div class="smb-slider__nav"><button type="button" class="smb-slider__btn" data-smc-prev aria-label="Trước">‹</button><div class="smb-slider__dots" data-smc-dots></div><button type="button" class="smb-slider__btn" data-smc-next aria-label="Sau">›</button></div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-steps">
+<h1>Quy trình từng bước <code>smb-steps</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--1</code> Dòng thời gian dọc</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--1">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--2</code> Hàng ngang</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--2">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--3</code> Thẻ số lớn</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--3">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--4</code> Thời gian so le</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--4">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--5</code> Ô "Bước N" + mũi tên</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--5">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-steps--6</code> Gọn, cột số đặc</div>
+<div class="smc-root smc-a"><section class="smb smb-steps smb-steps--6">
+  <h2 class="smb-title">Quy trình lắp đặt</h2>
+  <ol class="smb-steps__list">
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Khảo sát vị trí</h3><p class="smb-step__text">Kiểm tra mặt bằng, tải trọng sàn và đường ống.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Lắp chân đế</h3><p class="smb-step__text">Cố định chân đế cân bằng, chắc chắn.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Đặt bồn, nối ống</h3><p class="smb-step__text">Nối ống cấp, ống xả, lắp phao cơ.</p></div></li>
+    <li class="smb-step"><div class="smb-step__body"><h3 class="smb-step__title">Chạy thử, bàn giao</h3><p class="smb-step__text">Kiểm tra rò rỉ, hướng dẫn sử dụng.</p></div></li>
+  </ol>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-callout">
+<h1>Hộp nổi bật (lưu ý / mẹo) <code>smb-callout</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--1</code> Vạch trái nền nhạt</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--1">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--2</code> Khung + icon tròn</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--2">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--3</code> Khối màu đặc</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--3">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--4</code> Ghi chú nét đứt</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--4">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--5</code> Nhãn nhô lên</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--5">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-callout--6</code> Điều cốt lõi</div>
+<div class="smc-root smc-a"><aside class="smb smb-callout smb-callout--6">
+  <span class="smb-callout__icon"><span class="smb-ico smb-ico--tip"></span></span>
+  <div class="smb-callout__body">
+    <p class="smb-callout__title">Mẹo nhỏ</p>
+    <p>Gia đình 4-5 người nên chọn bồn 1.000-1.500 lít để đủ dùng cả khi mất nước 1-2 ngày.</p>
+  </div>
+</aside></div></div>
+</section>
+<section class="demo-block" id="b-stats">
+<h1>Con số nổi bật <code>smb-stats</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--1</code> Số lớn, vạch ngăn</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--1">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--2</code> Ô nền nhạt</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--2">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--3</code> Khung + vạch nhấn</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--3">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--4</code> Vòng tròn</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--4">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--5</code> Hàng ngang</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--5">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-stats--6</code> Dải màu đặc</div>
+<div class="smc-root smc-a"><section class="smb smb-stats smb-stats--6">
+  <div class="smb-stats__grid">
+    <div class="smb-stat"><strong class="smb-stat__num">15+</strong><span class="smb-stat__label">năm kinh nghiệm</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">1.500L</strong><span class="smb-stat__label">dung tích</span></div>
+    <div class="smb-stat"><strong class="smb-stat__num">12 năm</strong><span class="smb-stat__label">bảo hành</span></div>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-table">
+<h1>Bảng / thông số <code>smb-table</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-table--1</code> Đầu màu, dòng xen kẽ</div>
+<div class="smc-root smc-a"><section class="smb smb-table smb-table--1">
+  <h2 class="smb-title">Thông số kỹ thuật</h2>
+  <div class="smb-table__wrap">
+    <table class="smb-table__t">
+      <thead><tr><th>Model</th><th>Dung tích</th><th>Đường kính</th><th>Chiều cao</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Đứng 1.000L</th><td>1.000 lít</td><td>960 mm</td><td>1.550 mm</td></tr>
+        <tr><th scope="row">Đứng 1.500L</th><td>1.500 lít</td><td>1.140 mm</td><td>1.660 mm</td></tr>
+        <tr><th scope="row">Đứng 2.000L</th><td>2.000 lít</td><td>1.140 mm</td><td>2.130 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-table--2</code> Lưới kẻ ô</div>
+<div class="smc-root smc-a"><section class="smb smb-table smb-table--2">
+  <h2 class="smb-title">Thông số kỹ thuật</h2>
+  <div class="smb-table__wrap">
+    <table class="smb-table__t">
+      <thead><tr><th>Model</th><th>Dung tích</th><th>Đường kính</th><th>Chiều cao</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Đứng 1.000L</th><td>1.000 lít</td><td>960 mm</td><td>1.550 mm</td></tr>
+        <tr><th scope="row">Đứng 1.500L</th><td>1.500 lít</td><td>1.140 mm</td><td>1.660 mm</td></tr>
+        <tr><th scope="row">Đứng 2.000L</th><td>2.000 lít</td><td>1.140 mm</td><td>2.130 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-table--3</code> Bảng thông số</div>
+<div class="smc-root smc-a"><section class="smb smb-table smb-table--3">
+  <h2 class="smb-title">Thông số kỹ thuật</h2>
+  <div class="smb-table__wrap">
+    <table class="smb-table__t">
+      <thead><tr><th>Model</th><th>Dung tích</th><th>Đường kính</th><th>Chiều cao</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Đứng 1.000L</th><td>1.000 lít</td><td>960 mm</td><td>1.550 mm</td></tr>
+        <tr><th scope="row">Đứng 1.500L</th><td>1.500 lít</td><td>1.140 mm</td><td>1.660 mm</td></tr>
+        <tr><th scope="row">Đứng 2.000L</th><td>2.000 lít</td><td>1.140 mm</td><td>2.130 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-table--4</code> Tối giản kẻ ngang</div>
+<div class="smc-root smc-a"><section class="smb smb-table smb-table--4">
+  <h2 class="smb-title">Thông số kỹ thuật</h2>
+  <div class="smb-table__wrap">
+    <table class="smb-table__t">
+      <thead><tr><th>Model</th><th>Dung tích</th><th>Đường kính</th><th>Chiều cao</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Đứng 1.000L</th><td>1.000 lít</td><td>960 mm</td><td>1.550 mm</td></tr>
+        <tr><th scope="row">Đứng 1.500L</th><td>1.500 lít</td><td>1.140 mm</td><td>1.660 mm</td></tr>
+        <tr><th scope="row">Đứng 2.000L</th><td>2.000 lít</td><td>1.140 mm</td><td>2.130 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-table--5</code> Đầu tối, cột đầu màu</div>
+<div class="smc-root smc-a"><section class="smb smb-table smb-table--5">
+  <h2 class="smb-title">Thông số kỹ thuật</h2>
+  <div class="smb-table__wrap">
+    <table class="smb-table__t">
+      <thead><tr><th>Model</th><th>Dung tích</th><th>Đường kính</th><th>Chiều cao</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Đứng 1.000L</th><td>1.000 lít</td><td>960 mm</td><td>1.550 mm</td></tr>
+        <tr><th scope="row">Đứng 1.500L</th><td>1.500 lít</td><td>1.140 mm</td><td>1.660 mm</td></tr>
+        <tr><th scope="row">Đứng 2.000L</th><td>2.000 lít</td><td>1.140 mm</td><td>2.130 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-compare">
+<h1>So sánh / ưu nhược <code>smb-compare</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-compare--1</code> Thẻ đầu màu</div>
+<div class="smc-root smc-a"><section class="smb smb-compare smb-compare--1">
+  <h2 class="smb-title">Bồn inox hay bồn nhựa?</h2>
+  <div class="smb-compare__grid">
+    <div class="smb-compare__col smb-compare__col--featured">
+      <h3 class="smb-compare__head">Bồn inox</h3>
+      <ul class="smb-compare__list"><li>Bền, chịu nắng tốt</li><li>Dễ vệ sinh</li><li>Thẩm mỹ cao</li></ul>
+    </div>
+    <div class="smb-compare__col smb-compare__col--bad">
+      <h3 class="smb-compare__head">Bồn nhựa</h3>
+      <ul class="smb-compare__list"><li>Dễ lão hoá dưới nắng</li><li>Dễ bám rêu nếu bồn mỏng</li><li>Kém chịu va đập</li></ul>
+    </div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-compare--2</code> Đối đầu VS</div>
+<div class="smc-root smc-a"><section class="smb smb-compare smb-compare--2">
+  <h2 class="smb-title">Bồn inox hay bồn nhựa?</h2>
+  <div class="smb-compare__grid">
+    <div class="smb-compare__col smb-compare__col--featured">
+      <h3 class="smb-compare__head">Bồn inox</h3>
+      <ul class="smb-compare__list"><li>Bền, chịu nắng tốt</li><li>Dễ vệ sinh</li><li>Thẩm mỹ cao</li></ul>
+    </div>
+    <div class="smb-compare__col smb-compare__col--bad">
+      <h3 class="smb-compare__head">Bồn nhựa</h3>
+      <ul class="smb-compare__list"><li>Dễ lão hoá dưới nắng</li><li>Dễ bám rêu nếu bồn mỏng</li><li>Kém chịu va đập</li></ul>
+    </div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-compare--3</code> Kiểu bảng giá</div>
+<div class="smc-root smc-a"><section class="smb smb-compare smb-compare--3">
+  <h2 class="smb-title">Bồn inox hay bồn nhựa?</h2>
+  <div class="smb-compare__grid">
+    <div class="smb-compare__col smb-compare__col--featured">
+      <h3 class="smb-compare__head">Bồn inox</h3>
+      <ul class="smb-compare__list"><li>Bền, chịu nắng tốt</li><li>Dễ vệ sinh</li><li>Thẩm mỹ cao</li></ul>
+    </div>
+    <div class="smb-compare__col smb-compare__col--bad">
+      <h3 class="smb-compare__head">Bồn nhựa</h3>
+      <ul class="smb-compare__list"><li>Dễ lão hoá dưới nắng</li><li>Dễ bám rêu nếu bồn mỏng</li><li>Kém chịu va đập</li></ul>
+    </div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-compare--4</code> Xếp hàng</div>
+<div class="smc-root smc-a"><section class="smb smb-compare smb-compare--4">
+  <h2 class="smb-title">Bồn inox hay bồn nhựa?</h2>
+  <div class="smb-compare__grid">
+    <div class="smb-compare__col smb-compare__col--featured">
+      <h3 class="smb-compare__head">Bồn inox</h3>
+      <ul class="smb-compare__list"><li>Bền, chịu nắng tốt</li><li>Dễ vệ sinh</li><li>Thẩm mỹ cao</li></ul>
+    </div>
+    <div class="smb-compare__col smb-compare__col--bad">
+      <h3 class="smb-compare__head">Bồn nhựa</h3>
+      <ul class="smb-compare__list"><li>Dễ lão hoá dưới nắng</li><li>Dễ bám rêu nếu bồn mỏng</li><li>Kém chịu va đập</li></ul>
+    </div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-compare--5</code> Tối giản</div>
+<div class="smc-root smc-a"><section class="smb smb-compare smb-compare--5">
+  <h2 class="smb-title">Bồn inox hay bồn nhựa?</h2>
+  <div class="smb-compare__grid">
+    <div class="smb-compare__col smb-compare__col--featured">
+      <h3 class="smb-compare__head">Bồn inox</h3>
+      <ul class="smb-compare__list"><li>Bền, chịu nắng tốt</li><li>Dễ vệ sinh</li><li>Thẩm mỹ cao</li></ul>
+    </div>
+    <div class="smb-compare__col smb-compare__col--bad">
+      <h3 class="smb-compare__head">Bồn nhựa</h3>
+      <ul class="smb-compare__list"><li>Dễ lão hoá dưới nắng</li><li>Dễ bám rêu nếu bồn mỏng</li><li>Kém chịu va đập</li></ul>
+    </div>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-tabs">
+<h1>Tab nội dung <code>smb-tabs</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-tabs--1</code> Gạch chân</div>
+<div class="smc-root smc-a"><section class="smb smb-tabs smb-tabs--1" data-smc-tabs>
+  <h2 class="smb-title">Chọn dung tích theo nhu cầu</h2>
+  <div class="smb-tabs__nav" role="tablist">
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t1">2-3 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t2">4-6 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t3">Trên 6 người</button>
+  </div>
+  <div class="smb-tabs__panel" data-smc-panel="t1"><div class="smb-prose"><p>Bồn <strong>500-700 lít</strong> là đủ cho sinh hoạt hằng ngày.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t2"><div class="smb-prose"><p>Nên chọn bồn <strong>1.000-1.500 lít</strong>.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t3"><div class="smb-prose"><p>Chọn bồn <strong>2.000 lít</strong> trở lên hoặc ghép 2 bồn.</p></div></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-tabs--2</code> Viên thuốc</div>
+<div class="smc-root smc-a"><section class="smb smb-tabs smb-tabs--2" data-smc-tabs>
+  <h2 class="smb-title">Chọn dung tích theo nhu cầu</h2>
+  <div class="smb-tabs__nav" role="tablist">
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t1">2-3 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t2">4-6 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t3">Trên 6 người</button>
+  </div>
+  <div class="smb-tabs__panel" data-smc-panel="t1"><div class="smb-prose"><p>Bồn <strong>500-700 lít</strong> là đủ cho sinh hoạt hằng ngày.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t2"><div class="smb-prose"><p>Nên chọn bồn <strong>1.000-1.500 lít</strong>.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t3"><div class="smb-prose"><p>Chọn bồn <strong>2.000 lít</strong> trở lên hoặc ghép 2 bồn.</p></div></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-tabs--3</code> Hồ sơ (folder)</div>
+<div class="smc-root smc-a"><section class="smb smb-tabs smb-tabs--3" data-smc-tabs>
+  <h2 class="smb-title">Chọn dung tích theo nhu cầu</h2>
+  <div class="smb-tabs__nav" role="tablist">
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t1">2-3 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t2">4-6 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t3">Trên 6 người</button>
+  </div>
+  <div class="smb-tabs__panel" data-smc-panel="t1"><div class="smb-prose"><p>Bồn <strong>500-700 lít</strong> là đủ cho sinh hoạt hằng ngày.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t2"><div class="smb-prose"><p>Nên chọn bồn <strong>1.000-1.500 lít</strong>.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t3"><div class="smb-prose"><p>Chọn bồn <strong>2.000 lít</strong> trở lên hoặc ghép 2 bồn.</p></div></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-tabs--4</code> Dọc bên trái</div>
+<div class="smc-root smc-a"><section class="smb smb-tabs smb-tabs--4" data-smc-tabs>
+  <h2 class="smb-title">Chọn dung tích theo nhu cầu</h2>
+  <div class="smb-tabs__nav" role="tablist">
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t1">2-3 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t2">4-6 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t3">Trên 6 người</button>
+  </div>
+  <div class="smb-tabs__panel" data-smc-panel="t1"><div class="smb-prose"><p>Bồn <strong>500-700 lít</strong> là đủ cho sinh hoạt hằng ngày.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t2"><div class="smb-prose"><p>Nên chọn bồn <strong>1.000-1.500 lít</strong>.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t3"><div class="smb-prose"><p>Chọn bồn <strong>2.000 lít</strong> trở lên hoặc ghép 2 bồn.</p></div></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-tabs--5</code> Công tắc phân đoạn</div>
+<div class="smc-root smc-a"><section class="smb smb-tabs smb-tabs--5" data-smc-tabs>
+  <h2 class="smb-title">Chọn dung tích theo nhu cầu</h2>
+  <div class="smb-tabs__nav" role="tablist">
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t1">2-3 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t2">4-6 người</button>
+    <button type="button" class="smb-tabs__btn" data-smc-tab="t3">Trên 6 người</button>
+  </div>
+  <div class="smb-tabs__panel" data-smc-panel="t1"><div class="smb-prose"><p>Bồn <strong>500-700 lít</strong> là đủ cho sinh hoạt hằng ngày.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t2"><div class="smb-prose"><p>Nên chọn bồn <strong>1.000-1.500 lít</strong>.</p></div></div>
+  <div class="smb-tabs__panel" data-smc-panel="t3"><div class="smb-prose"><p>Chọn bồn <strong>2.000 lít</strong> trở lên hoặc ghép 2 bồn.</p></div></div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-media">
+<h1>Ảnh + chữ <code>smb-media</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-media--1</code> Ảnh trái</div>
+<div class="smc-root smc-a"><section class="smb smb-media smb-media--1">
+  <figure class="smb-media__fig"><img class="smb-media__img" src="/assets/img/images/7318.jpg" alt="Bồn nước inox đứng" width="800" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-media__cap">Bồn đứng tiết kiệm diện tích</figcaption></figure>
+  <div class="smb-media__body">
+    <h3 class="smb-media__title">Thiết kế đứng gọn gàng</h3>
+    <div class="smb-prose"><p>Bồn đứng chiếm ít diện tích mặt sàn, phù hợp sân thượng nhà phố. Thân bồn dập gân giúp tăng độ cứng.</p></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-media--2</code> Ảnh phải</div>
+<div class="smc-root smc-a"><section class="smb smb-media smb-media--2">
+  <figure class="smb-media__fig"><img class="smb-media__img" src="/assets/img/images/7318.jpg" alt="Bồn nước inox đứng" width="800" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-media__cap">Bồn đứng tiết kiệm diện tích</figcaption></figure>
+  <div class="smb-media__body">
+    <h3 class="smb-media__title">Thiết kế đứng gọn gàng</h3>
+    <div class="smb-prose"><p>Bồn đứng chiếm ít diện tích mặt sàn, phù hợp sân thượng nhà phố. Thân bồn dập gân giúp tăng độ cứng.</p></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-media--3</code> Thẻ chữ đè mép ảnh</div>
+<div class="smc-root smc-a"><section class="smb smb-media smb-media--3">
+  <figure class="smb-media__fig"><img class="smb-media__img" src="/assets/img/images/7318.jpg" alt="Bồn nước inox đứng" width="800" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-media__cap">Bồn đứng tiết kiệm diện tích</figcaption></figure>
+  <div class="smb-media__body">
+    <h3 class="smb-media__title">Thiết kế đứng gọn gàng</h3>
+    <div class="smb-prose"><p>Bồn đứng chiếm ít diện tích mặt sàn, phù hợp sân thượng nhà phố. Thân bồn dập gân giúp tăng độ cứng.</p></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-media--4</code> Ảnh có khung lệch</div>
+<div class="smc-root smc-a"><section class="smb smb-media smb-media--4">
+  <figure class="smb-media__fig"><img class="smb-media__img" src="/assets/img/images/7318.jpg" alt="Bồn nước inox đứng" width="800" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-media__cap">Bồn đứng tiết kiệm diện tích</figcaption></figure>
+  <div class="smb-media__body">
+    <h3 class="smb-media__title">Thiết kế đứng gọn gàng</h3>
+    <div class="smb-prose"><p>Bồn đứng chiếm ít diện tích mặt sàn, phù hợp sân thượng nhà phố. Thân bồn dập gân giúp tăng độ cứng.</p></div>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-media--5</code> Ảnh rộng, chữ giữa</div>
+<div class="smc-root smc-a"><section class="smb smb-media smb-media--5">
+  <figure class="smb-media__fig"><img class="smb-media__img" src="/assets/img/images/7318.jpg" alt="Bồn nước inox đứng" width="800" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-media__cap">Bồn đứng tiết kiệm diện tích</figcaption></figure>
+  <div class="smb-media__body">
+    <h3 class="smb-media__title">Thiết kế đứng gọn gàng</h3>
+    <div class="smb-prose"><p>Bồn đứng chiếm ít diện tích mặt sàn, phù hợp sân thượng nhà phố. Thân bồn dập gân giúp tăng độ cứng.</p></div>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-gallery">
+<h1>Lưới ảnh <code>smb-gallery</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-gallery--1</code> Lưới đều vuông</div>
+<div class="smc-root smc-a"><section class="smb smb-gallery smb-gallery--1" data-smc-gallery>
+  <h2 class="smb-title">Bộ sưu tập</h2>
+  <div class="smb-gallery__grid">
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2631.jpg" alt="Ảnh 1" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Mặt trước</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/373.jpg" alt="Ảnh 2" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Chân đế</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7450.jpg" alt="Ảnh 3" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Nắp bồn</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2600.jpg" alt="Ảnh 4" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Van xả</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7956.jpg" alt="Ảnh 5" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Phao cơ</figcaption></figure>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-gallery--2</code> Kiểu gạch (masonry)</div>
+<div class="smc-root smc-a"><section class="smb smb-gallery smb-gallery--2" data-smc-gallery>
+  <h2 class="smb-title">Bộ sưu tập</h2>
+  <div class="smb-gallery__grid">
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2631.jpg" alt="Ảnh 1" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Mặt trước</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/373.jpg" alt="Ảnh 2" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Chân đế</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7450.jpg" alt="Ảnh 3" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Nắp bồn</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2600.jpg" alt="Ảnh 4" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Van xả</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7956.jpg" alt="Ảnh 5" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Phao cơ</figcaption></figure>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-gallery--3</code> Ảnh đầu to</div>
+<div class="smc-root smc-a"><section class="smb smb-gallery smb-gallery--3" data-smc-gallery>
+  <h2 class="smb-title">Bộ sưu tập</h2>
+  <div class="smb-gallery__grid">
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2631.jpg" alt="Ảnh 1" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Mặt trước</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/373.jpg" alt="Ảnh 2" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Chân đế</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7450.jpg" alt="Ảnh 3" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Nắp bồn</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2600.jpg" alt="Ảnh 4" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Van xả</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7956.jpg" alt="Ảnh 5" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Phao cơ</figcaption></figure>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-gallery--4</code> Polaroid</div>
+<div class="smc-root smc-a"><section class="smb smb-gallery smb-gallery--4" data-smc-gallery>
+  <h2 class="smb-title">Bộ sưu tập</h2>
+  <div class="smb-gallery__grid">
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2631.jpg" alt="Ảnh 1" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Mặt trước</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/373.jpg" alt="Ảnh 2" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Chân đế</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7450.jpg" alt="Ảnh 3" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Nắp bồn</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2600.jpg" alt="Ảnh 4" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Van xả</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7956.jpg" alt="Ảnh 5" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Phao cơ</figcaption></figure>
+  </div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-gallery--5</code> Dải trượt ngang</div>
+<div class="smc-root smc-a"><section class="smb smb-gallery smb-gallery--5" data-smc-gallery>
+  <h2 class="smb-title">Bộ sưu tập</h2>
+  <div class="smb-gallery__grid">
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2631.jpg" alt="Ảnh 1" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Mặt trước</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/373.jpg" alt="Ảnh 2" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Chân đế</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7450.jpg" alt="Ảnh 3" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Nắp bồn</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/2600.jpg" alt="Ảnh 4" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Van xả</figcaption></figure>
+    <figure class="smb-gallery__item"><img src="/assets/img/images/7956.jpg" alt="Ảnh 5" width="600" height="600" loading="lazy" data-smc-zoom><figcaption class="smb-gallery__cap">Phao cơ</figcaption></figure>
+  </div>
+</section></div></div>
+</section>
+<section class="demo-block" id="b-quote">
+<h1>Trích dẫn / cảm nhận <code>smb-quote</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-quote--1</code> Vạch trái</div>
+<div class="smc-root smc-a"><figure class="smb smb-quote smb-quote--1">
+  <blockquote class="smb-quote__text"><p>Lắp bồn inox 1.500 lít đã 5 năm, nước vẫn trong, không rỉ sét. Rất hài lòng!</p></blockquote>
+  <figcaption class="smb-quote__by">Anh Minh — Hà Nội</figcaption>
+</figure></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-quote--2</code> Căn giữa, ngoặc lớn</div>
+<div class="smc-root smc-a"><figure class="smb smb-quote smb-quote--2">
+  <blockquote class="smb-quote__text"><p>Lắp bồn inox 1.500 lít đã 5 năm, nước vẫn trong, không rỉ sét. Rất hài lòng!</p></blockquote>
+  <figcaption class="smb-quote__by">Anh Minh — Hà Nội</figcaption>
+</figure></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-quote--3</code> Thẻ nền nhạt</div>
+<div class="smc-root smc-a"><figure class="smb smb-quote smb-quote--3">
+  <blockquote class="smb-quote__text"><p>Lắp bồn inox 1.500 lít đã 5 năm, nước vẫn trong, không rỉ sét. Rất hài lòng!</p></blockquote>
+  <figcaption class="smb-quote__by">Anh Minh — Hà Nội</figcaption>
+</figure></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-quote--4</code> Khối màu đặc</div>
+<div class="smc-root smc-a"><figure class="smb smb-quote smb-quote--4">
+  <blockquote class="smb-quote__text"><p>Lắp bồn inox 1.500 lít đã 5 năm, nước vẫn trong, không rỉ sét. Rất hài lòng!</p></blockquote>
+  <figcaption class="smb-quote__by">Anh Minh — Hà Nội</figcaption>
+</figure></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-quote--5</code> Trích dẫn kéo</div>
+<div class="smc-root smc-a"><figure class="smb smb-quote smb-quote--5">
+  <blockquote class="smb-quote__text"><p>Lắp bồn inox 1.500 lít đã 5 năm, nước vẫn trong, không rỉ sét. Rất hài lòng!</p></blockquote>
+  <figcaption class="smb-quote__by">Anh Minh — Hà Nội</figcaption>
+</figure></div></div>
+</section>
+<section class="demo-block" id="b-cta">
+<h1>Kêu gọi liên hệ <code>smb-cta</code></h1>
+<div class="demo-style"><div class="demo-label"><code>smb-cta--1</code> Dải màu đặc</div>
+<div class="smc-root smc-a"><section class="smb smb-cta smb-cta--1">
+  <p class="smb-cta__title">Cần tư vấn chọn bồn phù hợp?</p>
+  <p class="smb-cta__text">Gọi ngay để được kỹ thuật viên tư vấn miễn phí.</p>
+  <div class="smb-cta__actions"><a class="smb-btn" href="tel:0900000000"><span class="smb-ico smb-ico--phone"></span> Gọi tư vấn</a><a class="smb-btn smb-btn--ghost" href="/lien-he/">Gửi yêu cầu</a></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cta--2</code> Khung viền, nút phải</div>
+<div class="smc-root smc-a"><section class="smb smb-cta smb-cta--2">
+  <p class="smb-cta__title">Cần tư vấn chọn bồn phù hợp?</p>
+  <p class="smb-cta__text">Gọi ngay để được kỹ thuật viên tư vấn miễn phí.</p>
+  <div class="smb-cta__actions"><a class="smb-btn" href="tel:0900000000"><span class="smb-ico smb-ico--phone"></span> Gọi tư vấn</a><a class="smb-btn smb-btn--ghost" href="/lien-he/">Gửi yêu cầu</a></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cta--3</code> Thẻ căn giữa</div>
+<div class="smc-root smc-a"><section class="smb smb-cta smb-cta--3">
+  <p class="smb-cta__title">Cần tư vấn chọn bồn phù hợp?</p>
+  <p class="smb-cta__text">Gọi ngay để được kỹ thuật viên tư vấn miễn phí.</p>
+  <div class="smb-cta__actions"><a class="smb-btn" href="tel:0900000000"><span class="smb-ico smb-ico--phone"></span> Gọi tư vấn</a><a class="smb-btn smb-btn--ghost" href="/lien-he/">Gửi yêu cầu</a></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cta--4</code> Vạch nhấn trái</div>
+<div class="smc-root smc-a"><section class="smb smb-cta smb-cta--4">
+  <p class="smb-cta__title">Cần tư vấn chọn bồn phù hợp?</p>
+  <p class="smb-cta__text">Gọi ngay để được kỹ thuật viên tư vấn miễn phí.</p>
+  <div class="smb-cta__actions"><a class="smb-btn" href="tel:0900000000"><span class="smb-ico smb-ico--phone"></span> Gọi tư vấn</a><a class="smb-btn smb-btn--ghost" href="/lien-he/">Gửi yêu cầu</a></div>
+</section></div></div>
+<div class="demo-style"><div class="demo-label"><code>smb-cta--5</code> Tối giản</div>
+<div class="smc-root smc-a"><section class="smb smb-cta smb-cta--5">
+  <p class="smb-cta__title">Cần tư vấn chọn bồn phù hợp?</p>
+  <p class="smb-cta__text">Gọi ngay để được kỹ thuật viên tư vấn miễn phí.</p>
+  <div class="smb-cta__actions"><a class="smb-btn" href="tel:0900000000"><span class="smb-ico smb-ico--phone"></span> Gọi tư vấn</a><a class="smb-btn smb-btn--ghost" href="/lien-he/">Gửi yêu cầu</a></div>
+</section></div></div>
+</section>
+</main></div>
+<script src="/js/smart.js"></script>
+<script>
+(function(){
+  var r=document.documentElement;
+  function col(){r.style.setProperty('--smc-primary',document.getElementById('c1').value);r.style.setProperty('--smc-accent',document.getElementById('c2').value);}
+  document.getElementById('c1').oninput=col;document.getElementById('c2').oninput=col;
+  document.querySelectorAll('[data-w]').forEach(function(b){b.onclick=function(){
+    document.querySelectorAll('[data-w]').forEach(function(x){x.classList.toggle('on',x===b)});
+    r.style.setProperty('--demo-w',b.getAttribute('data-w'));window.dispatchEvent(new Event('resize'));};});
+})();
+</script>
+</body></html>
