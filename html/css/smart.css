@@ -18,6 +18,11 @@
 }
 
 .smc-root.smc-root.smc-root {
+  /* Tính lại biến phái sinh NGAY TRÊN khung bài: màu riêng của bài (style="--smc-primary:..."
+     gắn trên .smc-root) mới tác động được tới chúng; khai báo ở :root thì đã tính xong theo màu web. */
+  --smc-muted: color-mix(in srgb, var(--smc-text) 65%, var(--smc-bg));
+  --smc-surface: color-mix(in srgb, var(--smc-primary) 6%, var(--smc-bg));
+  --smc-border: color-mix(in srgb, var(--smc-text) 14%, var(--smc-bg));
   display: block;
   box-sizing: border-box;
   container: smc / inline-size;
