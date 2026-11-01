@@ -452,8 +452,8 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
   mới lưu; trang chỉ hiện bản che). `CLAUDE_EFFORT` (low | medium | high) cũng chỉnh ở thẻ đó.
   `CLAUDE_MODEL` — tuỳ chọn, điền tay nếu muốn đổi model (đổi model đắt hơn thì sửa `CLAUDE_PRICE_`).
   Tính phí bằng SỐ DƯ TOKEN trả trước, dùng chung cả site (không reset theo ngày): mỗi lần gọi Claude trừ
-  theo usage thật, 1 "token" hiển thị = 1/1000 token thật (4 USD / 1 nghìn "token" chi phí - vd 2,4 triệu
-  token thật hiện 2.400 token, đổi 01/11/2026). Trước khi bấm, trình thiết kế hiện "Dự kiến ... khoảng X token"
+  theo usage thật, 1 "token" hiển thị = 1đ GIÁ BÁN (01/11/2026: nạp 1.200.000đ = 1.200.000 token; mỗi lần trừ
+  = chi phí USD thật × tỉ giá × hệ số bán; `AI_USD_PER_TOKEN_ = 1 / (markup × tỉ giá)`). Trước khi bấm, trình thiết kế hiện "Dự kiến ... khoảng X token"
   (`smartEstimate` trong Code.js, ước lượng theo độ dài, ±30%; tab Góp ý luôn hiện mức cho mỗi lần Nhờ AI
   sửa). Viết bằng AI / Tạo bài Smart content hiện dự kiến cả quy trình + phần viết còn lại theo dàn ý (`writerEstimate`). Người dùng chỉ thấy số token; root thấy quy
   đổi tiền + nạp thêm theo số tiền bán (giá bán = 2 × chi phí, tỉ giá 26.000đ/USD - `AI_CREDIT_*` trong
