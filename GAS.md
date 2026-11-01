@@ -142,7 +142,9 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    nội dung gốc (+ ảnh sản phẩm), kèm kích thước thật đo ở trình duyệt; AI chỉ được dùng các ảnh đó.
 4. Build (`html/_dev/scripts/lib/smart.mjs`): có `smart.html` thì trang dùng nó thay `content_html`
    (bài viết: vẫn sinh mục lục từ H2/H3; sản phẩm: tab "Mô tả"), bọc `<div class="smc-root smc-a">`
-   (+ `style` màu riêng), nạp `/css/smart.css` (reset + biến `--smc-*` theo màu site) + `<style>` CSS
+   (KHÔNG còn `style` màu riêng: bài luôn dùng màu mặc định của website - quyết định 01/11/2026, Smart content
+   chỉ là công cụ dàn trang; build bỏ qua `smart.primary/accent` của bài cũ, trình thiết kế đã bỏ ô "Màu của bài"),
+   nạp `/css/smart.css` (reset + biến `--smc-*` theo màu site) + `<style>` CSS
    của bài đã gắn phạm vi `.smc-a.smc-a.smc-a` + `/js/smart.js` (slider, tab, phóng to ảnh, video,
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
    trước của Admin (Admin nạp từ `https://www.adzo.vn/js/...` → sửa file này phải deploy site trước).
@@ -151,7 +153,8 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    `posts.json` / `products.json`, server ghi khi Lưu). Form của bài đang dùng Smart content hiện bản thiết
    kế (giống trên web) ở chỗ ô "Nội dung" / "Mô tả chi tiết"; nút "Sửa nội dung gốc" mở lại ô soạn thảo
    (bản gốc AI đọc khi Thiết kế lại).
-5b. Thư viện khối dựng sẵn (mặc định, rẻ): tab Thiết kế có "Cách thiết kế" = **Ghép từ khối có sẵn**
+5b. (ĐÃ BỎ khỏi trình thiết kế 02/11/2026 — Thiết kế mới luôn là AI tự thiết kế; bài cũ làm bằng khối
+   vẫn hiển thị + sửa theo góp ý được. Phần dưới giữ để tham khảo.) Thư viện khối dựng sẵn: tab Thiết kế từng có "Cách thiết kế" = **Ghép từ khối có sẵn**
    (mặc định) hoặc **AI tự thiết kế riêng** (cách cũ, AI viết cả CSS). Field `smart.design` = `blocks` | `free`
    (bài cũ chưa có field: có CSS riêng = `free`).
    - 14 khối, mỗi khối 5-6 kiểu (77 kiểu): faq, list, cards (item), slider, steps, callout (hộp đặc biệt),
@@ -447,10 +450,14 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
 - `CLAUDE_API_KEY` — key Claude (AI mặc định cho Viết bằng AI + Smart content, model `claude-sonnet-5-5`).
   KHÔNG điền tay ở đây: admin nhập ở tab "Quản lý website" → thẻ "AI (Claude)" (key được gọi thử rồi
   mới lưu; trang chỉ hiện bản che). `CLAUDE_EFFORT` (low | medium | high) cũng chỉnh ở thẻ đó.
-  `CLAUDE_MODEL` — tuỳ chọn, điền tay nếu muốn đổi model. Hạn mức mỗi người/ngày (giờ VN, mở lại lúc
-  0h): 2 bài Viết bằng AI (tính lúc lập dàn ý) + 10 lượt Smart content (Thiết kế hoặc Sửa theo góp ý);
-  hết lượt / chưa có key / Claude lỗi → tự dùng Gemini bên dưới (`AI_DAILY_LIMITS_` trong Code.js).
-  Lượt dùng lưu ở Script Properties `aiq_<ngày>_<email>`.
+  `CLAUDE_MODEL` — tuỳ chọn, điền tay nếu muốn đổi model (đổi model đắt hơn thì sửa `CLAUDE_PRICE_`).
+  Tính phí bằng SỐ DƯ TOKEN trả trước, dùng chung cả site (không reset theo ngày): mỗi lần gọi Claude trừ
+  theo usage thật, 1 "token" hiển thị = 1/1000 token thật (4 USD / 1 nghìn "token" chi phí - vd 2,4 triệu
+  token thật hiện 2.400 token, đổi 01/11/2026). Trước khi bấm, trình thiết kế hiện "Dự kiến ... khoảng X token"
+  (`smartEstimate` trong Code.js, ước lượng theo độ dài, ±30%). Người dùng chỉ thấy số token; root thấy quy
+  đổi tiền + nạp thêm theo số tiền bán (giá bán = 2 × chi phí, tỉ giá 26.000đ/USD - `AI_CREDIT_*` trong
+  Code.js). Lần đầu chạy tự nạp 500.000đ. Hết token / chưa có key / Claude lỗi → tự dùng Gemini.
+  Lưu ở Script Properties `AI_CREDIT_USD` (số dư, USD chi phí thật), `AI_CREDIT_SPENT_USD` (đã dùng).
 - `GEMINI_API_KEY` — key Gemini (https://aistudio.google.com/apikey), AI dự phòng khi hết lượt Claude (mục II-D).
 - `GEMINI_MODEL` — tuỳ chọn, mặc định `gemini-3.8-flash`. `GEMINI_THINKING` — tuỳ chọn, `low`
   (mặc định) | `medium` | `high`: cao hơn đẹp hơn nhưng lâu hơn (Apps Script dừng ở 6 phút).

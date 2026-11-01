@@ -5,13 +5,14 @@ import { readFileSync } from 'node:fs';
 
 // Hàm gắn phạm vi CSS dùng chung với trang quản trị: chạy đúng file trình duyệt nạp (js/smart-scope.js).
 const scopeSrc = readFileSync(new URL('../../../js/smart-scope.js', import.meta.url), 'utf8');
-const { smcScopeCss, smcColorStyle } = new Function(scopeSrc + '\nreturn { smcScopeCss, smcColorStyle };')();
+const { smcScopeCss } = new Function(scopeSrc + '\nreturn { smcScopeCss, smcColorStyle };')();
 
 /** d.smart hợp lệ -> { html (đã bọc khung .smc-root), css (đã gắn phạm vi) }, không thì null. */
 export function smartContent(d) {
   const s = d && d.smart;
   if (!s || !String(s.html || '').trim()) return null;
-  const style = smcColorStyle(s.primary, s.accent);
+  // Màu: luôn theo màu mặc định của website (/css/smart.css) - bỏ qua màu riêng bài cũ còn lưu (s.primary/s.accent).
+  const style = '';
   return {
     html: `<div class="smc-root smc-a"${style ? ` style="${style}"` : ''}>${s.html}</div>`,
     css: smcScopeCss(s.css),
