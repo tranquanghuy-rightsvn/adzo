@@ -147,6 +147,10 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    hiện dần). Hàm gắn phạm vi CSS ở `html/js/smart-scope.js` dùng CHUNG cho build và khung xem
    trước của Admin (Admin nạp từ `https://www.adzo.vn/js/...` → sửa file này phải deploy site trước).
 5. Bộ chấm điểm SEO (mục II.5, III.7) chấm theo bản Smart content khi đang dùng.
+5a. Trong CMS: danh sách bài viết / sản phẩm có badge "✨ Smart content" sau tiêu đề (cờ `smart: true` trong
+   `posts.json` / `products.json`, server ghi khi Lưu). Form của bài đang dùng Smart content hiện bản thiết
+   kế (giống trên web) ở chỗ ô "Nội dung" / "Mô tả chi tiết"; nút "Sửa nội dung gốc" mở lại ô soạn thảo
+   (bản gốc AI đọc khi Thiết kế lại).
 5b. Thư viện khối dựng sẵn (mặc định, rẻ): tab Thiết kế có "Cách thiết kế" = **Ghép từ khối có sẵn**
    (mặc định) hoặc **AI tự thiết kế riêng** (cách cũ, AI viết cả CSS). Field `smart.design` = `blocks` | `free`
    (bài cũ chưa có field: có CSS riêng = `free`).
@@ -440,6 +444,13 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
 - `NOTIFY_EMAIL` — nhận mail báo liên hệ mới (tuỳ chọn).
 - `GSC_SITE_URL`, `GA4_PROPERTY_ID` — kết nối Search Console / GA4 cho tab thống kê (tuỳ chọn, mục VIII-B).
 - `SPREADSHEET_ID` — KHÔNG cần điền, code tự tạo Sheet lần đầu và tự lưu.
-- `GEMINI_API_KEY` — key Gemini (https://aistudio.google.com/apikey) cho Smart content (mục II-D).
+- `CLAUDE_API_KEY` — key Claude (AI mặc định cho Viết bằng AI + Smart content, model `claude-sonnet-5-5`).
+  KHÔNG điền tay ở đây: admin nhập ở tab "Quản lý website" → thẻ "AI (Claude)" (key được gọi thử rồi
+  mới lưu; trang chỉ hiện bản che). `CLAUDE_EFFORT` (low | medium | high) cũng chỉnh ở thẻ đó.
+  `CLAUDE_MODEL` — tuỳ chọn, điền tay nếu muốn đổi model. Hạn mức mỗi người/ngày (giờ VN, mở lại lúc
+  0h): 2 bài Viết bằng AI (tính lúc lập dàn ý) + 10 lượt Smart content (Thiết kế hoặc Sửa theo góp ý);
+  hết lượt / chưa có key / Claude lỗi → tự dùng Gemini bên dưới (`AI_DAILY_LIMITS_` trong Code.js).
+  Lượt dùng lưu ở Script Properties `aiq_<ngày>_<email>`.
+- `GEMINI_API_KEY` — key Gemini (https://aistudio.google.com/apikey), AI dự phòng khi hết lượt Claude (mục II-D).
 - `GEMINI_MODEL` — tuỳ chọn, mặc định `gemini-3.8-flash`. `GEMINI_THINKING` — tuỳ chọn, `low`
   (mặc định) | `medium` | `high`: cao hơn đẹp hơn nhưng lâu hơn (Apps Script dừng ở 6 phút).
