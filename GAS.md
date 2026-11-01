@@ -454,7 +454,8 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
   Tính phí bằng SỐ DƯ TOKEN trả trước, dùng chung cả site (không reset theo ngày): mỗi lần gọi Claude trừ
   theo usage thật, 1 "token" hiển thị = 1/1000 token thật (4 USD / 1 nghìn "token" chi phí - vd 2,4 triệu
   token thật hiện 2.400 token, đổi 01/11/2026). Trước khi bấm, trình thiết kế hiện "Dự kiến ... khoảng X token"
-  (`smartEstimate` trong Code.js, ước lượng theo độ dài, ±30%). Người dùng chỉ thấy số token; root thấy quy
+  (`smartEstimate` trong Code.js, ước lượng theo độ dài, ±30%; tab Góp ý luôn hiện mức cho mỗi lần Nhờ AI
+  sửa). Viết bằng AI / Tạo bài Smart content hiện dự kiến cả quy trình + phần viết còn lại theo dàn ý (`writerEstimate`). Người dùng chỉ thấy số token; root thấy quy
   đổi tiền + nạp thêm theo số tiền bán (giá bán = 2 × chi phí, tỉ giá 26.000đ/USD - `AI_CREDIT_*` trong
   Code.js). Lần đầu chạy tự nạp 500.000đ. Hết token / chưa có key / Claude lỗi → tự dùng Gemini.
   Lưu ở Script Properties `AI_CREDIT_USD` (số dư, USD chi phí thật), `AI_CREDIT_SPENT_USD` (đã dùng).
