@@ -84,10 +84,12 @@
   "img": "/assets/img/images/7817.jpg",
   "categories": [
    "do-gia-dung/may-bom",
+   "do-gia-dung/may-bom/may-bom-bentas",
    "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-11-02T01:11:22Z",
+  "smart": true
  },
  {
   "id": "7443",
