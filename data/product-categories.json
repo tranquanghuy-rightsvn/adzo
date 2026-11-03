@@ -84,20 +84,6 @@
   "has_filter": true
  },
  {
-  "path": "robot-giao-hang-phuc-vu-nha-hang-quan-an",
-  "name": "ROBOT GIAO HÀNG",
-  "h1": "Robot phục vụ ADZO phục vụ nhà hàng, quán ăn, khách sạn, bệnh viện mang thức ăn tự động, mang hồ sơ tự động",
-  "parent": "",
-  "order": 7,
-  "meta_title": "Robot phục vụ nhà hàng, quán ăn, khách sạn, bệnh viện mang thức ăn tự động, mang hồ sơ tự động",
-  "meta_description": "RoBot Phụ Vụ nhà hàng , quán Cafe ,quán Ăn từ nhiều thương hiệu lớn:\n- Được sử dụng để phục vụ ở nhiều nơi, thân thiện\n- Giao hàng ở nhiều vị trí khác nhau với sức tải lớn\n- Vượt chướng ngại vật tự động sử dụng hệ thống Laser Lidar 3D dẫn đường nhận ra vị trí định vị chính xác\n- Tự di chuyển đến nơi nạp năng lượng khi pin yếu ",
-  "meta_keywords": "robot giao hàng, robot giao đồ ăn, thiết bị nhà hàng",
-  "og_image": "",
-  "updated_at": "2026-10-18T06:05:40Z",
-  "description": "",
-  "has_filter": true
- },
- {
   "path": "may-rua-xe-phun-ap-luc-cao",
   "name": "MÁY RỬA XE, PHUN ÁP LỰC CAO",
   "h1": "MÁY RỬA XE, PHUN ÁP LỰC CAO ADZO NHẬT BẢN - BẢO HÀNH CHÍNH HÃNG 1 NĂM, MIỄN PHÍ GIAO HÀNG",
