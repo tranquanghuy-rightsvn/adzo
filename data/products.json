@@ -356,10 +356,11 @@
   "img": "/assets/img/images/7059.jpg",
   "categories": [
    "do-gia-dung/may-bom",
-   "san-pham-cong-nghiep"
+   "do-gia-dung/may-bom/may-bom-bentas"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-11-03T08:20:25Z",
+  "smart": true
  },
  {
   "id": "7062",
