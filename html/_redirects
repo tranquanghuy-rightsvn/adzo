@@ -3,3 +3,11 @@
 /feed-back-khach-hang/ /tin-tuc/ 301
 /tin-tuc/thong-tin-xe-dien /tin-tuc/ 301
 /tin-tuc/thong-tin-xe-dien/ /tin-tuc/ 301
+# CMS 2026-11-03: đổi URL danh mục /do-gia-dung/may-bom/ -> /do-gia-dung/may-bom-nuoc/
+/do-gia-dung/may-bom /do-gia-dung/may-bom-nuoc/ 301
+/do-gia-dung/may-bom/ /do-gia-dung/may-bom-nuoc/ 301
+/do-gia-dung/may-bom-trang-* /do-gia-dung/may-bom-nuoc-trang-:splat 301
+# CMS 2026-11-03: đổi URL danh mục /do-gia-dung/may-bom/may-bom-bentas/ -> /do-gia-dung/may-bom-nuoc/may-bom-bentas/
+/do-gia-dung/may-bom/may-bom-bentas /do-gia-dung/may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom/may-bom-bentas/ /do-gia-dung/may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom/may-bom-bentas-trang-* /do-gia-dung/may-bom-nuoc/may-bom-bentas-trang-:splat 301
