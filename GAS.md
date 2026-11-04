@@ -191,9 +191,9 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
 
 7. **Smart content tự động ban đêm** (thêm 04/11/2026, hàm `autoSmart*` trong `gas/Code.js`):
    - Mỗi đêm ~0h giờ VN (trigger Apps Script hằng ngày `autoSmartNightly`, giờ thật lệch ±15 phút) chuyển
-     **5 bài viết + 5 sản phẩm CHƯA dùng Smart content** (không có cờ `smart` trong `posts.json` /
+     **1 bài viết + 9 sản phẩm CHƯA dùng Smart content** (tỉ lệ 1:9, chốt 04/11/2026; hằng `AUTO_SMART_PER_DAY`) (không có cờ `smart` trong `posts.json` /
      `products.json`), theo thứ tự trong danh sách (mới nhất trước). Bài đã có `smart.html` nhưng thiếu cờ:
-     chỉ bổ sung cờ, không tính vào 5. Bài không có nội dung: bỏ qua.
+     chỉ bổ sung cờ, không tính vào số lượng. Bài không có nội dung: bỏ qua.
    - Cách chuyển = nút "Chuyển sang Smart content" với chữ "Giữ nguyên, chỉ dàn trang", màu website, không
      yêu cầu thêm; lưu 1 phiên bản "Tự động chuyển ban đêm". AI viết lại luôn Mô tả ngắn (mục 8).
    - Apps Script giới hạn 6 phút/lần chạy → mỗi lần chỉ bắt đầu bài mới trong 3,5 phút đầu, còn thì hẹn
