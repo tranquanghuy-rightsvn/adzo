@@ -1502,7 +1502,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/373.jpg",
    "date": "10/10/2026",
    "views": "35 Lượt xem",
-   "desc": "<p>Inox và nhựa là hai chất liệu bồn nước phổ biến nhất trên thị trường hiện nay, mỗi loại đều có ưu – nhược điểm riêng. Việc hiểu rõ sự khác biệt sẽ giúp bạn đưa ra lựa chọn phù hợp với công trình của mình.</p>"
+   "desc": "<p>Bồn nước Inox hay bồn nhựa: nên chọn loại nào? Xem ưu điểm từng loại và bảng so sánh độ bền, chi phí, thẩm mỹ để chọn đúng cho công trình.</p>"
   },
   {
    "title": "Hướng dẫn chọn máy bơm nước gia đình đúng công suất",
@@ -1510,7 +1510,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/7450.jpg",
    "date": "09/10/2026",
    "views": "58 Lượt xem",
-   "desc": "<p>Chọn sai công suất máy bơm là nguyên nhân phổ biến khiến nước lên yếu, máy nhanh hỏng hoặc hao điện. Bài viết sau giúp bạn xác định công suất phù hợp trước khi mua máy bơm cho gia đình.</p>"
+   "desc": "<p>Hướng dẫn chọn máy bơm nước gia đình đúng công suất: cách xét cột áp, khoảng cách, phân biệt bơm ly tâm, tăng áp, bơm chìm và mẹo dùng bền.</p>"
   },
   {
    "title": "Máy bơm tăng áp là gì? Khi nào cần lắp đặt",
@@ -1518,7 +1518,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/media/thumb/600x600/11.png",
    "date": "08/10/2026",
    "views": "47 Lượt xem",
-   "desc": "<p>Nhiều gia đình gặp tình trạng vòi sen, máy nước nóng chảy yếu dù bồn nước vẫn còn đầy. Đây thường là dấu hiệu cho thấy đã đến lúc cần lắp thêm máy bơm tăng áp.</p>"
+   "desc": "<p>Máy bơm tăng áp là gì? Tìm hiểu cách hoạt động, các dấu hiệu nhà cần lắp và lưu ý chọn công suất, vị trí khi lắp đặt để nước mạnh, đều hơn.</p>"
   },
   {
    "title": "Máy nước nóng năng lượng mặt trời: Lợi ích và kinh nghiệm chọn mua",
@@ -1526,7 +1526,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/2600.jpg",
    "date": "07/10/2026",
    "views": "63 Lượt xem",
-   "desc": "<p>Máy nước nóng năng lượng mặt trời ngày càng được nhiều gia đình Việt Nam lựa chọn nhờ khả năng tiết kiệm điện và thân thiện với môi trường. Vậy nên chọn mua loại nào và cần lưu ý gì khi lắp đặt?</p>"
+   "desc": "<p>Máy nước nóng năng lượng mặt trời giúp tiết kiệm điện: tìm hiểu lợi ích, cách chọn dung tích theo số người dùng và lưu ý khi lắp đặt trên mái nhà.</p>"
   },
   {
    "title": "Cách chọn động cơ motor điện phù hợp với nhu cầu sử dụng",
@@ -1534,7 +1534,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/7956.jpg",
    "date": "06/10/2026",
    "views": "29 Lượt xem",
-   "desc": "<p>Động cơ motor điện là linh kiện quan trọng trong nhiều thiết bị công nghiệp và dân dụng. Chọn đúng loại motor không chỉ giúp máy vận hành hiệu quả mà còn kéo dài tuổi thọ thiết bị.</p>"
+   "desc": "<p>Cách chọn động cơ motor điện phù hợp: nắm các thông số công suất, tốc độ, điện áp, phân biệt motor 1 pha và 3 pha, cùng mẹo bảo trì giúp motor bền hơn.</p>"
   },
   {
    "title": "Những phụ kiện điện nước cần thiết cho mọi gia đình",
