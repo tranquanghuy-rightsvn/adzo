@@ -194,8 +194,11 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
      **1 bài viết + 9 sản phẩm CHƯA dùng Smart content** (tỉ lệ 1:9, chốt 04/11/2026; hằng `AUTO_SMART_PER_DAY`) (không có cờ `smart` trong `posts.json` /
      `products.json`), theo thứ tự trong danh sách (mới nhất trước). Bài đã có `smart.html` nhưng thiếu cờ:
      chỉ bổ sung cờ, không tính vào số lượng. Bài không có nội dung: bỏ qua.
-   - Cách chuyển = nút "Chuyển sang Smart content" với chữ "Giữ nguyên, chỉ dàn trang", màu website, không
-     yêu cầu thêm; lưu 1 phiên bản "Tự động chuyển ban đêm". AI viết lại luôn Mô tả ngắn (mục 8).
+   - Sản phẩm: như nút "Chuyển sang Smart content" với chữ "Giữ nguyên, chỉ dàn trang". **Bài viết: chế độ
+     `expand`** (chỉ việc tự động dùng) - giữ hết chữ/ảnh/link gốc và viết DÀY hơn ~1,6-2 lần: cách hoạt động,
+     cách chọn, bảng so sánh, mẹo lắp đặt/sử dụng, lỗi hay gặp, bảo trì, hỏi đáp 4-6 câu; chỉ kiến thức chung
+     của ngành, cấm bịa giá/khuyến mãi/bảo hành/số liệu/thông số của sản phẩm cụ thể; lưu `mode: rewrite`.
+     Màu website, lưu 1 phiên bản. AI viết lại luôn Mô tả ngắn (mục 8). `content_html` gốc không đổi.
    - Apps Script giới hạn 6 phút/lần chạy → mỗi lần chỉ bắt đầu bài mới trong 3,5 phút đầu, còn thì hẹn
      lần chạy tiếp sau 1 phút (`autoSmartContinue`). File chi tiết ghi ngay sau mỗi bài (không kích hoạt
      build); xong hết mới ghi `posts.json` + `products.json` trong MỘT commit → **CI build + deploy 1 lần/đêm**.
