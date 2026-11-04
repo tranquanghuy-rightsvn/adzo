@@ -189,6 +189,35 @@ số, thẻ, quy trình, slider ảnh, tab, hỏi đáp xổ xuống...). Có �
    - Không bịa số liệu: chỉ dùng thông tin có trong ô Ý chính hoặc nội dung đang có (sản phẩm: cấm tự
      đưa thông số, model, công suất, bảo hành...).
 
+7. **Smart content tự động ban đêm** (thêm 04/11/2026, hàm `autoSmart*` trong `gas/Code.js`):
+   - Mỗi đêm ~0h giờ VN (trigger Apps Script hằng ngày `autoSmartNightly`, giờ thật lệch ±15 phút) chuyển
+     **5 bài viết + 5 sản phẩm CHƯA dùng Smart content** (không có cờ `smart` trong `posts.json` /
+     `products.json`), theo thứ tự trong danh sách (mới nhất trước). Bài đã có `smart.html` nhưng thiếu cờ:
+     chỉ bổ sung cờ, không tính vào 5. Bài không có nội dung: bỏ qua.
+   - Cách chuyển = nút "Chuyển sang Smart content" với chữ "Giữ nguyên, chỉ dàn trang", màu website, không
+     yêu cầu thêm; lưu 1 phiên bản "Tự động chuyển ban đêm". AI viết lại luôn Mô tả ngắn (mục 8).
+   - Apps Script giới hạn 6 phút/lần chạy → mỗi lần chỉ bắt đầu bài mới trong 3,5 phút đầu, còn thì hẹn
+     lần chạy tiếp sau 1 phút (`autoSmartContinue`). File chi tiết ghi ngay sau mỗi bài (không kích hoạt
+     build); xong hết mới ghi `posts.json` + `products.json` trong MỘT commit → **CI build + deploy 1 lần/đêm**.
+   - Ngay trước khi ghi đọc lại file chi tiết: bài vừa có Smart content → bỏ; nội dung gốc vừa bị sửa → để
+     đêm sau. Lỗi AI đếm theo bài (Script Property `AUTO_SMART_FAILS`), lỗi 3 lần thì không thử nữa. Trạng
+     thái đêm nay: `AUTO_SMART_STATE`; kết quả đêm gần nhất: `AUTO_SMART_LAST`.
+   - Trừ số dư token AI như bấm tay (~2-4 nghìn token/bài, ~25-40 nghìn token/đêm).
+   - Bật: chủ script chạy `autoSmartInstall` 1 lần trong editor (Google hỏi thêm quyền quản lý trigger -
+     scope `script.scriptapp`). Tắt: `autoSmartUninstall`. Chạy thử ngay: `autoSmartRunNow`. Các hàm này
+     chỉ chạy khi người gọi là chủ script; 2 hàm trigger chỉ chạy khi được gọi bởi trigger thật.
+8. **Quy tắc cho AI khi chuyển Smart content** (`smartGenerateCore_`, dùng chung nút bấm tay + tự động):
+   - **Bài viết bắt buộc có link nội bộ** trong nội dung: ≥ 2 (nên 3-5), rải ở các mục, không đặt trong
+     tiêu đề; giữ link sẵn có; thêm từ danh sách tối đa 15 trang gần chủ đề do server chọn
+     (`smartLinkCandidates_`: danh mục sản phẩm, ≤ 8 sản phẩm, bài viết khác — so từ của tiêu đề + từ khoá,
+     bỏ từ chung `LINK_STOPWORDS_`). Bọc cụm từ có sẵn, không có thì thêm 1 dòng "Xem thêm: …" cuối mục
+     (cho phép cả khi "Giữ nguyên chữ"). Viết bằng AI (mục 6): mỗi mục thân bài / kết bài của bài viết có
+     đúng 1 link. Sản phẩm: không bắt buộc.
+   - **AI sửa cả Mô tả ngắn** (field `short_desc` trong kết quả): bài viết = `description` (thẻ bài + meta
+     description), 120-160 ký tự, có từ khoá chính; sản phẩm = `short_desc` (cạnh giá), 2-5 dòng, không bịa
+     thông số/giá/khuyến mãi/bảo hành. Bấm tay: điền vào ô Mô tả ngắn của form, chỉ lên web khi Lưu. Tự
+     động: ghi thẳng (bài viết chỉ thay khi AI trả ≥ 60 ký tự).
+
 ## II-C. Quản lý website (thông tin chung)
 
 - Tab "Quản lý website" (admin trở lên), lưu `data/settings.json` (1 commit, kích hoạt build).
