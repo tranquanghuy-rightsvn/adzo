@@ -5683,11 +5683,12 @@
   "img": "/assets/img/images/8121.jpg",
   "categories": [
    "may-bom-nuoc",
-   "san-pham-cong-nghiep",
-   "may-bom-nuoc/may-bom-app"
+   "may-bom-nuoc/may-bom-app",
+   "san-pham-cong-nghiep"
   ],
   "status": "Còn hàng",
-  "updated_at": "2026-10-18T06:05:40Z"
+  "updated_at": "2026-11-05T08:13:48Z",
+  "smart": true
  },
  {
   "id": "1300",
