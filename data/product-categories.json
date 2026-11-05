@@ -126,8 +126,8 @@
   "has_filter": true
  },
  {
-  "path": "tag/san-pham/thiet-bi-bep-cong-nghiep",
-  "name": "Thiết bị bếp công nghiệp",
+  "path": "thiet-bi-cong-nghiep",
+  "name": "Thiết Bị Công Nghiệp",
   "h1": "",
   "parent": "",
   "order": 11,
@@ -135,7 +135,7 @@
   "meta_description": "Thiết bị bếp công nghiệp",
   "meta_keywords": "",
   "og_image": "",
-  "updated_at": "2026-10-18T06:05:40Z",
+  "updated_at": "2026-11-05T02:57:09Z",
   "description": "",
   "has_filter": false
  },

@@ -99,3 +99,7 @@
 /do-gia-dung/may-bom-nuoc/may-bom-bentas /may-bom-nuoc/may-bom-bentas/ 301
 /do-gia-dung/may-bom-nuoc/may-bom-bentas/ /may-bom-nuoc/may-bom-bentas/ 301
 /do-gia-dung/may-bom-nuoc/may-bom-bentas-trang-* /may-bom-nuoc/may-bom-bentas-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /tag/san-pham/thiet-bi-bep-cong-nghiep/ -> /thiet-bi-cong-nghiep/
+/tag/san-pham/thiet-bi-bep-cong-nghiep /thiet-bi-cong-nghiep/ 301
+/tag/san-pham/thiet-bi-bep-cong-nghiep/ /thiet-bi-cong-nghiep/ 301
+/tag/san-pham/thiet-bi-bep-cong-nghiep-trang-* /thiet-bi-cong-nghiep-trang-:splat 301
