@@ -4,10 +4,98 @@
 /tin-tuc/thong-tin-xe-dien /tin-tuc/ 301
 /tin-tuc/thong-tin-xe-dien/ /tin-tuc/ 301
 # CMS 2026-11-03: đổi URL danh mục /do-gia-dung/may-bom/ -> /do-gia-dung/may-bom-nuoc/
-/do-gia-dung/may-bom /do-gia-dung/may-bom-nuoc/ 301
-/do-gia-dung/may-bom/ /do-gia-dung/may-bom-nuoc/ 301
-/do-gia-dung/may-bom-trang-* /do-gia-dung/may-bom-nuoc-trang-:splat 301
+/do-gia-dung/may-bom /may-bom-nuoc/ 301
+/do-gia-dung/may-bom/ /may-bom-nuoc/ 301
+/do-gia-dung/may-bom-trang-* /may-bom-nuoc-trang-:splat 301
 # CMS 2026-11-03: đổi URL danh mục /do-gia-dung/may-bom/may-bom-bentas/ -> /do-gia-dung/may-bom-nuoc/may-bom-bentas/
-/do-gia-dung/may-bom/may-bom-bentas /do-gia-dung/may-bom-nuoc/may-bom-bentas/ 301
-/do-gia-dung/may-bom/may-bom-bentas/ /do-gia-dung/may-bom-nuoc/may-bom-bentas/ 301
-/do-gia-dung/may-bom/may-bom-bentas-trang-* /do-gia-dung/may-bom-nuoc/may-bom-bentas-trang-:splat 301
+/do-gia-dung/may-bom/may-bom-bentas /may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom/may-bom-bentas/ /may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom/may-bom-bentas-trang-* /may-bom-nuoc/may-bom-bentas-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-nuoc/ -> /may-bom-nuoc/
+/do-gia-dung/may-bom-nuoc /may-bom-nuoc/ 301
+/do-gia-dung/may-bom-nuoc/ /may-bom-nuoc/ 301
+/do-gia-dung/may-bom-nuoc-trang-* /may-bom-nuoc-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-app/ -> /may-bom-nuoc/may-bom-app/
+/do-gia-dung/may-bom-app /may-bom-nuoc/may-bom-app/ 301
+/do-gia-dung/may-bom-app/ /may-bom-nuoc/may-bom-app/ 301
+/do-gia-dung/may-bom-app-trang-* /may-bom-nuoc/may-bom-app-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-atman/ -> /may-bom-nuoc/may-bom-atman/
+/do-gia-dung/may-bom-atman /may-bom-nuoc/may-bom-atman/ 301
+/do-gia-dung/may-bom-atman/ /may-bom-nuoc/may-bom-atman/ 301
+/do-gia-dung/may-bom-atman-trang-* /may-bom-nuoc/may-bom-atman-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-ewara/ -> /may-bom-nuoc/may-bom-ewara/
+/do-gia-dung/may-bom-ewara /may-bom-nuoc/may-bom-ewara/ 301
+/do-gia-dung/may-bom-ewara/ /may-bom-nuoc/may-bom-ewara/ 301
+/do-gia-dung/may-bom-ewara-trang-* /may-bom-nuoc/may-bom-ewara-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-hitachi/ -> /may-bom-nuoc/may-bom-hitachi/
+/do-gia-dung/may-bom-hitachi /may-bom-nuoc/may-bom-hitachi/ 301
+/do-gia-dung/may-bom-hitachi/ /may-bom-nuoc/may-bom-hitachi/ 301
+/do-gia-dung/may-bom-hitachi-trang-* /may-bom-nuoc/may-bom-hitachi-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-maro/ -> /may-bom-nuoc/may-bom-maro/
+/do-gia-dung/may-bom-maro /may-bom-nuoc/may-bom-maro/ 301
+/do-gia-dung/may-bom-maro/ /may-bom-nuoc/may-bom-maro/ 301
+/do-gia-dung/may-bom-maro-trang-* /may-bom-nuoc/may-bom-maro-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-shimizu/ -> /may-bom-nuoc/may-bom-shimizu/
+/do-gia-dung/may-bom-shimizu /may-bom-nuoc/may-bom-shimizu/ 301
+/do-gia-dung/may-bom-shimizu/ /may-bom-nuoc/may-bom-shimizu/ 301
+/do-gia-dung/may-bom-shimizu-trang-* /may-bom-nuoc/may-bom-shimizu-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-wilo/ -> /may-bom-nuoc/may-bom-wilo/
+/do-gia-dung/may-bom-wilo /may-bom-nuoc/may-bom-wilo/ 301
+/do-gia-dung/may-bom-wilo/ /may-bom-nuoc/may-bom-wilo/ 301
+/do-gia-dung/may-bom-wilo-trang-* /may-bom-nuoc/may-bom-wilo-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-walrus/ -> /may-bom-nuoc/may-bom-walrus/
+/do-gia-dung/may-bom-walrus /may-bom-nuoc/may-bom-walrus/ 301
+/do-gia-dung/may-bom-walrus/ /may-bom-nuoc/may-bom-walrus/ 301
+/do-gia-dung/may-bom-walrus-trang-* /may-bom-nuoc/may-bom-walrus-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-resun/ -> /may-bom-nuoc/may-bom-resun/
+/do-gia-dung/may-bom-resun /may-bom-nuoc/may-bom-resun/ 301
+/do-gia-dung/may-bom-resun/ /may-bom-nuoc/may-bom-resun/ 301
+/do-gia-dung/may-bom-resun-trang-* /may-bom-nuoc/may-bom-resun-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-jebao/ -> /may-bom-nuoc/may-bom-jebao/
+/do-gia-dung/may-bom-jebao /may-bom-nuoc/may-bom-jebao/ 301
+/do-gia-dung/may-bom-jebao/ /may-bom-nuoc/may-bom-jebao/ 301
+/do-gia-dung/may-bom-jebao-trang-* /may-bom-nuoc/may-bom-jebao-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-dragonsea/ -> /may-bom-nuoc/may-bom-dragonsea/
+/do-gia-dung/may-bom-dragonsea /may-bom-nuoc/may-bom-dragonsea/ 301
+/do-gia-dung/may-bom-dragonsea/ /may-bom-nuoc/may-bom-dragonsea/ 301
+/do-gia-dung/may-bom-dragonsea-trang-* /may-bom-nuoc/may-bom-dragonsea-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-lifetech/ -> /may-bom-nuoc/may-bom-lifetech/
+/do-gia-dung/may-bom-lifetech /may-bom-nuoc/may-bom-lifetech/ 301
+/do-gia-dung/may-bom-lifetech/ /may-bom-nuoc/may-bom-lifetech/ 301
+/do-gia-dung/may-bom-lifetech-trang-* /may-bom-nuoc/may-bom-lifetech-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-lucky-pro/ -> /may-bom-nuoc/may-bom-lucky-pro/
+/do-gia-dung/may-bom-lucky-pro /may-bom-nuoc/may-bom-lucky-pro/ 301
+/do-gia-dung/may-bom-lucky-pro/ /may-bom-nuoc/may-bom-lucky-pro/ 301
+/do-gia-dung/may-bom-lucky-pro-trang-* /may-bom-nuoc/may-bom-lucky-pro-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-lepono/ -> /may-bom-nuoc/may-bom-lepono/
+/do-gia-dung/may-bom-lepono /may-bom-nuoc/may-bom-lepono/ 301
+/do-gia-dung/may-bom-lepono/ /may-bom-nuoc/may-bom-lepono/ 301
+/do-gia-dung/may-bom-lepono-trang-* /may-bom-nuoc/may-bom-lepono-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-panasonic/ -> /may-bom-nuoc/may-bom-panasonic/
+/do-gia-dung/may-bom-panasonic /may-bom-nuoc/may-bom-panasonic/ 301
+/do-gia-dung/may-bom-panasonic/ /may-bom-nuoc/may-bom-panasonic/ 301
+/do-gia-dung/may-bom-panasonic-trang-* /may-bom-nuoc/may-bom-panasonic-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-pentax/ -> /may-bom-nuoc/may-bom-pentax/
+/do-gia-dung/may-bom-pentax /may-bom-nuoc/may-bom-pentax/ 301
+/do-gia-dung/may-bom-pentax/ /may-bom-nuoc/may-bom-pentax/ 301
+/do-gia-dung/may-bom-pentax-trang-* /may-bom-nuoc/may-bom-pentax-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-rheken/ -> /may-bom-nuoc/may-bom-rheken/
+/do-gia-dung/may-bom-rheken /may-bom-nuoc/may-bom-rheken/ 301
+/do-gia-dung/may-bom-rheken/ /may-bom-nuoc/may-bom-rheken/ 301
+/do-gia-dung/may-bom-rheken-trang-* /may-bom-nuoc/may-bom-rheken-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-shimge/ -> /may-bom-nuoc/may-bom-shimge/
+/do-gia-dung/may-bom-shimge /may-bom-nuoc/may-bom-shimge/ 301
+/do-gia-dung/may-bom-shimge/ /may-bom-nuoc/may-bom-shimge/ 301
+/do-gia-dung/may-bom-shimge-trang-* /may-bom-nuoc/may-bom-shimge-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-sobo/ -> /may-bom-nuoc/may-bom-sobo/
+/do-gia-dung/may-bom-sobo /may-bom-nuoc/may-bom-sobo/ 301
+/do-gia-dung/may-bom-sobo/ /may-bom-nuoc/may-bom-sobo/ 301
+/do-gia-dung/may-bom-sobo-trang-* /may-bom-nuoc/may-bom-sobo-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-vipsun/ -> /may-bom-nuoc/may-bom-vipsun/
+/do-gia-dung/may-bom-vipsun /may-bom-nuoc/may-bom-vipsun/ 301
+/do-gia-dung/may-bom-vipsun/ /may-bom-nuoc/may-bom-vipsun/ 301
+/do-gia-dung/may-bom-vipsun-trang-* /may-bom-nuoc/may-bom-vipsun-trang-:splat 301
+# CMS 2026-11-05: đổi URL danh mục /do-gia-dung/may-bom-nuoc/may-bom-bentas/ -> /may-bom-nuoc/may-bom-bentas/
+/do-gia-dung/may-bom-nuoc/may-bom-bentas /may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom-nuoc/may-bom-bentas/ /may-bom-nuoc/may-bom-bentas/ 301
+/do-gia-dung/may-bom-nuoc/may-bom-bentas-trang-* /may-bom-nuoc/may-bom-bentas-trang-:splat 301
