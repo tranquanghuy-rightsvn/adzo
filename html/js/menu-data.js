@@ -59,88 +59,88 @@ window.TAHAWA_MENU = {
  "cats": [
   {
    "t": "MÁY BƠM NƯỚC",
-   "href": "https://tahawa.com.vn/do-gia-dung/may-bom/",
+   "href": "https://tahawa.com.vn/may-bom-nuoc/",
    "hidden": false,
    "sub": [
     {
      "t": "APP",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-app/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-app/"
     },
     {
      "t": "ATMAN",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-atman/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-atman/"
     },
     {
      "t": "EWARA - EWALA",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-ewara/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-ewara/"
     },
     {
      "t": "HITACHI",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-hitachi/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-hitachi/"
     },
     {
      "t": "MARO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-maro/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-maro/"
     },
     {
      "t": "SHIMIZU",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-shimizu/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-shimizu/"
     },
     {
      "t": "WILO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-wilo/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-wilo/"
     },
     {
      "t": "WALRUS",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-walrus/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-walrus/"
     },
     {
      "t": "RESUN",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-resun/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-resun/"
     },
     {
      "t": "JEBAO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-jebao/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-jebao/"
     },
     {
      "t": "DRAGONSEA PUMP",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-dragonsea/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-dragonsea/"
     },
     {
      "t": "LIFETECH",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-lifetech/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-lifetech/"
     },
     {
      "t": "LUCKY PRO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-lucky-pro/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-lucky-pro/"
     },
     {
      "t": "LEPONO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-lepono/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-lepono/"
     },
     {
      "t": "PANASONIC",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-panasonic/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-panasonic/"
     },
     {
      "t": "PENTAX",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-pentax/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-pentax/"
     },
     {
      "t": "RHEKEN",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-rheken/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-rheken/"
     },
     {
      "t": "SHIMGE",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-shimge/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-shimge/"
     },
     {
      "t": "SOBO",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-sobo/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-sobo/"
     },
     {
      "t": "VIPSUN",
-     "href": "https://tahawa.com.vn/do-gia-dung/may-bom-vipsun/"
+     "href": "https://tahawa.com.vn/may-bom-nuoc/may-bom-vipsun/"
     }
    ]
   },
