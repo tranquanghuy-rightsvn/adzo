@@ -1542,7 +1542,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/2457.jpg",
    "date": "05/10/2026",
    "views": "21 Lượt xem",
-   "desc": "<p>Bên cạnh các thiết bị chính như máy bơm, bồn nước, hệ thống phụ kiện điện nước đóng vai trò không thể thiếu để đảm bảo công trình vận hành an toàn, ổn định lâu dài.</p>"
+   "desc": "<p>Phụ kiện điện nước cần thiết cho mọi gia đình: CB, đèn LED, ống nhựa, lúp bê và cách chọn mua, lắp đặt, bảo trì để hệ thống an toàn, bền lâu.</p>"
   },
   {
    "title": "Máy thổi khí là gì? Ứng dụng trong xử lý nước và hồ cá",
