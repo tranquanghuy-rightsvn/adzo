@@ -70,7 +70,7 @@ window.TAHAWA_DATA = {
    "sm": "/assets/img/images/997.jpg"
   },
   {
-   "href": "/do-gia-dung/may-bom-nuoc/",
+   "href": "/may-bom-nuoc/",
    "name": "Máy Bơm Nước",
    "lg": "/assets/img/media/thumb/600x600/11.png",
    "sm": "/assets/img/media/thumb/300x300/11.png"
