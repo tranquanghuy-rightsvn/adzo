@@ -1550,7 +1550,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/7318.jpg",
    "date": "04/10/2026",
    "views": "18 Lượt xem",
-   "desc": "<p>Máy thổi khí là thiết bị quen thuộc trong xử lý nước thải, nuôi trồng thủy sản và chăm sóc hồ cá cảnh. Bài viết giúp bạn hiểu rõ nguyên lý hoạt động và cách chọn máy phù hợp.</p>"
+   "desc": "<p>Máy thổi khí là gì? Tìm hiểu nguyên lý, ứng dụng trong xử lý nước thải, ao nuôi, hồ cá và cách chọn công suất phù hợp, tránh sai lầm khi mua.</p>"
   },
   {
    "title": "Thiết bị công nghiệp thiết yếu cho nhà xưởng, xí nghiệp",
