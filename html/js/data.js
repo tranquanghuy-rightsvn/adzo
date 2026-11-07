@@ -1558,7 +1558,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/8388.jpg",
    "date": "03/10/2026",
    "views": "33 Lượt xem",
-   "desc": "<p>Một nhà xưởng vận hành trơn tru luôn cần đến hệ thống thiết bị công nghiệp được đầu tư bài bản. Dưới đây là những nhóm thiết bị thường được các doanh nghiệp ưu tiên trang bị.</p>"
+   "desc": "<p>Thiết bị công nghiệp thiết yếu cho nhà xưởng, xí nghiệp: nhóm bơm, truyền động, tiêu chí chọn mua, lịch bảo trì và giải đáp thắc mắc thường gặp.</p>"
   },
   {
    "title": "Kinh nghiệm chọn mua thiết bị bếp công nghiệp cho nhà hàng",
