@@ -1566,7 +1566,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/media/thumb/600x600/162844-5.jpg",
    "date": "02/10/2026",
    "views": "27 Lượt xem",
-   "desc": "<p>Đầu tư thiết bị bếp công nghiệp phù hợp giúp nhà hàng, quán ăn vận hành hiệu quả hơn, tiết kiệm thời gian chế biến và đảm bảo vệ sinh an toàn thực phẩm.</p>"
+   "desc": "<p>Kinh nghiệm chọn mua thiết bị bếp công nghiệp cho nhà hàng: xác định nhu cầu, thiết bị cơ bản, chọn inox 304, bảo quản và giải đáp thắc mắc thường gặp.</p>"
   },
   {
    "title": "Máy nước nóng trực tiếp và gián tiếp: Nên dùng loại nào",
