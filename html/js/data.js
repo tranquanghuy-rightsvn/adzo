@@ -1574,7 +1574,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/1980.jpg",
    "date": "01/10/2026",
    "views": "40 Lượt xem",
-   "desc": "<p>Máy nước nóng trực tiếp và gián tiếp là hai dòng sản phẩm phổ biến nhất hiện nay, mỗi loại phù hợp với một kiểu nhu cầu sử dụng khác nhau.</p>"
+   "desc": "<p>Máy nước nóng trực tiếp và gián tiếp khác nhau thế nào? So sánh nguyên lý, ưu nhược điểm và cách chọn loại phù hợp với gia đình bạn.</p>"
   },
   {
    "title": "Bồn tự hoại là gì? Hướng dẫn chọn dung tích phù hợp",
