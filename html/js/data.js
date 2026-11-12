@@ -1582,7 +1582,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/997.jpg",
    "date": "30/09/2026",
    "views": "24 Lượt xem",
-   "desc": "<p>Bồn tự hoại là giải pháp xử lý nước thải sinh hoạt phổ biến cho các công trình nhà ở, giúp tiết kiệm diện tích thi công so với bể tự hoại xây truyền thống.</p>"
+   "desc": "<p>Bồn tự hoại là gì? Tìm hiểu nguyên lý hoạt động, cách chọn dung tích theo số người, bảng gợi ý, lưu ý lắp đặt, bảo trì và giải đáp thắc mắc thường gặp.</p>"
   },
   {
    "title": "Chậu rửa chén Inox 304: Vì sao nên chọn",
@@ -1590,7 +1590,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/1822.jpg",
    "date": "29/09/2026",
    "views": "19 Lượt xem",
-   "desc": "<p>Chậu rửa chén là vật dụng sử dụng hàng ngày trong gian bếp, vì vậy việc chọn đúng chất liệu và kích thước sẽ ảnh hưởng trực tiếp đến độ bền và sự tiện lợi khi sử dụng.</p>"
+   "desc": "<p>Chậu rửa chén Inox 304: vì sao nên chọn, cách chọn kích thước 1 hộc hay 2 hộc, bảng so sánh chất liệu, mẹo vệ sinh và giải đáp thắc mắc thường gặp.</p>"
   },
   {
    "title": "Hướng dẫn chọn máy hàn điện tử cho thợ cơ khí",
