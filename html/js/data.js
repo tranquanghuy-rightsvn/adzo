@@ -1598,7 +1598,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/8018.jpg",
    "date": "28/09/2026",
    "views": "31 Lượt xem",
-   "desc": "<p>Máy hàn điện tử ngày càng được ưa chuộng nhờ thiết kế nhỏ gọn, tiết kiệm điện và cho mối hàn đẹp hơn so với máy hàn truyền thống. Vậy nên chọn máy hàn như thế nào cho phù hợp?</p>"
+   "desc": "<p>Hướng dẫn chọn máy hàn điện tử cho thợ cơ khí: phân biệt máy hàn que, hàn ống HDPE, PPR, tiêu chí chọn công suất và lưu ý an toàn khi vận hành.</p>"
   },
   {
    "title": "Máy lọc nước RO là gì? Có nên đầu tư cho gia đình",
