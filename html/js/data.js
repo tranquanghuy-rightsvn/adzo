@@ -1606,7 +1606,7 @@ window.TAHAWA_DATA = {
    "img": "/assets/img/images/2765.jpg",
    "date": "27/09/2026",
    "views": "52 Lượt xem",
-   "desc": "<p>Máy lọc nước RO là một trong những giải pháp lọc nước phổ biến nhất hiện nay nhờ khả năng loại bỏ tạp chất, vi khuẩn hiệu quả, mang lại nguồn nước uống trực tiếp an toàn cho gia đình.</p>"
+   "desc": "<p>Máy lọc nước RO là gì, hoạt động ra sao và có nên đầu tư cho gia đình? Tìm hiểu cách chọn máy, so sánh giải pháp, bảo trì lõi lọc và giải đáp thắc mắc.</p>"
   }
  ],
  "videos": [],
