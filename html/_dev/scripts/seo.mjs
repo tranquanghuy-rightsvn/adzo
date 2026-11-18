@@ -277,6 +277,9 @@ export async function run() {
     `User-agent: *\nAllow: /\nDisallow: /_dev/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   console.log(`seo: ${files.length} file HTML, cập nhật ${changed}, sitemap ${indexable.length} URL`);
+
+  // llms.txt cho AI search (ChatGPT, Perplexity...) - sinh lại mỗi lần build để luôn khớp dữ liệu CMS.
+  await (await import('./llms.mjs')).run();
 }
 
 if (process.argv[1]?.endsWith('seo.mjs')) await run();
